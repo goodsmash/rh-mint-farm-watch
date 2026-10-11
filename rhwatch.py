@@ -113,7 +113,7 @@ def cmd_live(a):
                      'flagged_share': flagged / c['n'], 'example_tx': sorted(c['tx'])[0],
                      'secs_ago': int((H - c['last']) * 0.1031)})
     rows.sort(key=lambda r: (-r['real_wallets'], -r['minted']))
-    rows = rows[:a.top]
+    rows = rows[:a.top * 3]
     names = {}
     calls = [('eth_call', [{'to': r['contract'], 'data': '0x06fdde03'}, 'latest']) for r in rows]
     for r, res in zip(rows, rh.batch(calls, size=4)):
@@ -121,6 +121,13 @@ def cmd_live(a):
             b = bytes.fromhex(res[2:]); ln = min(int.from_bytes(b[32:64], 'big'), 96, max(0, len(b) - 64)); names[r['contract']] = b[64:64+ln].decode(errors='replace') or '?'
         except Exception:
             names[r['contract']] = '?'
+    hidden = 0
+    if not a.include_lp:  # DEX liquidity-position NFTs (Uniswap, Ramses, ...) are not drops
+        lp = re.compile(r'position|positions|liquidity|\bLP\b', re.I)
+        before = len(rows); rows = [r for r in rows if not lp.search(names[r['contract']])]; hidden = before - len(rows)
+    rows = rows[:a.top]
+    if hidden:
+        print(f'({hidden} DEX liquidity-position collections hidden; --include-lp to show)')
     print(f'\n{"collection":28} {"minted":>7} {"wallets":>7} {"real":>6} {"bots%":>6} {"last":>6}  contract / copy this mint tx')
     for r in rows:
         print(f'{names[r["contract"]][:28]:28} {r["minted"]:>7} {r["wallets"]:>7} {r["real_wallets"]:>6} '
@@ -272,6 +279,7 @@ def main():
     p = sp.add_parser('live', help='what is minting right now')
     p.add_argument('--minutes', type=float, default=15); p.add_argument('--top', type=int, default=20)
     p.add_argument('--json', help='also write results to this file')
+    p.add_argument('--include-lp', action='store_true', help='also show DEX liquidity-position NFTs')
     p = sp.add_parser('follow', help='what a wallet minted lately')
     p.add_argument('addrs', nargs='+'); p.add_argument('--hours', type=float, default=24); p.add_argument('--top', type=int, default=25)
     p = sp.add_parser('check', help='check wallets against the master list')

@@ -188,6 +188,7 @@ function live(){
   $('#view').innerHTML = `<div class="card"><b>What is minting right now</b> - read live from the chain in your browser, ranked by <b>real</b> wallets (recipients not on the bot list).
    <div class="row" style="margin-top:8px"><label class="sub">RPC <input id="rpc" style="min-width:340px" value="${esc(rpcUrl())}"></label>
    <label class="sub">last <select id="mins"><option>2</option><option selected>5</option><option>10</option></select> min</label>
+   <label class="sub"><input type="checkbox" id="hidelp" checked> hide DEX liquidity-position NFTs</label>
    <button class="act" id="go">Scan now</button><span id="st" class="sub"></span></div>
    <div class="note">Use your own RPC if the public one is busy. Saved in this browser only. Before you mint anything: open the tx, check the contract is verified and the price is what you expect.</div></div><div id="lv"></div>`;
   $('#go').onclick = async () => {
@@ -202,9 +203,12 @@ function live(){
         const x = C[c] ||= {n:0,to:{},tx:l.transactionHash,last:0}; x.n++; x.to[to]=(x.to[to]||0)+1; const b=parseInt(l.blockNumber,16); if(b>=x.last){x.last=b;x.tx=l.transactionHash;} }
       let rows = Object.entries(C).map(([c,x])=>{ const ws=Object.keys(x.to); const bad=ws.filter(w=>{const t=(L.wallets[w]||[])[0]; return t==='CONFIRMED_PATTERN'||t==='LIKELY';});
         const badN = bad.reduce((s,w)=>s+x.to[w],0); return {c, n:x.n, w:ws.length, real:ws.length-bad.length, bots:badN/x.n, tx:x.tx, ago:Math.round((H-x.last)*0.1031)}; });
-      rows.sort((a,b)=>b.real-a.real||b.n-a.n); rows=rows.slice(0,30);
+      rows.sort((a,b)=>b.real-a.real||b.n-a.n); rows=rows.slice(0,60);
       $('#st').textContent='reading names...'; for (const r of rows) r.name = await nameOf(r.c);
-      $('#st').textContent=`${fmt(logs.length)} mints in ${Object.keys(C).length} collections · head ${H}`;
+      const LP = /position|positions|liquidity|\bLP\b/i; let hidden = 0;
+      if ($('#hidelp').checked) { const before = rows.length; rows = rows.filter(r => !LP.test(r.name)); hidden = before - rows.length; }
+      rows = rows.slice(0,30);
+      $('#st').textContent=`${fmt(logs.length)} mints in ${Object.keys(C).length} collections · head ${H}` + (hidden?` · ${hidden} DEX position NFTs hidden`:'');
       $('#lv').innerHTML = `<table><thead><tr><th>collection</th><th>minted</th><th>wallets</th><th>real wallets</th><th>to bots</th><th>last mint</th><th>copy the mint</th></tr></thead><tbody>${rows.map(r=>`<tr><td><b>${esc(r.name)}</b><br>${addrLink(r.c)}</td><td>${fmt(r.n)}</td><td>${fmt(r.w)}</td><td><b>${fmt(r.real)}</b></td><td><div class="bar"><i style="width:${r.bots*100}%"></i></div>${pct(r.bots)}</td><td>${r.ago}s ago</td><td><a href="${extx(r.tx)}" target="_blank" rel="noopener">latest mint tx</a></td></tr>`).join('')}</tbody></table>
        <div class="note">"latest mint tx" -> Input data shows the exact function a real person called. High "to bots" = farmed drop; low real wallets with huge minted = one wallet/creator.</div>`;
     } catch(e){ $('#st').textContent='RPC error: '+e.message+' - try another RPC'; }
