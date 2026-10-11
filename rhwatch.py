@@ -226,6 +226,8 @@ def _scan(hours):
         _run('scan.py', '--hours', str(hours), *extra, env={'SKIP_D': '1'})
         _run('phase_d.py', '--hours', str(hours))
         _run('analyze.py', '--hours', str(hours))
+        _run('owners.py')          # collection owners airdropping their own drop are not farms
+        _run('participants.py')    # who is minting: buyers, self-minters, distributors, farms
     except SystemExit:
         shutil.rmtree(D, ignore_errors=True)
         if os.path.exists(prev):

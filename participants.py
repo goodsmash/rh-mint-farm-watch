@@ -8,7 +8,7 @@ Roles (a wallet gets the strongest role that fits):
   DISTRIBUTOR     paid gas for mints sent to 3+ other wallets, and those wallets KEPT them
                   (a gift, an airdrop, a community drop - a person, not a farm)
   FARM_OPERATOR   paid for mints to 3+ other wallets AND swept their own out -> a farm
-  COLLECTS_FROM_MANY_MINTERS       received swept NFTs from 2+ different minting wallets     -> a farm collector
+  COLLECTS_FROM_MANY_MINTERS  received swept NFTs from 2+ different minting wallets     -> a farm collector
 
   python participants.py            # writes report.json -> participants, per window
   python build_dashboard.py         # then rebuilds the dashboard
@@ -22,7 +22,7 @@ DEAD = '0x000000000000000000000000000000000000dead'
 ROLES = ['PAID_BUYER', 'SELF_MINTER', 'DISTRIBUTOR', 'FARM_OPERATOR', 'COLLECTS_FROM_MANY_MINTERS']
 
 
-def classify(D):
+def classify(D, owners=frozenset()):
     mints = [json.loads(x) for x in open(os.path.join(D, 'mints.jsonl'))]
     txs = [json.loads(x) for x in open(os.path.join(D, 'txs.jsonl'))]
     txv = {t['h']: (int(t['val'], 16) if t.get('val') else 0) for t in txs}
@@ -53,6 +53,8 @@ def classify(D):
     for w, n in recv.items():
         if w in sinks:
             role = 'COLLECTS_FROM_MANY_MINTERS'
+        elif w in owners and len(op_for.get(w, ())) >= 3:
+            role = 'DISTRIBUTOR'       # collection owner airdropping its own collection
         elif len(op_for.get(w, ())) >= 3 and sent_out.get(w, 0) >= 5:
             role = 'FARM_OPERATOR'
         elif len(op_for.get(w, ())) >= 3:
@@ -87,7 +89,8 @@ for p in sorted(glob.glob(os.path.join(BASE, 'data', '*', 'report.json'))):
     D = os.path.dirname(p)
     if not os.path.exists(os.path.join(D, 'mints.jsonl')):
         print('skip (no raw data):', D); continue
-    R['participants'] = classify(D)
+    owners = {x['address'] for x in R['wallets'] if 'COLLECTION_OWNER' in x['labels']}
+    R['participants'] = classify(D, owners)
     json.dump(R, open(p, 'w'))
     f = R['participants']['roles']
     print(os.path.basename(D), '->', {r: f'{f[r]["nfts_share"]*100:.1f}% NFTs' for r in ROLES})

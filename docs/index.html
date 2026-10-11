@@ -135,8 +135,8 @@ function farms(){
    <div class="note">Feeders: ${f.feeders.slice(0,40).map(([a,n])=>`${addrLink(a)} (${n})`).join(' · ')}${f.feeders.length>40?' …':''}</div></div>`).join('') || '<div class="card">No sinks found in this window.</div>';
 }
 function ops(){
-  const rows = R[win].wallets.filter(r=>r.labels.includes('OPERATOR_FOR_OTHER_WALLETS')).sort((a,b)=>b.evidence.operated_for-a.evidence.operated_for);
-  $('#view').innerHTML = `<div class="note">An <b>operator</b> is a wallet that paid the gas for mints delivered to 3 or more <i>other</i> wallets (mint-to-many / bundled minting).</div><table><thead><tr><th>operator</th><th>minted for # wallets</th><th>NFTs</th><th>collections</th><th>via</th><th>signals</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${addrLink(r.address)}</td><td>${fmt(r.evidence.operated_for)}</td><td>${fmt(r.evidence.tokens)}</td><td>${fmt(r.evidence.collections)}</td><td>${esc(JSON.stringify(r.evidence.via||{}))}</td><td>${tags(r)}</td></tr>`).join('')}</tbody></table>`;
+  const rows = R[win].wallets.filter(r=>(r.labels.includes('PAID_FOR_OTHER_MINTS')||r.labels.includes('COLLECTION_OWNER'))).sort((a,b)=>b.evidence.operated_for-a.evidence.operated_for);
+  $('#view').innerHTML = `<div class="note">An <b>operator</b> is a wallet that paid the gas for mints delivered to 3 or more <i>other</i> wallets (mint-to-many / bundled minting). Wallets tagged <span class="tag">COLLECTION_OWNER</span> own the collection they minted from: that is a creator airdrop, not a farm, and they are never in the strong tier.</div><table><thead><tr><th>operator</th><th>minted for # wallets</th><th>NFTs</th><th>collections</th><th>via</th><th>signals</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${addrLink(r.address)}</td><td>${fmt(r.evidence.operated_for)}</td><td>${fmt(r.evidence.tokens)}</td><td>${fmt(r.evidence.collections)}</td><td>${esc(JSON.stringify(r.evidence.via||{}))}</td><td>${tags(r)}</td></tr>`).join('')}</tbody></table>`;
 }
 function swarms(){
   const s = R[win].swarms;
@@ -156,9 +156,9 @@ function who(){
     PAID_BUYER:['Paid ETH for its own mints','A real buyer. Paid mint = normal. Never a flag.'],
     DISTRIBUTOR:['Paid gas for mints sent to other wallets, and they kept them','Looks like a gift / airdrop / community drop - a person, not a farm.'],
     FARM_OPERATOR:['Paid for mints to 3+ other wallets AND swept its own out','A farm operator.'],
-    FARM_SINK:['Received swept NFTs from 2+ different minting wallets','A farm collector (one wallet holding many people\'s mints).']};
+    COLLECTS_FROM_MANY_MINTERS:['Received swept NFTs from 2+ different minting wallets','A collector wallet holding many other wallets\' mints (farm pattern).']};
   const rows = Object.keys(meta).map(k => { const v = P.roles[k]||{wallets:0,nfts:0,nfts_share:0,wallets_share:0};
-    return `<tr><td><b>${k.replace('_',' ')}</b><br><span class="sub">${meta[k][1]}</span></td>
+    return `<tr><td><b>${k.replace(/_/g,' ')}</b><br><span class="sub">${meta[k][1]}</span></td>
       <td>${fmt(v.wallets)}</td><td>${fmt(v.nfts)}</td>
       <td><div class="bar"><i style="width:${v.nfts_share*100}%"></i></div>${pct(v.nfts_share)}</td></tr>`; }).join('');
   const ex = P.farm_examples||{};
@@ -168,7 +168,7 @@ function who(){
    <table><thead><tr><th>role</th><th>wallets</th><th>NFTs</th><th>share of NFTs</th></tr></thead><tbody>${rows}</tbody></table>
    <div class="card" style="margin-top:12px"><b>${fmt(P.paid_mints)}</b> NFTs were minted from a PAID contract (the sender paid ETH in the mint tx). Total NFTs: <b>${fmt(P.total_nfts)}</b> to <b>${fmt(P.total_wallets_that_received)}</b> wallets.</div>
    ${exHtml}
-   <div class="note">Roles are assigned strongest-first (FARM_SINK > FARM_OPERATOR > DISTRIBUTOR > PAID_BUYER > SELF_MINTER), so each wallet counts once. Evidence, not verdicts. Never name or shame wallets.</div>`;
+   <div class="note">Roles are assigned strongest-first (COLLECTS_FROM_MANY_MINTERS > FARM_OPERATOR > DISTRIBUTOR > PAID_BUYER > SELF_MINTER; a collection owner airdropping its own collection counts as DISTRIBUTOR), so each wallet counts once. Evidence, not verdicts. Never name or shame wallets.</div>`;
 }
 
 
@@ -195,12 +195,12 @@ async function loadLook(){ if (LOOK) return LOOK;
 function lookup(){
   $('#view').innerHTML = `<div class="card"><b>Check wallets</b> - paste one or many (a whole giveaway / allowlist). Nothing leaves your browser.
    <textarea id="la" rows="6" style="width:100%;margin-top:8px;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px;font:12px ui-monospace,monospace" placeholder="0x... one per line, or paste any text containing addresses"></textarea>
-   <div class="row" style="margin-top:8px"><button class="act" id="lb">Check</button><label class="sub"><input type="checkbox" id="lk"> keep MIXED_SIGNAL (remove only CONFIRMED)</label></div>
+   <div class="row" style="margin-top:8px"><button class="act" id="lb">Check</button><label class="sub"><input type="checkbox" id="lk"> keep MIXED_SIGNAL (remove only STRONG_SIGNAL)</label></div>
    <div id="lr" class="note">Loading list...</div>
    <div class="note"><b>What the tiers mean.</b>
     <br><b>LOW_SIGNAL</b> - one weak signal. Normal collectors land here. <b>Never</b> treat it as a bot.
     <br><b>MIXED_SIGNAL</b> - several signals, but this can be a real person who mints a lot. Activity is a habit, not proof.
-    <br><b>CONFIRMED</b> - only used when there is structural proof: this wallet paid for mints sent to OTHER wallets, swept NFTs into one collector wallet, runs automated (EIP-7702) mints, or mints on machine timing.
+    <br><b>STRONG_SIGNAL</b> - only used when there is structural proof: this wallet paid for mints sent to OTHER wallets, swept NFTs into one collector wallet, runs automated (EIP-7702) mints, or mints on machine timing.
     <br>Buying a paid mint, or minting a lot for yourself, is <b>not</b> farm evidence. These are people too.</div></div>`;
   loadLook().then(L => $('#lr').textContent = `Master list: ${fmt(Object.keys(L.wallets).length)} wallets, generated ${L.generated}.`);
   $('#lb').onclick = async () => { const L = await loadLook();

@@ -91,6 +91,7 @@ The dashboard's "Minting now" tab also lets you type your own RPC. It is saved o
 | `REGULAR_TIMING` | Mint timing too regular for a person. |
 | `SAME_GAS_GROUP` | Five or more wallets sent byte-identical gas settings to the same mint (one script). |
 | `LINKED_GROUP` | Linked to a farm through a shared operator or collector wallet. |
+| `COLLECTION_OWNER` | Paid for mints sent to other wallets, **but owns the collection**: a creator airdrop, not a farm. `PAID_FOR_OTHER_MINTS` and `REGULAR_TIMING` are removed, the tier is capped at MIXED, and the airdrop's recipients are cleared (`owners.py`). |
 
 | Tier | Rule | Use it for |
 |---|---|---|
