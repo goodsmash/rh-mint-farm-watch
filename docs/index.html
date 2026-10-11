@@ -37,6 +37,11 @@ a{color:var(--blu);text-decoration:none}a:hover{text-decoration:underline}
 .copy{cursor:pointer;color:var(--mut);font-size:11px;margin-left:4px}
 button.act{background:var(--acc);color:#111;border:0;border-radius:8px;padding:7px 12px;font-weight:700;cursor:pointer}
 canvas{width:100%;height:160px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+pre{overflow-x:auto;max-width:100%}
+@media (max-width: 900px) {
+  #view table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap}
+  #view td{white-space:normal;min-width:90px}
+}
 </style>
 </head>
 <body>
@@ -137,9 +142,14 @@ function farms(){
    fs.slice(0,150).map(f=>`<div class="card"><div class="row"><b>Sink</b> ${addrLink(f.sink)} <span class="tag t-STRONG_SIGNAL">${f.feeder_wallets} feeder wallets</span><span class="tag">${fmt(f.tokens_received)} NFTs swept in</span><span class="tag">sink nonce ${fmt(f.sink_nonce)}</span>${(f.sink_code||'').startsWith('0xef0100')?'<span class="tag">EIP-7702</span>':''}</div>
    <div class="note">Feeders: ${f.feeders.slice(0,40).map(([a,n])=>`${addrLink(a)} (${n})`).join(' · ')}${f.feeders.length>40?' …':''}</div></div>`).join('') || '<div class="card">No sinks found in this window.</div>';
 }
+function viaCell(v){
+  const e = Object.entries(v||{}).sort((a,b)=>b[1]-a[1]);
+  if(!e.length) return '—';
+  return e.slice(0,3).map(([c,n])=>`${addrLink(c)} ×${fmt(n)}`).join('<br>') + (e.length>3?`<br><span class="sub">+${e.length-3} more</span>`:'');
+}
 function ops(){
   const rows = R[win].wallets.filter(r=>(r.labels.includes('PAID_FOR_OTHER_MINTS')||r.labels.includes('COLLECTION_OWNER'))).sort((a,b)=>b.evidence.operated_for-a.evidence.operated_for);
-  $('#view').innerHTML = `<div class="note">An <b>operator</b> is a wallet that paid the gas for mints delivered to 3 or more <i>other</i> wallets (mint-to-many / bundled minting). Wallets tagged <span class="tag">COLLECTION_OWNER</span> own the collection they minted from: that is a creator airdrop, not a farm, and they are never in the strong tier.</div><table><thead><tr><th>operator</th><th>minted for # wallets</th><th>NFTs</th><th>collections</th><th>via</th><th>signals</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${addrLink(r.address)}</td><td>${fmt(r.evidence.operated_for)}</td><td>${fmt(r.evidence.tokens)}</td><td>${fmt(r.evidence.collections)}</td><td>${esc(JSON.stringify(r.evidence.via||{}))}</td><td>${tags(r)}</td></tr>`).join('')}</tbody></table>`;
+  $('#view').innerHTML = `<div class="note">An <b>operator</b> is a wallet that paid the gas for mints delivered to 3 or more <i>other</i> wallets (mint-to-many / bundled minting). Wallets tagged <span class="tag">COLLECTION_OWNER</span> own the collection they minted from: that is a creator airdrop, not a farm, and they are never in the strong tier.</div><table><thead><tr><th>operator</th><th>minted for # wallets</th><th>NFTs</th><th>collections</th><th>via</th><th>signals</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${addrLink(r.address)}</td><td>${fmt(r.evidence.operated_for)}</td><td>${fmt(r.evidence.tokens)}</td><td>${fmt(r.evidence.collections)}</td><td>${viaCell(r.evidence.via)}</td><td>${tags(r)}</td></tr>`).join('')}</tbody></table>`;
 }
 function swarms(){
   const s = R[win].swarms;
@@ -173,6 +183,7 @@ function who(){
    ${exHtml}
    <div class="note">Roles are assigned strongest-first (COLLECTS_FROM_MANY_MINTERS > FARM_OPERATOR > DISTRIBUTOR > PAID_BUYER > SELF_MINTER; a collection owner airdropping its own collection counts as DISTRIBUTOR), so each wallet counts once. Evidence, not verdicts. Never name or shame wallets.</div>`;
 }
+
 
 
 let LOOK = null;

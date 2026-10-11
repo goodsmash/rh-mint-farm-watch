@@ -159,7 +159,7 @@ Master list: https://goodsmash.github.io/rh-mint-farm-watch/master_list.csv</div
   $$('.tabs button').forEach(b => b.addEventListener('click', () => {
     $$('.tabs button').forEach(x=>x.classList.remove('active'));
     $$('.tab').forEach(x=>x.classList.remove('active'));
-    b.classList.add('active'); $(b.dataset.tab).classList.add('active');
+    b.classList.add('active'); const t=document.getElementById(b.dataset.tab); if(t) t.classList.add('active');
   }));
   const CHAIN = {
     robinhood:{label:'Robinhood', href:(a)=>`https://opensea.io/assets/robinhood/${a}`},
