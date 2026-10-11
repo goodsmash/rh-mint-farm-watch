@@ -2,7 +2,19 @@
 
 **A free GoodsMash RIGS community drop for Robinhood Chain (chain id 4663).**
 
-Free mints on Robinhood Chain keep getting farmed. Over one 7-day scan, **about 2 of every 3 free-minted NFTs went to wallets showing bot or farm patterns**, and the top 1% of wallets took over half of everything minted. This tool shows you what is happening, lets you check any wallet, and gives creators what they need to make sure their mint reaches real people.
+Free mints on Robinhood Chain get farmed, but **most minters are ordinary people.** In one 7-day scan of every mint:
+
+| Role | Wallets | Share of NFTs |
+|---|---|---|
+| Paid buyers (paid ETH for their own mint) | 13,080 | 11.3% |
+| Self-minters (minted for themselves, kept them) | 118,584 | 79.6% |
+| Distributors (paid for other wallets' mints, which were kept) | 193 | 0.7% |
+| Farm operators (paid for other wallets AND swept) | 6 | 0.5% |
+| Farm sinks (received swept NFTs from 2+ wallets) | 942 | 7.9% |
+
+**About 91% of all minted NFTs went to people minting for themselves or paying for their own.** The concentrated farm share is the farm sinks, around **8%**. An earlier version of this tool over-flagged (it counted weak gas/timing signals as bots and could reach the top tier on activity alone); that is fixed.
+
+This tool shows you that picture, lets you check any wallet, and gives creators what they need to make sure their mint reaches real people.
 
 - **Read-only.** No keys, no wallet connection, no signing. It only reads public chain data.
 - **No installs.** Python 3.9+ standard library. The dashboard is one HTML file.
@@ -85,6 +97,16 @@ The dashboard's "Minting now" tab also lets you type your own RPC. It is saved o
 | **CONFIRMED_PATTERN** (score 70+) | **Structural proof required**: paid for mints sent to other wallets, swept NFTs into a collector wallet, runs automated (EIP-7702) mints, or mints on machine timing. Score alone is not enough | The only tier safe to block |
 | **LIKELY** (40-69, or 70+ on activity alone) | Several signals together. **A real person who mints a lot can land here** | Look, don't block |
 | **WATCH** (20-39) | One weak signal. Normal collectors are in here | Never block on this alone |
+
+### Who is minting (the honest breakdown)
+
+`python participants.py` classifies every wallet that received a mint into one role, strongest-first:
+
+- **PAID_BUYER** - paid ETH for its own mints and kept them. A real buyer. **Buying a paid mint is never a flag.**
+- **SELF_MINTER** - minted for itself and kept them. A real person. Minting a lot is a habit, not guilt.
+- **DISTRIBUTOR** - paid gas for mints sent to other wallets, and those wallets kept them. Looks like a gift, airdrop or community drop: a person, not a farm.
+- **FARM_OPERATOR** - paid for other wallets' mints **and** swept its own out. A farm.
+- **FARM_SINK** - received swept NFTs from 2+ different minting wallets. One wallet holding many people's mints.
 
 ### These are people, not just bots
 

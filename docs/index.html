@@ -64,7 +64,7 @@ const addrLink = a => `<a class="mono" href="${ex(a)}" target="_blank" rel="noop
 let win = wins[0], tab = 'live';
 $('#win').innerHTML = wins.map(w=>`<option>${w}</option>`).join('');
 $('#win').onchange = e => { win = e.target.value; render(); };
-const TABS = [['live','Minting now'],['lookup','Check a wallet'],['overview','Overview'],['wallets','Bot wallets'],['farms','Farms (sinks)'],['ops','Operators'],['swarms','Gas-fingerprint swarms'],['colls','Collections'],['defend','How to block'],['use','Use it / downloads']];
+const TABS = [['live','Minting now'],['who','Who is minting'],['lookup','Check a wallet'],['overview','Overview'],['wallets','Bot wallets'],['farms','Farms (sinks)'],['ops','Operators'],['swarms','Gas-fingerprint swarms'],['colls','Collections'],['defend','How to block'],['use','Use it / downloads']];
 $('#tabs').innerHTML = TABS.map(([k,l])=>`<button data-t="${k}">${l}</button>`).join('');
 $('#tabs').onclick = e => { const t = e.target.dataset.t; if (t) { tab = t; render(); } };
 document.addEventListener('click', e => { const c = e.target.dataset && e.target.dataset.copy; if (c) { navigator.clipboard.writeText(c); e.target.textContent='copied'; setTimeout(()=>e.target.textContent='copy',900);} });
@@ -147,6 +147,30 @@ function colls(){
   const cs = R[win].collections;
   $('#view').innerHTML = `<table><thead><tr><th>collection</th><th>minted</th><th>unique wallets</th><th>tx senders</th><th>to flagged wallets</th><th>top 10 wallets took</th><th>hours active</th><th>biggest minters</th></tr></thead><tbody>${cs.map(c=>`<tr><td><b>${esc(c.name||'?')}</b><br>${addrLink(c.contract)}</td><td>${fmt(c.minted)}</td><td>${fmt(c.unique_recipients)}</td><td>${fmt(c.unique_operators)}</td><td><div class="bar"><i style="width:${c.flagged_share*100}%"></i></div>${pct(c.flagged_share)}</td><td>${pct(c.top10_share)}</td><td>${c.hours_active}</td><td>${c.top_minters.slice(0,4).map(([a,n])=>`${addrLink(a)} ${n}`).join('<br>')}</td></tr>`).join('')}</tbody></table>`;
 }
+
+function who(){
+  const P = R[win] && R[win].participants;
+  if(!P){ $('#view').innerHTML='<div class="card">No participant data yet. Run participants.py.</div>'; return; }
+  const meta = {
+    SELF_MINTER:['Minted for itself, kept them','A real person. Volume is a habit, not guilt.'],
+    PAID_BUYER:['Paid ETH for its own mints','A real buyer. Paid mint = normal. Never a flag.'],
+    DISTRIBUTOR:['Paid gas for mints sent to other wallets, and they kept them','Looks like a gift / airdrop / community drop - a person, not a farm.'],
+    FARM_OPERATOR:['Paid for mints to 3+ other wallets AND swept its own out','A farm operator.'],
+    FARM_SINK:['Received swept NFTs from 2+ different minting wallets','A farm collector (one wallet holding many people\'s mints).']};
+  const rows = Object.keys(meta).map(k => { const v = P.roles[k]||{wallets:0,nfts:0,nfts_share:0,wallets_share:0};
+    return `<tr><td><b>${k.replace('_',' ')}</b><br><span class="sub">${meta[k][1]}</span></td>
+      <td>${fmt(v.wallets)}</td><td>${fmt(v.nfts)}</td>
+      <td><div class="bar"><i style="width:${v.nfts_share*100}%"></i></div>${pct(v.nfts_share)}</td></tr>`; }).join('');
+  const ex = P.farm_examples||{};
+  const exHtml = Object.keys(ex).map(k=>`<div class="card"><b>${k}</b> examples (evidence, not identity): ${ex[k].map(a=>addrLink(a)).join(' ')}</div>`).join('');
+  $('#view').innerHTML = `<div class="card"><b>Who is actually minting</b> - every wallet that received a mint in this window, by role.
+   <div class="note">This is the honest picture. "Flagged" is NOT this. Flagged means one or more behaviour signals; most flagged wallets are ordinary people.</div></div>
+   <table><thead><tr><th>role</th><th>wallets</th><th>NFTs</th><th>share of NFTs</th></tr></thead><tbody>${rows}</tbody></table>
+   <div class="card" style="margin-top:12px"><b>${fmt(P.paid_mints)}</b> NFTs were minted from a PAID contract (the sender paid ETH in the mint tx). Total NFTs: <b>${fmt(P.total_nfts)}</b> to <b>${fmt(P.total_wallets_that_received)}</b> wallets.</div>
+   ${exHtml}
+   <div class="note">Roles are assigned strongest-first (FARM_SINK > FARM_OPERATOR > DISTRIBUTOR > PAID_BUYER > SELF_MINTER), so each wallet counts once. Evidence, not verdicts. Never name or shame wallets.</div>`;
+}
+
 let LOOK = null;
 async function loadLook(){ if (LOOK) return LOOK;
   try { const r = await fetch('lookup.json', {cache:'no-cache'}); LOOK = await r.json(); }
@@ -249,7 +273,7 @@ function defend(){
 }
 function render(){ document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===tab));
   if(!win && !['live','lookup','use','defend'].includes(tab)){ $('#view').innerHTML='<div class="card">No scan data yet. Run: python rhwatch.py scan</div>'; return; }
-  ({live,overview,wallets,farms,ops,swarms,colls,lookup,defend,use})[tab](); }
+  ({live,who,overview,wallets,farms,ops,swarms,colls,lookup,defend,use})[tab](); }
 render();
 </script>
 </body>
