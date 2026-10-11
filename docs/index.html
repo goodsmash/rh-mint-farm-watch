@@ -51,6 +51,7 @@ canvas{width:100%;height:160px;background:var(--card);border:1px solid var(--lin
 <main id="view"></main>
 <script src="data.js"></script>
 <script src="top_participants.js"></script>
+<script src="top_participants_tab.js"></script>
 <script>
 const R = window.REPORTS || {};
 const wins = Object.keys(R).sort((a,b)=>parseInt(a)-parseInt(b));
@@ -173,8 +174,6 @@ function who(){
    <div class="note">Roles are assigned strongest-first (COLLECTS_FROM_MANY_MINTERS > FARM_OPERATOR > DISTRIBUTOR > PAID_BUYER > SELF_MINTER; a collection owner airdropping its own collection counts as DISTRIBUTOR), so each wallet counts once. Evidence, not verdicts. Never name or shame wallets.</div>`;
 }
 
-
-<script src="top_participants_tab.js"></script>
 
 let LOOK = null;
 async function loadLook(){ if (LOOK) return LOOK;
