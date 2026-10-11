@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>RH Mint-Farm Watch · GoodsMash RIGS community drop</title>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; form-action 'none'; frame-ancestors 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; form-action 'none'">
 <style>
 :root{--bg:#0b0d10;--card:#13171c;--line:#232a33;--fg:#e6edf3;--mut:#8b98a5;--acc:#ff6a1a;--red:#ff4d4f;--yel:#f5b301;--grn:#3fb950;--blu:#58a6ff}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 ui-sans-serif,system-ui,Segoe UI,Roboto,sans-serif}
@@ -178,7 +178,12 @@ async function rpcCall(method, params){ const r = await fetch(rpcUrl(), {method:
   const j = await r.json(); if (j.error) throw new Error(j.error.message||JSON.stringify(j.error)); return j.result; }
 const NAMES = {};
 async function nameOf(c){ if (c in NAMES) return NAMES[c]; try { const h = await rpcCall('eth_call',[{to:c,data:'0x06fdde03'},'latest']);
-  const n = parseInt(h.slice(130,194),16); let s=''; for(let i=0;i<n;i++) s+=String.fromCharCode(parseInt(h.substr(194+i*2,2),16)); NAMES[c]=decodeURIComponent(escape(s)); } catch(e){ NAMES[c]='?'; } return NAMES[c]; }
+  // bound the length: some contracts return non-string data, and a huge length would freeze the page
+  // ABI string: 0x | offset (64 hex) | length (64 hex, chars 66..130) | data from char 130
+  const avail = Math.max(0, (h.length - 130) / 2); let n = parseInt(h.slice(66,130),16);
+  if (!Number.isFinite(n) || n > avail || n > 96) { NAMES[c]='?'; return NAMES[c]; }
+  let s=''; for(let i=0;i<n;i++) s+=String.fromCharCode(parseInt(h.substr(130+i*2,2),16));
+  try { NAMES[c]=decodeURIComponent(escape(s)); } catch(e){ NAMES[c]=s.replace(/[^\x20-\x7e]/g,''); } } catch(e){ NAMES[c]='?'; } return NAMES[c]; }
 function live(){
   $('#view').innerHTML = `<div class="card"><b>What is minting right now</b> - read live from the chain in your browser, ranked by <b>real</b> wallets (recipients not on the bot list).
    <div class="row" style="margin-top:8px"><label class="sub">RPC <input id="rpc" style="min-width:340px" value="${esc(rpcUrl())}"></label>

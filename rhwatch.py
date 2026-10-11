@@ -118,7 +118,7 @@ def cmd_live(a):
     calls = [('eth_call', [{'to': r['contract'], 'data': '0x06fdde03'}, 'latest']) for r in rows]
     for r, res in zip(rows, rh.batch(calls, size=4)):
         try:
-            b = bytes.fromhex(res[2:]); ln = int.from_bytes(b[32:64], 'big'); names[r['contract']] = b[64:64+ln].decode(errors='replace')
+            b = bytes.fromhex(res[2:]); ln = min(int.from_bytes(b[32:64], 'big'), 96, max(0, len(b) - 64)); names[r['contract']] = b[64:64+ln].decode(errors='replace') or '?'
         except Exception:
             names[r['contract']] = '?'
     print(f'\n{"collection":28} {"minted":>7} {"wallets":>7} {"real":>6} {"bots%":>6} {"last":>6}  contract / copy this mint tx')
