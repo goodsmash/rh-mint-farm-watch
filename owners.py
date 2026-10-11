@@ -152,7 +152,7 @@ def process(p, cache):
     s = R['summary']
     s['flagged_wallets'] = {t: sum(1 for r in R['wallets'] if r['tier'] == t)
                             for t in ('STRONG_SIGNAL', 'MIXED_SIGNAL', 'LOW_SIGNAL')}
-    s['collection_owners_cleared'] = len(creators)
+    s['collection_owners_cleared'] = sum(1 for r in R['wallets'] if 'COLLECTION_OWNER' in r['labels'])  # idempotent on re-runs
     # recompute the "share of mints to flagged wallets" headline from raw data when we have it
     mp = os.path.join(D, 'mints.jsonl')
     if os.path.exists(mp):
