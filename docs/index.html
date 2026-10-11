@@ -42,7 +42,7 @@ canvas{width:100%;height:160px;background:var(--card);border:1px solid var(--lin
 <body>
 <header>
   <h1><b>RH</b> Mint-Farm Watch</h1>
-  <span class="sub">Robinhood Chain 4663 · GoodsMash RIGS community drop · free + open source · on-chain evidence only, scores are signals not accusations · <a href="https://github.com/goodsmash/rh-mint-farm-watch" target="_blank" rel="noopener">GitHub</a></span>
+  <span class="sub">Robinhood Chain 4663 · GoodsMash RIGS community drop · free + open source · on-chain evidence only · these are signals about wallet BEHAVIOUR, not about people · most flagged wallets are real people · <a href="https://github.com/goodsmash/rh-mint-farm-watch" target="_blank" rel="noopener">GitHub</a></span>
   <span style="flex:1"></span>
   <label class="sub">Window <select id="win"></select></label>
 </header>
@@ -158,14 +158,19 @@ function lookup(){
   $('#view').innerHTML = `<div class="card"><b>Check wallets</b> - paste one or many (a whole giveaway / allowlist). Nothing leaves your browser.
    <textarea id="la" rows="6" style="width:100%;margin-top:8px;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px;font:12px ui-monospace,monospace" placeholder="0x... one per line, or paste any text containing addresses"></textarea>
    <div class="row" style="margin-top:8px"><button class="act" id="lb">Check</button><label class="sub"><input type="checkbox" id="lk"> keep LIKELY (remove only CONFIRMED)</label></div>
-   <div id="lr" class="note">Loading list...</div></div>`;
+   <div id="lr" class="note">Loading list...</div>
+   <div class="note"><b>What the tiers mean.</b>
+    <br><b>WATCH</b> - one weak signal. Normal collectors land here. <b>Never</b> treat it as a bot.
+    <br><b>LIKELY</b> - several signals, but this can be a real person who mints a lot. Activity is a habit, not proof.
+    <br><b>CONFIRMED</b> - only used when there is structural proof: this wallet paid for mints sent to OTHER wallets, swept NFTs into one collector wallet, runs automated (EIP-7702) mints, or mints on machine timing.
+    <br>Buying a paid mint, or minting a lot for yourself, is <b>not</b> farm evidence. These are people too.</div></div>`;
   loadLook().then(L => $('#lr').textContent = `Master list: ${fmt(Object.keys(L.wallets).length)} wallets, generated ${L.generated}.`);
   $('#lb').onclick = async () => { const L = await loadLook();
     const addrs = [...new Set(($('#la').value.match(/0x[0-9a-fA-F]{40}/g)||[]).map(a=>a.toLowerCase()))];
     const keepLikely = $('#lk').checked; const keep = []; const cnt = {};
     const rows = addrs.map(a => { const w = L.wallets[a]; const t = w ? w[0] : 'NOT_LISTED'; cnt[t]=(cnt[t]||0)+1;
       if (!w || t==='WATCH' || (keepLikely && t==='LIKELY')) keep.push(a);
-      return `<tr><td>${addrLink(a)}</td><td><span class="tag t-${t}">${t.replace('_',' ')}</span></td><td>${w?w[1]:''}</td><td>${w?w[2].map(l=>`<span class="tag">${esc(l)}</span>`).join(''):''}</td><td>${w?fmt(w[3])+' NFTs / '+fmt(w[4])+' colls'+(w[5]?' · paid for '+w[5]+' wallets':''):''}</td><td>${w&&w[6]?`<a href="${extx(w[6])}" target="_blank" rel="noopener">proof tx</a>`:''}</td></tr>`; });
+      return `<tr><td>${addrLink(a)}</td><td><span class="tag t-${t}">${t.replace('_',' ')}</span></td><td>${w?w[1]:''}</td><td>${w?w[2].map(l=>`<span class="tag">${esc(l)}</span>`).join(''):''}${w&&t==='CONFIRMED_PATTERN'?'<br><span class="sub">structural proof: paid for other wallets / farm sink / automated mints</span>':''}${w&&t==='LIKELY'?'<br><span class="sub">several signals - may be a real heavy collector</span>':''}</td><td>${w?fmt(w[3])+' NFTs / '+fmt(w[4])+' colls'+(w[5]?' · paid for '+w[5]+' wallets':''):''}</td><td>${w&&w[6]?`<a href="${extx(w[6])}" target="_blank" rel="noopener">proof tx</a>`:''}</td></tr>`; });
     $('#lr').innerHTML = `<div class="card">${addrs.length} checked · ${Object.entries(cnt).map(([k,v])=>`${k.replace('_',' ')}: ${v}`).join(' · ')}
       <div class="row" style="margin-top:8px"><button class="act" id="dl">Download clean list (${keep.length})</button><span class="sub">WATCH = one weak signal, kept. Never publicly name wallets.</span></div></div>
       <table><thead><tr><th>wallet</th><th>tier</th><th>score</th><th>why</th><th>activity</th><th></th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
@@ -238,8 +243,9 @@ function defend(){
   <tr><td>Fresh throwaways, mint & sweep to a sink</td><td>transfer cooldown after mint (e.g. 6–24h)</td><td>cannot flip during the hype window</td></tr>
   <tr><td>Same-block swarms</td><td>per-block global cap + per-wallet block cooldown</td><td>spreads the farm out, humans get through</td></tr>
   <tr><td>Everything above, at scale</td><td>EIP-712 signed mint pass from a human check (captcha / social / holder)</td><td>needs one human pass per wallet</td></tr>
-  <tr><td>Known farm wallets</td><td>pre-sale blocklist from <span class="mono">master_list.json</span> (CONFIRMED only)</td><td>new wallets needed (raises cost, not a wall)</td></tr>
-  </table><div class="note">Honest limit: on a 0.02 gwei chain a fresh wallet costs fractions of a cent. Per-wallet caps and blocklists are speed bumps. The signed pass + transfer cooldown are what change the economics.</div></div>`;
+  <tr><td>Known farm wallets</td><td>pre-sale blocklist, <span class="mono">CONFIRMED_PATTERN</span> only (each has structural proof)</td><td>new wallets needed (raises cost, not a wall)</td></tr>
+  </table><div class="note"><b>Read this before blocking anyone.</b> A flag is a behaviour signal, not a verdict, and not a statement about a person. Most flagged wallets are real people: a collector who mints a lot or is new triggers activity signals with no farm behind them. Only <span class="mono">CONFIRMED_PATTERN</span> carries structural proof, and even that is evidence, not identity. Do not publish, name, or publicly shame wallets. If someone believes they are listed wrongly, open an issue and it is recomputed from fresh chain data.</div>
+  <div class="note">Honest limit: on a 0.02 gwei chain a fresh wallet costs fractions of a cent. Per-wallet caps and blocklists are speed bumps. The signed pass + transfer cooldown are what change the economics.</div></div>`;
 }
 function render(){ document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===tab));
   if(!win && !['live','lookup','use','defend'].includes(tab)){ $('#view').innerHTML='<div class="card">No scan data yet. Run: python rhwatch.py scan</div>'; return; }

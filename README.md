@@ -82,9 +82,20 @@ The dashboard's "Minting now" tab also lets you type your own RPC. It is saved o
 
 | Tier | Rule | Use it for |
 |---|---|---|
-| **CONFIRMED_PATTERN** (score 70+) | Structural on-chain proof (minting for others, feeding a collector wallet, automated-mint code) plus volume | Safe to block |
-| **LIKELY** (40-69) | Several signals together | Block with care; some heavy real collectors land here |
-| **WATCH** (20-39) | One weak signal | Never block on this alone |
+| **CONFIRMED_PATTERN** (score 70+) | **Structural proof required**: paid for mints sent to other wallets, swept NFTs into a collector wallet, runs automated (EIP-7702) mints, or mints on machine timing. Score alone is not enough | The only tier safe to block |
+| **LIKELY** (40-69, or 70+ on activity alone) | Several signals together. **A real person who mints a lot can land here** | Look, don't block |
+| **WATCH** (20-39) | One weak signal. Normal collectors are in here | Never block on this alone |
+
+### These are people, not just bots
+
+Read this before you use the list for anything.
+
+- A flag is a signal about **wallet behaviour**, not a verdict and not a statement about the person behind it.
+- **Most flagged wallets are real people.** A collector who mints every drop, or a newer wallet, trips the activity signals. Activity is a habit, not proof.
+- **Buying a paid mint is not a flag.** Nothing in the scoring looks at price. If someone bought a paid mint and is on the list, they are on it for something else, or for volume alone (which is LIKELY at most, never CONFIRMED).
+- Only `CONFIRMED_PATTERN` carries structural proof, and even that is **evidence, not identity**. It does not name, dox or shame anyone.
+- **Never publish, name, or publicly shame a wallet.** Use the list to protect a mint, not to accuse people.
+- If someone believes they are listed wrongly, open an issue. Flags are recomputed from fresh chain data every refresh, so a wallet that stops showing the pattern drops off.
 
 **Limits, honestly:**
 - A fresh wallet costs a fraction of a cent on this chain. A blocklist raises the cost of farming, but it is not a wall. Contract rules (see `contracts/`) do more.

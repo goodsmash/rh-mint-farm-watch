@@ -197,6 +197,9 @@ def cmd_check(a):
             if w:
                 e = w.get('evidence', {})
                 print(f'   why: {", ".join(w["labels"])}')
+                print('   proof: ' + ('STRUCTURAL - paid for other wallets / farm sink / automated mints'
+                                      if e.get('structural_proof') else
+                                      'activity only, no farm proof (real heavy collectors look like this)'))
                 print(f'   minted {e.get("tokens")} NFTs / {e.get("collections")} collections, '
                       f'paid for others: {e.get("operated_for", 0)}, sent on: {e.get("swept_out", 0)}')
                 for h in (e.get('example_tx') or [])[:2]:

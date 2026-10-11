@@ -183,7 +183,16 @@ for a, w in W.items():
                'code': code[:48] if code.startswith('0xef0100') else None,
                'top_collections': [c for c, _ in w['colls'].most_common(5)],
                'example_tx': sorted(w['mint_txs'])[:3]})
-    tier = 'CONFIRMED_PATTERN' if score >= 70 else 'LIKELY' if score >= 40 else 'WATCH'
+    # CONFIRMED_PATTERN must rest on real farm evidence, not on activity alone.
+    # Activity (heavy/high volume, many drops, fresh wallet) describes a HABIT a real
+    # collector can have. Only these signals prove someone is minting FOR other people:
+    STRUCTURAL = {'OPERATOR_FOR_OTHER_WALLETS', 'FARM_SINK', 'MINT_AND_SWEEP',
+                  'EIP7702_DELEGATED', 'MACHINE_CADENCE'}
+    ev['structural_proof'] = bool(STRUCTURAL & set(labels))
+    if score >= 70 and ev['structural_proof']:
+        tier = 'CONFIRMED_PATTERN'
+    else:
+        tier = 'LIKELY' if score >= 40 else 'WATCH'
     rows.append({'address': a, 'score': min(score, 100), 'tier': tier, 'labels': labels, 'evidence': ev})
 
 # cluster ids: sink -> its feeder wallets; operator -> its recipients
