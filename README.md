@@ -79,24 +79,24 @@ The dashboard's "Minting now" tab also lets you type your own RPC. It is saved o
 
 | Signal | Meaning |
 |---|---|
-| `OPERATOR_FOR_OTHER_WALLETS` | Sent and paid for mint transactions where the NFTs went to *other* wallets. One wallet minting for many is the clearest farm signal. |
-| `MINTED_BY_SOMEONE_ELSE` | This wallet's mints were sent and paid for by a different wallet (the other side of the line above). |
-| `FARM_SINK` | Received NFTs swept in from 3 or more different minting wallets. |
-| `MINT_AND_SWEEP` | Minted, then quickly sent the NFTs on to a collector wallet. |
-| `EIP7702_DELEGATED` | The wallet has delegated code (EIP-7702), which is used to run automated or batched mints. |
-| `CONTRACT_RECIPIENT` | Mints went to a contract, not a normal wallet. |
-| `FRESH_THROWAWAY` | Very few transactions ever, apart from minting. |
-| `HEAVY_MINTER` / `HIGH_VOLUME` | Received far more mints than normal in the window. |
-| `SPRAY_ALL_DROPS` / `MANY_DROPS` | Minted from a very large number of different collections. |
-| `MACHINE_CADENCE` | Mint timing too regular for a person. |
-| `FEE_FINGERPRINT_SWARM` | Five or more wallets sent byte-identical gas settings to the same mint (one script). |
-| `CLUSTER_MEMBER` | Linked to a farm through a shared operator or collector wallet. |
+| `PAID_FOR_OTHER_MINTS` | Sent and paid for mint transactions where the NFTs went to *other* wallets. One wallet minting for many is the clearest farm signal. |
+| `MINT_PAID_BY_OTHER` | This wallet's mints were sent and paid for by a different wallet (the other side of the line above). |
+| `COLLECTS_FROM_MANY_MINTERS` | Received NFTs swept in from 3 or more different minting wallets. |
+| `SENT_ON_AFTER_MINT` | Minted, then quickly sent the NFTs on to a collector wallet. |
+| `SMART_WALLET_7702` | The wallet has delegated code (EIP-7702), which is used to run automated or batched mints. |
+| `MINTED_TO_CONTRACT` | Mints went to a contract, not a normal wallet. |
+| `NEW_WALLET` | Very few transactions ever, apart from minting. |
+| `HIGH_MINT_COUNT` / `ACTIVE_MINTER` | Received far more mints than normal in the window. |
+| `MINTS_MANY_COLLECTIONS` / `SEVERAL_COLLECTIONS` | Minted from a very large number of different collections. |
+| `REGULAR_TIMING` | Mint timing too regular for a person. |
+| `SAME_GAS_GROUP` | Five or more wallets sent byte-identical gas settings to the same mint (one script). |
+| `LINKED_GROUP` | Linked to a farm through a shared operator or collector wallet. |
 
 | Tier | Rule | Use it for |
 |---|---|---|
-| **CONFIRMED_PATTERN** (score 70+) | **Structural proof required**: paid for mints sent to other wallets, swept NFTs into a collector wallet, runs automated (EIP-7702) mints, or mints on machine timing. Score alone is not enough | The only tier safe to block |
-| **LIKELY** (40-69, or 70+ on activity alone) | Several signals together. **A real person who mints a lot can land here** | Look, don't block |
-| **WATCH** (20-39) | One weak signal. Normal collectors are in here | Never block on this alone |
+| **STRONG_SIGNAL** (score 70+) | **Structural proof required**: paid for mints sent to other wallets, swept NFTs into a collector wallet, runs automated (EIP-7702) mints, or mints on machine timing. Score alone is not enough | The only tier safe to block |
+| **MIXED_SIGNAL** (40-69, or 70+ on activity alone) | Several signals together. **A real person who mints a lot can land here** | Look, don't block |
+| **LOW_SIGNAL** (20-39) | One weak signal. Normal collectors are in here | Never block on this alone |
 
 ### Who is minting (the honest breakdown)
 
@@ -106,7 +106,7 @@ The dashboard's "Minting now" tab also lets you type your own RPC. It is saved o
 - **SELF_MINTER** - minted for itself and kept them. A real person. Minting a lot is a habit, not guilt.
 - **DISTRIBUTOR** - paid gas for mints sent to other wallets, and those wallets kept them. Looks like a gift, airdrop or community drop: a person, not a farm.
 - **FARM_OPERATOR** - paid for other wallets' mints **and** swept its own out. A farm.
-- **FARM_SINK** - received swept NFTs from 2+ different minting wallets. One wallet holding many people's mints.
+- **COLLECTS_FROM_MANY_MINTERS** - received swept NFTs from 2+ different minting wallets. One wallet holding many people's mints.
 
 ### These are people, not just bots
 
@@ -114,8 +114,8 @@ Read this before you use the list for anything.
 
 - A flag is a signal about **wallet behaviour**, not a verdict and not a statement about the person behind it.
 - **Most flagged wallets are real people.** A collector who mints every drop, or a newer wallet, trips the activity signals. Activity is a habit, not proof.
-- **Buying a paid mint is not a flag.** Nothing in the scoring looks at price. If someone bought a paid mint and is on the list, they are on it for something else, or for volume alone (which is LIKELY at most, never CONFIRMED).
-- Only `CONFIRMED_PATTERN` carries structural proof, and even that is **evidence, not identity**. It does not name, dox or shame anyone.
+- **Buying a paid mint is not a flag.** Nothing in the scoring looks at price. If someone bought a paid mint and is on the list, they are on it for something else, or for volume alone (which is MIXED_SIGNAL at most, never CONFIRMED).
+- Only `STRONG_SIGNAL` carries structural proof, and even that is **evidence, not identity**. It does not name, dox or shame anyone.
 - **Never publish, name, or publicly shame a wallet.** Use the list to protect a mint, not to accuse people.
 - If someone believes they are listed wrongly, open an issue. Flags are recomputed from fresh chain data every refresh, so a wallet that stops showing the pattern drops off.
 
@@ -135,7 +135,7 @@ Read this before you use the list for anything.
 | `rhlib.py` | RPC helpers: config, retries, batching, rate limiting |
 | `scan.py`, `phase_d.py`, `analyze.py`, `build_dashboard.py` | The scan pipeline (rhwatch runs these for you) |
 | `master_list.json` / `.csv` | Every flagged wallet with tier, score, labels and proof transactions |
-| `blocklist_confirmed_pattern.txt`, `blocklist_likely.txt` | One address per line, for contracts and sites |
+| `flagged_strong.txt`, `flagged_mixed.txt` | One address per line, for contracts and sites |
 | `docs/` | The dashboard (GitHub Pages), plus `lookup.json` for sites and bots |
 | `data/<window>/report.json` | Full analysis per window |
 | `contracts/` | Anti-farm mint base contract, an on-chain farm registry, and TUNKI (an example collection). Foundry, with tests |

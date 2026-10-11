@@ -8,7 +8,7 @@ Roles (a wallet gets the strongest role that fits):
   DISTRIBUTOR     paid gas for mints sent to 3+ other wallets, and those wallets KEPT them
                   (a gift, an airdrop, a community drop - a person, not a farm)
   FARM_OPERATOR   paid for mints to 3+ other wallets AND swept their own out -> a farm
-  FARM_SINK       received swept NFTs from 2+ different minting wallets     -> a farm collector
+  COLLECTS_FROM_MANY_MINTERS       received swept NFTs from 2+ different minting wallets     -> a farm collector
 
   python participants.py            # writes report.json -> participants, per window
   python build_dashboard.py         # then rebuilds the dashboard
@@ -19,7 +19,7 @@ from collections import Counter, defaultdict
 BASE = os.path.dirname(os.path.abspath(__file__))
 ZERO = '0x0000000000000000000000000000000000000000'
 DEAD = '0x000000000000000000000000000000000000dead'
-ROLES = ['PAID_BUYER', 'SELF_MINTER', 'DISTRIBUTOR', 'FARM_OPERATOR', 'FARM_SINK']
+ROLES = ['PAID_BUYER', 'SELF_MINTER', 'DISTRIBUTOR', 'FARM_OPERATOR', 'COLLECTS_FROM_MANY_MINTERS']
 
 
 def classify(D):
@@ -28,12 +28,14 @@ def classify(D):
     txv = {t['h']: (int(t['val'], 16) if t.get('val') else 0) for t in txs}
     txfrom = {t['h']: t['from'] for t in txs}
     recv, paid_by, op_for = Counter(), Counter(), defaultdict(set)
+    paid_eth = Counter(); colls = defaultdict(set)
     for r in mints:
         _, txh, c, to, std, amt = r[0], r[1], r[2], r[3], r[4], r[5]
         n = 1 if std == 1155 else amt
-        recv[to] += n
+        recv[to] += n; colls[to].add(c)
         if txv.get(txh, 0) > 0:
             paid_by[to] += n
+            paid_eth[to] += txv[txh]
         f = txfrom.get(txh)
         if f and f != to:
             op_for[f].add(to)
@@ -50,7 +52,7 @@ def classify(D):
     counts, tokens, ex = Counter(), Counter(), {}
     for w, n in recv.items():
         if w in sinks:
-            role = 'FARM_SINK'
+            role = 'COLLECTS_FROM_MANY_MINTERS'
         elif len(op_for.get(w, ())) >= 3 and sent_out.get(w, 0) >= 5:
             role = 'FARM_OPERATOR'
         elif len(op_for.get(w, ())) >= 3:
@@ -60,7 +62,7 @@ def classify(D):
         else:
             role = 'SELF_MINTER'
         counts[role] += 1; tokens[role] += n
-        if role in ('FARM_OPERATOR', 'FARM_SINK') and len(ex.get(role, [])) < 12:
+        if role in ('FARM_OPERATOR', 'COLLECTS_FROM_MANY_MINTERS') and len(ex.get(role, [])) < 12:
             ex.setdefault(role, []).append(w)
     total = sum(tokens.values()) or 1
     facts = {
@@ -71,6 +73,11 @@ def classify(D):
                       'wallets_share': round(counts[r] / max(1, len(recv)), 4),
                       'nfts_share': round(tokens[r] / total, 4)} for r in ROLES},
         'farm_examples': ex,
+        # the good news, kept without any accusation: real buyers and top holders
+        'top_buyers': [{'wallet': w, 'nfts': recv[w], 'paid_eth': round(paid_eth[w] / 1e18, 4),
+                        'collections': len(colls[w])} for w, _ in paid_eth.most_common(25)],
+        'top_holders': [{'wallet': w, 'nfts': n, 'collections': len(colls[w])}
+                        for w, n in recv.most_common(25)],
     }
     return facts
 

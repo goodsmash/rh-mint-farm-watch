@@ -12,7 +12,7 @@ os.makedirs(DOCS, exist_ok=True)
 master = {}
 for w, r in reports.items():
     for x in r['wallets']:
-        m = master.setdefault(x['address'], {'address': x['address'], 'score': 0, 'tier': 'WATCH', 'labels': set(),
+        m = master.setdefault(x['address'], {'address': x['address'], 'score': 0, 'tier': 'LOW_SIGNAL', 'labels': set(),
                                              'windows': [], 'cluster': x.get('cluster')})
         m['windows'].append(w)
         m['labels'] |= set(x['labels'])
@@ -29,7 +29,7 @@ master_doc = {
     'generated': time.strftime('%Y-%m-%dT%H:%M:%S'),
     'chain_id': 4663,
     'method': 'Public RPC eth_getLogs replay of every ERC-721 / ERC-1155 mint, sampled tx senders, outflow tracing. '
-              'Scores are evidence signals, not proof of identity. Tiers: CONFIRMED_PATTERN >=70, LIKELY 40-69, WATCH 20-39.',
+              'Scores are evidence signals, not proof of identity. Tiers: STRONG_SIGNAL >=70, MIXED_SIGNAL 40-69, LOW_SIGNAL 20-39.',
     'windows': {w: r['summary'] for w, r in reports.items()},
     'count': len(ml),
     'wallets': ml,
@@ -43,8 +43,8 @@ with open(os.path.join(BASE, 'master_list.csv'), 'w', newline='') as f:
         wr.writerow([m['address'], m['tier'], m['score'], '|'.join(m['labels']), m.get('cluster') or '',
                      '|'.join(m['windows']), e.get('tokens'), e.get('collections')])
 # plain address lists for blocklists / contracts
-for tier in ('CONFIRMED_PATTERN', 'LIKELY'):
-    with open(os.path.join(BASE, f'blocklist_{tier.lower()}.txt'), 'w') as f:
+for tier in ('STRONG_SIGNAL', 'MIXED_SIGNAL'):
+    with open(os.path.join(BASE, f'flagged_{tier.split("_")[0].lower()}.txt'), 'w') as f:
         f.write('\n'.join(m['address'] for m in ml if m['tier'] == tier) + '\n')
 # dashboard data (trim per-report wallet list for size)
 slim = {}
@@ -60,6 +60,6 @@ look = {m['address']: [m['tier'], m['score'], m['labels'], m.get('evidence', {})
 with open(os.path.join(DOCS, 'lookup.json'), 'w') as f:
     json.dump({'generated': master_doc['generated'], 'wallets': look}, f, separators=(',', ':'))
 import shutil
-for fn in ('blocklist_confirmed_pattern.txt', 'blocklist_likely.txt', 'master_list.csv'):
+for fn in ('flagged_strong.txt', 'flagged_mixed.txt', 'master_list.csv'):
     shutil.copy(os.path.join(BASE, fn), os.path.join(DOCS, fn))
-print('windows', list(reports), 'master', len(ml), {t: sum(1 for m in ml if m['tier'] == t) for t in ('CONFIRMED_PATTERN', 'LIKELY', 'WATCH')})
+print('windows', list(reports), 'master', len(ml), {t: sum(1 for m in ml if m['tier'] == t) for t in ('STRONG_SIGNAL', 'MIXED_SIGNAL', 'LOW_SIGNAL')})

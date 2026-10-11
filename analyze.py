@@ -142,33 +142,33 @@ for a, w in W.items():
     med = cadence(w['blocks'])
     labels, ev, score = [], {}, 0
     if tokens >= 200:
-        score += 35; labels.append('HEAVY_MINTER')
+        score += 35; labels.append('HIGH_MINT_COUNT')
     elif tokens >= 50:
-        score += 20; labels.append('HIGH_VOLUME')
+        score += 20; labels.append('ACTIVE_MINTER')
     if ncoll >= 25:
-        score += 25; labels.append('SPRAY_ALL_DROPS')
+        score += 25; labels.append('MINTS_MANY_COLLECTIONS')
     elif ncoll >= 10:
-        score += 12; labels.append('MANY_DROPS')
+        score += 12; labels.append('SEVERAL_COLLECTIONS')
     if med is not None and med < 20 and ntx >= 30:
-        score += 15; labels.append('MACHINE_CADENCE')
+        score += 15; labels.append('REGULAR_TIMING')
     if len(w['ops_for_recips']) >= 3:
-        score += 30; labels.append('OPERATOR_FOR_OTHER_WALLETS')
+        score += 30; labels.append('PAID_FOR_OTHER_MINTS')
     if len(w['recv_for_ops']) >= 1 and w['tokens_recv'] >= 5:
-        score += 10; labels.append('MINTED_BY_SOMEONE_ELSE')
+        score += 10; labels.append('MINT_PAID_BY_OTHER')
     if swept.get(a, 0) >= 5 and w['tokens_recv'] and swept[a] >= 0.5 * w['tokens_recv']:
-        score += 15; labels.append('MINT_AND_SWEEP')
+        score += 15; labels.append('SENT_ON_AFTER_MINT')
     if a in SINKS:
-        score += 40; labels.append('FARM_SINK')
+        score += 40; labels.append('COLLECTS_FROM_MANY_MINTERS')
     if in_swarm.get(a):
-        score += 15; labels.append('FEE_FINGERPRINT_SWARM')
+        score += 15; labels.append('SAME_GAS_GROUP')
     code = st.get('code') or ''
     if code.startswith('0xef0100'):
-        score += 5; labels.append('EIP7702_DELEGATED')
+        score += 5; labels.append('SMART_WALLET_7702')
     elif st.get('codelen', 0) > 0:
-        score += 10; labels.append('CONTRACT_RECIPIENT')
+        score += 10; labels.append('MINTED_TO_CONTRACT')
     nonce = st.get('nonce')
     if nonce is not None and nonce <= 15 and tokens >= 5:
-        score += 10; labels.append('FRESH_THROWAWAY')
+        score += 10; labels.append('NEW_WALLET')
     routers = {k: v for k, v in w['via'].items() if k != 'direct'}
     if routers:
         ev['via'] = {KNOWN_ROUTERS.get(k, k): v for k, v in routers.items()}
@@ -183,16 +183,16 @@ for a, w in W.items():
                'code': code[:48] if code.startswith('0xef0100') else None,
                'top_collections': [c for c, _ in w['colls'].most_common(5)],
                'example_tx': sorted(w['mint_txs'])[:3]})
-    # CONFIRMED_PATTERN must rest on real farm evidence, not on activity alone.
+    # STRONG_SIGNAL must rest on real farm evidence, not on activity alone.
     # Activity (heavy/high volume, many drops, fresh wallet) describes a HABIT a real
     # collector can have. Only these signals prove someone is minting FOR other people:
-    STRUCTURAL = {'OPERATOR_FOR_OTHER_WALLETS', 'FARM_SINK', 'MINT_AND_SWEEP',
-                  'EIP7702_DELEGATED', 'MACHINE_CADENCE'}
+    STRUCTURAL = {'PAID_FOR_OTHER_MINTS', 'COLLECTS_FROM_MANY_MINTERS', 'SENT_ON_AFTER_MINT',
+                  'SMART_WALLET_7702', 'REGULAR_TIMING'}
     ev['structural_proof'] = bool(STRUCTURAL & set(labels))
     if score >= 70 and ev['structural_proof']:
-        tier = 'CONFIRMED_PATTERN'
+        tier = 'STRONG_SIGNAL'
     else:
-        tier = 'LIKELY' if score >= 40 else 'WATCH'
+        tier = 'MIXED_SIGNAL' if score >= 40 else 'LOW_SIGNAL'
     rows.append({'address': a, 'score': min(score, 100), 'tier': tier, 'labels': labels, 'evidence': ev})
 
 # cluster ids: sink -> its feeder wallets; operator -> its recipients
@@ -212,8 +212,8 @@ for a, c in cluster.items():
     if a in by_addr:
         by_addr[a]['cluster'] = c
     else:
-        # cluster member not otherwise flagged -> add as WATCH with cluster evidence
-        by_addr[a] = {'address': a, 'score': 25, 'tier': 'WATCH', 'labels': ['CLUSTER_MEMBER'],
+        # cluster member not otherwise flagged -> add as LOW_SIGNAL with cluster evidence
+        by_addr[a] = {'address': a, 'score': 25, 'tier': 'LOW_SIGNAL', 'labels': ['LINKED_GROUP'],
                       'cluster': c, 'evidence': {'tokens': max(W[a]['tokens_recv'], W[a]['tokens_sent_as_op']),
                                                  'collections': len(W[a]['colls'])}}
 rows = sorted(by_addr.values(), key=lambda r: (-r['score'], -r['evidence'].get('tokens', 0)))
@@ -250,7 +250,7 @@ def dec_str(h):
         return b[64:64 + ln].decode('utf-8', 'replace')
     except Exception:
         return None
-flagged = {r['address'] for r in rows if r['tier'] in ('CONFIRMED_PATTERN', 'LIKELY')}
+flagged = {r['address'] for r in rows if r['tier'] in ('STRONG_SIGNAL', 'MIXED_SIGNAL')}
 colls_out = []
 for c, nm in zip(top_colls, names):
     C = coll[c]
@@ -275,11 +275,11 @@ summary = {
     'window_hours': args.hours, 'head_block': H, 'start_block': START, 'generated': time.strftime('%Y-%m-%d %H:%M:%S'),
     'nft_tokens_minted': tot, 'mint_txs': len(tx_info), 'unique_recipients': len(all_recips),
     'unique_operators': len({t['from'] for t in txs.values()}), 'collections_minting': len(coll),
-    'flagged_wallets': {t: sum(1 for r in rows if r['tier'] == t) for t in ('CONFIRMED_PATTERN', 'LIKELY', 'WATCH')},
+    'flagged_wallets': {t: sum(1 for r in rows if r['tier'] == t) for t in ('STRONG_SIGNAL', 'MIXED_SIGNAL', 'LOW_SIGNAL')},
     'tokens_to_confirmed_or_likely': flag_tokens, 'share_to_confirmed_or_likely': round(flag_tokens / tot, 3) if tot else 0,
     'top1pct_wallet_share': round(sum(n for _, n in all_recips.most_common(max(1, len(all_recips) // 100))) / tot, 3) if tot else 0,
     'farm_sinks': len(SINKS), 'fee_swarms': len(SWARMS),
-    'eip7702_wallets_flagged': sum(1 for r in rows if 'EIP7702_DELEGATED' in r['labels']),
+    'eip7702_wallets_flagged': sum(1 for r in rows if 'SMART_WALLET_7702' in r['labels']),
     'routers': Counter(KNOWN_ROUTERS.get(t['to'], 'other') for h, t in txs.items() if h in tx_info and t['to'] not in tx_info[h]['contracts']).most_common(10),
     'wallets_with_wallet_state': len(wstate),
 }

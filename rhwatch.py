@@ -107,8 +107,8 @@ def cmd_live(a):
         c['n'] += 1; c['to'][to] += 1; c['tx'].add(l['transactionHash']); c['last'] = max(c['last'], int(l['blockNumber'], 16))
     rows = []
     for addr, c in C.items():
-        flagged = sum(n for w, n in c['to'].items() if by.get(w, {}).get('tier') in ('CONFIRMED_PATTERN', 'LIKELY'))
-        real = [w for w in c['to'] if by.get(w, {}).get('tier') not in ('CONFIRMED_PATTERN', 'LIKELY')]
+        flagged = sum(n for w, n in c['to'].items() if by.get(w, {}).get('tier') in ('STRONG_SIGNAL', 'MIXED_SIGNAL'))
+        real = [w for w in c['to'] if by.get(w, {}).get('tier') not in ('STRONG_SIGNAL', 'MIXED_SIGNAL')]
         rows.append({'contract': addr, 'minted': c['n'], 'wallets': len(c['to']), 'real_wallets': len(real),
                      'flagged_share': flagged / c['n'], 'example_tx': sorted(c['tx'])[0],
                      'secs_ago': int((H - c['last']) * 0.1031)})
@@ -156,7 +156,7 @@ def cmd_follow(a):
             c = C[l['address'].lower()]; c[0] += 1; b = int(l['blockNumber'], 16)
             if b >= c[2]: c[1], c[2] = l['transactionHash'], b
         print(f'\n{w}  [{t}]  minted {len(logs)} NFTs from {len(C)} collections in the last {a.hours}h')
-        if t in ('CONFIRMED_PATTERN', 'LIKELY'):
+        if t in ('STRONG_SIGNAL', 'MIXED_SIGNAL'):
             print('  note: this wallet is flagged - following it means following a farm')
         for c, (n, tx, b) in sorted(C.items(), key=lambda kv: -kv[1][2])[:a.top]:
             print(f'  {int((H-b)*0.1031/60):>5} min ago  x{n:<4} {c}  {rh.EXPLORER}/tx/{tx}')
@@ -188,7 +188,7 @@ def cmd_check(a):
         w = by.get(x)
         tier = w['tier'] if w else 'NOT_LISTED'
         hits[tier] += 1
-        if not a.quiet or tier in ('CONFIRMED_PATTERN', 'LIKELY'):
+        if not a.quiet or tier in ('STRONG_SIGNAL', 'MIXED_SIGNAL'):
             print(f'{x}  {tier}' + (f'  score {w["score"]}' if w else ''))
             if x in live and live[x][0] is not None:
                 code = live[x][1] or '0x'
@@ -204,7 +204,7 @@ def cmd_check(a):
                       f'paid for others: {e.get("operated_for", 0)}, sent on: {e.get("swept_out", 0)}')
                 for h in (e.get('example_tx') or [])[:2]:
                     print(f'   proof: {rh.EXPLORER}/tx/{h}')
-        if tier not in ('CONFIRMED_PATTERN', 'LIKELY') or (tier == 'LIKELY' and a.keep_likely):
+        if tier not in ('STRONG_SIGNAL', 'MIXED_SIGNAL') or (tier == 'MIXED_SIGNAL' and a.keep_likely):
             keep.append(x)
     print(f'\n{len(addrs)} checked: {dict(hits)}')
     if a.clean and a.file:
@@ -267,8 +267,8 @@ def cmd_update_list(a):
     M = json.loads(data)
     assert M.get('chain_id') == 4663 and isinstance(M.get('wallets'), list), 'not a 4663 master list'
     open(os.path.join(BASE, 'master_list.json'), 'wb').write(data)
-    for tier in ('CONFIRMED_PATTERN', 'LIKELY'):
-        open(os.path.join(BASE, f'blocklist_{tier.lower()}.txt'), 'w').write(
+    for tier in ('STRONG_SIGNAL', 'MIXED_SIGNAL'):
+        open(os.path.join(BASE, f'flagged_{tier.split("_")[0].lower()}.txt'), 'w').write(
             '\n'.join(w['address'] for w in M['wallets'] if w['tier'] == tier) + '\n')
     print(f'master list updated: {M["count"]} wallets, generated {M["generated"]}')
 
@@ -288,7 +288,7 @@ def main():
     p = sp.add_parser('check', help='check wallets against the master list')
     p.add_argument('addrs', nargs='*'); p.add_argument('--file'); p.add_argument('--clean', action='store_true')
     p.add_argument('--quiet', action='store_true', help='only print flagged wallets')
-    p.add_argument('--keep-likely', action='store_true', help='with --clean, only remove CONFIRMED_PATTERN')
+    p.add_argument('--keep-likely', action='store_true', help='with --clean, only remove STRONG_SIGNAL')
     p.add_argument('--live-max', type=int, default=200, help='skip live RPC lookups above this many addresses')
     p = sp.add_parser('scan', help='full scan + analysis + dashboard'); p.add_argument('--hours', type=int, default=24)
     p = sp.add_parser('watch', help='re-scan forever')

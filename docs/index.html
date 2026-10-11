@@ -27,9 +27,9 @@ tr:hover td{background:#161b22}
 a{color:var(--blu);text-decoration:none}a:hover{text-decoration:underline}
 .mono{font-family:ui-monospace,Consolas,monospace;font-size:12px}
 .tag{display:inline-block;padding:1px 6px;margin:1px;border-radius:6px;font-size:11px;background:#1f2630;color:#c9d1d9;border:1px solid var(--line)}
-.t-CONFIRMED_PATTERN{background:#3d1214;color:#ffb3b3;border-color:#6b1e22}
-.t-LIKELY{background:#3a2c05;color:#ffd666;border-color:#6b5208}
-.t-WATCH{background:#102231;color:#9ecbff;border-color:#1d3d57}
+.t-STRONG_SIGNAL{background:#3d1214;color:#ffb3b3;border-color:#6b1e22}
+.t-MIXED_SIGNAL{background:#3a2c05;color:#ffd666;border-color:#6b5208}
+.t-LOW_SIGNAL{background:#102231;color:#9ecbff;border-color:#1d3d57}
 .bar{height:8px;background:#1f2630;border-radius:5px;overflow:hidden;min-width:80px}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--yel),var(--red))}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
 .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
@@ -64,7 +64,7 @@ const addrLink = a => `<a class="mono" href="${ex(a)}" target="_blank" rel="noop
 let win = wins[0], tab = 'live';
 $('#win').innerHTML = wins.map(w=>`<option>${w}</option>`).join('');
 $('#win').onchange = e => { win = e.target.value; render(); };
-const TABS = [['live','Minting now'],['who','Who is minting'],['lookup','Check a wallet'],['overview','Overview'],['wallets','Bot wallets'],['farms','Farms (sinks)'],['ops','Operators'],['swarms','Gas-fingerprint swarms'],['colls','Collections'],['defend','How to block'],['use','Use it / downloads']];
+const TABS = [['live','Minting now'],['who','Who is minting'],['topp','Top participants'],['lookup','Check a wallet'],['overview','Overview'],['wallets','Signal wallets'],['farms','Collector groups'],['ops','Mint operators'],['swarms','Shared-gas groups'],['colls','Collections'],['defend','How to block'],['use','Use it / downloads']];
 $('#tabs').innerHTML = TABS.map(([k,l])=>`<button data-t="${k}">${l}</button>`).join('');
 $('#tabs').onclick = e => { const t = e.target.dataset.t; if (t) { tab = t; render(); } };
 document.addEventListener('click', e => { const c = e.target.dataset && e.target.dataset.copy; if (c) { navigator.clipboard.writeText(c); e.target.textContent='copied'; setTimeout(()=>e.target.textContent='copy',900);} });
@@ -79,9 +79,9 @@ function overview(){
    <div class="kpi"><div class="v">${fmt(s.mint_txs)}</div><div class="l">mint transactions</div></div>
    <div class="kpi"><div class="v">${fmt(s.unique_recipients)}</div><div class="l">wallets that received mints</div></div>
    <div class="kpi"><div class="v">${fmt(s.collections_minting)}</div><div class="l">collections minting</div></div>
-   <div class="kpi r"><div class="v">${fmt(fw.CONFIRMED_PATTERN)}</div><div class="l">confirmed-pattern bot wallets</div></div>
-   <div class="kpi y"><div class="v">${fmt(fw.LIKELY)}</div><div class="l">likely bot wallets</div></div>
-   <div class="kpi"><div class="v">${fmt(fw.WATCH)}</div><div class="l">watch</div></div>
+   <div class="kpi r"><div class="v">${fmt(fw.STRONG_SIGNAL)}</div><div class="l">strong-signal wallets</div></div>
+   <div class="kpi y"><div class="v">${fmt(fw.MIXED_SIGNAL)}</div><div class="l">mixed-signal wallets</div></div>
+   <div class="kpi"><div class="v">${fmt(fw.LOW_SIGNAL)}</div><div class="l">low signal</div></div>
    <div class="kpi a"><div class="v">${pct(s.share_to_confirmed_or_likely)}</div><div class="l">of all minted NFTs went to confirmed+likely</div></div>
    <div class="kpi a"><div class="v">${pct(s.top1pct_wallet_share)}</div><div class="l">share taken by top 1% of wallets</div></div>
    <div class="kpi"><div class="v">${fmt(s.farm_sinks)}</div><div class="l">farm sink wallets (≥3 feeders)</div></div>
@@ -113,7 +113,7 @@ function wallets(){
   f = f.sort((a,b)=> wsort==='tokens' ? (b.evidence.tokens||0)-(a.evidence.tokens||0) : wsort==='colls' ? (b.evidence.collections||0)-(a.evidence.collections||0) : b.score-a.score);
   $('#view').innerHTML = `<div class="row">
     <input id="q" placeholder="search address or cluster" value="${esc(wq)}" style="min-width:280px">
-    <select id="t">${['ALL','CONFIRMED_PATTERN','LIKELY','WATCH'].map(t=>`<option ${t===wt?'selected':''}>${t}</option>`).join('')}</select>
+    <select id="t">${['ALL','STRONG_SIGNAL','MIXED_SIGNAL','LOW_SIGNAL'].map(t=>`<option ${t===wt?'selected':''}>${t}</option>`).join('')}</select>
     <select id="l"><option value="">any signal</option>${labels.map(l=>`<option ${l===wl?'selected':''}>${l}</option>`).join('')}</select>
     <select id="s"><option value="score">sort: score</option><option value="tokens" ${wsort==='tokens'?'selected':''}>sort: tokens</option><option value="colls" ${wsort==='colls'?'selected':''}>sort: collections</option></select>
     <span class="sub">${fmt(f.length)} wallets</span>
@@ -131,7 +131,7 @@ function wallets(){
 function farms(){
   const fs = R[win].farms;
   $('#view').innerHTML = `<div class="note">A <b>sink</b> is a wallet that received freshly minted NFTs from 3 or more different minting wallets inside the window. That is the "mint on many side wallets, sweep to one" pattern.</div>` +
-   fs.slice(0,150).map(f=>`<div class="card"><div class="row"><b>Sink</b> ${addrLink(f.sink)} <span class="tag t-CONFIRMED_PATTERN">${f.feeder_wallets} feeder wallets</span><span class="tag">${fmt(f.tokens_received)} NFTs swept in</span><span class="tag">sink nonce ${fmt(f.sink_nonce)}</span>${(f.sink_code||'').startsWith('0xef0100')?'<span class="tag">EIP-7702</span>':''}</div>
+   fs.slice(0,150).map(f=>`<div class="card"><div class="row"><b>Sink</b> ${addrLink(f.sink)} <span class="tag t-STRONG_SIGNAL">${f.feeder_wallets} feeder wallets</span><span class="tag">${fmt(f.tokens_received)} NFTs swept in</span><span class="tag">sink nonce ${fmt(f.sink_nonce)}</span>${(f.sink_code||'').startsWith('0xef0100')?'<span class="tag">EIP-7702</span>':''}</div>
    <div class="note">Feeders: ${f.feeders.slice(0,40).map(([a,n])=>`${addrLink(a)} (${n})`).join(' · ')}${f.feeders.length>40?' …':''}</div></div>`).join('') || '<div class="card">No sinks found in this window.</div>';
 }
 function ops(){
@@ -171,6 +171,20 @@ function who(){
    <div class="note">Roles are assigned strongest-first (FARM_SINK > FARM_OPERATOR > DISTRIBUTOR > PAID_BUYER > SELF_MINTER), so each wallet counts once. Evidence, not verdicts. Never name or shame wallets.</div>`;
 }
 
+
+function topp(){
+  const P = R[win] && R[win].participants;
+  if(!P){ $('#view').innerHTML='<div class="card">No participant data yet. Run participants.py.</div>'; return; }
+  const buyers = (P.top_buyers||[]).map((b,i)=>`<tr><td>${i+1}</td><td>${addrLink(b.wallet)}</td><td>${fmt(b.nfts)}</td><td><b>${b.paid_eth} ETH</b></td><td>${fmt(b.collections)}</td></tr>`).join('');
+  const holders = (P.top_holders||[]).map((h,i)=>`<tr><td>${i+1}</td><td>${addrLink(h.wallet)}</td><td><b>${fmt(h.nfts)}</b></td><td>${fmt(h.collections)}</td></tr>`).join('');
+  $('#view').innerHTML = `<div class="card"><b>Top participants</b> - the people who actually turned up.
+   <div class="note">This is praise, not a flag. These are the wallets that paid the most, or that hold the most. Nothing here is a bot label, and nothing here is an accusation.</div></div>
+   <div class="card"><b>Biggest buyers by what they paid</b><table><thead><tr><th>#</th><th>wallet</th><th>NFTs</th><th>paid</th><th>collections</th></tr></thead><tbody>${buyers}</tbody></table>
+   <div class="note">paid = ETH this wallet's own mint transactions carried (wei summed from each mint tx value). A multi-recipient tx can attribute its full value to each recipient, so treat it as an upper bound.</div></div>
+   <div class="card"><b>Largest holders by mints received</b><table><thead><tr><th>#</th><th>wallet</th><th>NFTs</th><th>collections</th></tr></thead><tbody>${holders}</tbody></table>
+   <div class="note">A wallet holding a very large number across many collections is a major participant or a hub - not a verdict.</div></div>`;
+}
+
 let LOOK = null;
 async function loadLook(){ if (LOOK) return LOOK;
   try { const r = await fetch('lookup.json', {cache:'no-cache'}); LOOK = await r.json(); }
@@ -181,11 +195,11 @@ async function loadLook(){ if (LOOK) return LOOK;
 function lookup(){
   $('#view').innerHTML = `<div class="card"><b>Check wallets</b> - paste one or many (a whole giveaway / allowlist). Nothing leaves your browser.
    <textarea id="la" rows="6" style="width:100%;margin-top:8px;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px;font:12px ui-monospace,monospace" placeholder="0x... one per line, or paste any text containing addresses"></textarea>
-   <div class="row" style="margin-top:8px"><button class="act" id="lb">Check</button><label class="sub"><input type="checkbox" id="lk"> keep LIKELY (remove only CONFIRMED)</label></div>
+   <div class="row" style="margin-top:8px"><button class="act" id="lb">Check</button><label class="sub"><input type="checkbox" id="lk"> keep MIXED_SIGNAL (remove only CONFIRMED)</label></div>
    <div id="lr" class="note">Loading list...</div>
    <div class="note"><b>What the tiers mean.</b>
-    <br><b>WATCH</b> - one weak signal. Normal collectors land here. <b>Never</b> treat it as a bot.
-    <br><b>LIKELY</b> - several signals, but this can be a real person who mints a lot. Activity is a habit, not proof.
+    <br><b>LOW_SIGNAL</b> - one weak signal. Normal collectors land here. <b>Never</b> treat it as a bot.
+    <br><b>MIXED_SIGNAL</b> - several signals, but this can be a real person who mints a lot. Activity is a habit, not proof.
     <br><b>CONFIRMED</b> - only used when there is structural proof: this wallet paid for mints sent to OTHER wallets, swept NFTs into one collector wallet, runs automated (EIP-7702) mints, or mints on machine timing.
     <br>Buying a paid mint, or minting a lot for yourself, is <b>not</b> farm evidence. These are people too.</div></div>`;
   loadLook().then(L => $('#lr').textContent = `Master list: ${fmt(Object.keys(L.wallets).length)} wallets, generated ${L.generated}.`);
@@ -193,10 +207,10 @@ function lookup(){
     const addrs = [...new Set(($('#la').value.match(/0x[0-9a-fA-F]{40}/g)||[]).map(a=>a.toLowerCase()))];
     const keepLikely = $('#lk').checked; const keep = []; const cnt = {};
     const rows = addrs.map(a => { const w = L.wallets[a]; const t = w ? w[0] : 'NOT_LISTED'; cnt[t]=(cnt[t]||0)+1;
-      if (!w || t==='WATCH' || (keepLikely && t==='LIKELY')) keep.push(a);
-      return `<tr><td>${addrLink(a)}</td><td><span class="tag t-${t}">${t.replace('_',' ')}</span></td><td>${w?w[1]:''}</td><td>${w?w[2].map(l=>`<span class="tag">${esc(l)}</span>`).join(''):''}${w&&t==='CONFIRMED_PATTERN'?'<br><span class="sub">structural proof: paid for other wallets / farm sink / automated mints</span>':''}${w&&t==='LIKELY'?'<br><span class="sub">several signals - may be a real heavy collector</span>':''}</td><td>${w?fmt(w[3])+' NFTs / '+fmt(w[4])+' colls'+(w[5]?' · paid for '+w[5]+' wallets':''):''}</td><td>${w&&w[6]?`<a href="${extx(w[6])}" target="_blank" rel="noopener">proof tx</a>`:''}</td></tr>`; });
+      if (!w || t==='LOW_SIGNAL' || (keepLikely && t==='MIXED_SIGNAL')) keep.push(a);
+      return `<tr><td>${addrLink(a)}</td><td><span class="tag t-${t}">${t.replace('_',' ')}</span></td><td>${w?w[1]:''}</td><td>${w?w[2].map(l=>`<span class="tag">${esc(l)}</span>`).join(''):''}${w&&t==='STRONG_SIGNAL'?'<br><span class="sub">structural proof: paid for other wallets / farm sink / automated mints</span>':''}${w&&t==='MIXED_SIGNAL'?'<br><span class="sub">several signals - may be a real heavy collector</span>':''}</td><td>${w?fmt(w[3])+' NFTs / '+fmt(w[4])+' colls'+(w[5]?' · paid for '+w[5]+' wallets':''):''}</td><td>${w&&w[6]?`<a href="${extx(w[6])}" target="_blank" rel="noopener">proof tx</a>`:''}</td></tr>`; });
     $('#lr').innerHTML = `<div class="card">${addrs.length} checked · ${Object.entries(cnt).map(([k,v])=>`${k.replace('_',' ')}: ${v}`).join(' · ')}
-      <div class="row" style="margin-top:8px"><button class="act" id="dl">Download clean list (${keep.length})</button><span class="sub">WATCH = one weak signal, kept. Never publicly name wallets.</span></div></div>
+      <div class="row" style="margin-top:8px"><button class="act" id="dl">Download clean list (${keep.length})</button><span class="sub">LOW_SIGNAL = one weak signal, kept. Never publicly name wallets.</span></div></div>
       <table><thead><tr><th>wallet</th><th>tier</th><th>score</th><th>why</th><th>activity</th><th></th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
     $('#dl').onclick = () => { const b = new Blob([keep.join('\n')+'\n'],{type:'text/plain'}); const u = URL.createObjectURL(b);
       const a = document.createElement('a'); a.href=u; a.download='clean-list.txt'; a.click(); URL.revokeObjectURL(u); }; };
@@ -230,7 +244,7 @@ function live(){
       logs = logs.filter(l=>l.topics.length===4);
       const C = {}; for (const l of logs){ const c=l.address.toLowerCase(); const to='0x'+l.topics[3].slice(26);
         const x = C[c] ||= {n:0,to:{},tx:l.transactionHash,last:0}; x.n++; x.to[to]=(x.to[to]||0)+1; const b=parseInt(l.blockNumber,16); if(b>=x.last){x.last=b;x.tx=l.transactionHash;} }
-      let rows = Object.entries(C).map(([c,x])=>{ const ws=Object.keys(x.to); const bad=ws.filter(w=>{const t=(L.wallets[w]||[])[0]; return t==='CONFIRMED_PATTERN'||t==='LIKELY';});
+      let rows = Object.entries(C).map(([c,x])=>{ const ws=Object.keys(x.to); const bad=ws.filter(w=>{const t=(L.wallets[w]||[])[0]; return t==='STRONG_SIGNAL'||t==='MIXED_SIGNAL';});
         const badN = bad.reduce((s,w)=>s+x.to[w],0); return {c, n:x.n, w:ws.length, real:ws.length-bad.length, bots:badN/x.n, tx:x.tx, ago:Math.round((H-x.last)*0.1031)}; });
       rows.sort((a,b)=>b.real-a.real||b.n-a.n); rows=rows.slice(0,60);
       $('#st').textContent='reading names...'; for (const r of rows) r.name = await nameOf(r.c);
@@ -245,8 +259,8 @@ function live(){
 }
 function use(){
   $('#view').innerHTML = `<div class="card"><b>Downloads</b> (refreshed by the repo's GitHub Action)<ul>
-   <li><a href="blocklist_confirmed_pattern.txt">blocklist_confirmed_pattern.txt</a> - safe to block (structural proof on-chain)</li>
-   <li><a href="blocklist_likely.txt">blocklist_likely.txt</a> - several signals; use with care</li>
+   <li><a href="flagged_strong.txt">flagged_strong.txt</a> - safe to block (structural proof on-chain)</li>
+   <li><a href="flagged_mixed.txt">flagged_mixed.txt</a> - several signals; use with care</li>
    <li><a href="master_list.csv">master_list.csv</a> - every wallet with tier, score, labels</li>
    <li><a href="lookup.json">lookup.json</a> - machine-readable, for sites and bots</li></ul></div>
    <div class="card"><b>Run it yourself</b> (Python 3.9+, no installs, no keys)<pre class="mono">git clone https://github.com/goodsmash/rh-mint-farm-watch
@@ -267,13 +281,13 @@ function defend(){
   <tr><td>Fresh throwaways, mint & sweep to a sink</td><td>transfer cooldown after mint (e.g. 6–24h)</td><td>cannot flip during the hype window</td></tr>
   <tr><td>Same-block swarms</td><td>per-block global cap + per-wallet block cooldown</td><td>spreads the farm out, humans get through</td></tr>
   <tr><td>Everything above, at scale</td><td>EIP-712 signed mint pass from a human check (captcha / social / holder)</td><td>needs one human pass per wallet</td></tr>
-  <tr><td>Known farm wallets</td><td>pre-sale blocklist, <span class="mono">CONFIRMED_PATTERN</span> only (each has structural proof)</td><td>new wallets needed (raises cost, not a wall)</td></tr>
-  </table><div class="note"><b>Read this before blocking anyone.</b> A flag is a behaviour signal, not a verdict, and not a statement about a person. Most flagged wallets are real people: a collector who mints a lot or is new triggers activity signals with no farm behind them. Only <span class="mono">CONFIRMED_PATTERN</span> carries structural proof, and even that is evidence, not identity. Do not publish, name, or publicly shame wallets. If someone believes they are listed wrongly, open an issue and it is recomputed from fresh chain data.</div>
+  <tr><td>Known flagged wallets</td><td>pre-sale blocklist, <span class="mono">STRONG_SIGNAL</span> only (each has structural proof)</td><td>new wallets needed (raises cost, not a wall)</td></tr>
+  </table><div class="note"><b>Read this before blocking anyone.</b> A flag is a behaviour signal, not a verdict, and not a statement about a person. Most flagged wallets are real people: a collector who mints a lot or is new triggers activity signals with no farm behind them. Only <span class="mono">STRONG_SIGNAL</span> carries structural proof, and even that is evidence, not identity. Do not publish, name, or publicly shame wallets. If someone believes they are listed wrongly, open an issue and it is recomputed from fresh chain data.</div>
   <div class="note">Honest limit: on a 0.02 gwei chain a fresh wallet costs fractions of a cent. Per-wallet caps and blocklists are speed bumps. The signed pass + transfer cooldown are what change the economics.</div></div>`;
 }
 function render(){ document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===tab));
   if(!win && !['live','lookup','use','defend'].includes(tab)){ $('#view').innerHTML='<div class="card">No scan data yet. Run: python rhwatch.py scan</div>'; return; }
-  ({live,who,overview,wallets,farms,ops,swarms,colls,lookup,defend,use})[tab](); }
+  ({live,who,topp,overview,wallets,farms,ops,swarms,colls,lookup,defend,use})[tab](); }
 render();
 </script>
 </body>

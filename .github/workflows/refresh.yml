@@ -46,7 +46,7 @@ jobs:
         run: |
           git config user.name "rhwatch-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add master_list.json master_list.csv blocklist_*.txt docs data/*/report.json data/names_cache.json
+          git add master_list.json master_list.csv flagged_*.txt docs data/*/report.json data/names_cache.json
           git diff --cached --quiet && echo "no changes" && exit 0
           git commit -m "refresh ${{ steps.w.outputs.h }}h master list"
           git pull --rebase -X ours || true
