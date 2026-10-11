@@ -1,0 +1,53 @@
+name: refresh master list
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'   # 24h window every 6 hours
+    - cron: '41 4 * * 0'     # 7-day window every Sunday
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: 'window in hours (24 or 168)'
+        default: '24'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: pick window
+        id: w
+        run: |
+          if [ -n "${{ github.event.inputs.hours }}" ]; then echo "h=${{ github.event.inputs.hours }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "41 4 * * 0" ]; then echo "h=168" >> $GITHUB_OUTPUT
+          else echo "h=24" >> $GITHUB_OUTPUT; fi
+      - name: rpc doctor
+        env:
+          RH_RPCS: ${{ secrets.RH_RPCS }}
+          RH_LOGS_RPC: ${{ secrets.RH_LOGS_RPC }}
+        run: python rhwatch.py doctor
+      - name: scan
+        env:
+          RH_RPCS: ${{ secrets.RH_RPCS }}
+          RH_LOGS_RPC: ${{ secrets.RH_LOGS_RPC }}
+        run: python rhwatch.py scan --hours ${{ steps.w.outputs.h }}
+      - name: commit
+        run: |
+          git config user.name "rhwatch-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add master_list.json master_list.csv blocklist_*.txt docs data/*/report.json data/names_cache.json
+          git diff --cached --quiet && echo "no changes" && exit 0
+          git commit -m "refresh ${{ steps.w.outputs.h }}h master list"
+          git pull --rebase -X ours || true
+          git push

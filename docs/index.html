@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RH Mint-Farm Watch · GoodsMash RIGS community drop</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; form-action 'none'; frame-ancestors 'none'">
+<style>
+:root{--bg:#0b0d10;--card:#13171c;--line:#232a33;--fg:#e6edf3;--mut:#8b98a5;--acc:#ff6a1a;--red:#ff4d4f;--yel:#f5b301;--grn:#3fb950;--blu:#58a6ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 ui-sans-serif,system-ui,Segoe UI,Roboto,sans-serif}
+header{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+h1{font-size:18px;margin:0;letter-spacing:.3px}h1 b{color:var(--acc)}
+.sub{color:var(--mut);font-size:12px}
+select,input{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font:inherit}
+nav{display:flex;gap:4px;padding:10px 22px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+nav button{background:none;border:1px solid transparent;color:var(--mut);padding:7px 12px;border-radius:8px;cursor:pointer;font:inherit}
+nav button.on{color:var(--fg);border-color:var(--line);background:var(--card)}
+main{padding:18px 22px;max-width:1500px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.kpi .v{font-size:24px;font-weight:700}.kpi .l{color:var(--mut);font-size:12px}
+.kpi.r .v{color:var(--red)}.kpi.y .v{color:var(--yel)}.kpi.a .v{color:var(--acc)}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13px}
+th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--mut);font-weight:600;position:sticky;top:0;background:var(--bg);cursor:pointer}
+tr:hover td{background:#161b22}
+a{color:var(--blu);text-decoration:none}a:hover{text-decoration:underline}
+.mono{font-family:ui-monospace,Consolas,monospace;font-size:12px}
+.tag{display:inline-block;padding:1px 6px;margin:1px;border-radius:6px;font-size:11px;background:#1f2630;color:#c9d1d9;border:1px solid var(--line)}
+.t-CONFIRMED_PATTERN{background:#3d1214;color:#ffb3b3;border-color:#6b1e22}
+.t-LIKELY{background:#3a2c05;color:#ffd666;border-color:#6b5208}
+.t-WATCH{background:#102231;color:#9ecbff;border-color:#1d3d57}
+.bar{height:8px;background:#1f2630;border-radius:5px;overflow:hidden;min-width:80px}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--yel),var(--red))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.note{color:var(--mut);font-size:12px;margin-top:8px}
+.copy{cursor:pointer;color:var(--mut);font-size:11px;margin-left:4px}
+button.act{background:var(--acc);color:#111;border:0;border-radius:8px;padding:7px 12px;font-weight:700;cursor:pointer}
+canvas{width:100%;height:160px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+</style>
+</head>
+<body>
+<header>
+  <h1><b>RH</b> Mint-Farm Watch</h1>
+  <span class="sub">Robinhood Chain 4663 · GoodsMash RIGS community drop · free + open source · on-chain evidence only, scores are signals not accusations · <a href="https://github.com/goodsmash/rh-mint-farm-watch" target="_blank" rel="noopener">GitHub</a></span>
+  <span style="flex:1"></span>
+  <label class="sub">Window <select id="win"></select></label>
+</header>
+<nav id="tabs"></nav>
+<main id="view"></main>
+<script src="data.js"></script>
+<script>
+const R = window.REPORTS || {};
+const wins = Object.keys(R).sort((a,b)=>parseInt(a)-parseInt(b));
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const short = a => a ? a.slice(0,6)+'…'+a.slice(-4) : '';
+const ex = a => `https://robin.etherscan.io/address/${a}`;
+const extx = h => `https://robin.etherscan.io/tx/${h}`;
+const os = a => `https://opensea.io/${a}`;
+const fmt = n => n==null?'—':Number(n).toLocaleString();
+const pct = n => n==null?'—':(n*100).toFixed(1)+'%';
+const addrLink = a => `<a class="mono" href="${ex(a)}" target="_blank" rel="noopener">${short(a)}</a><span class="copy" data-copy="${a}">copy</span> <a class="sub" href="${os(a)}" target="_blank" rel="noopener">OS</a>`;
+let win = wins[0], tab = 'live';
+$('#win').innerHTML = wins.map(w=>`<option>${w}</option>`).join('');
+$('#win').onchange = e => { win = e.target.value; render(); };
+const TABS = [['live','Minting now'],['lookup','Check a wallet'],['overview','Overview'],['wallets','Bot wallets'],['farms','Farms (sinks)'],['ops','Operators'],['swarms','Gas-fingerprint swarms'],['colls','Collections'],['defend','How to block'],['use','Use it / downloads']];
+$('#tabs').innerHTML = TABS.map(([k,l])=>`<button data-t="${k}">${l}</button>`).join('');
+$('#tabs').onclick = e => { const t = e.target.dataset.t; if (t) { tab = t; render(); } };
+document.addEventListener('click', e => { const c = e.target.dataset && e.target.dataset.copy; if (c) { navigator.clipboard.writeText(c); e.target.textContent='copied'; setTimeout(()=>e.target.textContent='copy',900);} });
+
+function tags(r){ return `<span class="tag t-${r.tier}">${r.tier.replace('_',' ')}</span>` + r.labels.map(l=>`<span class="tag">${l}</span>`).join(''); }
+
+function overview(){
+  const s = R[win].summary;
+  const fw = s.flagged_wallets;
+  let h = `<div class="grid">
+   <div class="kpi"><div class="v">${fmt(s.nft_tokens_minted)}</div><div class="l">NFTs minted (${s.window_hours}h)</div></div>
+   <div class="kpi"><div class="v">${fmt(s.mint_txs)}</div><div class="l">mint transactions</div></div>
+   <div class="kpi"><div class="v">${fmt(s.unique_recipients)}</div><div class="l">wallets that received mints</div></div>
+   <div class="kpi"><div class="v">${fmt(s.collections_minting)}</div><div class="l">collections minting</div></div>
+   <div class="kpi r"><div class="v">${fmt(fw.CONFIRMED_PATTERN)}</div><div class="l">confirmed-pattern bot wallets</div></div>
+   <div class="kpi y"><div class="v">${fmt(fw.LIKELY)}</div><div class="l">likely bot wallets</div></div>
+   <div class="kpi"><div class="v">${fmt(fw.WATCH)}</div><div class="l">watch</div></div>
+   <div class="kpi a"><div class="v">${pct(s.share_to_confirmed_or_likely)}</div><div class="l">of all minted NFTs went to confirmed+likely</div></div>
+   <div class="kpi a"><div class="v">${pct(s.top1pct_wallet_share)}</div><div class="l">share taken by top 1% of wallets</div></div>
+   <div class="kpi"><div class="v">${fmt(s.farm_sinks)}</div><div class="l">farm sink wallets (≥3 feeders)</div></div>
+   <div class="kpi"><div class="v">${fmt(s.fee_swarms)}</div><div class="l">gas-fingerprint swarms (≥5 ops)</div></div>
+   <div class="kpi"><div class="v">${fmt(s.eip7702_wallets_flagged)}</div><div class="l">flagged EIP-7702 delegated wallets</div></div>
+  </div>
+  <div class="card" style="margin-top:12px"><b>Top collections by tokens minted, and how much went to flagged wallets</b><canvas id="cv"></canvas></div>
+  <div class="card"><b>Mint routes</b> ${ (s.routers||[]).map(([k,v])=>`<span class="tag">${esc(k)}: ${fmt(v)} txs</span>`).join('') }
+  <div class="note">Window ${s.start_block} → ${s.head_block}. Generated ${esc(s.generated)}. Method: replay of every ERC-721 Transfer(from=0) and ERC-1155 mint log, sampled tx senders per wallet, outflow tracing of the heaviest minters, wallet nonce/balance/code reads.</div></div>`;
+  $('#view').innerHTML = h;
+  drawColls();
+}
+function drawColls(){
+  const c = $('#cv'); if(!c) return; const ctx = c.getContext('2d');
+  const W = c.width = c.clientWidth*2, H = c.height = 320; ctx.scale(1,1);
+  const cs = R[win].collections.slice(0,30); const max = Math.max(...cs.map(x=>x.minted),1);
+  const bw = W/cs.length;
+  cs.forEach((x,i)=>{ const h=(x.minted/max)*(H-30); const fh=h*x.flagged_share;
+    ctx.fillStyle='#2b3440'; ctx.fillRect(i*bw+4,H-h,bw-8,h);
+    ctx.fillStyle='#ff4d4f'; ctx.fillRect(i*bw+4,H-fh,bw-8,fh); });
+  ctx.fillStyle='#8b98a5'; ctx.font='20px sans-serif'; ctx.fillText('grey = all mints, red = to flagged wallets (top 30 collections)',10,24);
+}
+
+let wq = '', wt = 'ALL', wl = '', wsort = 'score';
+function wallets(){
+  const rows = R[win].wallets;
+  const labels = [...new Set(rows.flatMap(r=>r.labels))].sort();
+  let f = rows.filter(r => (wt==='ALL'||r.tier===wt) && (!wl||r.labels.includes(wl)) && (!wq||r.address.includes(wq.toLowerCase())||(r.cluster||'').includes(wq)));
+  f = f.sort((a,b)=> wsort==='tokens' ? (b.evidence.tokens||0)-(a.evidence.tokens||0) : wsort==='colls' ? (b.evidence.collections||0)-(a.evidence.collections||0) : b.score-a.score);
+  $('#view').innerHTML = `<div class="row">
+    <input id="q" placeholder="search address or cluster" value="${esc(wq)}" style="min-width:280px">
+    <select id="t">${['ALL','CONFIRMED_PATTERN','LIKELY','WATCH'].map(t=>`<option ${t===wt?'selected':''}>${t}</option>`).join('')}</select>
+    <select id="l"><option value="">any signal</option>${labels.map(l=>`<option ${l===wl?'selected':''}>${l}</option>`).join('')}</select>
+    <select id="s"><option value="score">sort: score</option><option value="tokens" ${wsort==='tokens'?'selected':''}>sort: tokens</option><option value="colls" ${wsort==='colls'?'selected':''}>sort: collections</option></select>
+    <span class="sub">${fmt(f.length)} wallets</span>
+    <button class="act" id="dl">Download CSV</button></div>
+  <table><thead><tr><th>wallet</th><th>score</th><th>signals</th><th>NFTs</th><th>colls</th><th>mint txs</th><th>nonce</th><th>swept out</th><th>cluster</th><th>example</th></tr></thead><tbody>
+  ${f.slice(0,600).map(r=>{const e=r.evidence||{};return `<tr><td>${addrLink(r.address)}</td><td><div class="bar"><i style="width:${r.score}%"></i></div>${r.score}</td><td>${tags(r)}</td><td>${fmt(e.tokens)}</td><td>${fmt(e.collections)}</td><td>${fmt(e.mint_txs)}</td><td>${fmt(e.nonce)}</td><td>${fmt(e.swept_out)}</td><td class="mono">${esc(r.cluster||'')}</td><td>${(e.example_tx||[]).slice(0,1).map(h=>`<a class="mono" target="_blank" rel="noopener" href="${extx(h)}">${short(h)}</a>`).join('')}</td></tr>`}).join('')}
+  </tbody></table>${f.length>600?'<div class="note">Showing 600; download CSV for all.</div>':''}`;
+  $('#q').oninput = e => { wq = e.target.value; wallets(); $('#q').focus(); $('#q').setSelectionRange(wq.length,wq.length); };
+  $('#t').onchange = e => { wt = e.target.value; wallets(); };
+  $('#l').onchange = e => { wl = e.target.value; wallets(); };
+  $('#s').onchange = e => { wsort = e.target.value; wallets(); };
+  $('#dl').onclick = () => { const csv = ['address,tier,score,labels,tokens,collections,cluster'].concat(f.map(r=>[r.address,r.tier,r.score,r.labels.join('|'),r.evidence.tokens,r.evidence.collections,r.cluster||''].join(','))).join('\n');
+    const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'})); a.download=`rh-bots-${win}.csv`; a.click(); };
+}
+function farms(){
+  const fs = R[win].farms;
+  $('#view').innerHTML = `<div class="note">A <b>sink</b> is a wallet that received freshly minted NFTs from 3 or more different minting wallets inside the window. That is the "mint on many side wallets, sweep to one" pattern.</div>` +
+   fs.slice(0,150).map(f=>`<div class="card"><div class="row"><b>Sink</b> ${addrLink(f.sink)} <span class="tag t-CONFIRMED_PATTERN">${f.feeder_wallets} feeder wallets</span><span class="tag">${fmt(f.tokens_received)} NFTs swept in</span><span class="tag">sink nonce ${fmt(f.sink_nonce)}</span>${(f.sink_code||'').startsWith('0xef0100')?'<span class="tag">EIP-7702</span>':''}</div>
+   <div class="note">Feeders: ${f.feeders.slice(0,40).map(([a,n])=>`${addrLink(a)} (${n})`).join(' · ')}${f.feeders.length>40?' …':''}</div></div>`).join('') || '<div class="card">No sinks found in this window.</div>';
+}
+function ops(){
+  const rows = R[win].wallets.filter(r=>r.labels.includes('OPERATOR_FOR_OTHER_WALLETS')).sort((a,b)=>b.evidence.operated_for-a.evidence.operated_for);
+  $('#view').innerHTML = `<div class="note">An <b>operator</b> is a wallet that paid the gas for mints delivered to 3 or more <i>other</i> wallets (mint-to-many / bundled minting).</div><table><thead><tr><th>operator</th><th>minted for # wallets</th><th>NFTs</th><th>collections</th><th>via</th><th>signals</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${addrLink(r.address)}</td><td>${fmt(r.evidence.operated_for)}</td><td>${fmt(r.evidence.tokens)}</td><td>${fmt(r.evidence.collections)}</td><td>${esc(JSON.stringify(r.evidence.via||{}))}</td><td>${tags(r)}</td></tr>`).join('')}</tbody></table>`;
+}
+function swarms(){
+  const s = R[win].swarms;
+  $('#view').innerHTML = `<div class="note">Five or more different wallets calling the same mint function on the same collection with byte-identical gas settings (gas limit + max fee + priority fee). Wallet apps randomize or estimate these; one script reusing hardcoded values does not.</div>` +
+  `<table><thead><tr><th>collection</th><th>selector</th><th>gas / maxFee / prio</th><th>wallets</th><th>members</th></tr></thead><tbody>${s.map(x=>`<tr><td>${addrLink(x.contract)}</td><td class="mono">${esc(x.selector)}</td><td class="mono">${esc(parseInt(x.gas))} / ${esc(x.maxFee?parseInt(x.maxFee):'')} / ${esc(x.priority?parseInt(x.priority):'')}</td><td>${x.operators}</td><td>${x.members.slice(0,12).map(a=>addrLink(a)).join(' ')}${x.members.length>12?' …':''}</td></tr>`).join('')}</tbody></table>`;
+}
+function colls(){
+  const cs = R[win].collections;
+  $('#view').innerHTML = `<table><thead><tr><th>collection</th><th>minted</th><th>unique wallets</th><th>tx senders</th><th>to flagged wallets</th><th>top 10 wallets took</th><th>hours active</th><th>biggest minters</th></tr></thead><tbody>${cs.map(c=>`<tr><td><b>${esc(c.name||'?')}</b><br>${addrLink(c.contract)}</td><td>${fmt(c.minted)}</td><td>${fmt(c.unique_recipients)}</td><td>${fmt(c.unique_operators)}</td><td><div class="bar"><i style="width:${c.flagged_share*100}%"></i></div>${pct(c.flagged_share)}</td><td>${pct(c.top10_share)}</td><td>${c.hours_active}</td><td>${c.top_minters.slice(0,4).map(([a,n])=>`${addrLink(a)} ${n}`).join('<br>')}</td></tr>`).join('')}</tbody></table>`;
+}
+let LOOK = null;
+async function loadLook(){ if (LOOK) return LOOK;
+  try { const r = await fetch('lookup.json', {cache:'no-cache'}); LOOK = await r.json(); }
+  catch(e){ LOOK = {generated:'(offline: dashboard windows only)', wallets:{}};
+    for (const w of wins) for (const x of R[w].wallets) if(!LOOK.wallets[x.address]||LOOK.wallets[x.address][1]<x.score)
+      LOOK.wallets[x.address]=[x.tier,x.score,x.labels,x.evidence.tokens,x.evidence.collections,x.evidence.operated_for||0,(x.evidence.example_tx||[])[0]]; }
+  return LOOK; }
+function lookup(){
+  $('#view').innerHTML = `<div class="card"><b>Check wallets</b> - paste one or many (a whole giveaway / allowlist). Nothing leaves your browser.
+   <textarea id="la" rows="6" style="width:100%;margin-top:8px;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px;font:12px ui-monospace,monospace" placeholder="0x... one per line, or paste any text containing addresses"></textarea>
+   <div class="row" style="margin-top:8px"><button class="act" id="lb">Check</button><label class="sub"><input type="checkbox" id="lk"> keep LIKELY (remove only CONFIRMED)</label></div>
+   <div id="lr" class="note">Loading list...</div></div>`;
+  loadLook().then(L => $('#lr').textContent = `Master list: ${fmt(Object.keys(L.wallets).length)} wallets, generated ${L.generated}.`);
+  $('#lb').onclick = async () => { const L = await loadLook();
+    const addrs = [...new Set(($('#la').value.match(/0x[0-9a-fA-F]{40}/g)||[]).map(a=>a.toLowerCase()))];
+    const keepLikely = $('#lk').checked; const keep = []; const cnt = {};
+    const rows = addrs.map(a => { const w = L.wallets[a]; const t = w ? w[0] : 'NOT_LISTED'; cnt[t]=(cnt[t]||0)+1;
+      if (!w || t==='WATCH' || (keepLikely && t==='LIKELY')) keep.push(a);
+      return `<tr><td>${addrLink(a)}</td><td><span class="tag t-${t}">${t.replace('_',' ')}</span></td><td>${w?w[1]:''}</td><td>${w?w[2].map(l=>`<span class="tag">${esc(l)}</span>`).join(''):''}</td><td>${w?fmt(w[3])+' NFTs / '+fmt(w[4])+' colls'+(w[5]?' · paid for '+w[5]+' wallets':''):''}</td><td>${w&&w[6]?`<a href="${extx(w[6])}" target="_blank" rel="noopener">proof tx</a>`:''}</td></tr>`; });
+    $('#lr').innerHTML = `<div class="card">${addrs.length} checked · ${Object.entries(cnt).map(([k,v])=>`${k.replace('_',' ')}: ${v}`).join(' · ')}
+      <div class="row" style="margin-top:8px"><button class="act" id="dl">Download clean list (${keep.length})</button><span class="sub">WATCH = one weak signal, kept. Never publicly name wallets.</span></div></div>
+      <table><thead><tr><th>wallet</th><th>tier</th><th>score</th><th>why</th><th>activity</th><th></th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
+    $('#dl').onclick = () => { const b = new Blob([keep.join('\n')+'\n'],{type:'text/plain'}); const u = URL.createObjectURL(b);
+      const a = document.createElement('a'); a.href=u; a.download='clean-list.txt'; a.click(); URL.revokeObjectURL(u); }; };
+}
+const RPC_KEY='rhwatch.rpc';
+function rpcUrl(){ return localStorage.getItem(RPC_KEY) || 'https://rpc.mainnet.chain.robinhood.com'; }
+async function rpcCall(method, params){ const r = await fetch(rpcUrl(), {method:'POST', headers:{'content-type':'application/json'}, body:JSON.stringify({jsonrpc:'2.0',id:1,method,params})});
+  const j = await r.json(); if (j.error) throw new Error(j.error.message||JSON.stringify(j.error)); return j.result; }
+const NAMES = {};
+async function nameOf(c){ if (c in NAMES) return NAMES[c]; try { const h = await rpcCall('eth_call',[{to:c,data:'0x06fdde03'},'latest']);
+  const n = parseInt(h.slice(130,194),16); let s=''; for(let i=0;i<n;i++) s+=String.fromCharCode(parseInt(h.substr(194+i*2,2),16)); NAMES[c]=decodeURIComponent(escape(s)); } catch(e){ NAMES[c]='?'; } return NAMES[c]; }
+function live(){
+  $('#view').innerHTML = `<div class="card"><b>What is minting right now</b> - read live from the chain in your browser, ranked by <b>real</b> wallets (recipients not on the bot list).
+   <div class="row" style="margin-top:8px"><label class="sub">RPC <input id="rpc" style="min-width:340px" value="${esc(rpcUrl())}"></label>
+   <label class="sub">last <select id="mins"><option>2</option><option selected>5</option><option>10</option></select> min</label>
+   <button class="act" id="go">Scan now</button><span id="st" class="sub"></span></div>
+   <div class="note">Use your own RPC if the public one is busy. Saved in this browser only. Before you mint anything: open the tx, check the contract is verified and the price is what you expect.</div></div><div id="lv"></div>`;
+  $('#go').onclick = async () => {
+    localStorage.setItem(RPC_KEY, $('#rpc').value.trim()); const L = await loadLook();
+    const T='0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef', Z='0x'+'0'.repeat(64);
+    try { $('#st').textContent='reading head...'; const H = parseInt(await rpcCall('eth_blockNumber',[]),16);
+      const span = Math.round(+$('#mins').value*60/0.1031); let logs=[];
+      for (let fr=H-span; fr<=H; fr+=2000){ $('#st').textContent=`reading blocks ${fr}...`;
+        logs = logs.concat(await rpcCall('eth_getLogs',[{fromBlock:'0x'+fr.toString(16),toBlock:'0x'+Math.min(fr+1999,H).toString(16),topics:[T,Z]}])); }
+      logs = logs.filter(l=>l.topics.length===4);
+      const C = {}; for (const l of logs){ const c=l.address.toLowerCase(); const to='0x'+l.topics[3].slice(26);
+        const x = C[c] ||= {n:0,to:{},tx:l.transactionHash,last:0}; x.n++; x.to[to]=(x.to[to]||0)+1; const b=parseInt(l.blockNumber,16); if(b>=x.last){x.last=b;x.tx=l.transactionHash;} }
+      let rows = Object.entries(C).map(([c,x])=>{ const ws=Object.keys(x.to); const bad=ws.filter(w=>{const t=(L.wallets[w]||[])[0]; return t==='CONFIRMED_PATTERN'||t==='LIKELY';});
+        const badN = bad.reduce((s,w)=>s+x.to[w],0); return {c, n:x.n, w:ws.length, real:ws.length-bad.length, bots:badN/x.n, tx:x.tx, ago:Math.round((H-x.last)*0.1031)}; });
+      rows.sort((a,b)=>b.real-a.real||b.n-a.n); rows=rows.slice(0,30);
+      $('#st').textContent='reading names...'; for (const r of rows) r.name = await nameOf(r.c);
+      $('#st').textContent=`${fmt(logs.length)} mints in ${Object.keys(C).length} collections · head ${H}`;
+      $('#lv').innerHTML = `<table><thead><tr><th>collection</th><th>minted</th><th>wallets</th><th>real wallets</th><th>to bots</th><th>last mint</th><th>copy the mint</th></tr></thead><tbody>${rows.map(r=>`<tr><td><b>${esc(r.name)}</b><br>${addrLink(r.c)}</td><td>${fmt(r.n)}</td><td>${fmt(r.w)}</td><td><b>${fmt(r.real)}</b></td><td><div class="bar"><i style="width:${r.bots*100}%"></i></div>${pct(r.bots)}</td><td>${r.ago}s ago</td><td><a href="${extx(r.tx)}" target="_blank" rel="noopener">latest mint tx</a></td></tr>`).join('')}</tbody></table>
+       <div class="note">"latest mint tx" -> Input data shows the exact function a real person called. High "to bots" = farmed drop; low real wallets with huge minted = one wallet/creator.</div>`;
+    } catch(e){ $('#st').textContent='RPC error: '+e.message+' - try another RPC'; }
+  };
+}
+function use(){
+  $('#view').innerHTML = `<div class="card"><b>Downloads</b> (refreshed by the repo's GitHub Action)<ul>
+   <li><a href="blocklist_confirmed_pattern.txt">blocklist_confirmed_pattern.txt</a> - safe to block (structural proof on-chain)</li>
+   <li><a href="blocklist_likely.txt">blocklist_likely.txt</a> - several signals; use with care</li>
+   <li><a href="master_list.csv">master_list.csv</a> - every wallet with tier, score, labels</li>
+   <li><a href="lookup.json">lookup.json</a> - machine-readable, for sites and bots</li></ul></div>
+   <div class="card"><b>Run it yourself</b> (Python 3.9+, no installs, no keys)<pre class="mono">git clone https://github.com/goodsmash/rh-mint-farm-watch
+cd rh-mint-farm-watch
+python rhwatch.py doctor                      # test RPCs
+python rhwatch.py live                        # what's minting now
+python rhwatch.py check --file entrants.txt --clean
+python rhwatch.py follow 0xWALLET             # what a wallet minted lately
+python rhwatch.py scan --hours 24             # full scan -> dashboard
+python rhwatch.py --rpc https://your-rpc live # any command, your own RPC</pre></div>
+   <div class="card"><b>For creators</b>: anti-farm mint contract + Bankr prompts in <a href="https://github.com/goodsmash/rh-mint-farm-watch/tree/main/contracts" target="_blank" rel="noopener">contracts/</a> and <a href="https://github.com/goodsmash/rh-mint-farm-watch/tree/main/skills" target="_blank" rel="noopener">skills/</a>.</div>`;
+}
+function defend(){
+  $('#view').innerHTML = `<div class="card"><b>What actually blocks these patterns (contract side)</b><table>
+  <tr><th>Pattern we see</th><th>Block</th><th>Cost to the farmer after</th></tr>
+  <tr><td>Operator mints to many wallets</td><td>Public mint always mints to <span class="mono">msg.sender</span>; no <span class="mono">to</span> param</td><td>each wallet must sign + pay its own gas</td></tr>
+  <tr><td>Contract / EIP-7702 batch minters</td><td><span class="mono">msg.sender == tx.origin</span> AND <span class="mono">msg.sender.code.length == 0</span></td><td>one tx per wallet, no batching</td></tr>
+  <tr><td>Fresh throwaways, mint & sweep to a sink</td><td>transfer cooldown after mint (e.g. 6–24h)</td><td>cannot flip during the hype window</td></tr>
+  <tr><td>Same-block swarms</td><td>per-block global cap + per-wallet block cooldown</td><td>spreads the farm out, humans get through</td></tr>
+  <tr><td>Everything above, at scale</td><td>EIP-712 signed mint pass from a human check (captcha / social / holder)</td><td>needs one human pass per wallet</td></tr>
+  <tr><td>Known farm wallets</td><td>pre-sale blocklist from <span class="mono">master_list.json</span> (CONFIRMED only)</td><td>new wallets needed (raises cost, not a wall)</td></tr>
+  </table><div class="note">Honest limit: on a 0.02 gwei chain a fresh wallet costs fractions of a cent. Per-wallet caps and blocklists are speed bumps. The signed pass + transfer cooldown are what change the economics.</div></div>`;
+}
+function render(){ document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===tab));
+  if(!win && !['live','lookup','use','defend'].includes(tab)){ $('#view').innerHTML='<div class="card">No scan data yet. Run: python rhwatch.py scan</div>'; return; }
+  ({live,overview,wallets,farms,ops,swarms,colls,lookup,defend,use})[tab](); }
+render();
+</script>
+</body>
+</html>

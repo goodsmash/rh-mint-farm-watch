@@ -1,0 +1,17 @@
+# raw scan cache (large, re-creatable); only report.json is published
+data/*/*.jsonl
+data/*/A_parts/
+data/*/*.done
+data/*/meta.json
+data/*.prev/
+*.log
+__pycache__/
+rhwatch.config.json
+*.clean.txt
+.env
+# foundry
+contracts/out/
+contracts/cache/
+contracts/lib/
+contracts/previews/*.svg
+contracts/broadcast/
