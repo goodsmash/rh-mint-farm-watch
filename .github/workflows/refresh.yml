@@ -21,6 +21,9 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 340
+    env:
+      RH_RPCS: ${{ secrets.RH_RPCS || 'https://rpc.mainnet.chain.robinhood.com,https://robinhood.drpc.org,https://rpc4663.drpc.org' }}
+      RH_LOGS_RPC: ${{ secrets.RH_LOGS_RPC || 'https://rpc.mainnet.chain.robinhood.com' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -33,15 +36,15 @@ jobs:
           elif [ "${{ github.event.schedule }}" = "41 4 * * 0" ]; then echo "h=168" >> $GITHUB_OUTPUT
           else echo "h=24" >> $GITHUB_OUTPUT; fi
       - name: rpc doctor
-        env:
-          RH_RPCS: ${{ secrets.RH_RPCS }}
-          RH_LOGS_RPC: ${{ secrets.RH_LOGS_RPC }}
         run: python rhwatch.py doctor
-      - name: scan
-        env:
-          RH_RPCS: ${{ secrets.RH_RPCS }}
-          RH_LOGS_RPC: ${{ secrets.RH_LOGS_RPC }}
-        run: python rhwatch.py scan --hours ${{ steps.w.outputs.h }}
+      - name: scan (retry on transient RPC)
+        run: |
+          python rhwatch.py doctor >/dev/null || true
+          for i in 1 2 3; do
+            python rhwatch.py scan --hours ${{ steps.w.outputs.h }} && break
+            echo "scan attempt $i failed; retrying in 30s"
+            sleep 30
+          done
       - name: commit
         run: |
           git config user.name "rhwatch-bot"
