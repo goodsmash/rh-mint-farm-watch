@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>RH Mint-Farm Watch v2 Market · GoodsMash RIGS community drop</title>
+<meta name="description" content="On-chain market tracker for Robinhood Chain. OpenSea sales, holders, whales, flags and ratings — read live from the chain.">
+<style>
+:root{
+  --bg:#0b0d10; --card:#13171c; --card2:#1a1f2a; --line:#232a33; --fg:#e6edf3; --mut:#8b98a5;
+  --acc:#ff6a1a; --red:#ff4d4f; --grn:#3fb950; --blu:#58a6ff; --yel:#f5b301;
+  --radius:12px; --mono:ui-monospace,SFMono-Regular,Consolas,monospace; --sans:system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--sans);background:var(--bg);color:var(--fg);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1280px;margin:0 auto;padding:16px}
+header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);margin-bottom:12px}
+header .brand{font-size:1.05rem;display:flex;align-items:center;gap:10px}
+header .brand b{color:var(--acc)}
+header .brand small{display:block;font-size:.78rem;color:var(--mut);font-family:var(--mono)}
+.hd-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.hd-row .sb label{font-size:.78rem;color:var(--mut);display:flex;align-items:center;gap:6px}
+.hd-row select,.hd-row input{background:var(--card2);border:1px solid var(--line);color:var(--fg);border-radius:8px;padding:8px 10px;font-size:.88rem;font-family:var(--mono);min-width:0}
+.hd-row select:focus,.hd-row input:focus{outline:2px solid var(--acc);border-color:transparent}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;border:1px solid var(--line);border-bottom:none;background:var(--card2);border-radius:12px 12px 0 0;padding:6px}
+.tabs button{background:transparent;border:none;color:var(--mut);padding:8px 14px;border-radius:9px;font-size:.86rem;cursor:pointer;font-family:var(--sans);transition:.15s}
+.tabs button:hover{color:var(--fg)}
+.tabs button.on{background:var(--acc);color:#111;font-weight:600}
+.tab{display:none;animation:fade .25s}
+.tab.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+.card{margin-bottom:12px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.card h3{font-size:.82rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);padding:10px 14px;margin:0;border-bottom:1px solid var(--line)}
+.card .body{padding:12px 14px}
+.kpi{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px}
+.kpi .b{flex:1 1 160px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.kpi .b .l{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}
+.kpi .b .v{font-size:1.25rem;font-weight:700;font-family:var(--mono);margin-top:2px}
+.kpi .b .s{font-size:.72rem;color:var(--mut)}
+table{width:100%;border-collapse:collapse;font-size:.8rem;font-family:var(--mono)}
+th,td{text-align:left;padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--card2);font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--mut);position:sticky;top:0}
+th .op,td .op{color:var(--mut);font-size:.7rem}
+tr:last-child td{border-bottom:none}
+.tag{display:inline-block;padding:2px 7px;border-radius:5px;font-size:.68rem;font-family:var(--mono);white-space:nowrap}
+.tag-good{background:rgba(63,185,80,.18);color:#3fb950}
+.tag-bad{background:rgba(255,77,79,.18);color:#ff4d4f}
+.tag-warn{background:rgba(245,179,1,.18);color:#b8860b}
+.tag-dim{background:rgba(139,152,165,.1);color:var(--mut)}
+.link{display:inline-block;background:var(--acc);color:#111;font-size:.68rem;font-family:var(--mono);padding:3px 7px;border-radius:5px;text-decoration:none;white-space:nowrap}
+.link:hover{background:#e55a0f}
+.img{display:block;border-radius:6px;max-width:100%;height:auto}
+.empty{color:var(--mut);text-align:center;padding:24px}
+.muted{color:var(--mut)}
+.loader{width:28px;height:28px;border:3px solid var(--line);border-top-color:var(--acc);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.foot{text-align:center;color:var(--mut);font-size:.75rem;padding:14px;border-top:1px solid var(--line);margin-top:12px}
+.instr{font-family:var(--mono);font-size:.72rem;background:var(--card2);border:1px dashed var(--line);border-radius:8px;padding:8px 10px;color:var(--mut);word-break:break-all}
+::-webkit-scrollbar{width:8px;height:8px} ::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><b>RH</b> Mint-Farm Watch <b>v2 Market</b></div>
+    <div class="sub">OpenSea-linked on-chain market view for Robinhood Chain (4663) · read-NO Keys · read-only</div>
+    <div class="hd-row">
+      <div class="sb">
+        <label for="chainSel">Chain</label>
+        <select id="chainSel">
+          <option value="robinhood" selected>Robinhood</option>
+          <option value="ethereum">Ethereum</option>
+          <option value="base">Base</option>
+          <option value="arbitrum">Arbitrum</option>
+          <option value="apechain">ApeChain</option>
+        </select>
+        <label for="windowSel">Window</label>
+        <select id="windowSel">
+          <option value="24" selected>24 h</option>
+          <option value="1">1 h</option>
+          <option value="6">6 h</option>
+          <option value="72">72 h</option>
+          <option value="7">7 d</option>
+        </select>
+        <label class="sub" id="rpcLabel">RPC: <span id="rpcName">mainnet</span></label>
+      </div>
+      <div class="sb" style="justify-content:flex-end">
+        <button id="refreshBtn" style="font-size:.78rem">↻ refresh</button>
+        <span class="muted" id="statusTxt" style="font-size:.72rem"></span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button data-tab="tab-market" class="active">📈 Market (OpenSea sales)</button>
+    <button data-tab="tab-trending">🔥 Trending</button>
+    <button data-tab="tab-whales">🐋 Whales & wash</button>
+    <button data-tab="tab-holders">👥 Holders</button>
+    <button data-tab="tab-flags">🚩 Flags & ratings</button>
+    <button data-tab="tab-about">ℹ️ About & links</button>
+  </nav>
+
+  <div class="tab active" id="tab-market">
+    <div class="kpi">
+      <div class="b"><div class="l">Sales</div><div class="v" id="mSales">—</div><div class="s" id="mSalesS">fills</div></div>
+      <div class="b"><div class="l">Volume $</div><div class="v" id="mVol">—</div><div class="s" id="mVolS">last 24 h</div></div>
+      <div class="b"><div class="l">Collections</div><div class="v" id="mColl">—</div></div>
+      <div class="b"><div class="l">Flagged sales</div><div class="v" id="mFlag">—</div><div class="s" id="mFlagS">wallets with a signal</div></div>
+    </div>
+    <div class="body" id="marketBody"><div class="loader"></div></div>
+  </div>
+
+  <div class="tab" id="tab-trending">
+    <div class="body" id="trendingBody"><div class="loader"></div></div>
+  </div>
+
+  <div class="tab" id="tab-whales">
+    <div class="body" id="whalesBody"><div class="loader"></div></div>
+  </div>
+
+  <div class="tab" id="tab-holders">
+    <div class="row" style="margin-bottom:10px">
+      <label for="collSel" style="margin-right:8px">Collection</label>
+      <select id="collSel"><option value="">select a collection…</option></select>
+      <label style="color:var(--mut);margin-right:10px">window</label>
+      <select id="hWin"><option value="24">24 h</option><option value="7">7 d</option><option value="1">7 d (all)</option></select>
+      <button id="loadHolderBtn" class="act">↻ load</button>
+    </div>
+    <div class="body" id="holdersBody"><div class="loader"></div></div>
+  </div>
+
+  <div class="tab" id="tab-flags">
+    <div class="card"><h3>🚩 Flags & ratings (evidence from past launches)</h3><div class="body" id="flagsBody"><div class="loader"></div></div></div>
+  </div>
+
+  <div class="tab" id="tab-about">
+    <div class="card"><h3>ℹ️ About & links</h3><div class="body">
+      <p class="muted" style="font-size:.82rem">Read-only on-chain market view for the Robinhood ecosystem. Every OpenSea sale is settled on-chain by Seaport — this page reads it straight from the chain, in your browser, with no API key and no upload.</p>
+      <div class="instr">OpenSea links: https://opensea.io/assets/{chain-slug}/{contractAddress}<br>
+Ethereum / Base / Arbitrum / ApeChain: market + holders (last 7 d). Bot tags exist only on Robinhood.</div>
+      <div class="instr" style="margin-top:8px">Preserved original — RH Mint-Farm Watch dashboard (12 tabs, RPC + blocklists): https://goodsmash.github.io/rh-mint-farm-watch/<br>
+GitHub: https://github.com/goodsmash/rh-mint-farm-watch<br>
+Master list: https://goodsmash.github.io/rh-mint-farm-watch/master_list.csv</div>
+      <p class="muted" style="font-size:.78rem">Flags = structural on-chain evidence (paid-for-mints, sweep, automated mints, machine timing) from the 24h scan. Read-only — no wallet connect, no signing, nothing of ours is confidential.</p>
+    </div></div>
+  </div>
+</div>
+<div class="foot">Reading live on-chain data · market engine: Seaport OrderFulfilled replay · nothing uploaded, no keys</div>
+
+<script src="market.js"></script>
+<script>
+(function(){
+  'use strict';
+  const $ = s => document.querySelector(s);
+  const $$ = s => document.querySelectorAll(s);
+  const tabBtn = id => document.querySelector(`button[data-tab="${id}"]`);
+  const tabs = ['tab-market','tab-trending','tab-whales','tab-holders','tab-flags','tab-about'];
+  $$('.tabs button').forEach(b => b.addEventListener('click', () => {
+    $$('.tabs button').forEach(x=>x.classList.remove('active'));
+    $$('.tab').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active'); $(b.dataset.tab).classList.add('active');
+  }));
+  const CHAIN = {
+    robinhood:{label:'Robinhood', href:(a)=>`https://opensea.io/assets/robinhood/${a}`},
+    ethereum:{label:'Ethereum', href:(a)=>`https://opensea.io/assets/ethereum/${a}`},
+    base:{label:'Base', href:(a)=>`https://opensea.io/assets/base/${a}`},
+    arbitrum:{label:'Arbitrum', href:(a)=>`https://opensea.io/assets/arbitrum/${a}`},
+    apechain:{label:'ApeChain', href:(a)=>`https://opensea.io/assets/apechain/${a}`} };
+  let chain = 'robinhood', win = 24, priceCache = new Map(), flagMap = new Map();
+  const RPCFALLBACK = ['https://rpc.mainnet.chain.robinhood.com','https://robinhood.drpc.org','https://rpc4663.drpc.org'];
+  async function loadPrices(){
+    const r = await fetch('https://api.coinbase.com/v2/prices/ETH-USD/spot').catch(()=>null);
+    if(!r) return;
+    const j = await r.json();
+    const eth = j ? +j.data.rate : 0;
+    priceCache.set('eth', eth); priceCache.set('usd', eth*1e6);
+  }
+  async function loadFlags(){
+    const base = 'https://goodsmash.github.io/rh-mint-farm-watch/';
+    const get = async p => { try{ const r=await fetch(base+p,{mode:'cors'}); return r.ok?await r.json():null; }catch(e){return null;} };
+    const strong = await get('flagged_strong.txt');
+    const mixed  = await get('flagged_mixed.txt');
+    flagMap = new Map();
+    (strong||[]).forEach(l=>{ const m=l.trim().match(/^(0x[0-9a-fA-F]{40})\s+(.*)$/); if(m) flagMap.set(m[1].toLowerCase(), {t:'CONFIRMED', raw:m[2]}); });
+    (mixed||[]).forEach(l=>{ const m=l.trim().match(/^(0x[0-9a-fA-F]{40})\s+(.*)$/); if(m && !flagMap.has(m[1].toLowerCase())) flagMap.set(m[1].toLowerCase(), {t:'MIXED', raw:m[2]}); });
+  }
+  async function loadMarket(){
+    const btn = $('#refreshBtn'); const onProg = (p,n)=>{ btn.disabled=true; btn.textContent='↻ scanning… '+Math.round(p*100)+'%'; };
+    const { head, from, sales, rawLogs } = await G.RHMarket.scanSales({ hours: win, toBlock: null, onProgress: onProg });
+    const prices = priceCache.get('eth') ? {eth: priceCache.get('eth')} : null;
+    const stats = G.RHMarket.salesStats(sales, prices);
+    const totalVol = stats.reduce((a,b)=>a+b.volume,0);
+    document.getElementById('mSales').textContent = sales.length;
+    document.getElementById('mVol').textContent = '$'+(totalVol||0).toLocaleString(undefined,{maximumFractionDigits:0});
+    document.getElementById('mColl').textContent = stats.length;
+    document.getElementById('mFlag').textContent = stats.filter(s=>s.washShare>0).length;
+    const body = $('#marketBody');
+    if(!stats.length){ body.innerHTML='<div class="empty">No Seaport sales in this window. Set your own RPC.</div>'; return; }
+    let rows = '';
+    for(const s of stats.slice(0,60)){
+      rows += `<tr>
+        <td><a class="link" href="${CHAIN[chain].href(s.collection)}">${CHAIN[chain].label}/${s.collection.slice(0,6)}…${s.collection.slice(-4)}</a></td>
+        <td class="mono">${s.collection.slice(0,8)}…${s.collection.slice(-6)}</td>
+        <td class="n">${s.sales.toLocaleString()}</td>
+        <td class="n">$${s.volume.toLocaleString(undefined,{maximumFractionDigits:0})}</td>
+        <td class="n">${s.buyers.toLocaleString()}</td>
+        <td class="n">${s.sellers.toLocaleString()}</td>
+        <td class="n">${s.floorish.toFixed(4)}</td>
+        <td class="n">${s.median.toFixed(4)}</td>
+        <td class="n">${s.washShare>0.3?'<span class="tag tag-warn">wash</span>':(s.washShare>0?'<span class="tag tag-dim">low</span>':'<span class="tag tag-good">clean</span>')}</td>
+      </tr>`;
+    }
+    body.innerHTML = rows || '<div class="empty">No sales to display.</div>';
+  }
+  async function loadTrending(){
+    const btn = $('#refreshBtn'); btn.disabled=true;
+    const onProg = (p,n)=>{ btn.textContent='↻ trending… '+Math.round(p*100)+'%'; };
+    const { head, from, sales } = await G.RHMarket.scanSales({ hours: 1, toBlock: null, onProgress: onProg });
+    const prices = priceCache.get('eth') ? {eth: priceCache.get('eth')} : null;
+    const stats = G.RHMarket.salesStats(sales, prices);
+    const last24 = await G.RHMarket.scanSales({ hours: 24, toBlock: null });
+    const s24 = G.RHMarket.salesStats(last24.sales, prices);
+    const avg24 = s24.reduce((a,b)=>a+b.volume,0)/24;
+    const rows = '';
+    for(const s of stats.slice(0,40)){
+      const ratio = avg24>0 ? Math.min(9, s.volume/avg24) : 0;
+      const hot = s.volume > avg24*1.5;
+      rows += `<div class="card" style="margin-top:8px">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <a class="link" href="${CHAIN[chain].href(s.collection)}">${CHAIN[chain].label}/${s.collection.slice(0,6)}…${s.collection.slice(-4)}</a>
+          <span class="tag ${hot?'tag-warn':'tag-dim'}">${hot?'🔥 hot':'—'}</span>
+        </div>
+        <div style="font-family:var(--mono);font-size:.74rem;color:var(--mut);">${s.sales} sales · $${s.volume.toFixed(0)} · ratio ${ratio.toFixed(2)}x</div></div>`;
+    }
+    $('#trendingBody').innerHTML = rows || '<div class="empty">No trending data.</div>';
+  }
+  async function loadWhales(){
+    const prices = priceCache.get('eth') ? {eth: priceCache.get('eth')} : null;
+    const { head, from, sales } = await G.RHMarket.scanSales({ hours: win, toBlock: null });
+    const stats = G.RHMarket.salesStats(sales, prices);
+    let bal = new Map();
+    for(const s of sales){ bal.set(s.buyer,(bal.get(s.buyer)||0)+1); bal.set(s.seller,(bal.get(s.seller)||0)+1); }
+    const topBuyer = [...bal.entries()].sort((a,b)=>b[1]-a[1]).slice(0,6);
+    const topSeller = [...bal.entries()].sort((a,b)=>b[1]-a[1]).slice(0,6);
+    let rows = '';
+    rows += `<div class="card" style="margin-bottom:12px"><h3>Biggest buyers</h3><div class="body"><table><tr><th>#</th><th>wallet</th><th># sales</th><th>OpenSea</th></tr>`;
+    for(let i=0;i<topBuyer.length;i++){
+      const [w,n] = topBuyer[i];
+      rows += `<tr><td>${i+1}</td><td class="mono">${w.slice(0,6)}…${w.slice(-4)}</td><td class="n">${n}</td><td><a class="link" href="${CHAIN[chain].href(w)}">${CHAIN[chain].label}/${w.slice(0,6)}…</a></td></tr>`;
+    }
+    rows += `</table></div></div>`;
+    rows += `<div class="card" style="margin-bottom:12px"><h3>Biggest sellers</h3><div class="body"><table><tr><th>#</th><th>wallet</th><th># sales</th><th>OpenSea</th></tr>`;
+    for(let i=0;i<topSeller.length;i++){
+      const [w,n] = topSeller[i];
+      rows += `<tr><td>${i+1}</td><td class="mono">${w.slice(0,6)}…${w.slice(-4)}</td><td class="n">${n}</td><td><a class="link" href="${CHAIN[chain].href(w)}">${CHAIN[chain].label}/${w.slice(0,6)}…</a></td></tr>`;
+    }
+    rows += `</table></div></div>`;
+    rows += `<div class="card"><h3>Wash-trade pairs (@3+ turns)</h3><div class="body"><table><tr><th>#</th><th>pair</th><th>turns</th></tr>`;
+    const wash = [];
+    for(const s of stats){ for(const [k,n] of s.pairs){ if(n>=3){ const [a,b]=k.split('|'); wash.push([a,b,bal.get(a)||0,bal.get(b)||0,n]); } } }
+    const washPairs = wash.sort((x,y)=>y[2]-x[2]).slice(0,12);
+    for(const [a,b,_p,n] of washPairs){
+      rows += `<tr><td class="n">#</td><td class="mono"><a class="link" href="${CHAIN[chain].href(a)}">${a.slice(0,6)}…${a.slice(-4)}</a> ↔ <a class="link" href="${CHAIN[chain].href(b)}">${b.slice(0,6)}…${b.slice(-4)}</a></td><td class="n">${n}</td></tr>`;
+    }
+    rows += `</table></div></div>`;
+    $('#whalesBody').innerHTML = rows || '<div class="empty">No whales data.</div>';
+  }
+  async function loadHolders(){
+    const coll = $('#collSel').value; if(!coll){ $('#holdersBody').innerHTML='<div class="empty">Pick a collection.</div>'; return; }
+    const onProg = (p,n)=>{ $('#loadHolderBtn').textContent = 'loading… '+Math.round(p*100)+'%'; };
+    const h = await G.RHMarket.holders(coll, { is1155:false, toBlock: null, fromBlock:0, onProgress:onProg });
+    const st = G.RHMarket.holderStats(h, flagMap);
+    const flaggedK = new Set(); for(const [a,v] of flagMap){ if(v.t==='CONFIRMED') flaggedK.add(a); }
+    const flaggedUnits = st.top.filter(x=>flaggedK.has(x[0])).reduce((s,x)=>s+x[1],0);
+    let rows = `<div class="kpi" style="margin-bottom:10px">
+      <div class="b"><div class="l">Holders</div><div class="v">${st.holders}</div></div>
+      <div class="b"><div class="l">Flagged wallets</div><div class="v">${st.flaggedHolders}</div></div>
+      <div class="b"><div class="l">Gini</div><div class="v">${st.gini.toFixed(3)}</div></div>
+      <div class="b"><div class="l">Top10 share</div><div class="v">${(st.top10Share*100).toFixed(1)}%</div></div>
+    </div><table><tr><th>holder</th><th>units</th><th>first seen</th><th>flag</th></tr>`;
+    for(const [a,n] of st.top.slice(0,40)){
+      const f = flagMap.get(a.toLowerCase());
+      rows += `<tr><td class="mono">${a.slice(0,6)}…${a.slice(-4)}</td>
+        <td class="n">${n.toLocaleString()}</td>
+        <td class="n">${h.firstSeen.get(a)?'…':'-'}</td>
+        <td>${f?(f.t==='CONFIRMED'?'<span class="tag tag-bad">CONFIRMED</span>':'<span class="tag tag-warn">WATCH</span>'):'<span class="tag tag-dim">—</span>'}</td></tr>`;
+    }
+    rows += `</table><p class="muted" style="font-size:.74rem">Flagged units ${flaggedUnits.toLocaleString()} / ${st.units.toLocaleString()}</p>`;
+    $('#holdersBody').innerHTML = rows || '<div class="empty">No holders.</div>';
+  }
+  async function loadFlags(){
+    const body = $('#flagsBody');
+    const evidence = [
+      {addr:'0x3e19804e41b21be83a6f3566d283b8f5fb48a0c1', t:'CONFIRMED', l:'seeps 120k ETH → 93 sinks', s:'paid for 14 other wallets + sweep'},
+      {addr:'0x7ff2cb3cf1289b7b5c93bcc6b9946e60f9a5047c', t:'CONFIRMED', l:'sprayed 316 collections', s:'multi-drop, 1,384 mints'},
+      {addr:'0x98c716626d293bb219db44c980e0d441b3cdb8cf', t:'CONFIRMED', l:'farbink assembly', s:'collector → 2 sinks'},
+      {addr:'0xd096dc016e0178380c0d8e14bcda642bb75fcc25', t:'CONFIRMED', l:'0x98c7 … user farm', s:'paid 9 others, automated mints'}
+    ];
+    let rows = '';
+    for(const v of evidence){
+      rows += `<div class="card" style="margin-top:8px">
+        <div style="display:flex;align-items:center;gap:10px"><span class="tag tag-bad">${v.t}</span>
+          <span style="color:var(--mut);font-size:.74rem">${v.l}</span></div>
+        <div style="font-family:var(--mono);font-size:.74rem">${v.s} · <a class="link" href="https://robinhoodchain.blockscout.com/address/${v.addr}" target="_blank" rel="noopener">${v.addr.slice(0,6)}…${v.addr.slice(-4)}</a></div></div>`;
+    }
+    rows += `<p class="muted" style="font-size:.76rem">Flags = structural on-chain evidence from the 24h scan (paid-for-mints, sweep, automated mints, machine timing). Read-only.</p>`;
+    body.innerHTML = rows || '<div class="empty">No launch flags yet.</div>';
+  }
+  async function init(){
+    await loadPrices();
+    await loadFlags();
+    const { head, from, sales } = await G.RHMarket.scanSales({ hours: 24, toBlock: null });
+    const cols = new Set(sales.map(s=>s.collection));
+    const sel = $('#collSel');
+    cols.forEach(c=>{ const o=document.createElement('option'); o.value=c; o.textContent=c.slice(0,14); sel.appendChild(o); });
+    $('#refreshBtn').addEventListener('click', async ()=>{
+      win = +$('#windowSel').value;
+      await Promise.all([loadMarket(), loadTrending(), loadWhales(), loadFlags()]);
+    });
+    $('#windowSel').addEventListener('change', e=>{ win=+e.target.value; loadMarket(); loadTrending(); loadWhales(); });
+    $('#collSel').addEventListener('change', ()=>$('#loadHolderBtn').textContent='load');
+    $('#loadHolderBtn').addEventListener('click', loadHolders);
+    await Promise.all([loadMarket(), loadTrending(), loadWhales(), loadFlags()]);
+  }
+  init().catch(e=>{ document.getElementById('statusTxt').textContent='error: '+e.message; });
+})();
+</script>
+</body>
+</html>
