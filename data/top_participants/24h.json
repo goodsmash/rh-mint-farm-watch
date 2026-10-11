@@ -1,0 +1,6051 @@
+{
+ "window": "24h",
+ "generated": "2026-10-11 08:23:28",
+ "total_collections_scanned": 300,
+ "top100": [
+  {
+   "rank": 1,
+   "contract": "0x58daec3116aae6d93017baaea7749052e8a04fa7",
+   "name": "Uniswap v4 Positions NFT",
+   "minted": 14859,
+   "recipients": 4349,
+   "operators": 499,
+   "flagged_share": 0.099,
+   "hours_active": 23.99,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x88cf4a2a954a21736ad1bb007c67066d6a5e98cb",
+     "nfts": 283,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7777a56aeb78e5cd4a62190271f48722aae28888",
+     "nfts": 248,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x136ae1c07782044e56f515b4e52c6044d59038d7",
+     "nfts": 230,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x83551a233f6d7b3cb4defbf55abfd887c6811ce4",
+     "nfts": 229,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0a38457ec4b7074b40d7ea06cc002733b45b9989",
+     "nfts": 200,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x17d4be6dd6e3dfeba5deb44d94cff765a065752e",
+     "nfts": 200,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc216bfa5da000965e820845c32e6fd88db275743",
+     "nfts": 166,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8f4282a9fdf92b065d68bdbcea8669d682e2f19c",
+     "nfts": 152,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 2,
+   "contract": "0xd7c8c61c887da615f3bd5ec1ef58c1ea4257459e",
+   "name": "CLAYMO",
+   "minted": 5555,
+   "recipients": 2783,
+   "operators": 466,
+   "flagged_share": 0.155,
+   "hours_active": 0.11,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x204a75265d955b9532e378b00efa84956495e800",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6a6a115a09a0136ed61dd3bbf8ced9b7654c06cd",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x010dd13b588a806c1f0289317e18368516c8df35",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9971d2ccc3f3fc435ff2124f7cf8930952db3bba",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xbaa46f3cc595711255f52da68fa53e7a41ef26d2",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xedec4505cfac8e73bb73afcb311411d48f08b56e",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3fd3f735105a9e755faf07938b904e2d28951c7e",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb44afc3facc363da5222bf5777ca36d70c14e6a4",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 3,
+   "contract": "0xc2ce2497df2a4054847ee615659b2c3ec0af39eb",
+   "name": "Tickergeist",
+   "minted": 3333,
+   "recipients": 2205,
+   "operators": 393,
+   "flagged_share": 0.112,
+   "hours_active": 1.34,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5b6c16a960f6e7b1603b3d4c420e0c0a5f6e2afb",
+     "nfts": 21,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9fe3e8a1ea46aaa2d1c2a7d332dc7fa56aff2d0c",
+     "nfts": 20,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe9463472311a31a398420e6befa019aae9b54bfe",
+     "nfts": 20,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5bc1e58ed678ad7979da0c08aba8a04caafe5601",
+     "nfts": 20,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x047cdb175183d4a5f95d7924ddb08d8624ba7b3c",
+     "nfts": 18,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1df79554ffcceb881744f0f2794866f8da66555a",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xbd6239c56a7127cd583b10ed460c4e73bc91b866",
+     "nfts": 9,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb5743a1cf2380234f28487349a93b39e03914156",
+     "nfts": 9,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 4,
+   "contract": "0xc9691a47f2e5ce2d22b8b64dcd3f74b1b7b8e908",
+   "name": "CHROMAFORM",
+   "minted": 1679,
+   "recipients": 1669,
+   "operators": 293,
+   "flagged_share": 0.006,
+   "hours_active": 1.97,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x83aa6e4610a500e72ad701bf7b90841557c9b2b7",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x96920059cbf706de7f97302fd65949fe754d3a29",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf868c9378d868ce5fa97fc2096575630d57a02fd",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe4d1be270bb202e0b650b2acf80d0dc71e042793",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcbf833aacdb258c668352ae5a6871fd2f3b23291",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa970131532d64ca1243a160da21d27c6c1cec00e",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdc2f1a9ef5e90f4fda898b2a4f5f3c76e1ec6c3a",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x670f0304beb0361ee2162fb71b81732d3564672b",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 5,
+   "contract": "0xd55c69051e1af2db948ac1a541c6fee70b927af9",
+   "name": "BEASTSIDE",
+   "minted": 4444,
+   "recipients": 1535,
+   "operators": 629,
+   "flagged_share": 0.248,
+   "hours_active": 0.85,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9680ca29575e88a741119e0ae17f21d8bc729eda",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x87c89732c3a3d28937bf47fb835ae188b25341a1",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc187ce2f538006c35629c721fea1cb6c0f6f1234",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdcdd7a6c6d51189301252db2bf0cf2315f42ebfa",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x34b467d9bfa7b1319c48c3bc44de161ae404f2be",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0e24fee510b4dbd41d7691a15db1abee719d290f",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xac5ad29d16dc3fea2200585247991ae896814d39",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x26e5448c94cb478fa813de3d01952410620c17cb",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 6,
+   "contract": "0xea4bf31a0d94139acedc52c96df936fcf4b7ff11",
+   "name": "LIME HOOD PUNK",
+   "minted": 2085,
+   "recipients": 1396,
+   "operators": 82,
+   "flagged_share": 0.011,
+   "hours_active": 14.08,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8e80a50e4ad76cc6bfa66232c826dbb2593ec7e8",
+     "nfts": 37,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb31d732de7c09276334135297298036cddad970a",
+     "nfts": 35,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xad03a5676a21cb4b0e8a0eb4901a0e9f26c2f687",
+     "nfts": 35,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc27413d37376926a6b41b60cedb1093d13341aa9",
+     "nfts": 27,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd510c0d9f1c543c11b5a2c685a9b715fe98ef1c2",
+     "nfts": 21,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5ce06bce23e80a04cd1b2ae6470f477ac2a542bf",
+     "nfts": 14,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x259eb093fc06c30eb09025e2a5236470fb559b1a",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6434b81a1ad599fbefa22ce5d3ae9617b0f76ec6",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 7,
+   "contract": "0xa302b7eff4ee4400cfefd98bf114a0aa983c95f6",
+   "name": "SpawnTEK Editions",
+   "minted": 1396,
+   "recipients": 1396,
+   "operators": 1,
+   "flagged_share": 0.011,
+   "hours_active": 0.1,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6e4b30e6ab272a221c9d63b2570b17073a69d958",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1dcfc1970c138b6a05c2ada5bb3c2c6730f319dd",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xeb5add951d96d552e880849acdaa7cf82b886681",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2d8af1364128f191dd42e9c0a44d0906f731b97f",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe35ee3a8a54aade7635cccf80933d93c033fbf6a",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x17412b2b513584c382e4e8dc34fc776a41395636",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa67504bbcaa20d4e882c709923062e2747dad790",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcb610336e847dde55c319ed8513ed8601a67f719",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 8,
+   "contract": "0x1a21164b5ada9146b3a60f699439ed06fc378185",
+   "name": "Zumi",
+   "minted": 3333,
+   "recipients": 1347,
+   "operators": 189,
+   "flagged_share": 0.094,
+   "hours_active": 3.29,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf2fb6d012ca95d70b2515614583e9a6bb5667cdb",
+     "nfts": 52,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x27dc050eaf6861d74d5dbfd723b170730b9df71b",
+     "nfts": 52,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe69723f44b908189b08f14977933659871a800b6",
+     "nfts": 52,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x03879da9151af28d8aa88a407d29473086b03f35",
+     "nfts": 50,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdd0ebda7a0cbc63157df1449cbb6aad515bca0fa",
+     "nfts": 50,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9e5983fe826096e968fa4f14055db32d0dbe880b",
+     "nfts": 50,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x350501b10ba803d80937768afa9e3d14eb605f86",
+     "nfts": 37,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x26e5448c94cb478fa813de3d01952410620c17cb",
+     "nfts": 30,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 9,
+   "contract": "0x0835d5ef2e731ab39c900403bc89a71509098238",
+   "name": "Dancing Bear#",
+   "minted": 4863,
+   "recipients": 1186,
+   "operators": 404,
+   "flagged_share": 0.3,
+   "hours_active": 11.0,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x889de4ba675f972078a9ed334b506f9b8ce72889",
+     "nfts": 45,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x259eb093fc06c30eb09025e2a5236470fb559b1a",
+     "nfts": 30,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8a7cc50866ca988c280e74efd6ef89f4b45fd57d",
+     "nfts": 30,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2ecd271c9718ee9e93f5fd2d8920840958b44285",
+     "nfts": 15,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x18c708805f687ae5d4fbe7c2e8657ad61633569f",
+     "nfts": 15,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd12f9241baa16a05d8f8d12863daaaf6679ed9eb",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x22f7231183a3a67b14cad0b2eff6d422629ea837",
+     "nfts": 8,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x722ffa423cce95953d97c9c4a2ac0049e70f0ee7",
+     "nfts": 8,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 10,
+   "contract": "0x9c5bbef152a41cea1d67b85b1b53684e2721b57a",
+   "name": "Calcium Cult",
+   "minted": 3333,
+   "recipients": 1117,
+   "operators": 247,
+   "flagged_share": 0.061,
+   "hours_active": 3.11,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9c4ab0ec83cf8d40f4da73328b65eeb014d9637f",
+     "nfts": 44,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5e84a4bba53d563438c1f4020f8d9d7d89499999",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1a751188343bee997ff2132f5454e0b5da477705",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x546a0e7c0e7785aafac360b865a7f08151d50f4f",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb61bb03cdc0b6a4134338f875cd527d4a4aa2bdb",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x19310357eeb9b5af955bbd8ff639e65172e2995b",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x454dc25c9dcc5090ffccd8678736ecd9e2555b35",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x733ab4fecce45bb925c499a9fc91982740697701",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 11,
+   "contract": "0x7f9c16aedaa8c90cb9583971dcbb090df0d79d01",
+   "name": "ON CHAIN PIGGIES",
+   "minted": 1111,
+   "recipients": 1101,
+   "operators": 192,
+   "flagged_share": 0.304,
+   "hours_active": 0.07,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x19b46b0c7e396a970936d2c0df4e8ae6997d17e9",
+     "nfts": 11,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0f4dd5c14d716172aa2bac197dfcd2e23a75bce8",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x76ba84356c1d42123a04eb2a10c6a06242514cf2",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe4d1be270bb202e0b650b2acf80d0dc71e042793",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x271398d254df10452f2150a9dfc988a674d6649c",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xafdbff3304187063075b2919ae946c1baa1284ba",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xbe9182b8f1ea82ec8dda9debf1328d6d1e0b78d7",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7a9f69cfec824dd865349622a43c65a4622ff074",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 12,
+   "contract": "0x10d17ea142a509e0dce4b1dc7400716bbd9bf475",
+   "name": "Hollywood Hills",
+   "minted": 3000,
+   "recipients": 1001,
+   "operators": 318,
+   "flagged_share": 0.435,
+   "hours_active": 0.15,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4c464ef35202c0fecaf9c4eecf20b6b4f7d44ce0",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcc997b58db9c2b0d6c71b90e2434f8f73275e34c",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2f2ca0ce4fe645530e49feeca51183367b8c6313",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xea60250e3d4aba43c257cc6a3c32ace887ff6a27",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe4b7b66a6d53f14a4655ee1cf3a16dbf88cc62ee",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x800d0ff5318ed254bdcb11a5c21282b5c9b6ab78",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x19310357eeb9b5af955bbd8ff639e65172e2995b",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x454dc25c9dcc5090ffccd8678736ecd9e2555b35",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 13,
+   "contract": "0xbb22de4a5e38bb81589b7e476d1bebeb04ec113c",
+   "name": "Ryfinite Passport Pass",
+   "minted": 3878,
+   "recipients": 981,
+   "operators": 272,
+   "flagged_share": 0.423,
+   "hours_active": 0.5,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xaecf2ad1de0085481b52a645766fcc020dcce488",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcc997b58db9c2b0d6c71b90e2434f8f73275e34c",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x66003b1adb33f45a77ddd41d0d4c1fceb8d49f93",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc187ce2f538006c35629c721fea1cb6c0f6f1234",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x58d7f93155b35dee2b1fe46b1dcec1a06ba85283",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2ffd046c5a33968ec21cefa0bdbc97d00ae35370",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x145c0edde6f970ad3e605ae77d04a8db4e86b3db",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcc242bb982851a1e918d2ad78935fa3416d7c5dc",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 14,
+   "contract": "0x22d331ffcfe74205d6a100c4aefccfb839dc9cb5",
+   "name": "Halloween Drop",
+   "minted": 9493,
+   "recipients": 952,
+   "operators": 359,
+   "flagged_share": 0.453,
+   "hours_active": 15.99,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc0d043215a5b096314737ebfc02afd1a461dbcd8",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x59bde4bdf3a2a1346db47edb9c6eaa6fee71d44b",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x96afe44bad01a5d5db560c7801f4ee963d2cc7e7",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3dc7af8afa83eb9d6f02f8cc3a66100c29ac72a5",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xbacd551d84e3ff7ffaeeffb2f4365ed61911025a",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3a2e7b870546fee5e8c785a93b0357c136daaef5",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xde71ede995d09e0d5197eed94b122210fbea9e87",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xba48bcc16f500ed532660ef3236e99bd181685cb",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 15,
+   "contract": "0x9d15ebf724fe910638fbf3527077f607cb8f823a",
+   "name": "Sleepytoons ",
+   "minted": 2564,
+   "recipients": 846,
+   "operators": 164,
+   "flagged_share": 0.435,
+   "hours_active": 7.51,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x046b143d19e7e0b0e1446c02ade51a0ac3e5a762",
+     "nfts": 27,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x175f31e484601271cd7a018f1d0953baf15ccdf3",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd22d0ffb48286a1268d0770064644bf3b2ea99d2",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5dc12c60885934e9a08cba9cfeee9b9611e97290",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x65b334390adbe77ef6d3d4e24e869813ba22b5ff",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x696f7cffeeaf2b2a816f18960e7f521fa6fc296c",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcc997b58db9c2b0d6c71b90e2434f8f73275e34c",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x66003b1adb33f45a77ddd41d0d4c1fceb8d49f93",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 16,
+   "contract": "0x3878cc40894e5c137574962848dc255d57cc654e",
+   "name": "Skonk Cats",
+   "minted": 1847,
+   "recipients": 828,
+   "operators": 311,
+   "flagged_share": 0.158,
+   "hours_active": 21.95,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa749b21cc2f15deb9d2ad371e2494c69a0b1eff4",
+     "nfts": 98,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcf66d3e2c7a269e2cc30375548a29ecddc38f5c9",
+     "nfts": 32,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8ad557e25766c99e28e6fe8e3e0fbf87e452b23d",
+     "nfts": 12,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x128b4d9a062d137710f362d2b5c0b81e2726cc40",
+     "nfts": 12,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xac9776aacafb22243b5b32027f2519973de4873d",
+     "nfts": 12,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x81a496b3fafe9522efa3b3207db9a0496ca0a13e",
+     "nfts": 11,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1f9c55fbbc574fa737c77eb43e4e5750017c98df",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x55653fa68699131cc11b7ef49042015c6f177b5f",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 17,
+   "contract": "0x5cf4ecb0c4412963b5ee7d255bb28486df03f5aa",
+   "name": "Little Guys",
+   "minted": 1369,
+   "recipients": 813,
+   "operators": 124,
+   "flagged_share": 0.063,
+   "hours_active": 3.43,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xab443a4fb5c3290d5b4a953290a31e4e1970007e",
+     "nfts": 31,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd7406b445dd2888735082150ca42f921d957806c",
+     "nfts": 31,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x867e9c1ac7ec396581c90231d6289263fbd32354",
+     "nfts": 31,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x439c56e0b02e53e6d9c7ed3c6b8d171eaca70ae2",
+     "nfts": 31,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xaf7989647fe5165fb0bcecd3bd9f9852aefcfe0b",
+     "nfts": 31,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4362984b3f59d02352da73dd812ff16786a75346",
+     "nfts": 31,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1499df8d47fa9ac16829af9ee7f81f507d3e8d65",
+     "nfts": 31,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb799ecf54557a2d51d8861cb052114b413a7c995",
+     "nfts": 30,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 18,
+   "contract": "0xaa84edbdbb28d69de495d949ef1d79e3da6080c9",
+   "name": "Hooja",
+   "minted": 983,
+   "recipients": 799,
+   "operators": 1,
+   "flagged_share": 0,
+   "hours_active": 0.64,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1f00b89f92990b8b3a1708a59e11397dc5af0364",
+     "nfts": 9,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x162af4fd4d2f2d3a721aeee22e3cbb640f23735a",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x46cddbd494d7c031948497f0ae638c2bdf604824",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8d42388603970610302d608e81b8c06224f0de7f",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x63f42bfc17b6ff3a7f487c406b8e006d0d4970c3",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf56345338cb4cddaf915ebef3bfde63e70fe3053",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7171e64e979265aed6588577d1c6b60a701d7866",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4efb3e7032d422fa08c8ea07c93001e65dc21271",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 19,
+   "contract": "0x3062c59fd429f36abcee96090c02cb8c2012e850",
+   "name": "Rainbow Hoodie",
+   "minted": 4040,
+   "recipients": 772,
+   "operators": 349,
+   "flagged_share": 0.414,
+   "hours_active": 1.62,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1cfdb777e7599b21ab727c2539e1bbedf4ffff8f",
+     "nfts": 1600,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdce6fb43fd27d6ae88041477e0dd23d244adefac",
+     "nfts": 8,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8da88d407606e0fc437f0b88e5944c01a484814e",
+     "nfts": 8,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x59175881c0ba485683aaa22a247fe07def3d9349",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x160c2deba0e58cfbf42d1d56cfa61f263c6de28a",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xbd49ef62f5226f3ed66791650f28e8363a62a462",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcc997b58db9c2b0d6c71b90e2434f8f73275e34c",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2b49eb7586f1f64677c57e18f8f6acfc9ab1be91",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 20,
+   "contract": "0x35e3bee6d765828f7cd7740f40cbb99e01c26f8d",
+   "name": "X-Bounties",
+   "minted": 863,
+   "recipients": 698,
+   "operators": 129,
+   "flagged_share": 0.183,
+   "hours_active": 21.93,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0a37e7683b4086bb8bec6a5e58df3fbcf77d5493",
+     "nfts": 49,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc12e3657ce2ede7fae1d6f5a83b386f6a630fd18",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5af54002d113059b28d98af232bce5d15c2a89db",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x739f22a55d729fe3a64909acbf90821cfd6d06aa",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe3264cd2cd9d7e4b8d1f17cc7c885446c94a9028",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x572ddbf21e0ee873494173963ffdd4df4ac519ca",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1695a7c52ee69aaf222326fe7ff3f54333b282b1",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9cda5d20c2fc8d0e25fd53f9542162c48c61309e",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 21,
+   "contract": "0xaa522a5319288203ced97d1ecc22d715deaca6c1",
+   "name": "Pixel Chibi Crew",
+   "minted": 1326,
+   "recipients": 684,
+   "operators": 175,
+   "flagged_share": 0.28,
+   "hours_active": 18.04,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa44460739e40c95795c66c283539dfc8670de03b",
+     "nfts": 75,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa2d56ece135643864841a904231f107fc4d61cd4",
+     "nfts": 11,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x736eaeeeefe7008afd10d8dfab66cb3432fc726d",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x604f081d66d33551e3c2b29bd3df2c6bdadf89ad",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xba0fba22cde8695858fb0649368eec39ec4cdb7e",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x43a8c1648b27e9e31f2e52e509a5b7dfeb6dd22d",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe7b03b580beee0770e22181df63dc0ed72da31f1",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4045e587ff07128417a66f53c5918c8a74d229e4",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 22,
+   "contract": "0xe288fd1e561e64f977edf91c71bfadce1257df85",
+   "name": "STREET CATS",
+   "minted": 696,
+   "recipients": 677,
+   "operators": 77,
+   "flagged_share": 0.272,
+   "hours_active": 0.09,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xfad201270f90fbef533377a8518accc5d68ee050",
+     "nfts": 20,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4a4a4003c06171860701cd9ba34e0a2d9ce3b283",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7f2ebea59a65c1319149023c6466a04217de9ba3",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6584e83aa0d6653b26bb65a33c7c880125f254b7",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5a43efa836794896c391d08e7c8deff8ab347d8a",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf16262a266e5afd21e450c2830ab99f80a3c2e3a",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xfca40421ff659a2bdb08e906d38c8edaf57df979",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xca370c4079cc62674dee686d3d5d9f10db46e612",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 23,
+   "contract": "0x26985ec72684f4eaf8183cecb9c4f2a8208897d9",
+   "name": "Goat Morning Goat Night",
+   "minted": 888,
+   "recipients": 670,
+   "operators": 166,
+   "flagged_share": 0.399,
+   "hours_active": 2.32,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x178e10437984ff4ca98f8c938abab4b9baea4248",
+     "nfts": 88,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1695a7c52ee69aaf222326fe7ff3f54333b282b1",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdcce9061526e356715e2216bf0eb59f2d5c2d426",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa454966545ce0d3abe725ffc9add64c2c99239a7",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x712ae8e849b8153a3f5ac866b27c92e4543b680d",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x426c8fe4c2d8b2c272b72c21d630015a1c1d31f7",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8ca67c839444dca88620d53c314bd373802b1944",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3d18c67261e33c069e4d48d4a837be44a9b23c23",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 24,
+   "contract": "0xfee954d43e064dffe4a070037a104897257f563e",
+   "name": "Planet Bot",
+   "minted": 939,
+   "recipients": 648,
+   "operators": 142,
+   "flagged_share": 0.508,
+   "hours_active": 15.93,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdefa34513df8268bad0ca68508f011b44612c201",
+     "nfts": 292,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xafed89f37b71126f7c1c5479e437845fbf2ec33e",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x18825f6bf6abf1b8e50d39262a64cc407bc61bbe",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd0eb7c2c21d02a0644b0fb666e937beeb7aa300f",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1e1ddb6510b6cc0d68ec5da86f94449a37fbc263",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7700c3651abbd0010d07b8746c0dae943d7cec9f",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4103797ffbcc91e2e21bc309f8e6a8c1be2ba1bf",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x19310357eeb9b5af955bbd8ff639e65172e2995b",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 25,
+   "contract": "0x73991a25c818bf1f1128deaab1492d45638de0d3",
+   "name": "Uniswap V3 Positions NFT-V1",
+   "minted": 2530,
+   "recipients": 631,
+   "operators": 58,
+   "flagged_share": 0.442,
+   "hours_active": 23.99,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1195c074f898b7644ba732407619c9804dfe6dce",
+     "nfts": 824,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc216bfa5da000965e820845c32e6fd88db275743",
+     "nfts": 230,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb4acbc082b5e7ded571c98ee4257778a9d784b36",
+     "nfts": 118,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x83551a233f6d7b3cb4defbf55abfd887c6811ce4",
+     "nfts": 105,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6ed60864fb8fb610a65af5d16cef272548bc64d6",
+     "nfts": 60,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0affd771aa623b7479f8fc83c02ea21349f7f77e",
+     "nfts": 41,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8b0aa46dde02d1eddec0160d0584ba2a77c6025a",
+     "nfts": 32,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7492e84e47c75dfade1af3fb8b99f7dd627d2488",
+     "nfts": 30,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 26,
+   "contract": "0x11fcbc7be88241027bfb36b4f5e6da8494b17280",
+   "name": "REXIE",
+   "minted": 1825,
+   "recipients": 599,
+   "operators": 394,
+   "flagged_share": 0.023,
+   "hours_active": 0.76,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc8e1c4ceb2fe6777d1ebdf468299ebc11b23ba71",
+     "nfts": 49,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd6e9afc153bf3ba7dbae622eef0a441ac10d0c86",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x82d3f005a6ca5f36a820a92cad690241042d920c",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x66003b1adb33f45a77ddd41d0d4c1fceb8d49f93",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x91977d924e5c77c80394ff477fdb4af328e05a6e",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x240e5ccfc1b8b7e76844897d7b9c9cbb99d10052",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x348465175d6a0c08ad27469c3e571dfe13795b31",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcc997b58db9c2b0d6c71b90e2434f8f73275e34c",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 27,
+   "contract": "0x232c454167655e3a810d346986c42e78cdd4d839",
+   "name": "STASH",
+   "minted": 5555,
+   "recipients": 561,
+   "operators": 140,
+   "flagged_share": 0.603,
+   "hours_active": 0.54,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcc997b58db9c2b0d6c71b90e2434f8f73275e34c",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2f2ca0ce4fe645530e49feeca51183367b8c6313",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x08a01c200aa0e0bb02bfd098607a5fe619619057",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x16f6d6c22aafd7a797609608d3fe412538233616",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x431d7fb5612b4cff0d41ae411fa9c463e9438190",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x95ffad101e00600b3a5ec2305a5ecd04dae370a7",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x800d0ff5318ed254bdcb11a5c21282b5c9b6ab78",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x87c89732c3a3d28937bf47fb835ae188b25341a1",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 28,
+   "contract": "0xf62f033569173559322c2d2fce7273a16a4aa1d5",
+   "name": "NullHood",
+   "minted": 969,
+   "recipients": 547,
+   "operators": 65,
+   "flagged_share": 0.013,
+   "hours_active": 0.7,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4c7f51277d5005ca4965e069ad49a3bbea44544e",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x73ea9c8a15f024567e51d719cad088d618b7a17a",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xceb68a77b0cdda86df586901eb2cd591c1d984bd",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x43395f5192ea4a3b9bab35deb2a5017563772009",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xba7aeeda32e7fc4c35d2acb8275d7d9ebc1ab69b",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb9b9ae712265739256a3091aafcbca3e02c73a88",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5dc25b7bacdd197f160cb2bdb869cda35155251c",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x27e2aea18148ec59f3afc6b50f16fe6359a27e55",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 29,
+   "contract": "0x9897cfab24ae20186df5cdcac609b17fd908bd74",
+   "name": "Tickertapes Pass",
+   "minted": 531,
+   "recipients": 531,
+   "operators": 117,
+   "flagged_share": 0.269,
+   "hours_active": 0.81,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd0eb7c2c21d02a0644b0fb666e937beeb7aa300f",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1695a7c52ee69aaf222326fe7ff3f54333b282b1",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1eef41c3b51aa5b1f6164cf543b47a3c5e407e8b",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1203b2ba7581d93a3dfac6c4000ff6c62a15d407",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0922e905584042e34d6ed946ea51f106be8124c1",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5be5a7b3c26a258ad0323c6f4828fc8115316574",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb083300a133adfb08677656e58cd115aa8dc2bfd",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x37868b24b3155d630403aec403336f5e1f53fc04",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 30,
+   "contract": "0xdae4cb1805fc4ca089347974f125ba6d6a2fac9a",
+   "name": "Chinese Hood",
+   "minted": 1037,
+   "recipients": 505,
+   "operators": 1,
+   "flagged_share": 0,
+   "hours_active": 0.72,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x11e3f8d0613d7b79a4764296864b0f6fd1f93a5a",
+     "nfts": 27,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdbd47f66aa2f00b3db03397f260ce9728298c495",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9723cc792c32dca2744690f99103d095ea149e82",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2052051a0474fb0b98283b3f38c13b0b0b6a3677",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x44e9d011df8741be2493e99297e9ad67bb1aa85b",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf56345338cb4cddaf915ebef3bfde63e70fe3053",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x05d41274057a0ed09e4b65f8ba8fe3d452932925",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x076319f1d1e960f4f087c58cde74a147f51b6f57",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 31,
+   "contract": "0x2c8b9ac2a9bd317039b4a12ef4050e10bf23d3bb",
+   "name": "Hood Plains",
+   "minted": 1514,
+   "recipients": 501,
+   "operators": 87,
+   "flagged_share": 0.478,
+   "hours_active": 15.84,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x10b0c84ceda37fdd40e9ceeb69eb01bcbea726db",
+     "nfts": 16,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd22d0ffb48286a1268d0770064644bf3b2ea99d2",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdffef77b9385ad0459bd9f1dde316390541a34f8",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x51c08d0bdcbf6b2500ff332663eadfb2b9d67413",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x66003b1adb33f45a77ddd41d0d4c1fceb8d49f93",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcc997b58db9c2b0d6c71b90e2434f8f73275e34c",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc8e1c4ceb2fe6777d1ebdf468299ebc11b23ba71",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc33672a4d3a39a430b25df90d90d95e020c68b14",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 32,
+   "contract": "0xa6d9ccaba6fbcbc5f5da85da6fd7820dfe402a04",
+   "name": "Pokemon gallary",
+   "minted": 1272,
+   "recipients": 476,
+   "operators": 147,
+   "flagged_share": 0.372,
+   "hours_active": 5.36,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x96535e1fb7c5ec84e8921d58d98becc5ecc8968a",
+     "nfts": 45,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9faf34ba9f039630caac3d694409435deaf0226e",
+     "nfts": 20,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9ded70b0cf6a38915b0a2d97bba93a37c1d658b1",
+     "nfts": 14,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x19310357eeb9b5af955bbd8ff639e65172e2995b",
+     "nfts": 12,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7b67a29d1e9fd5105bd75968d4df22b6c543a444",
+     "nfts": 11,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x722ffa423cce95953d97c9c4a2ac0049e70f0ee7",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x21ace872e245328214b41bc6e862816e6571ee45",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x26e5448c94cb478fa813de3d01952410620c17cb",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 33,
+   "contract": "0xb1f4721e84d6fcfee917b53c8882e91456cfeb77",
+   "name": "FatCatz Club",
+   "minted": 474,
+   "recipients": 463,
+   "operators": 165,
+   "flagged_share": 0.308,
+   "hours_active": 21.39,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5b269ec908b2fc1c885c81cdc724f55d9c08e660",
+     "nfts": 11,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd968a09e2b065fd6d7df05dc9c5a657f281e565a",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x19310357eeb9b5af955bbd8ff639e65172e2995b",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x379406b7a53e5e2ba1c1ea2b2e88a00368d74de2",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2855008c7764fb35fc73407e2091f5de2c577ecf",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61e433e1986cb1c65e7de8fa04fe9c4917d50536",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x39b725a5e58b62e66f3a5473e50fc091a2323c55",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc33672a4d3a39a430b25df90d90d95e020c68b14",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 34,
+   "contract": "0xe2d106ee255c0463cb3610d0c925e2ff9244c597",
+   "name": "AUTO CARTELLA",
+   "minted": 4444,
+   "recipients": 448,
+   "operators": 93,
+   "flagged_share": 0.689,
+   "hours_active": 3.76,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcc997b58db9c2b0d6c71b90e2434f8f73275e34c",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2f2ca0ce4fe645530e49feeca51183367b8c6313",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x19310357eeb9b5af955bbd8ff639e65172e2995b",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x37dd3f1443cf3783afa577be2c26cb6a0632ed6d",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x54dc1336ad6511fdeec865e3166208dc0445aa5e",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc187ce2f538006c35629c721fea1cb6c0f6f1234",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xabaca4b8ac1f611c163caf935af4c332e73ce678",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xfa55575de9dccc10bcd310f6d98a814768f8911d",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 35,
+   "contract": "0xfd2a2c7f45ad760fcd81f15df4194916c5a85561",
+   "name": "SOULS CLUB",
+   "minted": 4444,
+   "recipients": 448,
+   "operators": 105,
+   "flagged_share": 0.616,
+   "hours_active": 0.45,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x39ed29a4d8c69006c05777bd40f1f676d26f9b08",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf683f14b203b58a2ee02d7812224df955a750baf",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xeb4c20835e0ab9b06008dcae4a55ea13d0f530e1",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x011dfe2ac2cbaa70dd720f1ed6862b7baaccb1ad",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa47195cc522787bebe731c579968bae43859b9f1",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5dd127a8effdfa48685b2d50dd0265d4ceb02506",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc64c27a7b9bf37656b466b3c89af05a369ebc4c4",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x81b5bfacdc4ef460d461c442fb197785c943f650",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 36,
+   "contract": "0xbcd0f4dcacf762eec0b690ba69b2f1548a705ecf",
+   "name": "NOB BOT",
+   "minted": 4444,
+   "recipients": 447,
+   "operators": 295,
+   "flagged_share": 0.245,
+   "hours_active": 3.27,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd45a48df076c3dd6ee4f04124f3decf736425684",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x804544233a3a2903e4cc7ab245a76fa7ec1c323d",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8785da0a8fba26c867f6fcc13f858bcf4ea8a80e",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x75b32595f0668d304aafdcd51a054f3666b22e75",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa03f94b728bd6ec73dcfb8f4e40fbae91fa86c88",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0607e6c5b60e1b6e42cb79acbe23569a6c2d46ef",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x043f658bc5bc7c68c28efcb094f57a744b3a6573",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9a925253356876de3662c0b0c5f32f0a09c40960",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 37,
+   "contract": "0x2825296e12afbb40238a20025748a0d5e7fa170c",
+   "name": "AWAKEN Genesis Core",
+   "minted": 857,
+   "recipients": 446,
+   "operators": 118,
+   "flagged_share": 0.009,
+   "hours_active": 4.79,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x51b31fb4d1c026f4ccf5291098d2dfcf420bc208",
+     "nfts": 50,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3dd34bbc2785667f00a8853310ab4976d3fdda4b",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe68df3d55cd6edeb4d4ed7f1b70df2313dbb2b4d",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1618cadcfcc524be6e85b4fa20fa49c92ee492ae",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8b173174b2d88d3d2ec8979f2a88de765f1c4ebb",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x70f5419fadd7a20cc6ff0b48a396537647c4d906",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x11ca5fef0ace3538e6d5f7069f92528bfad59ce6",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2a0cbd0112e6df15a1ddd84a8f52508c8f8b6637",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 38,
+   "contract": "0x270397590104bd77f110334881167283e60ffb15",
+   "name": "MAD CRYSTAL ",
+   "minted": 4444,
+   "recipients": 445,
+   "operators": 107,
+   "flagged_share": 0.554,
+   "hours_active": 0.06,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa77d56c7a89ff8e25fc0280d258a73bb19f2f53d",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa10687567ce90eb92849631d081dc08bfc5dba78",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcc997b58db9c2b0d6c71b90e2434f8f73275e34c",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5ce41ef591765d341c98f217354436279def0bb1",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe4b7b66a6d53f14a4655ee1cf3a16dbf88cc62ee",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2f2ca0ce4fe645530e49feeca51183367b8c6313",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x16f6d6c22aafd7a797609608d3fe412538233616",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x43e3d8c8d89a77f65b7680fafc143bb28296c713",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 39,
+   "contract": "0xa62e0d5ea805903494e7ca506f4acb4095e61fc6",
+   "name": "Charles Robinson",
+   "minted": 422,
+   "recipients": 422,
+   "operators": 109,
+   "flagged_share": 0.429,
+   "hours_active": 0,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6af90e64213f54e5a1c40beeda5d5c35ecc8ca14",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6f572652f0e31905430dda4ebf06aa5f53204a85",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x52cc24d04a3156318993b91c7296d3404acadc3f",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3f2c32dc20c646b15be90ec424e8ac1895326854",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcbbbe4530a958f8437352978c49d09b91f3f087a",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1696abb4fadb06257d799dae71565759ce68112b",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8f1933ea95d6c3d90a859900572c844e12ed4f89",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x336b074b05b5e5787f8cb330c81f3034a84e6a85",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 40,
+   "contract": "0x98c716626d293bb219db44c980e0d441b3cdb8cf",
+   "name": "PIXEL Z WARRIORS",
+   "minted": 1000,
+   "recipients": 402,
+   "operators": 85,
+   "flagged_share": 0.239,
+   "hours_active": 0.06,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8618356fe445eddf3b0a3898e0303f2087f46984",
+     "nfts": 20,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x361413eaf8067860fed70807664c9e035b743ce8",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc896499fbf564f3813ef58c42e32635e0707aa96",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xef08bc9a77fab06f29d1afa16ae69c9cfb844a39",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x66003b1adb33f45a77ddd41d0d4c1fceb8d49f93",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x152d888fb893059a648885c40d5466e63a3abcd5",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x13e0dd5a8b32602e25428ca714395d6363317a25",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x042f82f342dd17aa6bae061a64b697805c9befb0",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 41,
+   "contract": "0x21dbb1bc1da6ac81c5e5e3fd715de3809194b438",
+   "name": "PonFoot",
+   "minted": 510,
+   "recipients": 400,
+   "operators": 82,
+   "flagged_share": 0.6,
+   "hours_active": 3.39,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1c9eb74560c1da2b126394fe8db1355f8248415c",
+     "nfts": 111,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1695a7c52ee69aaf222326fe7ff3f54333b282b1",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x964db0874682f672c64c7b47fad51c2d130ad7f8",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x662797326c7669d99ae93e66b5de984108246732",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf21dea28688442ec947d4ccec588d56a71ad96ab",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8d28f8f7c3b0e87d8c3d7b80d8ec798ac79f6253",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd877b63e49ff72756d4422daffb9971fd250f00e",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6196165819f3577719e2d01d9ce5a88d18a699b6",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 42,
+   "contract": "0x18cefb4db68f9620ee28bbccf88f37ce957588b3",
+   "name": "Lil Street Minis",
+   "minted": 1111,
+   "recipients": 395,
+   "operators": 105,
+   "flagged_share": 0.268,
+   "hours_active": 1.63,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd149bb10c1c868c453d9400ee6f9c2bfd0a50ae1",
+     "nfts": 100,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x16e658f644b90169c8251693661a0ed5026debd2",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdceff21662a4e570a9df7b9e0861104eac170fa3",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe8a2b600ab5a9c69c274352cdeddc75e450fc634",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x404eaae8008cb04b845ef014aafb71bbb8ea2ebc",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x391f0a86f99db6c0ee99e9093099b32793c9312a",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa14d9b467207783c72b97583c251f0e77f012037",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa3397e248dc522b1546d61a7d447f4713eebf4d8",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 43,
+   "contract": "0x12d0d515cdbdd4d68d959f50bd3f16e050075115",
+   "name": "Moss Lady",
+   "minted": 1858,
+   "recipients": 381,
+   "operators": 84,
+   "flagged_share": 0.586,
+   "hours_active": 14.16,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61dbc2d15680a7631f5ea09ba9437db8e24b042f",
+     "nfts": 122,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1695a7c52ee69aaf222326fe7ff3f54333b282b1",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9a9fdd3e387e5c8f8ce92cb3dba67cbe01ac1079",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6feaa273bbaa98c9465a0871f44621e904b4a242",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x964db0874682f672c64c7b47fad51c2d130ad7f8",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2eb4ed0c68f36a462bbf0b1779eaab7c14066ebd",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5955e5fa9e63647f76a0e646568ba54046b17ce5",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x362b883353dc19d2ef3a43187c0fe5e802b73ec0",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 44,
+   "contract": "0x0490871d52e240681ec1255b537e7ad17b169eb9",
+   "name": "101 Days",
+   "minted": 377,
+   "recipients": 377,
+   "operators": 231,
+   "flagged_share": 0.04,
+   "hours_active": 0.05,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd431fb0f8b5412e3ab9f29a5de0253a9aacf5c33",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x160c2deba0e58cfbf42d1d56cfa61f263c6de28a",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xbd49ef62f5226f3ed66791650f28e8363a62a462",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x240e5ccfc1b8b7e76844897d7b9c9cbb99d10052",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x348465175d6a0c08ad27469c3e571dfe13795b31",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3900056639a512db33d0d20ccea94023875e5fa3",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x66003b1adb33f45a77ddd41d0d4c1fceb8d49f93",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1f161fb6f84dbf01eca8155cd007528b45a1015f",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 45,
+   "contract": "0x38125aca7c6953d3148ddcd5f9b6e1517cb29e1b",
+   "name": "Pixel Power Generators",
+   "minted": 1099,
+   "recipients": 372,
+   "operators": 168,
+   "flagged_share": 0,
+   "hours_active": 0.2,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3e21f7ccce59522f91467a588cd9cf403d5ced3e",
+     "nfts": 9,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9d3714ed53a862199a1e6cd1d229268bda4589a3",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x63455b09c4ec15f13ab9e915d93fa0633a8254cc",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdc2eebf8012aadce36e1ae4e614adc027918456d",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf747c3ab4f606594172445bcf142f4e80a4e81cb",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1324a551d6d3dea064e3b00d21fbe78b135b121c",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4bf7c86556c20012abe712b6d2790ac84da4ebab",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xfbb7a7a1714a18e266b86a84b8b5b2837d43c934",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 46,
+   "contract": "0x9e3816a70dbf390342c2e20f1ed7d22d627a21e4",
+   "name": "MAD  CARTELO \ud83d\ude21 ",
+   "minted": 3333,
+   "recipients": 335,
+   "operators": 88,
+   "flagged_share": 0.51,
+   "hours_active": 0.04,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x454dc25c9dcc5090ffccd8678736ecd9e2555b35",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2f2ca0ce4fe645530e49feeca51183367b8c6313",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcc997b58db9c2b0d6c71b90e2434f8f73275e34c",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x90ca9d7529676aba44ac3e9a172357dafeeb4962",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x59a6bdcae1657af5ddbceff96747510392d7675d",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9fd7c4fc0276779516e046fc4f707ed37c368e3b",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x413d320a4e6b4fb1838245fbdc5d4e77dd9bb695",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xddc1295fb6ff4487d48eca052e37da6d570eeafd",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 47,
+   "contract": "0xcb75f4ace92b63c69c140936cd68c43500532d45",
+   "name": "Courier",
+   "minted": 3316,
+   "recipients": 301,
+   "operators": 70,
+   "flagged_share": 0.706,
+   "hours_active": 0.04,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1d304971e244bd09347f0aff8df5856fc65a6636",
+     "nfts": 30,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x609c6b21f5a19ad4f61694d9ff71abc0b78ff44c",
+     "nfts": 30,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x000970c25166a7236f376a073fb3ee9288f1a62d",
+     "nfts": 30,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3fa6731b72afbcd6c20fb83807bd29f71e5016df",
+     "nfts": 30,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf5ec55b011145dc4471b40e5572998adc402fbf4",
+     "nfts": 30,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x02c9fdf08fc10a9cfea74e92a719dffa0ecd7a50",
+     "nfts": 30,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcf067c227f00c66bb5593a5c7c619bb1946de635",
+     "nfts": 30,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x51c152ca4a176bbdc69a6b47e0f663370dd5e97a",
+     "nfts": 30,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 48,
+   "contract": "0x74ed74214b006afef0b916c9346ae4ebe4ec9503",
+   "name": "Sheeps Undead",
+   "minted": 921,
+   "recipients": 290,
+   "operators": 43,
+   "flagged_share": 0.59,
+   "hours_active": 6.4,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61dbc2d15680a7631f5ea09ba9437db8e24b042f",
+     "nfts": 114,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1695a7c52ee69aaf222326fe7ff3f54333b282b1",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9a9fdd3e387e5c8f8ce92cb3dba67cbe01ac1079",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2eb4ed0c68f36a462bbf0b1779eaab7c14066ebd",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5955e5fa9e63647f76a0e646568ba54046b17ce5",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x964db0874682f672c64c7b47fad51c2d130ad7f8",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6feaa273bbaa98c9465a0871f44621e904b4a242",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xea501334aa65459dbd04e091890c19b3debf1ff1",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 49,
+   "contract": "0x977f53ee7ff663ab17611473f49a26461996f98d",
+   "name": "Conduit Agentic Passes",
+   "minted": 333,
+   "recipients": 284,
+   "operators": 71,
+   "flagged_share": 0.48,
+   "hours_active": 1.57,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x95e73fa9c5d88b17da1bc37dade91355bbb94a3d",
+     "nfts": 50,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa2d56ece135643864841a904231f107fc4d61cd4",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd22b1d0eb9663359af3574d3ebd33b5ce8288b04",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc01dd898063cccae7946a17f4a4ba08bc5633ca2",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcfe1766506ee9eda3142ab9fa5e8c62ad8bf5701",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcff53fb9e9e46405548d00809f03b792d74edc43",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x643d3133d574e9ceae74e4392d07d8b1da9ea78c",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xddccc009400520ed518675f64ccad77cbcb42ce9",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 50,
+   "contract": "0x56e10e4523c69c3a5074dbe5af71dde0e9c1e8a6",
+   "name": "Hoodio",
+   "minted": 270,
+   "recipients": 270,
+   "operators": 47,
+   "flagged_share": 0.352,
+   "hours_active": 10.92,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x512c579153ac6fd961a7d9e7b19281b855aafbe1",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6918c95af91b6eedf5e86d4ff1487e74fd1aac76",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6712d490bfa453af8bfc4d212528c954d6d2911f",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd968a09e2b065fd6d7df05dc9c5a657f281e565a",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb28a64b5a37fe25ee2d864a33192dac41b04fb93",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1b521cabaac3453a2e926f3ebfb5b27b7c7a6dd3",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd390d834f6aee1778db5133d4a1e04d82df97b9a",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5e8be1b11c6a63c0fb353d8d3e64c39c5ccc9479",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 51,
+   "contract": "0x400c38f848abb4195343ca648adceced28c439bd",
+   "name": "DREAMERS",
+   "minted": 287,
+   "recipients": 257,
+   "operators": 52,
+   "flagged_share": 0.105,
+   "hours_active": 14.69,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3050785900e1242a206aa77a49b94723c512dda3",
+     "nfts": 20,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xbb6fc09ec40036494836074930107b962e883cda",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3e1aff30417deb14f4608f173df7eec743fd1167",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x91bb79768a8f7eee4542faedfa75f027b1af4388",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x26542d0bc93a63c141a21956337f18773b237882",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb8203487ce401b29ddf3416eade5f0697ff4ab9d",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x19f6d139e96206a8319a9d312ffe98a706d732f2",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x991f4abc08018af3438285e978139c335ef507a8",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 52,
+   "contract": "0xe0e97f12e81dce07da1bd72e7f8be4acb33298c4",
+   "name": "STAKZ",
+   "minted": 500,
+   "recipients": 251,
+   "operators": 26,
+   "flagged_share": 0.248,
+   "hours_active": 0.03,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc6f3f33978eca8dd73c9deee4bdcadb1ed0db0f9",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xfe23473460f50ac8cae83a8f13a5f50b1a951793",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x23f2a39b4b8d4ef4aa305941f8212140be99625f",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x70bea08ad7dd90b8eaa8c489f5a30cf4e756f675",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0483ea8f9bc2cdc1cb65264f180bdefdd89c0aa8",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6643ba6f5a66431f8d596965324937951426052c",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x07fd628be548a95208213f01a6655661265536fe",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x855b81a18cfb6cb67c4926cf4f7131d59f244e80",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 53,
+   "contract": "0x44567a07e3997c488fde8b70bc991d5f69923318",
+   "name": "JeanPunk",
+   "minted": 248,
+   "recipients": 244,
+   "operators": 43,
+   "flagged_share": 0.403,
+   "hours_active": 20.78,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xae3e29b33aa91c95b26d4726eff6663aac6d1162",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe3e272f8d770c623d66de907a5f2cf0b66964596",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xbe539dcce12d51819915f2266606d66ef1c74a0d",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdda6f72df08b1411174b547c2cced174946d6328",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xde4e380313945a50b4aeadac23fe5c36844debfe",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x38b0af422d195c22f0d69a512c900207b5ce1176",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x131b857b0b78b3cf8417e7b870291ca39a38a40f",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x08db90cee8faba59893ea2eee657e5441ea9af6d",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 54,
+   "contract": "0x7f0f5de22834ef6b86a420b7d9c675c32b49dae5",
+   "name": "Snouts Club",
+   "minted": 470,
+   "recipients": 243,
+   "operators": 13,
+   "flagged_share": 0.009,
+   "hours_active": 0.82,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xbe6ce3bf1d15e4e31526af4ab4bbde6e44290e56",
+     "nfts": 100,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd3094c49e2ec1e6140df15c5158b5bb6a416463c",
+     "nfts": 50,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5c5fb927ca7520f46d2b12a39fc83ad5c9ca5f2f",
+     "nfts": 50,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb0121791087241984dc0d02def1e8cda500523f4",
+     "nfts": 12,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd68c451da3cc6bff34a88bc5b255c0ef4b1c9c50",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9b0183bf3ba415a19579d241154a93cd24509272",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdb0b29dcecfaf1ee7eb4fe22d732cc8a28058971",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xccec5ab89c523affe30714bdb32f3caf29690824",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 55,
+   "contract": "0xa5cebc4c0ab65cdfacecd6303e6ac878c91c4563",
+   "name": "Stalemate",
+   "minted": 1111,
+   "recipients": 240,
+   "operators": 202,
+   "flagged_share": 0.007,
+   "hours_active": 2.27,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xbe6ce3bf1d15e4e31526af4ab4bbde6e44290e56",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xda616ea16e81bdc78e3600171d635f89414e242b",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x160c2deba0e58cfbf42d1d56cfa61f263c6de28a",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x733ab4fecce45bb925c499a9fc91982740697701",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xee09cbc09dac41b43ddf14ed6044847f01b6ca81",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9557a228eb644a759952337aee8a3874b7663df0",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x00144f35a0dd8f2019a40205efa463e6bab2c816",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x177426c59e0e0e0debe23892ec3d757cb8530629",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 56,
+   "contract": "0x2088ad40c264e7d46a92be5a8f5db0c9bb9ba974",
+   "name": "The Rubens",
+   "minted": 1253,
+   "recipients": 229,
+   "operators": 60,
+   "flagged_share": 0.699,
+   "hours_active": 4.36,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61dbc2d15680a7631f5ea09ba9437db8e24b042f",
+     "nfts": 270,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x240e5ccfc1b8b7e76844897d7b9c9cbb99d10052",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7700c3651abbd0010d07b8746c0dae943d7cec9f",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf321edaca73903ad74ddfa120a9998104253fc6b",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x348465175d6a0c08ad27469c3e571dfe13795b31",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9e15fc4caf52651aee570e7773a3069d6951203e",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x21ace872e245328214b41bc6e862816e6571ee45",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe05261c6298848201dacc94258903d21a2f69eee",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 57,
+   "contract": "0x7f5aae2bcbbe8420d21c4220f971e3cc07c18d67",
+   "name": "ARTWORK",
+   "minted": 440,
+   "recipients": 201,
+   "operators": 46,
+   "flagged_share": 0.707,
+   "hours_active": 14.14,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdefa34513df8268bad0ca68508f011b44612c201",
+     "nfts": 240,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd0eb7c2c21d02a0644b0fb666e937beeb7aa300f",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x18825f6bf6abf1b8e50d39262a64cc407bc61bbe",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x19310357eeb9b5af955bbd8ff639e65172e2995b",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x413d320a4e6b4fb1838245fbdc5d4e77dd9bb695",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb97793bbac4ec52ee0ebc602c9c3b4e410b0c943",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd45a48df076c3dd6ee4f04124f3decf736425684",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8785da0a8fba26c867f6fcc13f858bcf4ea8a80e",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 58,
+   "contract": "0xfb6a4871be40f6c6d44f0b63f2e134fe0937a927",
+   "name": "Robin Chickens",
+   "minted": 1858,
+   "recipients": 193,
+   "operators": 102,
+   "flagged_share": 0.207,
+   "hours_active": 1.88,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x522063bbc0874ab1c1e507702c670444d6bf7641",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x968546f19651279a91399ab6af1e95f1a4b3ce97",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2f2ca0ce4fe645530e49feeca51183367b8c6313",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb218cf732155003877092d595ef520b59fa64de4",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x19310357eeb9b5af955bbd8ff639e65172e2995b",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x454dc25c9dcc5090ffccd8678736ecd9e2555b35",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3e2c1f166fabdb80db919b74f61528fd1886753e",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2d9e6fce5a79e364a4403f816f503d4722874f23",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 59,
+   "contract": "0xcc8f7a6819ad7dbd693c4ff14638cff081d1fb83",
+   "name": "OnChain Queens",
+   "minted": 204,
+   "recipients": 192,
+   "operators": 32,
+   "flagged_share": 0.461,
+   "hours_active": 14.4,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x08a8aa8e9e6f6ee85c2645d6756d479047d3b09b",
+     "nfts": 13,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1695a7c52ee69aaf222326fe7ff3f54333b282b1",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0922e905584042e34d6ed946ea51f106be8124c1",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb083300a133adfb08677656e58cd115aa8dc2bfd",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1eef41c3b51aa5b1f6164cf543b47a3c5e407e8b",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb61d77ddf63e860efb0b6b488684efdae315dbe4",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8f67be3e344be2874d542510d58e507898c9670c",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0cddaccd968ee1afdb6387b043c4d02c59bfa435",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 60,
+   "contract": "0xfcdc56c730dd630a84e821385948f72296c96ab6",
+   "name": "Mutated Cats",
+   "minted": 200,
+   "recipients": 192,
+   "operators": 79,
+   "flagged_share": 0.04,
+   "hours_active": 4.53,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xafa981bc50c01f6e6f32aee9d4a099c233b631c8",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x75be72307c3c69ad99e8f7d86b527596d253228f",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa400578a66fdf4049fd007e1cc56f0b860c59772",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd869549882d885f94e18b8fa0c9ebbae76f4de09",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1790d5b32cdf90373e48cfccf60b2b0992fa1fe9",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x53ae707382d1231a4414ad1e982d775842f6a934",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61e433e1986cb1c65e7de8fa04fe9c4917d50536",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc33672a4d3a39a430b25df90d90d95e020c68b14",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 61,
+   "contract": "0x305c539894622a52f4176252208f28459898d6d9",
+   "name": "LOST PIXEL CITY GENERATIONS",
+   "minted": 3269,
+   "recipients": 191,
+   "operators": 59,
+   "flagged_share": 0.931,
+   "hours_active": 16.48,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x843819e77947e2ca4f198dfa9c32cf49b598ef4b",
+     "nfts": 3000,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4692785dcd2f7ad1617df4d82f4fcb6f217f3d34",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x222e15b07ce31c977a1d818821ed184875d2c50a",
+     "nfts": 9,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0c4f44ff438fa12020c385a3a622fe4c7676289d",
+     "nfts": 9,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xbe922f499b19e4bad074f6a5a181e6965e2b7e9d",
+     "nfts": 7,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x39a9d46afd94db8776b4208efd962edba9b7e450",
+     "nfts": 7,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0bfac5a96eb3dff95a217b23334e16568c0e9372",
+     "nfts": 7,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9680ca29575e88a741119e0ae17f21d8bc729eda",
+     "nfts": 7,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 62,
+   "contract": "0x6f18e12b5bcba43e12422dd6c64f748c0e1323fe",
+   "name": "Onlyslut",
+   "minted": 737,
+   "recipients": 190,
+   "operators": 30,
+   "flagged_share": 0.818,
+   "hours_active": 2.88,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61dbc2d15680a7631f5ea09ba9437db8e24b042f",
+     "nfts": 232,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1695a7c52ee69aaf222326fe7ff3f54333b282b1",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x43948bababa753a587fc475ced55c74760b716fc",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x362b883353dc19d2ef3a43187c0fe5e802b73ec0",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x964db0874682f672c64c7b47fad51c2d130ad7f8",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x678bf0d66e3a99a471b24ee583e8030afbbc76b6",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2eb4ed0c68f36a462bbf0b1779eaab7c14066ebd",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8ed84a653bd71a6223ce90296a752ec43c35286f",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 63,
+   "contract": "0x506db44575fd9cd7e90b56f26fc26dae0ff85d85",
+   "name": "Hex-lings",
+   "minted": 789,
+   "recipients": 187,
+   "operators": 114,
+   "flagged_share": 0.057,
+   "hours_active": 0.33,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xfac1b96d3eb2cc569d84826e000db713e41afcd0",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x47eba71b631a6318b0fa2b410ce73dcfe7cfb320",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9d98b9d30367e5534770dc9a89097fd248efcb1c",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x32f0647428da1c4dfd8896b11d11c5106eb22355",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf58204094ecda515b48524cfda54a59838b481c6",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb31d732de7c09276334135297298036cddad970a",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8b8888028105efd9492faf0d24ef4ec4bd3be1cf",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x635f57dcc7df58f24cd97bd5a34af7b461b9c850",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 64,
+   "contract": "0xeecea76d98eb3073ac398c9116dde7c1448877a3",
+   "name": "ODD SYNDICATE",
+   "minted": 501,
+   "recipients": 180,
+   "operators": 39,
+   "flagged_share": 0.581,
+   "hours_active": 20.08,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0d6200a8faf3150bdd5aa11dbd0671a189720fcf",
+     "nfts": 262,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x463db4c0b5c947170778da2bb05670d2f37500c3",
+     "nfts": 15,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5af54002d113059b28d98af232bce5d15c2a89db",
+     "nfts": 15,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcb3ccc1c844a209e5ccb185012fe28a9c57814f3",
+     "nfts": 12,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4045e587ff07128417a66f53c5918c8a74d229e4",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2bdb9f8fc3c2b5a2eb1081e2b48ff4ab2e71d906",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf72721b49249c4c3b3ec05156409572b1cc16f39",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb38a349d6379be68a65f13945cbaab83cb081e08",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 65,
+   "contract": "0xa54fda624d304af691dadac6aa359b3021c9a416",
+   "name": "Oden Paws",
+   "minted": 1245,
+   "recipients": 167,
+   "operators": 44,
+   "flagged_share": 0.643,
+   "hours_active": 6.74,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61dbc2d15680a7631f5ea09ba9437db8e24b042f",
+     "nfts": 494,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x39b725a5e58b62e66f3a5473e50fc091a2323c55",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9cda5d20c2fc8d0e25fd53f9542162c48c61309e",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61e433e1986cb1c65e7de8fa04fe9c4917d50536",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2855008c7764fb35fc73407e2091f5de2c577ecf",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc33672a4d3a39a430b25df90d90d95e020c68b14",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x21ace872e245328214b41bc6e862816e6571ee45",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x082158379f102409f6778f0061b29f85312a2f35",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 66,
+   "contract": "0xb967b4f207b5d558460bba640e6fefc7a57361c7",
+   "name": "Punks and Pals",
+   "minted": 999,
+   "recipients": 167,
+   "operators": 137,
+   "flagged_share": 0.012,
+   "hours_active": 0.13,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2f2ca0ce4fe645530e49feeca51183367b8c6313",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5c6f5b55bc395f12bc17a573e9ec685b3a9d5e8b",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5ffe976890546ca78457a3f5e030a2a7970b78e9",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf4f891d559e970cf458895c61d2a46b338f86fae",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7b02233d521c867f51eba8a723ab16f0a925396c",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x73f5b330e52f895893cc4f0bf3cf763f7ab5ef5f",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0e661fe9ecd6af4fe91e302dae44ffc0dd220588",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x04aecbb167855ddcc91e06ec75637c149c28cc0b",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 67,
+   "contract": "0x14c49e6118f46525de9ab41a51cbaa3c6ebf181d",
+   "name": "Rare Friends Generations",
+   "minted": 225,
+   "recipients": 164,
+   "operators": 15,
+   "flagged_share": 0.004,
+   "hours_active": 23.3,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xec9aa0a6c2372131a0502aba6188269ab52cacb5",
+     "nfts": 16,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+     "nfts": 9,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb477751b76cf82d00a686a1232f5fcd772414af3",
+     "nfts": 8,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x15c27ed229c6c345748603ea5dd53f6eb18b7eb7",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa62858659c83095eb5e702f0af6a7bb7f370b3e7",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xad64899f8b144d0b6614a9fd4c370db6ae6bf91b",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x155982855388523c3ccce684b11c78b34eb75d6d",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1b4b91bb747176451f0f7f73b636babafcf31cc4",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 68,
+   "contract": "0x0137cf4336446a2a0e44deca373192d0a140b0bf",
+   "name": "Digital humans RH",
+   "minted": 176,
+   "recipients": 162,
+   "operators": 145,
+   "flagged_share": 0.051,
+   "hours_active": 0.08,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb08fa356eb60249f8f9a10a28df4733664a7a0ee",
+     "nfts": 15,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc1f75fea2e6567915747797ea55fe46934959d61",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x348465175d6a0c08ad27469c3e571dfe13795b31",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x240e5ccfc1b8b7e76844897d7b9c9cbb99d10052",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61e433e1986cb1c65e7de8fa04fe9c4917d50536",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc33672a4d3a39a430b25df90d90d95e020c68b14",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x39b725a5e58b62e66f3a5473e50fc091a2323c55",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2855008c7764fb35fc73407e2091f5de2c577ecf",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 69,
+   "contract": "0xc21df1bb620ebe7f5ae0144df50de28ce0d47ae7",
+   "name": "GMCards",
+   "minted": 168,
+   "recipients": 159,
+   "operators": 1,
+   "flagged_share": 0,
+   "hours_active": 23.4,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4afc6fafbe1cd2b4c074107b86d2fb95c4c76abf",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe77fb6d4a9d94d919fd290f2ef1a21b618ba9eb2",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6d3a6fda22aa10822326efdd4501c0efd8958148",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x31ca6a61ebd6f6118fd9ce6c743a281e2474a843",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe059a37d87c49503b283a2f7a3a5d4b652ff7351",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0341ab2d783648be716fa78a48eedf13f151335e",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5ba5e30b05aa61cc6114292c1abaf9929d591965",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x99053bf4383aa3985ebfbe7d65e5ca18e361656e",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 70,
+   "contract": "0x4e7d59b37ed70923bd988ab3d8f871260a966f2b",
+   "name": "Gas Bike",
+   "minted": 158,
+   "recipients": 158,
+   "operators": 0,
+   "flagged_share": 0,
+   "hours_active": 23.4,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x409ffec94e320516a7f31cfb432564422c89e78b",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4a6b21ed3b7694f6783c623d7410dfdc4d9e2b5c",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1dbd08f8e178f9f9e97d8be51c14d27b5ad1e43e",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x398b80d70caf406ac1c45c00dd92ebc8d39f7c3f",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0c4ab93ec2d1f8648f5bb58dc3d8deb553086429",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x164a8bcb424c6be9e37fe7fa78ef132c983b7e2d",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb74347da1e40b6dcbd7b5006f81ec7bd65e86591",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd424e91857f3b0738cdbd2f02703f6de2043113e",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 71,
+   "contract": "0x65bba506a62e819f57eeb926a3fe576c3e335449",
+   "name": "Pepe Goddess",
+   "minted": 938,
+   "recipients": 148,
+   "operators": 49,
+   "flagged_share": 0.615,
+   "hours_active": 2.8,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61dbc2d15680a7631f5ea09ba9437db8e24b042f",
+     "nfts": 267,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x39b725a5e58b62e66f3a5473e50fc091a2323c55",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2855008c7764fb35fc73407e2091f5de2c577ecf",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x19310357eeb9b5af955bbd8ff639e65172e2995b",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x75e0131af2dc87fe2442a47c08bf9f5b693b467f",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb97793bbac4ec52ee0ebc602c9c3b4e410b0c943",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xddc1295fb6ff4487d48eca052e37da6d570eeafd",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xfb0c8f67a5e5b5a39451bc99f411a6a0b01a5555",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 72,
+   "contract": "0xea8513e5f5d883ed8dbe1359f22a195dd14cdc0b",
+   "name": "Ark Of Noah",
+   "minted": 578,
+   "recipients": 144,
+   "operators": 40,
+   "flagged_share": 0.467,
+   "hours_active": 8.21,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61dbc2d15680a7631f5ea09ba9437db8e24b042f",
+     "nfts": 132,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9cda5d20c2fc8d0e25fd53f9542162c48c61309e",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61e433e1986cb1c65e7de8fa04fe9c4917d50536",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc33672a4d3a39a430b25df90d90d95e020c68b14",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4103797ffbcc91e2e21bc309f8e6a8c1be2ba1bf",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x64dee0fb3d3b4b22bfb079c1cf47133cf368232a",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xce70d6dd1375859d5f152b22f7befd7bcda86666",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xfb0c8f67a5e5b5a39451bc99f411a6a0b01a5555",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 73,
+   "contract": "0x413512c5dc9c6182091ab0afac11b10261d1a26d",
+   "name": "THE 1000 PASS",
+   "minted": 136,
+   "recipients": 136,
+   "operators": 23,
+   "flagged_share": 0.022,
+   "hours_active": 13.58,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc40e573a4513078570518f0f4fafe441375d7b2e",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x68a9360e07a5fe96a2209a64fa486bb7b2df217b",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc2ce0444d4868838b2c903a0438e4bc60fb6e334",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x88db7645a43f59611e9983d13c46886b17cd9ba0",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd4554d1189c8094526938e60cd197ed7733e5263",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa7954cba75fd810002c5a31d71bc70d0a03ab977",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa3fbfc154c1e0db739616c90f570ce562cd61b0d",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc69de6a0b8f7385c87abab3a45211b4b84cb7f27",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 74,
+   "contract": "0xabc40861373bcd1fee36f53522db0a99fd9c2e0e",
+   "name": "CAT BOOT",
+   "minted": 131,
+   "recipients": 131,
+   "operators": 58,
+   "flagged_share": 0.038,
+   "hours_active": 5.03,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x197723cf5a04492837c92507330ebc6ea072c18c",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xbc593d83794900ea2f8d1a9aed36ab0e985d6861",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf6ae28b7ae08214b06347cffcf9aba65425d9cea",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7dc1bf414ac36fe6c5d30499d5a68315a5fc1ba5",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3257b41e02965d7b720bb880ce5592ae19670d6d",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf8cdd31b3136f0e61828101bda8aaae652aa101b",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x673bc0f02ab6d96bceb418803d0ea9862b5ba664",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc9590fa41f0515d665506ef17998b79af5f8ae1a",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 75,
+   "contract": "0x6473abe1ecdcf725f14b0295bd5ee5a6c4029d72",
+   "name": "Souls Club",
+   "minted": 611,
+   "recipients": 124,
+   "operators": 1,
+   "flagged_share": 0,
+   "hours_active": 0.12,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x17e9e0d951e9a52a697180119b90ce682e24c66f",
+     "nfts": 50,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xce09309d50111f5c25e4485f1f8e7b017d886d62",
+     "nfts": 43,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe40fdabe9d1b4c02aa190aaee56cbd80c2447dec",
+     "nfts": 40,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3aa65290d90ee283cdcdf6bfe3e7d896533fe90d",
+     "nfts": 40,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x45c01d82ebd0e567040c19718d8c0a06ab13940f",
+     "nfts": 31,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd8c629221bf930e10163d8db769324a3b5a9d276",
+     "nfts": 22,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x81cc1fe5244579f3027711882f26d8c37b9761a6",
+     "nfts": 21,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0c9befb7bd218d4baa4aa70e04a2ec7614b00456",
+     "nfts": 20,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 76,
+   "contract": "0x07f44c47743a2f36414a82b9f558ecfcf0eedcef",
+   "name": "up Position NFT",
+   "minted": 2091,
+   "recipients": 123,
+   "operators": 38,
+   "flagged_share": 0.736,
+   "hours_active": 23.97,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xba618977fe27a4d86663867d258491e953644da1",
+     "nfts": 557,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x66b570d1b419209c54cf9a85c04c64557c038edf",
+     "nfts": 457,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x59ffd878fdcedb50a382a78346dcc29f3fb88b7e",
+     "nfts": 365,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x097ba31b7acffd75b909fc7bef2e55424d2dacdc",
+     "nfts": 94,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0a0c68b4947c84582f293e52aff99f99de03a5be",
+     "nfts": 60,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x78323349ae5f6081b59c4f2eed2d0a2da2c9d6ab",
+     "nfts": 51,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x92fd9a01ae92903c0054acfeb7ed586287a546c9",
+     "nfts": 40,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8aab22353999fe7936a7d6c04ad4e81a8f25a785",
+     "nfts": 33,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 77,
+   "contract": "0xb2de1ffdc470abaaeef21493df08f06604c53e33",
+   "name": "Onlyhood",
+   "minted": 683,
+   "recipients": 118,
+   "operators": 36,
+   "flagged_share": 0.717,
+   "hours_active": 4.01,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61dbc2d15680a7631f5ea09ba9437db8e24b042f",
+     "nfts": 356,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61e433e1986cb1c65e7de8fa04fe9c4917d50536",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x39b725a5e58b62e66f3a5473e50fc091a2323c55",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc33672a4d3a39a430b25df90d90d95e020c68b14",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2855008c7764fb35fc73407e2091f5de2c577ecf",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9cda5d20c2fc8d0e25fd53f9542162c48c61309e",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x29e9dd5ddad1de3f21ba8d091e79e6d648f5251c",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4103797ffbcc91e2e21bc309f8e6a8c1be2ba1bf",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 78,
+   "contract": "0x97c164373104eabd4ca3ddcb06201601c0347444",
+   "name": "CryptoPons RH",
+   "minted": 134,
+   "recipients": 117,
+   "operators": 10,
+   "flagged_share": 0.075,
+   "hours_active": 1.13,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x15382bc910ef57565cbfdd01528cb04892652d2c",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x240e5ccfc1b8b7e76844897d7b9c9cbb99d10052",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x348465175d6a0c08ad27469c3e571dfe13795b31",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb971089812f83273fbeac1c5b312bc6a91bf51f6",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4bcd9e61a702a2a02dde9bb0fc859c583c0dc239",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc1f75fea2e6567915747797ea55fe46934959d61",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x876a4e954fa6a20951706240cd04062d7c55b24f",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5a51d26722c28f62328b49c3c35cec6ddb03c34e",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 79,
+   "contract": "0x43228f71f7b7a3c5928b2243b8ce4b994b325d70",
+   "name": "ARM CAT",
+   "minted": 250,
+   "recipients": 113,
+   "operators": 22,
+   "flagged_share": 0.8,
+   "hours_active": 12.88,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdefa34513df8268bad0ca68508f011b44612c201",
+     "nfts": 138,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7b67a29d1e9fd5105bd75968d4df22b6c543a444",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x094d85cff33dcdc7616b5cd9085f146c4f72f9bc",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb083300a133adfb08677656e58cd115aa8dc2bfd",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5be5a7b3c26a258ad0323c6f4828fc8115316574",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1eef41c3b51aa5b1f6164cf543b47a3c5e407e8b",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2aa29915682e03768d511deeb34cdaa70606d273",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0922e905584042e34d6ed946ea51f106be8124c1",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 80,
+   "contract": "0x47853c9dc85c676987c24198244629a6fa77adf1",
+   "name": "DEAD FREQUENCIES",
+   "minted": 404,
+   "recipients": 109,
+   "operators": 33,
+   "flagged_share": 0.574,
+   "hours_active": 0.06,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x22bffae9ef425b95200b7a903ee0633e393e17c0",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf5bcf39a77ce9ccc31e0f04ceb413873ae07a855",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7041aa8573d06cca3187e2e004cef66ecf818bea",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4fc7f41dce04d096f5a8ebe0e4d1b52a07554d73",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x54eb8130badd59997ba920ae5fb591bf805525b8",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5355adb4a26705b73f5b87e1471ae1a807eab66a",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8a4bc7736d642788af51761cbac19671766eed34",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x234e510aa9d4be0de896ecc92f559df5793e42c3",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 81,
+   "contract": "0x5f56abe078a465ddead00458bb47924ea7c08c2f",
+   "name": "VOIDKID",
+   "minted": 589,
+   "recipients": 106,
+   "operators": 1,
+   "flagged_share": 0,
+   "hours_active": 0.23,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x35e3d06d969b7f2f16ca6d5128d2732304cbe39c",
+     "nfts": 26,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe40fdabe9d1b4c02aa190aaee56cbd80c2447dec",
+     "nfts": 25,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3aa65290d90ee283cdcdf6bfe3e7d896533fe90d",
+     "nfts": 25,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0c9befb7bd218d4baa4aa70e04a2ec7614b00456",
+     "nfts": 24,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xde7cff4ed6e4790a49785681bc923828d34d3baf",
+     "nfts": 24,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcf420b68e258e6cfcbf5d72b0563021de79abaad",
+     "nfts": 23,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd5ed184f8e375eb5ef595004f9c6050db7ddc189",
+     "nfts": 22,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x10661ac9bfe1691946c78bfda635162e33f2c618",
+     "nfts": 21,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 82,
+   "contract": "0xcf071ee82aa176a74d5deb135fee5a4c966ffb97",
+   "name": "LIME HOOD PUNK",
+   "minted": 587,
+   "recipients": 104,
+   "operators": 1,
+   "flagged_share": 0,
+   "hours_active": 0.34,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x35e3d06d969b7f2f16ca6d5128d2732304cbe39c",
+     "nfts": 26,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe40fdabe9d1b4c02aa190aaee56cbd80c2447dec",
+     "nfts": 25,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3aa65290d90ee283cdcdf6bfe3e7d896533fe90d",
+     "nfts": 25,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0c9befb7bd218d4baa4aa70e04a2ec7614b00456",
+     "nfts": 24,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xde7cff4ed6e4790a49785681bc923828d34d3baf",
+     "nfts": 24,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcf420b68e258e6cfcbf5d72b0563021de79abaad",
+     "nfts": 23,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd5ed184f8e375eb5ef595004f9c6050db7ddc189",
+     "nfts": 22,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x10661ac9bfe1691946c78bfda635162e33f2c618",
+     "nfts": 21,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 83,
+   "contract": "0x58c8ec26a9defdcb3df7fef32fd68f50e3c4c8a2",
+   "name": "PlayOnMint",
+   "minted": 586,
+   "recipients": 104,
+   "operators": 1,
+   "flagged_share": 0,
+   "hours_active": 0.13,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x35e3d06d969b7f2f16ca6d5128d2732304cbe39c",
+     "nfts": 26,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe40fdabe9d1b4c02aa190aaee56cbd80c2447dec",
+     "nfts": 25,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3aa65290d90ee283cdcdf6bfe3e7d896533fe90d",
+     "nfts": 25,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0c9befb7bd218d4baa4aa70e04a2ec7614b00456",
+     "nfts": 24,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xde7cff4ed6e4790a49785681bc923828d34d3baf",
+     "nfts": 24,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcf420b68e258e6cfcbf5d72b0563021de79abaad",
+     "nfts": 23,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd5ed184f8e375eb5ef595004f9c6050db7ddc189",
+     "nfts": 22,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x10661ac9bfe1691946c78bfda635162e33f2c618",
+     "nfts": 21,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 84,
+   "contract": "0x3e579574063a5d0c9d3704ec2813cbbe2004201e",
+   "name": "Cats Pawshood",
+   "minted": 328,
+   "recipients": 104,
+   "operators": 41,
+   "flagged_share": 0.357,
+   "hours_active": 20.08,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9af6a9e13523acc989460da2c347b7de235675f3",
+     "nfts": 21,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x66003b1adb33f45a77ddd41d0d4c1fceb8d49f93",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcc997b58db9c2b0d6c71b90e2434f8f73275e34c",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x19310357eeb9b5af955bbd8ff639e65172e2995b",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe943fe834f337aadabfa33714e236b6d0c50c421",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x454dc25c9dcc5090ffccd8678736ecd9e2555b35",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x86b23a14e896f3945dd76d062047b040efeab0eb",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc9be5f620b249f42acfc8518053eac7c4c986c72",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 85,
+   "contract": "0x5fe8ff0607ff34b9e7fbb55017793d3f16423d3c",
+   "name": "EmberVale",
+   "minted": 583,
+   "recipients": 103,
+   "operators": 1,
+   "flagged_share": 0,
+   "hours_active": 0.04,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x35e3d06d969b7f2f16ca6d5128d2732304cbe39c",
+     "nfts": 26,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe40fdabe9d1b4c02aa190aaee56cbd80c2447dec",
+     "nfts": 25,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3aa65290d90ee283cdcdf6bfe3e7d896533fe90d",
+     "nfts": 25,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0c9befb7bd218d4baa4aa70e04a2ec7614b00456",
+     "nfts": 24,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xde7cff4ed6e4790a49785681bc923828d34d3baf",
+     "nfts": 24,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcf420b68e258e6cfcbf5d72b0563021de79abaad",
+     "nfts": 23,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd5ed184f8e375eb5ef595004f9c6050db7ddc189",
+     "nfts": 22,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x10661ac9bfe1691946c78bfda635162e33f2c618",
+     "nfts": 21,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 86,
+   "contract": "0x9806f0fac50269f6ef092ea3d5a3f33967e3f151",
+   "name": "Minehood",
+   "minted": 583,
+   "recipients": 103,
+   "operators": 1,
+   "flagged_share": 0,
+   "hours_active": 0.04,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x35e3d06d969b7f2f16ca6d5128d2732304cbe39c",
+     "nfts": 26,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe40fdabe9d1b4c02aa190aaee56cbd80c2447dec",
+     "nfts": 25,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3aa65290d90ee283cdcdf6bfe3e7d896533fe90d",
+     "nfts": 25,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0c9befb7bd218d4baa4aa70e04a2ec7614b00456",
+     "nfts": 24,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xde7cff4ed6e4790a49785681bc923828d34d3baf",
+     "nfts": 24,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcf420b68e258e6cfcbf5d72b0563021de79abaad",
+     "nfts": 23,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd5ed184f8e375eb5ef595004f9c6050db7ddc189",
+     "nfts": 22,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x10661ac9bfe1691946c78bfda635162e33f2c618",
+     "nfts": 21,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 87,
+   "contract": "0x142bd9e9cb23d2449c07c6bab41e92ee20e63e77",
+   "name": "BLACKTIDE: Stormbound Fleet",
+   "minted": 103,
+   "recipients": 103,
+   "operators": 15,
+   "flagged_share": 0.019,
+   "hours_active": 7.44,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x66c89da77bba4bbd2c870d12c1096a02c26e93f1",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcf0f33dc1332a6c0907c1cd732368982e0d520d8",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1a94144f6a80f223f6d0da3855a105046b30a760",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xab75d14eddfe1beca14910ceff9495bc39252d7d",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0a7c78a7bb4533cee071b7224b7bd88aaec0f454",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd34c49185bad5194ca1054e3aa166356a03a3992",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8d106c747cd21272d4c9ff0af8d53a9c9aca25d2",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6d0b4241e0801ff12dbe4633974c0b5e9c95d8b2",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 88,
+   "contract": "0xa988d058362082e346b3abffd2a3ddc9d50182be",
+   "name": "Oasis Dragons",
+   "minted": 882,
+   "recipients": 101,
+   "operators": 23,
+   "flagged_share": 0.679,
+   "hours_active": 3.14,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x61dbc2d15680a7631f5ea09ba9437db8e24b042f",
+     "nfts": 487,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x348465175d6a0c08ad27469c3e571dfe13795b31",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9e15fc4caf52651aee570e7773a3069d6951203e",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x800d0ff5318ed254bdcb11a5c21282b5c9b6ab78",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8647e897211caa1c18e283e0df7909069c2e3dce",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x43948bababa753a587fc475ced55c74760b716fc",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8893151487c6e15155db6b842f7cb1b894b7d627",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf321edaca73903ad74ddfa120a9998104253fc6b",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 89,
+   "contract": "0xcf9ecf72765a87c4f0089a3293ef6a53c1863dde",
+   "name": "Habibi Golden Key",
+   "minted": 100,
+   "recipients": 100,
+   "operators": 1,
+   "flagged_share": 0,
+   "hours_active": 12.17,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb0fae5ff520f70b7b43b9a08f2aae16d9390de6f",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xce545103f27a80ea0055ec509e8198742300a21e",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd4369e970d984595529276feac900bd79a78757f",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x8b1b7b1c1145eedb6bf427f52159769e3753b899",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xddf785bc4c9638d030eceaf88d6788543d47cbda",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x93be117b32a670beafc953597d9d09a5fc1789b4",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1992989135500057ddaf2e34b6e5e055be881269",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe68495acdb8cb9fab4808a871e85659d149c89f6",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 90,
+   "contract": "0x683078812cd9cf1e6af236f394b8c1cc98260210",
+   "name": "One Hundred Dollars",
+   "minted": 100,
+   "recipients": 100,
+   "operators": 30,
+   "flagged_share": 0.05,
+   "hours_active": 0.03,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9f1c13ddf31293620600ca2408a9d358d8a83f30",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xddccc009400520ed518675f64ccad77cbcb42ce9",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3cf08dce10c22d7a09eaaf33472c3af233b27685",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x67c56747c74ff103e2db5b544a6cc1d2fdae274a",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x44e8f6a55201d71539734c93976110bd0f7107c0",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe48b1f880020ff73c769c85875a9c3b3150af44d",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2e40fcaaccfacf8614acd4411d52a23d8f1b7782",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x87a82a0b4ef7cc8ad7a0479255abae397dd54518",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 91,
+   "contract": "0x6f30be42a090766b36b001188cddec85eca78fe7",
+   "name": "MISFIT II",
+   "minted": 100,
+   "recipients": 100,
+   "operators": 40,
+   "flagged_share": 0.11,
+   "hours_active": 1.2,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb4ba95fc62000c70f88fda8bb181854a55e168e6",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb7f0c1251598f275abbeb32ca5c8068dbdb7d62e",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5b47508e9030abed861db273a922b6791dd6de4e",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0cc0417e041f4d8dfea71d111d3ff531ac40ff7d",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcc997b58db9c2b0d6c71b90e2434f8f73275e34c",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2f2ca0ce4fe645530e49feeca51183367b8c6313",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xad8fceae917bf624a71396b3b39095ca145a9db3",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2b5b35ac5a2d5c1224337ba86bf3816abee69da3",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 92,
+   "contract": "0xe3c96d00693bb6090b9da2d0d0f4e0baa4224b3a",
+   "name": "Claude Apes",
+   "minted": 110,
+   "recipients": 94,
+   "operators": 21,
+   "flagged_share": 0.1,
+   "hours_active": 8.12,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc2bb0451f9efcadfdd618f82776ae0781f3f6caa",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcaa178139ed1de094ff208c6f89b634cb2a1c1e3",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x259eb093fc06c30eb09025e2a5236470fb559b1a",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1e27c6ab4ef23fd8c3f3543480c7ecb098aaa47c",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb38a349d6379be68a65f13945cbaab83cb081e08",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x39180ffc4befc95a55304f83e9cbb0fcba93f2f8",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcbfb9daeca29defa413868a7b4b6a91d1add0045",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x14c8cc81621af869728d218e7a95c54052c47e29",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 93,
+   "contract": "0xbfe048ccfdf7c003098861c1a846a9618739bfd0",
+   "name": "Claus IMD",
+   "minted": 555,
+   "recipients": 93,
+   "operators": 38,
+   "flagged_share": 0.27,
+   "hours_active": 3.63,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0907b14771f2b04c5a4643e611d23f7e988bd35d",
+     "nfts": 50,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7f18157dc4fc443a3d33d317946b8b0e2298b081",
+     "nfts": 50,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd00bcc63d9153170e08a40cdaa1eb658879a2a35",
+     "nfts": 40,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xcaa178139ed1de094ff208c6f89b634cb2a1c1e3",
+     "nfts": 40,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc2bb0451f9efcadfdd618f82776ae0781f3f6caa",
+     "nfts": 27,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2a0bc335e2c27df64781b7f710a950716852d052",
+     "nfts": 20,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf72721b49249c4c3b3ec05156409572b1cc16f39",
+     "nfts": 20,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdb20e066a429178597d2d5334a508b9083d9efd3",
+     "nfts": 15,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 94,
+   "contract": "0x970d2723d7ca0e4d7e51c4815acc229e6eb784c9",
+   "name": "ReefersRH",
+   "minted": 288,
+   "recipients": 91,
+   "operators": 22,
+   "flagged_share": 0.611,
+   "hours_active": 4.28,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf17b8db838968ff24b3b13afc0050bd9f6889c0d",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x55043e1cfd2419872dabb8a6549fe4c7622a9c25",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x082158379f102409f6778f0061b29f85312a2f35",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x95ffad101e00600b3a5ec2305a5ecd04dae370a7",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x19310357eeb9b5af955bbd8ff639e65172e2995b",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf321edaca73903ad74ddfa120a9998104253fc6b",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x18f73fa215e1b0286f3da1a185d758241988ad7b",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x29e9dd5ddad1de3f21ba8d091e79e6d648f5251c",
+     "nfts": 4,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 95,
+   "contract": "0xe26d8a9f143d03ba26298bc88073d74406445fd8",
+   "name": "Mineland rh",
+   "minted": 92,
+   "recipients": 91,
+   "operators": 1,
+   "flagged_share": 0,
+   "hours_active": 4.39,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1f00b89f92990b8b3a1708a59e11397dc5af0364",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb4d64772218d36f97974e8bb6ef0d01b026c9a14",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x274dea9e5746f0d57781f64777e3a3d73624ad5a",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa4adc8abe09cf3c06f353576c2e9886eef815ebe",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc279cce107a9272ffec07cb1b7471491c2fee5a2",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xe1d29d0a39962a9a8d2a297ebe82e166f8b8ec18",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x08f189a5983980cfb5b613065ad5fbf39c62fc59",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd982292dc9c524fddbfc1931f7137292007ec1cb",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 96,
+   "contract": "0x7a59adc36aeb4fcf4b1a60db4b2eef8d80aff1e5",
+   "name": "Ape City Buildings",
+   "minted": 610,
+   "recipients": 87,
+   "operators": 39,
+   "flagged_share": 0.018,
+   "hours_active": 23.8,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x46711e13f584b7c5959ba4b322a2816abe352e8e",
+     "nfts": 100,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x214e6dca2cf60987a25ed93fd25b5206950e6986",
+     "nfts": 57,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9433d2eef9f4fcef8888d449b76405270b358395",
+     "nfts": 45,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x6f84faf45d90fa0d5c2added12c998e628bc4c2f",
+     "nfts": 35,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x324a11743265d1d180598dee9ec133a0f01e9091",
+     "nfts": 25,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x052e89241d6e60c28b485b6f22ddefaf4b2fa9df",
+     "nfts": 23,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0f4dd5c14d716172aa2bac197dfcd2e23a75bce8",
+     "nfts": 20,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xbf8b9af56e4779fa93126f5c0e25d5b175e53f80",
+     "nfts": 17,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 97,
+   "contract": "0xd6d244917c75e449c977dedd4f5e7bf9083e8c1d",
+   "name": "King nft",
+   "minted": 167,
+   "recipients": 85,
+   "operators": 15,
+   "flagged_share": 0.659,
+   "hours_active": 11.62,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2b49eb7586f1f64677c57e18f8f6acfc9ab1be91",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7700c3651abbd0010d07b8746c0dae943d7cec9f",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xb49052b980e0fb4f1960cf17215c3300c879c8d1",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x4d6e37a933a652784180562b8868b373f48c4cac",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2f2ca0ce4fe645530e49feeca51183367b8c6313",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1700af4c1b4523db1f79448099745ff585b2f0e4",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xa10687567ce90eb92849631d081dc08bfc5dba78",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf6457b39fda376fe9ac454059f56495842eca7cd",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 98,
+   "contract": "0x0977117936609e853d4e4022ad250d2dda9cb2b7",
+   "name": "MemeScape Legends",
+   "minted": 100,
+   "recipients": 81,
+   "operators": 45,
+   "flagged_share": 0,
+   "hours_active": 1.66,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf86d92a8c4b7bd30c4d1a18c8cc95e08e253cc63",
+     "nfts": 20,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x5c3835dedbf5b19a0da2eac8b2e30b940766febe",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x138b95452077fdd744c24a5a5e9e6389cf1f37cd",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1c60759b7ad62d9576d88912f68746dfbffc45fd",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x0f4dd5c14d716172aa2bac197dfcd2e23a75bce8",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd2bdc21655d757ecd19d19bb105fccacddacf700",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xf42733ac2a7d29a3a9346f9a637add82d216fd3b",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x3314f16770eea2745b3e9bb9b50cd407bd2582b8",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 99,
+   "contract": "0x034908ddaed44b57709200c6e2c555b0b5a0fa57",
+   "name": "SplitzPunks",
+   "minted": 134,
+   "recipients": 80,
+   "operators": 23,
+   "flagged_share": 0.015,
+   "hours_active": 7.04,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xc34c626aedf0cce91b922c8cdd9a23d19d9be7ff",
+     "nfts": 25,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x7138d09bfdcfaeaa0819dc4607a55bf95941ad7e",
+     "nfts": 10,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xfe85e3da74388224b652504f88251ca25a81ed0a",
+     "nfts": 7,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x9d4c0a059a8b2d1e74994178d8a93d5bfd925f58",
+     "nfts": 6,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x2a0bc335e2c27df64781b7f710a950716852d052",
+     "nfts": 5,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xd462d48ce181f2108d90fd8cd84c4c42b9a1a525",
+     "nfts": 3,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x82a47117b89224bd81548efe11160f5041595455",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xad841cea11444b6a091ff0621fb587b67bbf0896",
+     "nfts": 2,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  },
+  {
+   "rank": 100,
+   "contract": "0x864e040c4c16af892c2737687d3dd34e190d2613",
+   "name": "JELLY KRAZERS",
+   "minted": 188,
+   "recipients": 77,
+   "operators": 11,
+   "flagged_share": 0.181,
+   "hours_active": 5.55,
+   "top_payers": [
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x076c0807492a40c5ea87630d5b409f3fd2f76dc0",
+     "nfts": 112,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x160c2deba0e58cfbf42d1d56cfa61f263c6de28a",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x733ab4fecce45bb925c499a9fc91982740697701",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xaea7434c35b03b0dee916d869bb14cb01753fa03",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xdc5edb6c04a990b25f59883dbb87ff8bd7de59a7",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0xddc1295fb6ff4487d48eca052e37da6d570eeafd",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x10723c57c399dd752de184dd4e77d2916bb91d84",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    },
+    {
+     "role": "PAID_BUYER",
+     "wallet": "0x1700af4c1b4523db1f79448099745ff585b2f0e4",
+     "nfts": 1,
+     "note": "paid ETH for this collection"
+    }
+   ]
+  }
+ ],
+ "channels": [
+  {
+   "bucket": "Wildcards",
+   "collections": 282,
+   "mints": 108693,
+   "wallets": 282
+  },
+  {
+   "bucket": "Community drops",
+   "collections": 10,
+   "mints": 38400,
+   "wallets": 10
+  },
+  {
+   "bucket": "DeFi / dex positions",
+   "collections": 4,
+   "mints": 17413,
+   "wallets": 4
+  },
+  {
+   "bucket": "Generative art",
+   "collections": 1,
+   "mints": 5555,
+   "wallets": 1
+  },
+  {
+   "bucket": "Identity / credentials",
+   "collections": 1,
+   "mints": 3878,
+   "wallets": 1
+  },
+  {
+   "bucket": "Character / mascot",
+   "collections": 1,
+   "mints": 3333,
+   "wallets": 1
+  },
+  {
+   "bucket": "Gaming",
+   "collections": 1,
+   "mints": 64,
+   "wallets": 1
+  }
+ ]
+}

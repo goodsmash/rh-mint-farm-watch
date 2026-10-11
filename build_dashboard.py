@@ -46,6 +46,14 @@ with open(os.path.join(BASE, 'master_list.csv'), 'w', newline='') as f:
 for tier in ('STRONG_SIGNAL', 'MIXED_SIGNAL'):
     with open(os.path.join(BASE, f'flagged_{tier.split("_")[0].lower()}.txt'), 'w') as f:
         f.write('\n'.join(m['address'] for m in ml if m['tier'] == tier) + '\n')
+# top-participants praise data (window-keyed) so the dashboard tab is self-contained
+TOP = {}
+for w in ('24h', '168h'):
+    p = os.path.join(BASE, 'data', 'top_participants', f'{w}.json')
+    if os.path.exists(p):
+        TOP[w] = json.load(open(p))
+with open(os.path.join(DOCS, 'top_participants.js'), 'w') as f:
+    f.write('window.TOP_PARTICIPANTS=' + json.dumps(TOP) + ';\n')
 # dashboard data (trim per-report wallet list for size)
 slim = {}
 for w, r in reports.items():

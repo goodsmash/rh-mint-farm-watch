@@ -1,7 +1,7 @@
 {
 "name": "Robinhood Chain (4663) mint-farm watchlist - GoodsMash RIGS community drop",
 "source": "https://github.com/goodsmash/rh-mint-farm-watch",
-"generated": "2026-10-11T08:23:36",
+"generated": "2026-10-11T08:19:12",
 "chain_id": 4663,
 "method": "Public RPC eth_getLogs replay of every ERC-721 / ERC-1155 mint, sampled tx senders, outflow tracing. Scores are evidence signals, not proof of identity. Tiers: STRONG_SIGNAL >=70, MIXED_SIGNAL 40-69, LOW_SIGNAL 20-39.",
 "windows": {

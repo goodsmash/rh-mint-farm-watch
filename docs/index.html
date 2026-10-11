@@ -173,18 +173,7 @@ function who(){
 }
 
 
-function topp(){
-  const P = R[win] && R[win].participants;
-  if(!P){ $('#view').innerHTML='<div class="card">No participant data yet. Run participants.py.</div>'; return; }
-  const buyers = (P.top_buyers||[]).map((b,i)=>`<tr><td>${i+1}</td><td>${addrLink(b.wallet)}</td><td>${fmt(b.nfts)}</td><td><b>${b.paid_eth} ETH</b></td><td>${fmt(b.collections)}</td></tr>`).join('');
-  const holders = (P.top_holders||[]).map((h,i)=>`<tr><td>${i+1}</td><td>${addrLink(h.wallet)}</td><td><b>${fmt(h.nfts)}</b></td><td>${fmt(h.collections)}</td></tr>`).join('');
-  $('#view').innerHTML = `<div class="card"><b>Top participants</b> - the people who actually turned up.
-   <div class="note">This is praise, not a flag. These are the wallets that paid the most, or that hold the most. Nothing here is a bot label, and nothing here is an accusation.</div></div>
-   <div class="card"><b>Biggest buyers by what they paid</b><table><thead><tr><th>#</th><th>wallet</th><th>NFTs</th><th>paid</th><th>collections</th></tr></thead><tbody>${buyers}</tbody></table>
-   <div class="note">paid = ETH this wallet's own mint transactions carried (wei summed from each mint tx value). A multi-recipient tx can attribute its full value to each recipient, so treat it as an upper bound.</div></div>
-   <div class="card"><b>Largest holders by mints received</b><table><thead><tr><th>#</th><th>wallet</th><th>NFTs</th><th>collections</th></tr></thead><tbody>${holders}</tbody></table>
-   <div class="note">A wallet holding a very large number across many collections is a major participant or a hub - not a verdict.</div></div>`;
-}
+<script src="top_participants_tab.js"></script>
 
 let LOOK = null;
 async function loadLook(){ if (LOOK) return LOOK;
