@@ -217,7 +217,7 @@ function lookup(){
 }
 const RPC_KEY='rhwatch.rpc';
 function rpcUrl(){ return localStorage.getItem(RPC_KEY) || 'https://rpc.mainnet.chain.robinhood.com'; }
-async function rpcCall(method, params){ const r = await fetch(rpcUrl(), {method:'POST', headers:{'content-type':'application/json'}, body:JSON.stringify({jsonrpc:'2.0',id:1,method,params})});
+async function rpcCall(method, params){ const r = await fetch(rpcUrl(), {method:'POST', mode:'cors', headers:{'content-type':'application/json'}, body:JSON.stringify({jsonrpc:'2.0',id:1,method,params})});
   const j = await r.json(); if (j.error) throw new Error(j.error.message||JSON.stringify(j.error)); return j.result; }
 const NAMES = {};
 async function nameOf(c){ if (c in NAMES) return NAMES[c]; try { const h = await rpcCall('eth_call',[{to:c,data:'0x06fdde03'},'latest']);
@@ -227,6 +227,8 @@ async function nameOf(c){ if (c in NAMES) return NAMES[c]; try { const h = await
   if (!Number.isFinite(n) || n > avail || n > 96) { NAMES[c]='?'; return NAMES[c]; }
   let s=''; for(let i=0;i<n;i++) s+=String.fromCharCode(parseInt(h.substr(130+i*2,2),16));
   try { NAMES[c]=decodeURIComponent(escape(s)); } catch(e){ NAMES[c]=s.replace(/[^\x20-\x7e]/g,''); } } catch(e){ NAMES[c]='?'; } return NAMES[c]; }
+let LiveLast = null;
+let LiveError = null;
 function live(){
   $('#view').innerHTML = `<div class="card"><b>What is minting right now</b> - read live from the chain in your browser, ranked by <b>real</b> wallets (recipients not on the bot list).
    <div class="row" style="margin-top:8px"><label class="sub">RPC <input id="rpc" style="min-width:340px" value="${esc(rpcUrl())}"></label>
@@ -254,7 +256,8 @@ function live(){
       $('#st').textContent=`${fmt(logs.length)} mints in ${Object.keys(C).length} collections · head ${H}` + (hidden?` · ${hidden} DEX position NFTs hidden`:'');
       $('#lv').innerHTML = `<table><thead><tr><th>collection</th><th>minted</th><th>wallets</th><th>real wallets</th><th>to bots</th><th>last mint</th><th>copy the mint</th></tr></thead><tbody>${rows.map(r=>`<tr><td><b>${esc(r.name)}</b><br>${addrLink(r.c)}</td><td>${fmt(r.n)}</td><td>${fmt(r.w)}</td><td><b>${fmt(r.real)}</b></td><td><div class="bar"><i style="width:${r.bots*100}%"></i></div>${pct(r.bots)}</td><td>${r.ago}s ago</td><td><a href="${extx(r.tx)}" target="_blank" rel="noopener">latest mint tx</a></td></tr>`).join('')}</tbody></table>
        <div class="note">"latest mint tx" -> Input data shows the exact function a real person called. High "to bots" = farmed drop; low real wallets with huge minted = one wallet/creator.</div>`;
-    } catch(e){ $('#st').textContent='RPC error: '+e.message+' - try another RPC'; }
+      LiveLast = {H: H, logs: logs, rows: rows, L: L, html: $('#lv').innerHTML, t: 'live'};
+    } catch(e){ if (LiveLast){ $('#st').textContent='Live scan is down right now — showing the last scan; reload or set your own RPC for live data.'; $('#lv').innerHTML = LiveLast.html; } else { $('#st').textContent='RPC error: '+e.message+' - try another RPC'; } }
   };
 }
 function use(){
