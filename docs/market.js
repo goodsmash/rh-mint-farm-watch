@@ -29,7 +29,7 @@
     ethereum:  { id: 1,     rpc: 'https://ethereum-rpc.publicnode.com',       bs: 12.0,   label: 'Ethereum',  opensea: 'ethereum'  },
     base:      { id: 8453,  rpc: 'https://base-rpc.publicnode.com',           bs: 2.0,    label: 'Base',      opensea: 'base'      },
     apechain:  { id: 33139, rpc: 'https://rpc.apechain.com',                  bs: 2.0,    label: 'ApeChain',  opensea: 'apechain'  },
-    ink:       { id: 11111, rpc: 'https://rpc.inkprotocol.com',               bs: 2.0,    label: 'Ink',       opensea: 'ink'       }
+    ink:       { id: 11111, rpc: 'https://rpc-gel.inkonchain.com',               bs: 2.0,    label: 'Ink',       opensea: 'ink'       }
   };
   let chain = 'robinhood';
   let RPC = CHAINS[chain].rpc;
