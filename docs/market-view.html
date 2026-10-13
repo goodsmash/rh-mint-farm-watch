@@ -161,6 +161,7 @@ canvas{width:100%!important;height:100%!important}
     <button data-tab="tab-trending">🔥 Trending</button>
     <button data-tab="tab-whales">🐋 Whales</button>
     <button data-tab="tab-holders">👥 Holders</button>
+    <button data-tab="tab-collection">🗂️ Scan Collection</button>
     <button data-tab="tab-about">ℹ️ About</button>
   </nav>
 
@@ -215,25 +216,57 @@ canvas{width:100%!important;height:100%!important}
     </div>
   </div>
 
-  <div class="tab" id="tab-about">
-    <div class="card">
-      <h3>ℹ️ About This Tool</h3>
-      <div class="body">
-        <p class="muted" style="font-size:.86rem">This is a read-only on-chain market analytics dashboard for <strong>OpenSea Seaport</strong> NFT sales. Every sale is recorded as an OrderFulfilled log in the Seaport contract on each chain. This page replays those logs directly from the chain — no API key, no upload, read-only.</p>
-        <div class="instr"><strong>Supported chains:</strong><br>
-          • Base (8453) · • Ink (11111, ERC-1155 + ERC-721)<br>
-          • Ethereum (1) · • ApeChain (33139) · • Robinhood (4663)<br><br>
-          <strong>OpenSea link format:</strong> https://opensea.io/assets/{chain-slug}/{contractAddress}</div>
-        <div class="instr" style="margin-top:8px"><strong>Master tools:</strong><br>
-          📊 Volume breakdown (1-7 day) · 🏆 Top collections · 🔍 Wallet audit · 🫧 Connected projects · 👥 Holders · 🚩 Flags</div>
-        <div class="instr" style="margin-top:8px"><strong>Data source:</strong> each chain's Seaport contract (OrderFulfilled topic 0x9d9af8e38d66c62e2c12f0225249fd9d721c54b83f48d9352c97c6cacdcb6f31). Block explorers: Blockscout for all chains.</div>
-        <p class="muted" style="font-size:.76rem">Flags = structural on-chain evidence (paid-for-mints, sweep, automated mints, machine timing) from the 24h scan. Read-only — no wallet connect, no signing, nothing confidential.</p>
+  <div class="tab" id="tab-collection">
+      <div class="card">
+        <h3>🗂️ Scan a Collection</h3>
+        <div class="body" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+          <div style="flex:2 1 380px">
+            <label for="collScanSel" style="margin-bottom:6px;font-size:.8rem">Collection address (ERC-721 or ERC-1155)</label>
+            <input id="collScanSel" type="text" placeholder="0x..." style="width:100%;font-family:var(--mono);font-size:.82rem;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card2);color:var(--fg)">
+          </div>
+          <div style="flex:1 1 160px">
+            <label style="margin-bottom:6px;font-size:.8rem">Chain</label>
+            <select id="collChainSel" style="width:100%">
+              <option value="base">Base</option>
+              <option value="ink">Ink</option>
+              <option value="ethereum">Ethereum</option>
+              <option value="apechain">ApeChain</option>
+              <option value="robinhood">Robinhood</option>
+            </select>
+          </div>
+          <div style="flex:1 1 140px" style="text-align:right">
+            <button id="scanCollectionBtn" class="btn" style="width:100%">Scan Collection</button>
+          </div>
+        </div>
+        <div class="instr" style="margin-top:8px;font-size:.68rem">Displays full-scan data: sales, every holder with units + first seen, flags, wash pairs, connected projects, and a per-chain sales breakdown.</div>
       </div>
     </div>
-  </div>
+
+  <div class="tab active" id="tab-about">
+      <div class="card">
+        <h3>ℹ️ About This Tool</h3>
+        <div class="body">
+          <p class="muted" style="font-size:.86rem">This is a read-only on-chain market analytics dashboard for <strong>OpenSea Seaport</strong> NFT sales. Every sale is recorded as an OrderFulfilled log in the Seaport contract on each chain. This page replays those logs directly from the chain — no API key, no upload, read-only.</p>
+          <div class="instr"><strong>Supported chains:</strong><br>
+            • Base (8453) · • Ink (11111, ERC-1155 + ERC-721)<br>
+            • Ethereum (1) · • ApeChain (33139) · • Robinhood (4663)<br><br>
+            <strong>OpenSea link format:</strong> https://opensea.io/assets/{chain-slug}/{contractAddress}</div>
+          <div class="instr" style="margin-top:8px"><strong>Master tools:</strong><br>
+            📊 Volume breakdown (1-7 day) · 🏆 Top collections · 🔍 Wallet audit · 🫧 Connected projects · 👥 Holders · 🚩 Flags</div>
+        </div>
+      </div>
+    </div>
 </div>
 
-<div class="card" style="margin-top:12px">
+
+    <div class="card" style="margin-top:12px" id="collScanBody">
+      <div class="body" style="text-align:center;padding:30px">
+        <div class="loader"></div>
+        <p class="muted" style="font-size:.85rem">Enter a collection address above and click <strong>Scan Collection</strong> to load the full scan.</p>
+      </div>
+    </div>
+
+  <div class="card" style="margin-top:12px">
   <div class="body" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px">
     <div class="card" style="border:1px solid var(--line)">
       <h3>📊 Volume Breakdown (1-7 days)</h3>
@@ -397,6 +430,63 @@ canvas{width:100%!important;height:100%!important}
     $('#holdersBody').innerHTML = rows || '<div class="empty">No holders.</div>';
   }
 
+  async function scanCollection(){
+    const coll = $('#collScanSel').value.trim().toLowerCase();
+    if(!coll || !coll.startsWith('0x')){ $('#collScanBody').innerHTML='<div class="empty">Enter a valid collection address starting with 0x.</div>'; return; }
+    const chain = $('#collChainSel').value;
+    const btn = $('#scanCollectionBtn');
+    const onProg = (p,n)=>{ btn.textContent = 'scanning… '+Math.round(p*100)+'%'; };
+    const prices = priceCache.get('eth') ? {eth: priceCache.get('eth')} : null;
+    const body = $('#collScanBody');
+    body.innerHTML = '<div class="loader"></div><p class="muted" style="text-align:center;padding:20px">Scanning collection on chain…</p>';
+    btn.disabled = true;
+    try{
+      const { head, from, sales } = await G.RHMarket.scanSales({ hours: 168, toBlock:null, onProgress:onProg });
+      const stats = G.RHMarket.salesStats(sales, prices);
+      const holdings = await G.RHMarket.holders(coll, { is1155:true, toBlock:null, fromBlock:0, onProgress:onProg });
+      const hStats = G.RHMarket.holderStats(holdings, flagMap);
+      const flaggedK = new Set(); for(const [a,v] of flagMap){if(v.t==='CONFIRMED')flaggedK.add(a);}
+      const flaggedUnits = hStats.top.filter(x=>flaggedK.has(x[0])).reduce((s,x)=>s+x[1],0);
+      let html = `<div class="stats-bar">
+        <div class="stat"><span>Sales</span><b>${stats.length}</b></div>
+        <div class="stat"><span>Volume</span><b>$${stats.reduce((a,b)=>a+b.volume,0).toLocaleString(undefined,{maximumFractionDigits:0})}</b></div>
+        <div class="stat"><span>Holders</span><b>${hStats.holders}</b></div>
+        <div class="stat"><span>Flagged wallets</span><b style="color:var(--red)">${hStats.flaggedHolders}</b></div>
+        <div class="stat"><span>Gini</span><b>${hStats.gini.toFixed(3)}</b></div>
+        <div class="stat"><span>Wash pairs</span><b>${stats.filter(s=>s.washShare>0).length}</b></div>
+      </div>`;
+      // Sales breakdown
+      html += `<div class="card"><h3>📈 Sales per chain</h3><div class="body table-scroll"><table><tr><th>#</th><th>collection</th><th>sales</th><th>volume</th><th>buyers</th><th>sellers</th><th>median</th><th>wash</th></tr>`;
+      for(let i=0;i<Math.min(stats.length,50);i++){
+        const s = stats[i];
+        html += `<tr><td class="n">${i+1}</td><td class="mono">${s.collection.slice(0,12)}…${s.collection.slice(-6)}</td><td class="n">${s.sales.toLocaleString()}</td><td class="n">$${s.volume.toLocaleString(undefined,{maximumFractionDigits:0})}</td><td class="n">${s.buyers}</td><td class="n">${s.sellers}</td><td class="n">${s.median.toFixed(4)}</td><td>${s.washShare>0.3?'<span class="tag tag-warn">wash</span>':(s.washShare>0?'<span class="tag tag-dim">low</span>':'<span class="tag tag-good">clean</span>')}</td></tr>`;
+      }
+      html += `</table></div></div>`;
+      // Holders
+      html += `<div class="card"><h3>👥 Holders (${hStats.holders})</h3><div class="body table-scroll"><table><tr><th>holder</th><th>units</th><th>first seen</th><th>flag</th></tr>`;
+      for(const [a,n] of hStats.top.slice(0,50)){
+        const f = flagMap.get(a.toLowerCase());
+        html += `<tr><td class="mono">${a.slice(0,6)}…${a.slice(-4)}</td><td class="n">${n.toLocaleString()}</td><td class="n">${holdings.firstSeen.get(a)?'…':'-'}</td><td>${f?(f.t==='CONFIRMED'?'<span class="tag tag-bad">CONFIRMED</span>':'<span class="tag tag-warn">WATCH</span>'):'<span class="tag tag-dim">—</span>'}</td></tr>`;
+      }
+      html += `</table><p class="muted" style="font-size:.7rem">Flagged units ${flaggedUnits.toLocaleString()} / ${hStats.units.toLocaleString()}</p></div></div>`;
+      // Wash pairs
+      const wash=[];
+      for(const s of stats){ for(const [k,n] of s.pairs){ if(n>=3){const [a,b]=k.split('|');wash.push([a,b,bal.get(a)||0,bal.get(b)||0,n]);} } }
+      const washPairs = wash.sort((x,y)=>y[2]-x[2]).slice(0,12);
+      html += `<div class="card"><h3>🧹 Wash-trade pairs (@3+ turns)</h3><div class="body table-scroll"><table><tr><th>#</th><th>pair</th><th>turns</th></tr>`;
+      for(let i=0;i<washPairs.length;i++){
+        const [a,b,_p,n] = washPairs[i];
+        html += `<tr><td class="n">${i+1}</td><td class="mono"><a class="link" href="${CHAIN_HREF[chain]+a}" target="_blank">${a.slice(0,6)}…${a.slice(-4)}</a> ↔ <a class="link" href="${CHAIN_HREF[chain]+b}" target="_blank">${b.slice(0,6)}…${b.slice(-4)}</a></td><td class="n">${n}</td></tr>`;
+      }
+      html += `</table></div></div>`;
+      body.innerHTML = html;
+    }catch(e){
+      body.innerHTML = `<div class="empty">Error: ${e.message}</div>`;
+    }finally{
+      btn.disabled = false;
+    }
+  }
+
   async function loadVolumes(){
     const btn = $('#refreshBtn'); btn.disabled = true;
     const windows = [1,6,12,24,72,168];
@@ -557,6 +647,7 @@ canvas{width:100%!important;height:100%!important}
   });
   $('#collSel').addEventListener('change', ()=>$('#loadHolderBtn').textContent='load');
   $('#loadHolderBtn').addEventListener('click', loadHolders);
+  $('#scanCollectionBtn').addEventListener('click', scanCollection);
 })();
 </script>
 </body>
