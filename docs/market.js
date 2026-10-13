@@ -11,7 +11,15 @@
   const T1155S = '0xc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f62';
   const T1155B = '0x4a39dc06d4c0dbc64b70af90fd698a233a518aa5d07e595d983b8c0526c8f7fb';
   const ORDER_FULFILLED = '0x9d9af8e38d66c62e2c12f0225249fd9d721c54b83f48d9352c97c6cacdcb6f31';
-  const SEAPORTS = ['0x0000000000000068f116a894984e2db1123eb395', '0x00000000000000adc04c56bf30ac9d3c0aaf14dc'];
+  /* per-chain Seaport addresses (Official OpenSea Seaport that chain) */
+  const SEAPORTS_BY_CHAIN = {
+    robinhood: ['0x0000000000000068f116a894984e2db1123eb395','0x00000000000000adc04c56bf30ac9d3c0aaf14dc'],
+    ethereum:  ['0x0000000000000068f116a894984e2db1123eb395','0x00000000000000adc04c56bf30ac9d3c0aaf14dc'],
+    base:      ['0x00000000000000adc04c56bf30ac9d3c0aaf14dc'],   // Seaport 1.6 – Base native CAs confirmed
+    apechain:  ['0x0000000000000068f116a894984e2db1123eb395','0x00000000000000adc04c56bf30ac9d3c0aaf14dc'],
+    ink:       ['0x0000000000000068f116a894984e2db1123eb395','0x00000000000000adc04c56bf30ac9d3c0aaf14dc']   // Ink = Seaport on Ethereum L2
+  };
+  let SEAPORTS = SEAPORTS_BY_CHAIN[chain] || SEAPORTS_BY_CHAIN.robinhood;
   const ZERO = '0x0000000000000000000000000000000000000000';
   const SPAN_ONE_ADDR = 9000000;
   const IPFS = 'https://ipfs.io/ipfs/';
@@ -20,7 +28,8 @@
     robinhood: { id: 4663,  rpc: 'https://rpc.mainnet.chain.robinhood.com',  bs: 0.1045, label: 'Robinhood', opensea: 'robinhood' },
     ethereum:  { id: 1,     rpc: 'https://ethereum-rpc.publicnode.com',       bs: 12.0,   label: 'Ethereum',  opensea: 'ethereum'  },
     base:      { id: 8453,  rpc: 'https://base-rpc.publicnode.com',           bs: 2.0,    label: 'Base',      opensea: 'base'      },
-    apechain:  { id: 33139, rpc: 'https://rpc.apechain.com',                  bs: 2.0,    label: 'ApeChain',  opensea: 'apechain'  }
+    apechain:  { id: 33139, rpc: 'https://rpc.apechain.com',                  bs: 2.0,    label: 'ApeChain',  opensea: 'apechain'  },
+    ink:       { id: 11111, rpc: 'https://rpc.inkprotocol.com',               bs: 2.0,    label: 'Ink',       opensea: 'ink'       }
   };
   let chain = 'robinhood';
   let RPC = CHAINS[chain].rpc;
@@ -33,9 +42,8 @@
     const meta = CHAINS[c];
     RPC = meta.rpc;
     BLOCK_S = meta.bs;
-    if (typeof rpcLabel !== 'undefined' && rpcLabel) {
-      // hook for UI to show
-    }
+    SEAPORTS = SEAPORTS_BY_CHAIN[c] || SEAPORTS_BY_CHAIN.robinhood;
+    if (typeof rpcLabel !== 'undefined' && rpcLabel) rpcLabel.textContent = meta.label + ' · ' + meta.rpc.replace(/^https?:\/\//, '').split('/')[0];
     return meta;
   }
   const chainName = () => chain;

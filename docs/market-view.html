@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>RH Mint-Farm Watch v2 Market · GoodsMash RIGS community drop</title>
-<meta name="description" content="On-chain market tracker for Robinhood Chain. OpenSea sales, holders, whales, flags and ratings — read live from the chain.">
+<title>OS Market · Multi-Chain Fork</title>
+<meta name="description" content="OpenSea Seaport on-chain market view for all chains: Base, Ink, Ethereum, ApeChain, Robinhood. Sales, holders, whales, wallets, volumes 1-7 days, connected-project graphs.">
 <style>
 :root{
   --bg:#0b0d10; --card:#13171c; --card2:#1a1f2a; --line:#232a33; --fg:#e6edf3; --mut:#8b98a5;
-  --acc:#ff6a1a; --red:#ff4d4f; --grn:#3fb950; --blu:#58a6ff; --yel:#f5b301;
+  --acc:#ff6a1a; --red:#ff4d4f; --grn:#3fb950; --yel:#f5b301; --blu:#58a6ff;
   --radius:12px; --mono:ui-monospace,SFMono-Regular,Consolas,monospace; --sans:system-ui,-apple-system,sans-serif;
 }
 *{box-sizing:border-box}
 body{margin:0;font-family:var(--sans);background:var(--bg);color:var(--fg);-webkit-font-smoothing:antialiased}
-.wrap{max-width:1280px;margin:0 auto;padding:16px}
+.wrap{max-width:1320px;margin:0 auto;padding:16px}
 header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);margin-bottom:12px}
 header .brand{font-size:1.05rem;display:flex;align-items:center;gap:10px}
 header .brand b{color:var(--acc)}
@@ -23,12 +23,12 @@ header .brand small{display:block;font-size:.78rem;color:var(--mut);font-family:
 .hd-row .sb label{font-size:.78rem;color:var(--mut);display:flex;align-items:center;gap:6px}
 .hd-row select,.hd-row input{background:var(--card2);border:1px solid var(--line);color:var(--fg);border-radius:8px;padding:8px 10px;font-size:.88rem;font-family:var(--mono);min-width:0}
 .hd-row select:focus,.hd-row input:focus{outline:2px solid var(--acc);border-color:transparent}
+.act{background:var(--acc);color:#111;font-weight:600;border:none;padding:8px 14px;border-radius:8px;cursor:pointer;font-size:.86rem}
 .tabs{display:flex;flex-wrap:wrap;gap:6px;border:1px solid var(--line);border-bottom:none;background:var(--card2);border-radius:12px 12px 0 0;padding:6px}
 .tabs button{background:transparent;border:none;color:var(--mut);padding:8px 14px;border-radius:9px;font-size:.86rem;cursor:pointer;font-family:var(--sans);transition:.15s}
 .tabs button:hover{color:var(--fg)}
 .tabs button.on{background:var(--acc);color:#111;font-weight:600}
-.tab{display:none;animation:fade .25s}
-.tab.active{display:block}
+.tab{display:none;animation:fade .25s}.tab.active{display:block}
 @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
 .card{margin-bottom:12px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
 .card h3{font-size:.82rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);padding:10px 14px;margin:0;border-bottom:1px solid var(--line)}
@@ -36,7 +36,7 @@ header .brand small{display:block;font-size:.78rem;color:var(--mut);font-family:
 .kpi{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px}
 .kpi .b{flex:1 1 160px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
 .kpi .b .l{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}
-.kpi .b .v{font-size:1.25rem;font-weight:700;font-family:var(--mono);margin-top:2px}
+.kpi .b .v{font-size:1.25rem;font-weight:700;font-family:var(--mono)}
 .kpi .b .s{font-size:.72rem;color:var(--mut)}
 table{width:100%;border-collapse:collapse;font-size:.8rem;font-family:var(--mono)}
 th,td{text-align:left;padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
@@ -50,43 +50,44 @@ tr:last-child td{border-bottom:none}
 .tag-dim{background:rgba(139,152,165,.1);color:var(--mut)}
 .link{display:inline-block;background:var(--acc);color:#111;font-size:.68rem;font-family:var(--mono);padding:3px 7px;border-radius:5px;text-decoration:none;white-space:nowrap}
 .link:hover{background:#e55a0f}
-.img{display:block;border-radius:6px;max-width:100%;height:auto}
 .empty{color:var(--mut);text-align:center;padding:24px}
 .muted{color:var(--mut)}
 .loader{width:28px;height:28px;border:3px solid var(--line);border-top-color:var(--acc);border-radius:50%;animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 .foot{text-align:center;color:var(--mut);font-size:.75rem;padding:14px;border-top:1px solid var(--line);margin-top:12px}
 .instr{font-family:var(--mono);font-size:.72rem;background:var(--card2);border:1px dashed var(--line);border-radius:8px;padding:8px 10px;color:var(--mut);word-break:break-all}
-::-webkit-scrollbar{width:8px;height:8px} ::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
+.graphWrap{position:relative;width:100%;height:520px;background:var(--card2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+canvas{width:100%!important;height:100%!important}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div class="brand"><b>RH</b> Mint-Farm Watch <b>v2 Market</b></div>
-    <div class="sub">OpenSea-linked on-chain market view for Robinhood Chain (4663) · read-NO Keys · read-only</div>
+    <div class="brand"><b>OS</b> Market · Multi-Chain Fork</div>
+    <div class="sub">OpenSea Seaport on-chain market for Base, Ink, Ethereum, ApeChain, Robinhood · read-NO Keys · 1-7 day volumes · wallet audit · connected-project graphs</div>
     <div class="hd-row">
       <div class="sb">
         <label for="chainSel">Chain</label>
         <select id="chainSel">
-          <option value="robinhood" selected>Robinhood</option>
+          <option value="base" selected>Base</option>
+          <option value="ink">Ink</option>
           <option value="ethereum">Ethereum</option>
-          <option value="base">Base</option>
           <option value="apechain">ApeChain</option>
+          <option value="robinhood">Robinhood</option>
         </select>
-        <label for="windowSel">Window</label>
+        <label for="windowSel">Volume Window</label>
         <select id="windowSel">
           <option value="24" selected>24 h</option>
-          <option value="1">1 h</option>
           <option value="6">6 h</option>
+          <option value="12">12 h</option>
           <option value="72">72 h</option>
-          <option value="7">7 d</option>
+          <option value="168">7 d</option>
         </select>
         <label class="sub" id="rpcLabel">RPC: <span id="rpcName">mainnet</span></label>
       </div>
       <div class="sb" style="justify-content:flex-end">
-        <button id="refreshBtn" style="font-size:.78rem">↻ refresh</button>
-        <span class="muted" id="statusTxt" style="font-size:.72rem"></span>
+        <button id="refreshBtn" class="act" style="font-size:.78rem;text-decoration:none">↻ refresh</button>
+        <span class="muted" style="font-size:.72rem" id="statusTxt"></span>
       </div>
     </div>
   </header>
@@ -96,8 +97,7 @@ tr:last-child td{border-bottom:none}
     <button data-tab="tab-trending">🔥 Trending</button>
     <button data-tab="tab-whales">🐋 Whales & wash</button>
     <button data-tab="tab-holders">👥 Holders</button>
-    <button data-tab="tab-flags">🚩 Flags & ratings</button>
-    <button data-tab="tab-about">ℹ️ About & links</button>
+    <button data-tab="tab-about">ℹ️ About</button>
   </nav>
 
   <div class="tab active" id="tab-market">
@@ -119,33 +119,57 @@ tr:last-child td{border-bottom:none}
   </div>
 
   <div class="tab" id="tab-holders">
-    <div class="row" style="margin-bottom:10px">
-      <label for="collSel" style="margin-right:8px">Collection</label>
-      <select id="collSel"><option value="">select a collection…</option></select>
-      <label style="color:var(--mut);margin-right:10px">window</label>
-      <select id="hWin"><option value="24">24 h</option><option value="7">7 d</option><option value="1">7 d (all)</option></select>
-      <button id="loadHolderBtn" class="act">↻ load</button>
+    <div class="card">
+      <h3>👥 Holders breakdown</h3>
+      <div class="body" style="display:flex;gap:10px;flex-wrap:wrap">
+        <div style="flex:2 1 320px">
+          <label for="collSel" style="margin-right:8px">Collection</label>
+          <select id="collSel"><option value="">select a collection…</option></select>
+        </div>
+        <div style="flex:1 1 160px">
+          <label style="margin-right:8px">volume window</label>
+          <select id="hWin"><option value="24">24 h</option><option value="7">7 d</option><option value="1">7 d (all)</option></select>
+        </div>
+        <div style="flex:1 1 120px" style="justify-content:flex-end">
+          <button id="loadHolderBtn" class="act">↻ load</button>
+        </div>
+      </div>
     </div>
     <div class="body" id="holdersBody"><div class="loader"></div></div>
   </div>
 
-  <div class="tab" id="tab-flags">
-    <div class="card"><h3>🚩 Flags & ratings (evidence from past launches)</h3><div class="body" id="flagsBody"><div class="loader"></div></div></div>
-  </div>
-
   <div class="tab" id="tab-about">
-    <div class="card"><h3>ℹ️ About & links</h3><div class="body">
-      <p class="muted" style="font-size:.82rem">Read-only on-chain market view for the Robinhood ecosystem. Every OpenSea sale is settled on-chain by Seaport — this page reads it straight from the chain, in your browser, with no API key and no upload.</p>
-      <div class="instr">OpenSea links: https://opensea.io/assets/{chain-slug}/{contractAddress}<br>
-Ethereum / Base / Arbitrum / ApeChain: market + holders (last 7 d). Bot tags exist only on Robinhood.</div>
-      <div class="instr" style="margin-top:8px">Preserved original — RH Mint-Farm Watch dashboard (12 tabs, RPC + blocklists): https://goodsmash.github.io/rh-mint-farm-watch/<br>
-GitHub: https://github.com/goodsmash/rh-mint-farm-watch<br>
-Master list: https://goodsmash.github.io/rh-mint-farm-watch/master_list.csv</div>
+    <div class="card"><h3>ℹ️ About</h3><div class="body">
+      <p class="muted" style="font-size:.82rem">OpenSea Seaport is the on-chain marketplace for NFT sales. Every sale is recorded as an <code>OrderFulfilled</code> log in the Seaport contract on each chain. This page replays those logs directly from the chain — no API key, no upload, read-only.</p>
+      <div class="instr">Supported chains: <strong>Base</strong> (8453), <strong>Ink</strong> (11111, ERC-1155 + ERC-721), <strong>Ethereum</strong> (1), <strong>ApeChain</strong> (33139), <strong>Robinhood</strong> (4663). OpenSea link format: <code>https://opensea.io/assets/{chain-slug}/{contractAddress}</code></div>
+      <div class="instr" style="margin-top:8px">Master tool list: <strong>Volumes</strong> (1-7 day), <strong>Top collections</strong> (ranked by volume), <strong>Wallet audit</strong> (fungible wallets for buys/sells), <strong>Connected-project graph</strong> (bubble graph, shared wallets → proximity), <strong>Holders</strong> (per collection).</div>
+      <div class="instr" style="margin-top:8px">Data source: each chain's Seaport contract (OrderFulfilled topic 0x9d9af8e38d66c62e2c12f0225249fd9d721c54b83f48d9352c97c6cacdcb6f31). Block explorers: Blockscout for all chains. Web: opensea.io.</div>
       <p class="muted" style="font-size:.78rem">Flags = structural on-chain evidence (paid-for-mints, sweep, automated mints, machine timing) from the 24h scan. Read-only — no wallet connect, no signing, nothing of ours is confidential.</p>
     </div></div>
   </div>
+
+  <div class="card">
+    <h3>📊 Volume breakdown (1-7 days)</h3>
+    <div class="body" id="volumesBody"><div class="loader"></div></div>
+  </div>
+
+  <div class="card">
+    <h3>🏆 Top collections (ranked by volume)</h3>
+    <div class="body" id="topCollBody"><div class="loader"></div></div>
+  </div>
+
+  <div class="card">
+    <h3>🔍 Wallet audit (fungible wallets — buys/sells)</h3>
+    <div class="body" id="walletsBody"><div class="loader"></div></div>
+  </div>
+
+  <div class="card">
+    <h3>🫧 Connected projects (bubble graph)</h3>
+    <div class="body" id="graphBody"><div class="loader"></div></div>
+  </div>
 </div>
-<div class="foot">Reading live on-chain data · market engine: Seaport OrderFulfilled replay · nothing uploaded, no keys</div>
+
+<div class="foot">Read-only on-chain market · Seaport OrderFulfilled replay · multi-chain (Base/Ink/Ethereum/ApeChain/Robinhood) · no keys, no upload</div>
 
 <script src="market.js"></script>
 <script>
@@ -153,21 +177,16 @@ Master list: https://goodsmash.github.io/rh-mint-farm-watch/master_list.csv</div
   'use strict';
   const $ = s => document.querySelector(s);
   const $$ = s => document.querySelectorAll(s);
-  const tabBtn = id => document.querySelector(`button[data-tab="${id}"]`);
-  const tabs = ['tab-market','tab-trending','tab-whales','tab-holders','tab-flags','tab-about'];
-  $$('.tabs button').forEach(b => b.addEventListener('click', () => {
-    $$('.tabs button').forEach(x=>x.classList.remove('active'));
-    $$('.tab').forEach(x=>x.classList.remove('active'));
-    b.classList.add('active'); const t=document.getElementById(b.dataset.tab); if(t) t.classList.add('active');
-  }));
-  const CHAIN = {
-    robinhood:{label:'Robinhood', href:(a)=>`https://opensea.io/assets/robinhood/${a}`},
-    ethereum:{label:'Ethereum', href:(a)=>`https://opensea.io/assets/ethereum/${a}`},
-    base:{label:'Base', href:(a)=>`https://opensea.io/assets/base/${a}`},
-    arbitrum:{label:'Arbitrum', href:(a)=>`https://opensea.io/assets/arbitrum/${a}`},
-    apechain:{label:'ApeChain', href:(a)=>`https://opensea.io/assets/apechain/${a}`} };
-  let chain = 'robinhood', win = 24, priceCache = new Map(), flagMap = new Map();
-  const RPCFALLBACK = ['https://rpc.mainnet.chain.robinhood.com','https://robinhood.drpc.org','https://rpc4663.drpc.org'];
+  const CHAIN_HREF = {
+    base:'https://opensea.io/assets/base/',
+    ink:'https://opensea.io/assets/ink/',
+    ethereum:'https://opensea.io/assets/ethereum/',
+    apechain:'https://opensea.io/assets/apechain/',
+    robinhood:'https://opensea.io/assets/robinhood/'
+  };
+  const CHAIN_LABEL = {base:'Base',ink:'Ink',ethereum:'Ethereum',apechain:'ApeChain',robinhood:'Robinhood'};
+  let chain = 'base', win = 24, priceCache = new Map(), flagMap = new Map();
+
   async function loadPrices(){
     const r = await fetch('https://api.coinbase.com/v2/prices/ETH-USD/spot').catch(()=>null);
     if(!r) return;
@@ -175,65 +194,56 @@ Master list: https://goodsmash.github.io/rh-mint-farm-watch/master_list.csv</div
     const eth = j ? +j.data.rate : 0;
     priceCache.set('eth', eth); priceCache.set('usd', eth*1e6);
   }
-  async function loadFlags(){
-    const base = 'https://goodsmash.github.io/rh-mint-farm-watch/';
-    const get = async p => { try{ const r=await fetch(base+p,{mode:'cors'}); return r.ok?await r.json():null; }catch(e){return null;} };
-    const strong = await get('flagged_strong.txt');
-    const mixed  = await get('flagged_mixed.txt');
-    flagMap = new Map();
-    (strong||[]).forEach(l=>{ const m=l.trim().match(/^(0x[0-9a-fA-F]{40})\s+(.*)$/); if(m) flagMap.set(m[1].toLowerCase(), {t:'CONFIRMED', raw:m[2]}); });
-    (mixed||[]).forEach(l=>{ const m=l.trim().match(/^(0x[0-9a-fA-F]{40})\s+(.*)$/); if(m && !flagMap.has(m[1].toLowerCase())) flagMap.set(m[1].toLowerCase(), {t:'MIXED', raw:m[2]}); });
-  }
+
   async function loadMarket(){
     const btn = $('#refreshBtn'); const onProg = (p,n)=>{ btn.disabled=true; btn.textContent='↻ scanning… '+Math.round(p*100)+'%'; };
     const { head, from, sales, rawLogs } = await G.RHMarket.scanSales({ hours: win, toBlock: null, onProgress: onProg });
     const prices = priceCache.get('eth') ? {eth: priceCache.get('eth')} : null;
     const stats = G.RHMarket.salesStats(sales, prices);
-    const totalVol = stats.reduce((a,b)=>a+b.volume,0);
-    document.getElementById('mSales').textContent = sales.length;
-    document.getElementById('mVol').textContent = '$'+(totalVol||0).toLocaleString(undefined,{maximumFractionDigits:0});
-    document.getElementById('mColl').textContent = stats.length;
-    document.getElementById('mFlag').textContent = stats.filter(s=>s.washShare>0).length;
+    const totalVol = stats.reduce((a,b)=>a+b.volume,0) || 0;
+    document.getElementById('mSales').textContent = sales.length || 0;
+    document.getElementById('mVol').textContent = '$'+totalVol.toLocaleString(undefined,{maximumFractionDigits:0});
+    document.getElementById('mColl').textContent = stats.length || 0;
+    document.getElementById('mFlag').textContent = stats.filter(s=>s.washShare>0).length || 0;
     const body = $('#marketBody');
-    if(!stats.length){ body.innerHTML='<div class="empty">No Seaport sales in this window. Set your own RPC.</div>'; return; }
+    if(!sales.length){ body.innerHTML = '<div class="empty">No Seaport sales in this window on this chain.</div>'; return; }
     let rows = '';
-    for(const s of stats.slice(0,60)){
+    for(const s of stats.slice(0,50)){
       rows += `<tr>
-        <td><a class="link" href="${CHAIN[chain].href(s.collection)}">${CHAIN[chain].label}/${s.collection.slice(0,6)}…${s.collection.slice(-4)}</a></td>
-        <td class="mono">${s.collection.slice(0,8)}…${s.collection.slice(-6)}</td>
+        <td class="mono">${s.collection.slice(0,10)}…${s.collection.slice(-6)}</td>
         <td class="n">${s.sales.toLocaleString()}</td>
         <td class="n">$${s.volume.toLocaleString(undefined,{maximumFractionDigits:0})}</td>
-        <td class="n">${s.buyers.toLocaleString()}</td>
-        <td class="n">${s.sellers.toLocaleString()}</td>
-        <td class="n">${s.floorish.toFixed(4)}</td>
+        <td class="n">${s.buyers}</td><td class="n">${s.sellers}</td>
         <td class="n">${s.median.toFixed(4)}</td>
-        <td class="n">${s.washShare>0.3?'<span class="tag tag-warn">wash</span>':(s.washShare>0?'<span class="tag tag-dim">low</span>':'<span class="tag tag-good">clean</span>')}</td>
+        <td>${s.washShare>0.3?'<span class="tag tag-warn">wash</span>':(s.washShare>0?'<span class="tag tag-dim">low</span>':'<span class="tag tag-good">clean</span>')}</td>
       </tr>`;
     }
     body.innerHTML = rows || '<div class="empty">No sales to display.</div>';
   }
+
   async function loadTrending(){
     const btn = $('#refreshBtn'); btn.disabled=true;
-    const onProg = (p,n)=>{ btn.textContent='↻ trending… '+Math.round(p*100)+'%'; };
-    const { head, from, sales } = await G.RHMarket.scanSales({ hours: 1, toBlock: null, onProgress: onProg });
     const prices = priceCache.get('eth') ? {eth: priceCache.get('eth')} : null;
+    const { head, from, sales } = await G.RHMarket.scanSales({ hours: 1, toBlock: null, onProgress: (p)=>{ btn.textContent='↻ trending… '+Math.round(p*100)+'%'; } });
+    const s24 = await G.RHMarket.scanSales({ hours: 24, toBlock: null });
     const stats = G.RHMarket.salesStats(sales, prices);
-    const last24 = await G.RHMarket.scanSales({ hours: 24, toBlock: null });
-    const s24 = G.RHMarket.salesStats(last24.sales, prices);
-    const avg24 = s24.reduce((a,b)=>a+b.volume,0)/24;
-    const rows = '';
-    for(const s of stats.slice(0,40)){
+    const s24Stats = G.RHMarket.salesStats(s24.sales, prices);
+    const avg24 = s24Stats.reduce((a,b)=>a+b.volume,0)/24 || 1;
+    let rows = '';
+    for(const s of stats.slice(0,30)){
       const ratio = avg24>0 ? Math.min(9, s.volume/avg24) : 0;
       const hot = s.volume > avg24*1.5;
       rows += `<div class="card" style="margin-top:8px">
         <div style="display:flex;justify-content:space-between;align-items:center">
-          <a class="link" href="${CHAIN[chain].href(s.collection)}">${CHAIN[chain].label}/${s.collection.slice(0,6)}…${s.collection.slice(-4)}</a>
+          <a class="link" href="${CHAIN_HREF[chain]+s.collection}" target="_blank">${CHAIN_LABEL[chain]}/${s.collection.slice(0,8)}…${s.collection.slice(-6)}</a>
           <span class="tag ${hot?'tag-warn':'tag-dim'}">${hot?'🔥 hot':'—'}</span>
         </div>
-        <div style="font-family:var(--mono);font-size:.74rem;color:var(--mut);">${s.sales} sales · $${s.volume.toFixed(0)} · ratio ${ratio.toFixed(2)}x</div></div>`;
+        <div style="font-family:var(--mono);font-size:.74rem;color:var(--mut)">${s.sales} sales · $${s.volume.toFixed(0)} · ratio ${ratio.toFixed(2)}x</div></div>`;
     }
     $('#trendingBody').innerHTML = rows || '<div class="empty">No trending data.</div>';
+    btn.disabled=false;
   }
+
   async function loadWhales(){
     const prices = priceCache.get('eth') ? {eth: priceCache.get('eth')} : null;
     const { head, from, sales } = await G.RHMarket.scanSales({ hours: win, toBlock: null });
@@ -243,34 +253,31 @@ Master list: https://goodsmash.github.io/rh-mint-farm-watch/master_list.csv</div
     const topBuyer = [...bal.entries()].sort((a,b)=>b[1]-a[1]).slice(0,6);
     const topSeller = [...bal.entries()].sort((a,b)=>b[1]-a[1]).slice(0,6);
     let rows = '';
-    rows += `<div class="card" style="margin-bottom:12px"><h3>Biggest buyers</h3><div class="body"><table><tr><th>#</th><th>wallet</th><th># sales</th><th>OpenSea</th></tr>`;
-    for(let i=0;i<topBuyer.length;i++){
-      const [w,n] = topBuyer[i];
-      rows += `<tr><td>${i+1}</td><td class="mono">${w.slice(0,6)}…${w.slice(-4)}</td><td class="n">${n}</td><td><a class="link" href="${CHAIN[chain].href(w)}">${CHAIN[chain].label}/${w.slice(0,6)}…</a></td></tr>`;
-    }
+    rows += `<div class="card" style="margin-bottom:12px"><h3>Biggest buyers</h3><div class="body"><table><tr><th>#</th><th>wallet</th><th># buys</th><th>OpenSea</th></tr>`;
+    for(let i=0;i<topBuyer.length;i++){const [w,n]=topBuyer[i];
+      rows += `<tr><td>${i+1}</td><td class="mono">${w.slice(0,6)}…${w.slice(-4)}</td><td class="n">${n}</td><td><a class="link" href="${CHAIN_HREF[chain]+w}" target="_blank">${CHAIN_LABEL[chain]}/${w.slice(0,6)}…</a></td></tr>`;}
     rows += `</table></div></div>`;
-    rows += `<div class="card" style="margin-bottom:12px"><h3>Biggest sellers</h3><div class="body"><table><tr><th>#</th><th>wallet</th><th># sales</th><th>OpenSea</th></tr>`;
-    for(let i=0;i<topSeller.length;i++){
-      const [w,n] = topSeller[i];
-      rows += `<tr><td>${i+1}</td><td class="mono">${w.slice(0,6)}…${w.slice(-4)}</td><td class="n">${n}</td><td><a class="link" href="${CHAIN[chain].href(w)}">${CHAIN[chain].label}/${w.slice(0,6)}…</a></td></tr>`;
-    }
+    rows += `<div class="card" style="margin-bottom:12px"><h3>Biggest sellers</h3><div class="body"><table><tr><th>#</th><th>wallet</th><th># sells</th><th>OpenSea</th></tr>`;
+    for(let i=0;i<topSeller.length;i++){const [w,n]=topSeller[i];
+      rows += `<tr><td>${i+1}</td><td class="mono">${w.slice(0,6)}…${w.slice(-4)}</td><td class="n">${n}</td><td><a class="link" href="${CHAIN_HREF[chain]+w}" target="_blank">${CHAIN_LABEL[chain]}/${w.slice(0,6)}…</a></td></tr>`;}
     rows += `</table></div></div>`;
     rows += `<div class="card"><h3>Wash-trade pairs (@3+ turns)</h3><div class="body"><table><tr><th>#</th><th>pair</th><th>turns</th></tr>`;
-    const wash = [];
-    for(const s of stats){ for(const [k,n] of s.pairs){ if(n>=3){ const [a,b]=k.split('|'); wash.push([a,b,bal.get(a)||0,bal.get(b)||0,n]); } } }
+    const wash=[];
+    for(const s of stats){ for(const [k,n] of s.pairs){ if(n>=3){const [a,b]=k.split('|');wash.push([a,b,bal.get(a)||0,bal.get(b)||0,n]);} } }
     const washPairs = wash.sort((x,y)=>y[2]-x[2]).slice(0,12);
     for(const [a,b,_p,n] of washPairs){
-      rows += `<tr><td class="n">#</td><td class="mono"><a class="link" href="${CHAIN[chain].href(a)}">${a.slice(0,6)}…${a.slice(-4)}</a> ↔ <a class="link" href="${CHAIN[chain].href(b)}">${b.slice(0,6)}…${b.slice(-4)}</a></td><td class="n">${n}</td></tr>`;
+      rows += `<tr><td class="n">#</td><td class="mono"><a class="link" href="${CHAIN_HREF[chain]+a}" target="_blank">${a.slice(0,6)}…${a.slice(-4)}</a> ↔ <a class="link" href="${CHAIN_HREF[chain]+b}" target="_blank">${b.slice(0,6)}…${b.slice(-4)}</a></td><td class="n">${n}</td></tr>`;
     }
     rows += `</table></div></div>`;
     $('#whalesBody').innerHTML = rows || '<div class="empty">No whales data.</div>';
   }
+
   async function loadHolders(){
     const coll = $('#collSel').value; if(!coll){ $('#holdersBody').innerHTML='<div class="empty">Pick a collection.</div>'; return; }
     const onProg = (p,n)=>{ $('#loadHolderBtn').textContent = 'loading… '+Math.round(p*100)+'%'; };
-    const h = await G.RHMarket.holders(coll, { is1155:false, toBlock: null, fromBlock:0, onProgress:onProg });
+    const h = await G.RHMarket.holders(coll, { is1155:false, toBlock:null, fromBlock:0, onProgress:onProg });
     const st = G.RHMarket.holderStats(h, flagMap);
-    const flaggedK = new Set(); for(const [a,v] of flagMap){ if(v.t==='CONFIRMED') flaggedK.add(a); }
+    const flaggedK = new Set(); for(const [a,v] of flagMap){if(v.t==='CONFIRMED')flaggedK.add(a);}
     const flaggedUnits = st.top.filter(x=>flaggedK.has(x[0])).reduce((s,x)=>s+x[1],0);
     let rows = `<div class="kpi" style="margin-bottom:10px">
       <div class="b"><div class="l">Holders</div><div class="v">${st.holders}</div></div>
@@ -280,57 +287,162 @@ Master list: https://goodsmash.github.io/rh-mint-farm-watch/master_list.csv</div
     </div><table><tr><th>holder</th><th>units</th><th>first seen</th><th>flag</th></tr>`;
     for(const [a,n] of st.top.slice(0,40)){
       const f = flagMap.get(a.toLowerCase());
-      rows += `<tr><td class="mono">${a.slice(0,6)}…${a.slice(-4)}</td>
-        <td class="n">${n.toLocaleString()}</td>
-        <td class="n">${h.firstSeen.get(a)?'…':'-'}</td>
-        <td>${f?(f.t==='CONFIRMED'?'<span class="tag tag-bad">CONFIRMED</span>':'<span class="tag tag-warn">WATCH</span>'):'<span class="tag tag-dim">—</span>'}</td></tr>`;
+      rows += `<tr><td class="mono">${a.slice(0,6)}…${a.slice(-4)}</td><td class="n">${n.toLocaleString()}</td><td class="n">${h.firstSeen.get(a)?'…':'-'}</td><td>${f?(f.t==='CONFIRMED'?'<span class="tag tag-bad">CONFIRMED</span>':'<span class="tag tag-warn">WATCH</span>'):'<span class="tag tag-dim">—</span>'}</td></tr>`;
     }
     rows += `</table><p class="muted" style="font-size:.74rem">Flagged units ${flaggedUnits.toLocaleString()} / ${st.units.toLocaleString()}</p>`;
     $('#holdersBody').innerHTML = rows || '<div class="empty">No holders.</div>';
   }
-  async function loadFlags(){
-    const body = $('#flagsBody');
-    const evidence = [
-      {addr:'0x3e19804e41b21be83a6f3566d283b8f5fb48a0c1', t:'CONFIRMED', l:'seeps 120k ETH → 93 sinks', s:'paid for 14 other wallets + sweep'},
-      {addr:'0x7ff2cb3cf1289b7b5c93bcc6b9946e60f9a5047c', t:'CONFIRMED', l:'sprayed 316 collections', s:'multi-drop, 1,384 mints'},
-      {addr:'0x98c716626d293bb219db44c980e0d441b3cdb8cf', t:'CONFIRMED', l:'farbink assembly', s:'collector → 2 sinks'},
-      {addr:'0xd096dc016e0178380c0d8e14bcda642bb75fcc25', t:'CONFIRMED', l:'0x98c7 … user farm', s:'paid 9 others, automated mints'}
-    ];
-    let rows = '';
-    for(const v of evidence){
-      rows += `<div class="card" style="margin-top:8px">
-        <div style="display:flex;align-items:center;gap:10px"><span class="tag tag-bad">${v.t}</span>
-          <span style="color:var(--mut);font-size:.74rem">${v.l}</span></div>
-        <div style="font-family:var(--mono);font-size:.74rem">${v.s} · <a class="link" href="https://robinhoodchain.blockscout.com/address/${v.addr}" target="_blank" rel="noopener">${v.addr.slice(0,6)}…${v.addr.slice(-4)}</a></div></div>`;
+
+  async function loadVolumes(){
+    const btn = $('#refreshBtn'); btn.disabled = true;
+    const windows = [1,6,12,24,72,168];
+    const rows = [];
+    for(const h of windows){
+      try{
+        const { head, from, sales } = await G.RHMarket.scanSales({ hours:h, toBlock:null });
+        const prices = priceCache.get('eth') ? {eth: priceCache.get('eth')} : null;
+        const stats = G.RHMarket.salesStats(sales, prices);
+        const vol = stats.reduce((a,b)=>a+b.volume,0);
+        rows.push({label:`${h}h`, sales: sales.length, volume: vol.toFixed(2), collections: stats.length, buyers: new Set(sales.map(s=>s.buyer)).size});
+      }catch(e){ rows.push({label:`${h}h`, error:true}); }
     }
-    rows += `<p class="muted" style="font-size:.76rem">Flags = structural on-chain evidence from the 24h scan (paid-for-mints, sweep, automated mints, machine timing). Read-only.</p>`;
-    body.innerHTML = rows || '<div class="empty">No launch flags yet.</div>';
+    const t = $('#volumesBody');
+    if(rows.some(r=>r.error)) t.innerHTML='<div class="empty">One or more windows failed. Reduce window size and retry.</div>';
+    else{
+      let h = '<table><tr><th>window</th><th>sales</th><th>collections</th><th>buyers</th><th>volume $</th></tr>';
+      for(const r of rows) h += `<tr><td class="mono">${r.label}</td><td class="n">${r.sales||0}</td><td class="n">${r.collections||0}</td><td class="n">${r.buyers||0}</td><td class="n">$${r.volume||0}</td></tr>`;
+      h += '</table>';
+      t.innerHTML = h;
+    }
+    btn.disabled = false;
   }
+
+  async function loadTopCollections(){
+    const btn = $('#refreshBtn'); btn.disabled = true;
+    const prices = priceCache.get('eth') ? {eth: priceCache.get('eth')} : null;
+    const { head, from, sales } = await G.RHMarket.scanSales({ hours: win, toBlock:null });
+    const stats = G.RHMarket.salesStats(sales, prices);
+    const top = stats.sort((a,b)=>b.volume-a.volume).slice(0,40);
+    const t = $('#topCollBody');
+    let h = '<table><tr><th>#</th><th>collection</th><th>sales</th><th>volume $</th><th>buyers</th><th>median $</th><th>wash</th></tr>';
+    for(let i=0;i<top.length;i++){
+      const s = top[i];
+      h += `<tr><td class="n">${i+1}</td><td class="mono">${s.collection.slice(0,10)}…${s.collection.slice(-6)}</td><td class="n">${s.sales.toLocaleString()}</td><td class="n">$${s.volume.toLocaleString(undefined,{maximumFractionDigits:0})}</td><td class="n">${s.buyers}</td><td class="n">$${s.median.toFixed(4)}</td><td>${s.washShare>0.3?'<span class="tag tag-warn">wash</span>':(s.washShare>0?'<span class="tag tag-dim">${s.washShare.toFixed(2)}</span>':'<span class="tag tag-good">clean</span>')}</td></tr>`;
+    }
+    h += '</table>';
+    t.innerHTML = h || '<div class="empty">No data or no supported chain selected.</div>';
+    btn.disabled = false;
+  }
+
+  async function loadWalletAudit(){
+    const btn = $('#refreshBtn'); btn.disabled = true;
+    const prices = priceCache.get('eth') ? {eth: priceCache.get('eth')} : null;
+    const { head, from, sales } = await G.RHMarket.scanSales({ hours: win, toBlock:null });
+    const stats = G.RHMarket.salesStats(sales, prices);
+    const bal = new Map();
+    for(const s of sales){ bal.set(s.buyer,(bal.get(s.buyer)||0)+1); bal.set(s.seller,(bal.get(s.seller)||0)+1); }
+    const wallets = [...bal.entries()].sort((a,b)=>b[1]-a[1]).slice(0,40);
+    const t = $('#walletsBody');
+    let h = '<table><tr><th>#</th><th>wallet</th><th># buys</th><th># sells</th><th>net</th><th>OpenSea</th></tr>';
+    for(let i=0;i<wallets.length;i++){
+      const [w,n] = wallets[i];
+      const buys = sales.filter(s=>s.buyer===w).length;
+      const sells = sales.filter(s=>s.seller===w).length;
+      const net = sells-buys;
+      const tag = net>5 ? '<span class="tag tag-bad">seller</span>' : (net<-5 ? '<span class="tag tag-good">buyer</span>' : '<span class="tag tag-dim">mixed</span>');
+      h += `<tr><td class="n">${i+1}</td><td class="mono">${w.slice(0,6)}…${w.slice(-4)}</td><td class="n">${buys}</td><td class="n">${sells}</td><td class="n">${net}</td><td><a class="link" href="${CHAIN_HREF[chain]+w}" target="_blank">open</a></td></tr>`;
+    }
+    h += '</table>';
+    t.innerHTML = h || '<div class="empty">No wallet data.</div>';
+    btn.disabled = false;
+  }
+
+  async function loadConnectedGraph(){
+    const btn = $('#refreshBtn'); btn.disabled = true;
+    const prices = priceCache.get('eth') ? {eth: priceCache.get('eth')} : null;
+    const { head, from, sales } = await G.RHMarket.scanSales({ hours: win, toBlock:null });
+    const stats = G.RHMarket.salesStats(sales, prices);
+    const proj = new Map();
+    for(const s of stats){
+      const p = proj.get(s.collection) || { collection:s.collection, volume:0, sales:0, buyers:new Set(), sellers:new Set(), tokens:new Set() };
+      p.volume += s.volume; p.sales += s.sales; p.buyers.add(s.buyer); p.sellers.add(s.seller);
+      s.tokens && s.tokens.forEach(t=>p.tokens.add(t));
+      proj.set(s.collection, p);
+    }
+    const projArr = [...proj.values()].sort((a,b)=>b.volume-a.volume).slice(0,15);
+    const connections = new Map();
+    for(const s of stats){
+      const set = new Set([s.buyer, s.seller]);
+      for(const a of set){ for(const b of set){ if(a<b){ const k=[a,b].sort().join('|'); connections.set(k,(connections.get(k)||0)+1); } } }
+    }
+    const t = $('#graphBody');
+    let h = '<p><strong>Connected projects (bubble graph)</strong> — each circle is a collection; size = 7-day volume; distance from shared buyers/sellers. Mouse over a circle to see its name and sales.</p>';
+    h += '<div class="graphWrap" id="graphCanvasWrap"><canvas id="bubbleCanvas"></canvas></div>';
+    t.innerHTML = h;
+    const canvas = $('#bubbleCanvas'); if(canvas){
+      const ctx = canvas.getContext('2d');
+      const wrap = canvas.parentElement;
+      const W = wrap.clientWidth || 800, H = wrap.clientHeight || 520;
+      canvas.width = W; canvas.height = H;
+      const N = projArr.length; if(N===0) return;
+      const maxVol = Math.max(...projArr.map(p=>p.volume),1);
+      const radius = v => 14 + (v.volume/maxVol)*34;
+      const pts = projArr.map(p=>({ x: Math.random()*W, y: Math.random()*H, vx:(Math.random()-0.5)*0.3, vy:(Math.random()-0.5)*0.3, radius: radius(p.volume), label: p.collection.slice(0,14)+'…', volume: p.volume, buyers: p.buyers.size, sellers: p.sellers.size }));
+      const repulsion = 0.002, damping = 0.94;
+      const simulate = () => {
+        for(const p of pts){ let fx=0, fy=0;
+          for(const q of pts){ if(p===q) continue;
+            const dx=p.x-q.x, dy=p.y-q.y, d=Math.hypot(dx,dy)||0.1;
+            const f = (p.radius*2+q.radius*2-d)*repulsion;
+            fx += f*dx/d; fy += f*dy/d;
+          }
+          p.x = Math.max(p.radius, Math.min(W-p.radius, p.x + p.vx*0.1 + fx));
+          p.y = Math.max(p.radius, Math.min(H-p.radius, p.y + p.vy*0.1 + fy));
+        }
+        ctx.clearRect(0,0,W,H);
+        for(const p of pts){
+          ctx.beginPath(); ctx.arc(p.x, p.y, p.radius, 0, Math.PI*2);
+          ctx.fillStyle = 'rgba(88,166,255,0.55)'; ctx.fill();
+          ctx.strokeStyle = '#58a6ff'; ctx.lineWidth = 1.5; ctx.stroke();
+          ctx.fillStyle = '#e6edf3'; ctx.font = '11px ui-monospace,monospace'; ctx.fillText(p.label, p.x-p.radius-60, p.y+3);
+        }
+        for(const [k,v] of connections){
+          const [a,b] = k.split('|');
+          const A = pts.find(p=>p.label.startsWith(a.slice(0,8))), B = pts.find(p=>p.label.startsWith(b.slice(0,8)));
+          if(A && B){
+            ctx.beginPath(); ctx.moveTo(A.x, A.y); ctx.lineTo(B.x, B.y);
+            ctx.strokeStyle = 'rgba(139,152,165,0.35)'; ctx.lineWidth = 1; ctx.stroke();
+          }
+        }
+        requestAnimationFrame(simulate);
+      };
+      simulate();
+    }
+    btn.disabled = false;
+  }
+
   async function init(){
     await loadPrices();
-    await loadFlags();
-    const { head, from, sales } = await G.RHMarket.scanSales({ hours: 24, toBlock: null });
-    const cols = new Set(sales.map(s=>s.collection));
-    const sel = $('#collSel');
-    cols.forEach(c=>{ const o=document.createElement('option'); o.value=c; o.textContent=c.slice(0,14); sel.appendChild(o); });
-    $('#refreshBtn').addEventListener('click', async ()=>{
-      win = +$('#windowSel').value;
-      await Promise.all([loadMarket(), loadTrending(), loadWhales(), loadFlags()]);
-    });
-    $('#windowSel').addEventListener('change', e=>{ win=+e.target.value; loadMarket(); loadTrending(); loadWhales(); });
-    const isChainSel = document.getElementById('chainSel');
-    if (isChainSel) isChainSel.addEventListener('change', async (e)=>{
-      const chosen = e.target.value;
-      if (window.G && G.RHMarket && G.RHMarket.setChain) { G.RHMarket.setChain(chosen); RPC = chosen; }
-      chain = chosen;
-      const rpcElement = document.getElementById('rpcName'); if (rpcElement) rpcElement.textContent = chosen;
-      await Promise.all([loadMarket(), loadTrending(), loadWhales(), loadFlags()]);
-    });
-    $('#collSel').addEventListener('change', ()=>$('#loadHolderBtn').textContent='load');
-    $('#loadHolderBtn').addEventListener('click', loadHolders);
-    await Promise.all([loadMarket(), loadTrending(), loadWhales(), loadFlags()]);
+    await loadTopCollections();
+    await Promise.all([loadMarket(), loadTrending(), loadWhales(), loadFlags(), loadVolumes(), loadTopCollections(), loadWalletAudit(), loadConnectedGraph()]);
   }
   init().catch(e=>{ document.getElementById('statusTxt').textContent='error: '+e.message; });
+
+  $('#refreshBtn').addEventListener('click', async ()=>{
+    win = +$('#windowSel').value;
+    await Promise.all([loadMarket(), loadTrending(), loadWhales(), loadFlags(), loadTopCollections(), loadWalletAudit(), loadConnectedGraph()]);
+  });
+  $('#windowSel').addEventListener('change', e=>{ win=+e.target.value; loadTopCollections(); loadWalletAudit(); loadConnectedGraph(); });
+  const isChainSel = document.getElementById('chainSel');
+  if(isChainSel) isChainSel.addEventListener('change', async (e)=>{
+    const chosen = e.target.value;
+    if(window.G && G.RHMarket && G.RHMarket.setChain) G.RHMarket.setChain(chosen);
+    chain = chosen;
+    const rpcElement = document.getElementById('rpcName'); if(rpcElement) rpcElement.textContent = CHAIN_LABEL[chosen];
+    await Promise.all([loadMarket(), loadTrending(), loadWhales(), loadFlags(), loadTopCollections(), loadWalletAudit(), loadConnectedGraph()]);
+  });
+  $('#collSel').addEventListener('change', ()=>$('#loadHolderBtn').textContent='load');
+  $('#loadHolderBtn').addEventListener('click', loadHolders);
 })();
 </script>
 </body>
