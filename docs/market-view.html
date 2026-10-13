@@ -349,7 +349,7 @@ canvas{width:100%!important;height:100%!important}
       <div style="display:flex;justify-content:space-between;margin-bottom:8px">
         <strong>Biggest buyers</strong><span style="color:var(--green)">▲ ${topBuyer.length} wallets</span>
       </div>
-      <div class="body table-scroll"><table><tr><th>#</th><th>wallet</th><th># buys</th><th>OpenSea</th></tr>`;
+      <div class="body table-scroll"><table><tr><th>#</th><th>wallet</th><th># buys</th><th>OpenSea</th></tr></table></div></div>`;
     for(let i=0;i<topBuyer.length;i++){const [w,n]=topBuyer[i];
       rows += `<tr><td>${i+1}</td><td class="mono">${w.slice(0,6)}…${w.slice(-4)}</td><td class="n">${n}</td><td><a class="link" href="${CHAIN_HREF[chain]+w}" target="_blank">${CHAIN_LABEL[chain]}/${w.slice(0,6)}…</a></td></tr>`;}`;
     rows += `</table></div></div>`;
