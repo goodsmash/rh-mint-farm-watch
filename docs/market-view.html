@@ -72,7 +72,6 @@ tr:last-child td{border-bottom:none}
           <option value="robinhood" selected>Robinhood</option>
           <option value="ethereum">Ethereum</option>
           <option value="base">Base</option>
-          <option value="arbitrum">Arbitrum</option>
           <option value="apechain">ApeChain</option>
         </select>
         <label for="windowSel">Window</label>
@@ -319,6 +318,14 @@ Master list: https://goodsmash.github.io/rh-mint-farm-watch/master_list.csv</div
       await Promise.all([loadMarket(), loadTrending(), loadWhales(), loadFlags()]);
     });
     $('#windowSel').addEventListener('change', e=>{ win=+e.target.value; loadMarket(); loadTrending(); loadWhales(); });
+    const isChainSel = document.getElementById('chainSel');
+    if (isChainSel) isChainSel.addEventListener('change', async (e)=>{
+      const chosen = e.target.value;
+      if (window.G && G.RHMarket && G.RHMarket.setChain) { G.RHMarket.setChain(chosen); RPC = chosen; }
+      chain = chosen;
+      const rpcElement = document.getElementById('rpcName'); if (rpcElement) rpcElement.textContent = chosen;
+      await Promise.all([loadMarket(), loadTrending(), loadWhales(), loadFlags()]);
+    });
     $('#collSel').addEventListener('change', ()=>$('#loadHolderBtn').textContent='load');
     $('#loadHolderBtn').addEventListener('click', loadHolders);
     await Promise.all([loadMarket(), loadTrending(), loadWhales(), loadFlags()]);

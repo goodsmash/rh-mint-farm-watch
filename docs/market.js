@@ -13,11 +13,33 @@
   const ORDER_FULFILLED = '0x9d9af8e38d66c62e2c12f0225249fd9d721c54b83f48d9352c97c6cacdcb6f31';
   const SEAPORTS = ['0x0000000000000068f116a894984e2db1123eb395', '0x00000000000000adc04c56bf30ac9d3c0aaf14dc'];
   const ZERO = '0x0000000000000000000000000000000000000000';
-  const BLOCK_S = 0.1045;           // measured average block time on 4663
-  const SPAN_ONE_ADDR = 9000000;    // RPC allows ~10M blocks when filtering on a single address
+  const SPAN_ONE_ADDR = 9000000;
   const IPFS = 'https://ipfs.io/ipfs/';
 
-  let RPC = 'https://rpc.mainnet.chain.robinhood.com';
+  const CHAINS = {
+    robinhood: { id: 4663,  rpc: 'https://rpc.mainnet.chain.robinhood.com',  bs: 0.1045, label: 'Robinhood', opensea: 'robinhood' },
+    ethereum:  { id: 1,     rpc: 'https://ethereum-rpc.publicnode.com',       bs: 12.0,   label: 'Ethereum',  opensea: 'ethereum'  },
+    base:      { id: 8453,  rpc: 'https://base-rpc.publicnode.com',           bs: 2.0,    label: 'Base',      opensea: 'base'      },
+    apechain:  { id: 33139, rpc: 'https://rpc.apechain.com',                  bs: 2.0,    label: 'ApeChain',  opensea: 'apechain'  }
+  };
+  let chain = 'robinhood';
+  let RPC = CHAINS[chain].rpc;
+  let BLOCK_S = CHAINS[chain].bs;
+  const SPAN_ONE_ADDR_local = SPAN_ONE_ADDR;
+
+  function setChain(c) {
+    if (!CHAINS[c]) return;
+    chain = c;
+    const meta = CHAINS[c];
+    RPC = meta.rpc;
+    BLOCK_S = meta.bs;
+    if (typeof rpcLabel !== 'undefined' && rpcLabel) {
+      // hook for UI to show
+    }
+    return meta;
+  }
+  const chainName = () => chain;
+  const getChainMeta = c => CHAINS[c || chain];
   const hx = n => '0x' + n.toString(16);
   const addrOf = w => '0x' + w.slice(-40).toLowerCase();
   const big = h => BigInt(h.startsWith('0x') ? h : '0x' + h);
