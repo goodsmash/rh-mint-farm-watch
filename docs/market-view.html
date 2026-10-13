@@ -4,67 +4,131 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>OS Market · Multi-Chain Fork</title>
-<meta name="description" content="OpenSea Seaport on-chain market view for all chains: Base, Ink, Ethereum, ApeChain, Robinhood. Sales, holders, whales, wallets, volumes 1-7 days, connected-project graphs.">
+<title>OS Market · Multi-Chain NFT Market</title>
+<meta name="description" content="OpenSea Seaport on-chain NFT market tracker for Base, Ink, Ethereum, ApeChain, Robinhood — multi-chain volumes, wallet auditing, connected-project graphs, 1-7 day analytics.">
 <style>
 :root{
-  --bg:#0b0d10; --card:#13171c; --card2:#1a1f2a; --line:#232a33; --fg:#e6edf3; --mut:#8b98a5;
-  --acc:#ff6a1a; --red:#ff4d4f; --grn:#3fb950; --yel:#f5b301; --blu:#58a6ff;
-  --radius:12px; --mono:ui-monospace,SFMono-Regular,Consolas,monospace; --sans:system-ui,-apple-system,sans-serif;
+  --bg:#080a0d; --bg2:#0b0d10; --card:#11151b; --card2:#161c24; --line:#232a33; --line2:#33404f;
+  --fg:#e6edf3; --mut:#8b98a5; --bright:#fbbf24; --accent:#ff6a1a; --green:#3fb950; --red:#ff4d4f; --blue:#58a6ff; --cyan:#38bdf8;
+  --radius:14px; --radius-sm:10px; --font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,Consolas,monospace;
 }
 *{box-sizing:border-box}
-body{margin:0;font-family:var(--sans);background:var(--bg);color:var(--fg);-webkit-font-smoothing:antialiased}
-.wrap{max-width:1320px;margin:0 auto;padding:16px}
-header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);margin-bottom:12px}
-header .brand{font-size:1.05rem;display:flex;align-items:center;gap:10px}
-header .brand b{color:var(--acc)}
-header .brand small{display:block;font-size:.78rem;color:var(--mut);font-family:var(--mono)}
-.hd-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
-.hd-row .sb label{font-size:.78rem;color:var(--mut);display:flex;align-items:center;gap:6px}
-.hd-row select,.hd-row input{background:var(--card2);border:1px solid var(--line);color:var(--fg);border-radius:8px;padding:8px 10px;font-size:.88rem;font-family:var(--mono);min-width:0}
-.hd-row select:focus,.hd-row input:focus{outline:2px solid var(--acc);border-color:transparent}
-.act{background:var(--acc);color:#111;font-weight:600;border:none;padding:8px 14px;border-radius:8px;cursor:pointer;font-size:.86rem}
-.tabs{display:flex;flex-wrap:wrap;gap:6px;border:1px solid var(--line);border-bottom:none;background:var(--card2);border-radius:12px 12px 0 0;padding:6px}
-.tabs button{background:transparent;border:none;color:var(--mut);padding:8px 14px;border-radius:9px;font-size:.86rem;cursor:pointer;font-family:var(--sans);transition:.15s}
-.tabs button:hover{color:var(--fg)}
-.tabs button.on{background:var(--acc);color:#111;font-weight:600}
+body{
+  margin:0; font-family:var(--font); background:var(--bg); color:var(--fg);
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+::selection{background:var(--accent);color:#111}
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--line2);border-radius:4px}
+.wrap{max-width:1400px;margin:0 auto;padding:0 20px}
+header{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;
+  padding:18px 20px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#0d1117 0%,var(--bg) 100%);position:sticky;top:0;z-index:100;
+}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .mark{
+  width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--red));
+  display:flex;align-items:center;justify-content:center;color:#111;font-weight:800;font-size:.85rem;box-shadow:0 4px 12px rgba(255,106,26,.3);
+}
+.brand h1{font-size:1.1rem;margin:0;letter-spacing:.3px}
+.brand h1 b{color:var(--accent)}
+.brand .sub{font-size:.74rem;color:var(--mut);letter-spacing:.2px}
+.hd-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:12px}
+.hd-row .sb label{font-size:.72rem;color:var(--mut);display:flex;align-items:center;gap:6px;text-transform:uppercase;letter-spacing:.5px}
+.hd-row select,.hd-row input{background:var(--card2);border:1px solid var(--line);color:var(--fg);border-radius:8px;padding:8px 10px;font-size:.82rem;font-family:var(--mono);min-width:0;transition:border-color .15s}
+.hd-row select:focus,.hd-row input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,106,26,.1)}
+.hd-row select option{background:var(--card2);color:var(--fg)}
+.btn{
+  background:linear-gradient(135deg,var(--accent),#ff8f40);color:#111;font-weight:600;
+  padding:8px 14px;border:none;border-radius:8px;cursor:pointer;font-size:.84rem;transition:all .15s;
+  box-shadow:0 4px 12px rgba(255,106,26,.25);letter-spacing:.2px;
+}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(255,106,26,.35)}
+.btn:active{transform:translateY(0)}
+.btn.ghost{background:rgba(255,255,255,.06);color:var(--fg);box-shadow:none;border:1px solid var(--line)}
+.btn.ghost:hover{background:rgba(255,255,255,.12);transform:translateY(-1px)}
+.tabs{
+  display:flex;flex-wrap:wrap;gap:4px;border:1px solid var(--line);border-bottom:none;background:var(--card);border-radius:12px 12px 0 0;padding:6px;position:relative;
+}
+.tabs button{
+  background:transparent;border:none;color:var(--mut);padding:8px 14px;border-radius:8px;font-size:.82rem;
+  cursor:pointer;font-family:var(--font);transition:all .15s;position:relative;
+}
+.tabs button:hover{color:var(--fg);background:rgba(255,255,255,.06)}
+.tabs button.on{background:var(--accent);color:#111;font-weight:600;box-shadow:0 2px 8px rgba(255,106,26,.3)}
 .tab{display:none;animation:fade .25s}.tab.active{display:block}
-@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
-.card{margin-bottom:12px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-.card h3{font-size:.82rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);padding:10px 14px;margin:0;border-bottom:1px solid var(--line)}
-.card .body{padding:12px 14px}
-.kpi{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px}
-.kpi .b{flex:1 1 160px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
-.kpi .b .l{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}
-.kpi .b .v{font-size:1.25rem;font-weight:700;font-family:var(--mono)}
-.kpi .b .s{font-size:.72rem;color:var(--mut)}
-table{width:100%;border-collapse:collapse;font-size:.8rem;font-family:var(--mono)}
-th,td{text-align:left;padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-th{background:var(--card2);font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--mut);position:sticky;top:0}
-th .op,td .op{color:var(--mut);font-size:.7rem}
+@keyframes fade{from{opacity:0}to{opacity:1)}
+.card{
+  margin-bottom:14px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;transition:border-color .15s;position:relative;
+}
+.card:hover{border-color:var(--line2)}
+.card h3{
+  font-size:.78rem;text-transform:uppercase;letter-spacing:.6px;color:var(--mut);padding:12px 16px;margin:0;
+  border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px;
+}
+.card h3 .badge{
+  font-size:.64rem;text-transform:none;letter-spacing:0;padding:4px 10px;border-radius:20px;
+  background:rgba(255,255,255,.06);color:var(--mut);
+}
+.card .body{padding:16px 20px}
+.kpi{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;margin-bottom:14px}
+.kpi .b{
+  background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border:1px solid var(--line);
+  border-radius:var(--radius-sm);padding:14px 18px;transition:background .15s;
+}
+.kpi .b:hover{background:rgba(255,255,255,.05)}
+.kpi .b .l{font-size:.68rem;text-transform:uppercase;letter-spacing:.5px;color:var(--mut);font-weight:600}
+.kpi .b .v{font-size:1.5rem;font-weight:700;font-family:var(--mono);color:var(--fg);margin-top:4px;line-height:1.2}
+.kpi .b .s{font-size:.68rem;color:var(--mut);margin-top:2px}
+.kpi .v.accent{color:var(--accent)}
+.kpi .v.green{color:var(--green)}
+.kpi .v.red{color:var(--red)}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:.78rem;font-family:var(--mono)}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:middle;white-space:nowrap}
+th{background:rgba(255,255,255,.04);font-size:.68rem;text-transform:uppercase;letter-spacing:.5px;color:var(--mut);position:sticky;top:0;z-index:1}
+th .op,td .op{color:var(--mut);font-size:.68rem}
 tr:last-child td{border-bottom:none}
-.tag{display:inline-block;padding:2px 7px;border-radius:5px;font-size:.68rem;font-family:var(--mono);white-space:nowrap}
+tr:hover td{background:rgba(255,255,255,.025)}
+.tag{display:inline-block;padding:3px 8px;border-radius:20px;font-size:.66rem;font-family:var(--mono);white-space:nowrap}
 .tag-good{background:rgba(63,185,80,.18);color:#3fb950}
 .tag-bad{background:rgba(255,77,79,.18);color:#ff4d4f}
 .tag-warn{background:rgba(245,179,1,.18);color:#b8860b}
-.tag-dim{background:rgba(139,152,165,.1);color:var(--mut)}
-.link{display:inline-block;background:var(--acc);color:#111;font-size:.68rem;font-family:var(--mono);padding:3px 7px;border-radius:5px;text-decoration:none;white-space:nowrap}
-.link:hover{background:#e55a0f}
-.empty{color:var(--mut);text-align:center;padding:24px}
+.tag-dim{background:rgba(139,152,165,.12);color:var(--mut)}
+.link{display:inline-block;background:linear-gradient(135deg,var(--accent),#ff8f40);color:#111;font-size:.68rem;font-family:var(--mono);padding:3px 7px;border-radius:20px;text-decoration:none;white-space:nowrap}
+.link:hover{background:linear-gradient(135deg,#ff5a1a,#e55a0f);color:#111}
+.empty{color:var(--mut);text-align:center;padding:28px 16px;font-size:.82rem}
 .muted{color:var(--mut)}
-.loader{width:28px;height:28px;border:3px solid var(--line);border-top-color:var(--acc);border-radius:50%;animation:spin .8s linear infinite}
+.loader{width:30px;height:30px;border:3px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-.foot{text-align:center;color:var(--mut);font-size:.75rem;padding:14px;border-top:1px solid var(--line);margin-top:12px}
-.instr{font-family:var(--mono);font-size:.72rem;background:var(--card2);border:1px dashed var(--line);border-radius:8px;padding:8px 10px;color:var(--mut);word-break:break-all}
-.graphWrap{position:relative;width:100%;height:520px;background:var(--card2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.foot{text-align:center;color:var(--mut);font-size:.72rem;padding:16px;border-top:1px solid var(--line);margin-top:12px}
+.instr{font-family:var(--mono);font-size:.7rem;background:rgba(255,255,255,.04);border:1px dashed var(--line);border-radius:8px;padding:8px 10px;color:var(--mut);word-break:break-all;margin-top:8px}
+.graphWrap{position:relative;width:100%;height:440px;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.04));border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:8px}
 canvas{width:100%!important;height:100%!important}
+.stats-bar{
+  display:flex;flex-wrap:wrap;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line);font-size:.72rem;color:var(--mut);
+}
+.stats-bar .stat{flex:1 1 120px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.02);padding:6px 10px;border-radius:6px}
+.stats-bar .stat b{color:var(--fg);font-weight:600;font-family:var(--mono)}
+.mono{font-family:var(--mono);font-size:.82rem}
+@media (max-width:900px){
+  .hd-row{padding-bottom:8px}
+  header{padding:12px 14px}
+  .kpi{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div class="brand"><b>OS</b> Market · Multi-Chain Fork</div>
-    <div class="sub">OpenSea Seaport on-chain market for Base, Ink, Ethereum, ApeChain, Robinhood · read-NO Keys · 1-7 day volumes · wallet audit · connected-project graphs</div>
+    <div class="brand">
+      <div class="mark">OS</div>
+      <div>
+        <h1>OS <span style="color:var(--mut)">Market</span></h1>
+        <div class="sub">Multi-chain NFT Market · Seaport On-chain Analytics</div>
+      </div>
+    </div>
     <div class="hd-row">
       <div class="sb">
         <label for="chainSel">Chain</label>
@@ -77,95 +141,121 @@ canvas{width:100%!important;height:100%!important}
         </select>
         <label for="windowSel">Volume Window</label>
         <select id="windowSel">
-          <option value="24" selected>24 h</option>
-          <option value="6">6 h</option>
-          <option value="12">12 h</option>
-          <option value="72">72 h</option>
-          <option value="168">7 d</option>
+          <option value="24" selected>24h</option>
+          <option value="6">6h</option>
+          <option value="12">12h</option>
+          <option value="72">72h</option>
+          <option value="168">7d</option>
         </select>
         <label class="sub" id="rpcLabel">RPC: <span id="rpcName">mainnet</span></label>
       </div>
       <div class="sb" style="justify-content:flex-end">
-        <button id="refreshBtn" class="act" style="font-size:.78rem;text-decoration:none">↻ refresh</button>
-        <span class="muted" style="font-size:.72rem" id="statusTxt"></span>
+        <button id="refreshBtn" class="btn">↻ Refresh</button>
+        <span class="muted" id="statusTxt" style="font-size:.7rem"></span>
       </div>
     </div>
   </header>
 
-  <nav class="tabs" id="tabs">
-    <button data-tab="tab-market" class="active">📈 Market (OpenSea sales)</button>
+  <nav class="tabs">
+    <button data-tab="tab-market" class="active">📈 Market</button>
     <button data-tab="tab-trending">🔥 Trending</button>
-    <button data-tab="tab-whales">🐋 Whales & wash</button>
+    <button data-tab="tab-whales">🐋 Whales</button>
     <button data-tab="tab-holders">👥 Holders</button>
     <button data-tab="tab-about">ℹ️ About</button>
   </nav>
 
   <div class="tab active" id="tab-market">
     <div class="kpi">
-      <div class="b"><div class="l">Sales</div><div class="v" id="mSales">—</div><div class="s" id="mSalesS">fills</div></div>
-      <div class="b"><div class="l">Volume $</div><div class="v" id="mVol">—</div><div class="s" id="mVolS">last 24 h</div></div>
+      <div class="b"><div class="l">Sales</div><div class="v" id="mSales">—</div></div>
+      <div class="b"><div class="l">Volume</div><div class="v" id="mVol">—</div></div>
       <div class="b"><div class="l">Collections</div><div class="v" id="mColl">—</div></div>
-      <div class="b"><div class="l">Flagged sales</div><div class="v" id="mFlag">—</div><div class="s" id="mFlagS">wallets with a signal</div></div>
+      <div class="b"><div class="l">Flagged</div><div class="v" id="mFlag">—</div></div>
     </div>
-    <div class="body" id="marketBody"><div class="loader"></div></div>
+    <div class="card">
+      <h3>📈 OpenSea Sales</h3>
+      <div class="body table-scroll" id="marketBody"><div class="loader"></div></div>
+    </div>
   </div>
 
   <div class="tab" id="tab-trending">
-    <div class="body" id="trendingBody"><div class="loader"></div></div>
+    <div class="card">
+      <h3>🔥 Trending Collections</h3>
+      <div class="body table-scroll" id="trendingBody"><div class="loader"></div></div>
+    </div>
   </div>
 
   <div class="tab" id="tab-whales">
-    <div class="body" id="whalesBody"><div class="loader"></div></div>
+    <div class="card">
+      <h3>🐋 Whales & Wash Trading</h3>
+      <div class="body">
+        <div class="stats-bar" id="whalesStats"></div>
+        <div class="body table-scroll" id="whalesBody"><div class="loader"></div></div>
+      </div>
+    </div>
   </div>
 
   <div class="tab" id="tab-holders">
     <div class="card">
-      <h3>👥 Holders breakdown</h3>
-      <div class="body" style="display:flex;gap:10px;flex-wrap:wrap">
-        <div style="flex:2 1 320px">
-          <label for="collSel" style="margin-right:8px">Collection</label>
-          <select id="collSel"><option value="">select a collection…</option></select>
+      <div class="body" style="display:flex;gap:14px;flex-wrap:wrap;align-items:end">
+        <div style="flex:2 1 340px">
+          <label for="collSel" style="margin-bottom:6px">Collection</label>
+          <select id="collSel" style="width:100%"><option value="">select a collection to audit holders…</option></select>
         </div>
-        <div style="flex:1 1 160px">
-          <label style="margin-right:8px">volume window</label>
-          <select id="hWin"><option value="24">24 h</option><option value="7">7 d</option><option value="1">7 d (all)</option></select>
+        <div style="flex:1 1 140px">
+          <label style="margin-bottom:6px">Window</label>
+          <select id="hWin" style="width:100%"><option value="24">24h</option><option value="7">7d</option><option value="1">7d all-time</option></select>
         </div>
-        <div style="flex:1 1 120px" style="justify-content:flex-end">
-          <button id="loadHolderBtn" class="act">↻ load</button>
+        <div style="flex:1 1 120px" style="text-align:right">
+          <button id="loadHolderBtn" class="btn">Load</button>
         </div>
       </div>
     </div>
-    <div class="body" id="holdersBody"><div class="loader"></div></div>
+    <div class="card">
+      <div class="body" id="holdersBody"><div class="loader"></div></div>
+    </div>
   </div>
 
   <div class="tab" id="tab-about">
-    <div class="card"><h3>ℹ️ About</h3><div class="body">
-      <p class="muted" style="font-size:.82rem">OpenSea Seaport is the on-chain marketplace for NFT sales. Every sale is recorded as an <code>OrderFulfilled</code> log in the Seaport contract on each chain. This page replays those logs directly from the chain — no API key, no upload, read-only.</p>
-      <div class="instr">Supported chains: <strong>Base</strong> (8453), <strong>Ink</strong> (11111, ERC-1155 + ERC-721), <strong>Ethereum</strong> (1), <strong>ApeChain</strong> (33139), <strong>Robinhood</strong> (4663). OpenSea link format: <code>https://opensea.io/assets/{chain-slug}/{contractAddress}</code></div>
-      <div class="instr" style="margin-top:8px">Master tool list: <strong>Volumes</strong> (1-7 day), <strong>Top collections</strong> (ranked by volume), <strong>Wallet audit</strong> (fungible wallets for buys/sells), <strong>Connected-project graph</strong> (bubble graph, shared wallets → proximity), <strong>Holders</strong> (per collection).</div>
-      <div class="instr" style="margin-top:8px">Data source: each chain's Seaport contract (OrderFulfilled topic 0x9d9af8e38d66c62e2c12f0225249fd9d721c54b83f48d9352c97c6cacdcb6f31). Block explorers: Blockscout for all chains. Web: opensea.io.</div>
-      <p class="muted" style="font-size:.78rem">Flags = structural on-chain evidence (paid-for-mints, sweep, automated mints, machine timing) from the 24h scan. Read-only — no wallet connect, no signing, nothing of ours is confidential.</p>
-    </div></div>
+    <div class="card">
+      <h3>ℹ️ About This Tool</h3>
+      <div class="body">
+        <p class="muted" style="font-size:.86rem">This is a read-only on-chain market analytics dashboard for <strong>OpenSea Seaport</strong> NFT sales. Every sale is recorded as an OrderFulfilled log in the Seaport contract on each chain. This page replays those logs directly from the chain — no API key, no upload, read-only.</p>
+        <div class="instr"><strong>Supported chains:</strong><br>
+          • Base (8453) · • Ink (11111, ERC-1155 + ERC-721)<br>
+          • Ethereum (1) · • ApeChain (33139) · • Robinhood (4663)<br><br>
+          <strong>OpenSea link format:</strong> https://opensea.io/assets/{chain-slug}/{contractAddress}</div>
+        <div class="instr" style="margin-top:8px"><strong>Master tools:</strong><br>
+          📊 Volume breakdown (1-7 day) · 🏆 Top collections · 🔍 Wallet audit · 🫧 Connected projects · 👥 Holders · 🚩 Flags</div>
+        <div class="instr" style="margin-top:8px"><strong>Data source:</strong> each chain's Seaport contract (OrderFulfilled topic 0x9d9af8e38d66c62e2c12f0225249fd9d721c54b83f48d9352c97c6cacdcb6f31). Block explorers: Blockscout for all chains.</div>
+        <p class="muted" style="font-size:.76rem">Flags = structural on-chain evidence (paid-for-mints, sweep, automated mints, machine timing) from the 24h scan. Read-only — no wallet connect, no signing, nothing confidential.</p>
+      </div>
+    </div>
   </div>
+</div>
 
-  <div class="card">
-    <h3>📊 Volume breakdown (1-7 days)</h3>
-    <div class="body" id="volumesBody"><div class="loader"></div></div>
+<div class="card" style="margin-top:12px">
+  <div class="body" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px">
+    <div class="card" style="border:1px solid var(--line)">
+      <h3>📊 Volume Breakdown (1-7 days)</h3>
+      <div class="body" id="volumesBody"><div class="loader"></div></div>
+    </div>
+    <div class="card" style="border:1px solid var(--line)">
+      <h3>🏆 Top Collections (ranked by volume)</h3>
+      <div class="body table-scroll" id="topCollBody"><div class="loader"></div></div>
+    </div>
   </div>
+</div>
 
-  <div class="card">
-    <h3>🏆 Top collections (ranked by volume)</h3>
-    <div class="body" id="topCollBody"><div class="loader"></div></div>
-  </div>
-
-  <div class="card">
-    <h3>🔍 Wallet audit (fungible wallets — buys/sells)</h3>
-    <div class="body" id="walletsBody"><div class="loader"></div></div>
-  </div>
-
-  <div class="card">
-    <h3>🫧 Connected projects (bubble graph)</h3>
-    <div class="body" id="graphBody"><div class="loader"></div></div>
+<div class="card" style="margin-top:12px">
+  <div class="body" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:12px">
+    <div class="card" style="border:1px solid var(--line)">
+      <h3>🔍 Wallet Audit (fungible wallets — buys/sells)</h3>
+      <div class="body table-scroll" id="walletsBody"><div class="loader"></div></div>
+    </div>
+    <div class="card" style="border:1px solid var(--line)">
+      <h3>🫧 Connected Projects (bubble graph)</h3>
+      <div class="body" id="graphBody"><div class="loader"></div></div>
+    </div>
   </div>
 </div>
 
@@ -196,7 +286,8 @@ canvas{width:100%!important;height:100%!important}
   }
 
   async function loadMarket(){
-    const btn = $('#refreshBtn'); const onProg = (p,n)=>{ btn.disabled=true; btn.textContent='↻ scanning… '+Math.round(p*100)+'%'; };
+    const btn = $('#refreshBtn');
+    const onProg = (p,n)=>{ btn.disabled=true; btn.textContent='↻ scanning… '+Math.round(p*100)+'%'; };
     const { head, from, sales, rawLogs } = await G.RHMarket.scanSales({ hours: win, toBlock: null, onProgress: onProg });
     const prices = priceCache.get('eth') ? {eth: priceCache.get('eth')} : null;
     const stats = G.RHMarket.salesStats(sales, prices);
@@ -210,7 +301,7 @@ canvas{width:100%!important;height:100%!important}
     let rows = '';
     for(const s of stats.slice(0,50)){
       rows += `<tr>
-        <td class="mono">${s.collection.slice(0,10)}…${s.collection.slice(-6)}</td>
+        <td class="mono">${s.collection.slice(0,12)}…${s.collection.slice(-6)}</td>
         <td class="n">${s.sales.toLocaleString()}</td>
         <td class="n">$${s.volume.toLocaleString(undefined,{maximumFractionDigits:0})}</td>
         <td class="n">${s.buyers}</td><td class="n">${s.sellers}</td>
@@ -219,6 +310,7 @@ canvas{width:100%!important;height:100%!important}
       </tr>`;
     }
     body.innerHTML = rows || '<div class="empty">No sales to display.</div>';
+    btn.disabled=false;
   }
 
   async function loadTrending(){
@@ -233,12 +325,12 @@ canvas{width:100%!important;height:100%!important}
     for(const s of stats.slice(0,30)){
       const ratio = avg24>0 ? Math.min(9, s.volume/avg24) : 0;
       const hot = s.volume > avg24*1.5;
-      rows += `<div class="card" style="margin-top:8px">
-        <div style="display:flex;justify-content:space-between;align-items:center">
-          <a class="link" href="${CHAIN_HREF[chain]+s.collection}" target="_blank">${CHAIN_LABEL[chain]}/${s.collection.slice(0,8)}…${s.collection.slice(-6)}</a>
-          <span class="tag ${hot?'tag-warn':'tag-dim'}">${hot?'🔥 hot':'—'}</span>
+      rows += `<div class="card" style="margin-top:8px;border-left:3px solid ${hot?'var(--red)':'var(--line)'}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+          <a class="link" href="${CHAIN_HREF[chain]+s.collection}" target="_blank">${CHAIN_LABEL[chain]}/${s.collection.slice(0,10)}…${s.collection.slice(-6)}</a>
+          <span class="tag ${hot?'tag-bad':'tag-dim'}">${hot?'🔥 hot':'—'}</span>
         </div>
-        <div style="font-family:var(--mono);font-size:.74rem;color:var(--mut)">${s.sales} sales · $${s.volume.toFixed(0)} · ratio ${ratio.toFixed(2)}x</div></div>`;
+        <div style="font-family:var(--mono);font-size:.72rem;color:var(--mut)">${s.sales} sales · $${s.volume.toFixed(0)} · ratio ${ratio.toFixed(2)}x</div></div>`;
     }
     $('#trendingBody').innerHTML = rows || '<div class="empty">No trending data.</div>';
     btn.disabled=false;
@@ -253,15 +345,25 @@ canvas{width:100%!important;height:100%!important}
     const topBuyer = [...bal.entries()].sort((a,b)=>b[1]-a[1]).slice(0,6);
     const topSeller = [...bal.entries()].sort((a,b)=>b[1]-a[1]).slice(0,6);
     let rows = '';
-    rows += `<div class="card" style="margin-bottom:12px"><h3>Biggest buyers</h3><div class="body"><table><tr><th>#</th><th>wallet</th><th># buys</th><th>OpenSea</th></tr>`;
+    rows += `<div class="card" style="border-left:3px solid var(--acc);padding-left:14px">
+      <div style="display:flex;justify-content:space-between;margin-bottom:8px">
+        <strong>Biggest buyers</strong><span style="color:var(--green)">▲ ${topBuyer.length} wallets</span>
+      </div>
+      <div class="body table-scroll"><table><tr><th>#</th><th>wallet</th><th># buys</th><th>OpenSea</th></tr>`;
     for(let i=0;i<topBuyer.length;i++){const [w,n]=topBuyer[i];
-      rows += `<tr><td>${i+1}</td><td class="mono">${w.slice(0,6)}…${w.slice(-4)}</td><td class="n">${n}</td><td><a class="link" href="${CHAIN_HREF[chain]+w}" target="_blank">${CHAIN_LABEL[chain]}/${w.slice(0,6)}…</a></td></tr>`;}
+      rows += `<tr><td>${i+1}</td><td class="mono">${w.slice(0,6)}…${w.slice(-4)}</td><td class="n">${n}</td><td><a class="link" href="${CHAIN_HREF[chain]+w}" target="_blank">${CHAIN_LABEL[chain]}/${w.slice(0,6)}…</a></td></tr>`;}`;
     rows += `</table></div></div>`;
-    rows += `<div class="card" style="margin-bottom:12px"><h3>Biggest sellers</h3><div class="body"><table><tr><th>#</th><th>wallet</th><th># sells</th><th>OpenSea</th></tr>`;
+    rows += `<div class="card" style="border-left:3px solid var(--yel)">
+      <div style="display:flex;justify-content:space-between;margin-bottom:8px">
+        <strong>Biggest sellers</strong><span style="color:var(--yel)">▲ ${topSeller.length} wallets</span>
+      </div>
+      <div class="body table-scroll"><table><tr><th>#</th><th>wallet</th><th># sells</th><th>OpenSea</th></tr>`;
     for(let i=0;i<topSeller.length;i++){const [w,n]=topSeller[i];
-      rows += `<tr><td>${i+1}</td><td class="mono">${w.slice(0,6)}…${w.slice(-4)}</td><td class="n">${n}</td><td><a class="link" href="${CHAIN_HREF[chain]+w}" target="_blank">${CHAIN_LABEL[chain]}/${w.slice(0,6)}…</a></td></tr>`;}
+      rows += `<tr><td>${i+1}</td><td class="mono">${w.slice(0,6)}…${w.slice(-4)}</td><td class="n">${n}</td><td><a class="link" href="${CHAIN_HREF[chain]+w}" target="_blank">${CHAIN_LABEL[chain]}/${w.slice(0,6)}…</a></td></tr>`;}`;
     rows += `</table></div></div>`;
-    rows += `<div class="card"><h3>Wash-trade pairs (@3+ turns)</h3><div class="body"><table><tr><th>#</th><th>pair</th><th>turns</th></tr>`;
+    rows += `<div class="card">
+      <h3>Wash-trade pairs (@3+ turns)</h3>
+      <div class="body table-scroll"><table><tr><th>#</th><th>pair</th><th>turns</th></tr>`;
     const wash=[];
     for(const s of stats){ for(const [k,n] of s.pairs){ if(n>=3){const [a,b]=k.split('|');wash.push([a,b,bal.get(a)||0,bal.get(b)||0,n]);} } }
     const washPairs = wash.sort((x,y)=>y[2]-x[2]).slice(0,12);
@@ -273,23 +375,25 @@ canvas{width:100%!important;height:100%!important}
   }
 
   async function loadHolders(){
-    const coll = $('#collSel').value; if(!coll){ $('#holdersBody').innerHTML='<div class="empty">Pick a collection.</div>'; return; }
-    const onProg = (p,n)=>{ $('#loadHolderBtn').textContent = 'loading… '+Math.round(p*100)+'%'; };
+    const coll = $('#collSel').value; if(!coll){ $('#holdersBody').innerHTML='<div class="empty">Pick a collection to audit holders.</div>'; return; }
+    const btn = $('#loadHolderBtn');
+    const onProg = (p,n)=>{ btn.textContent = 'loading… '+Math.round(p*100)+'%'; };
     const h = await G.RHMarket.holders(coll, { is1155:false, toBlock:null, fromBlock:0, onProgress:onProg });
     const st = G.RHMarket.holderStats(h, flagMap);
     const flaggedK = new Set(); for(const [a,v] of flagMap){if(v.t==='CONFIRMED')flaggedK.add(a);}
     const flaggedUnits = st.top.filter(x=>flaggedK.has(x[0])).reduce((s,x)=>s+x[1],0);
-    let rows = `<div class="kpi" style="margin-bottom:10px">
-      <div class="b"><div class="l">Holders</div><div class="v">${st.holders}</div></div>
-      <div class="b"><div class="l">Flagged wallets</div><div class="v">${st.flaggedHolders}</div></div>
-      <div class="b"><div class="l">Gini</div><div class="v">${st.gini.toFixed(3)}</div></div>
-      <div class="b"><div class="l">Top10 share</div><div class="v">${(st.top10Share*100).toFixed(1)}%</div></div>
-    </div><table><tr><th>holder</th><th>units</th><th>first seen</th><th>flag</th></tr>`;
+    const statsBar = `<div class="stats-bar">
+      <div class="stat"><span>Holders</span><b>${st.holders}</b></div>
+      <div class="stat"><span>Flagged wallets</span><b style="color:var(--red)">${st.flaggedHolders}</b></div>
+      <div class="stat"><span>Gini</span><b>${st.gini.toFixed(3)}</b></div>
+      <div class="stat"><span>Top10 share</span><b>${(st.top10Share*100).toFixed(1)}%</b></div>
+    </div>`;
+    let rows = statsBar + '<table><tr><th>holder</th><th>units</th><th>first seen</th><th>flag</th></tr>';
     for(const [a,n] of st.top.slice(0,40)){
       const f = flagMap.get(a.toLowerCase());
       rows += `<tr><td class="mono">${a.slice(0,6)}…${a.slice(-4)}</td><td class="n">${n.toLocaleString()}</td><td class="n">${h.firstSeen.get(a)?'…':'-'}</td><td>${f?(f.t==='CONFIRMED'?'<span class="tag tag-bad">CONFIRMED</span>':'<span class="tag tag-warn">WATCH</span>'):'<span class="tag tag-dim">—</span>'}</td></tr>`;
     }
-    rows += `</table><p class="muted" style="font-size:.74rem">Flagged units ${flaggedUnits.toLocaleString()} / ${st.units.toLocaleString()}</p>`;
+    rows += `</table><p class="muted" style="font-size:.7rem">Flagged units ${flaggedUnits.toLocaleString()} / ${st.units.toLocaleString()}</p>`;
     $('#holdersBody').innerHTML = rows || '<div class="empty">No holders.</div>';
   }
 
@@ -309,12 +413,11 @@ canvas{width:100%!important;height:100%!important}
     const t = $('#volumesBody');
     if(rows.some(r=>r.error)) t.innerHTML='<div class="empty">One or more windows failed. Reduce window size and retry.</div>';
     else{
-      let h = '<table><tr><th>window</th><th>sales</th><th>collections</th><th>buyers</th><th>volume $</th></tr>';
-      for(const r of rows) h += `<tr><td class="mono">${r.label}</td><td class="n">${r.sales||0}</td><td class="n">${r.collections||0}</td><td class="n">${r.buyers||0}</td><td class="n">$${r.volume||0}</td></tr>`;
-      h += '</table>';
-      t.innerHTML = h;
+      let h = '<div class="stats-bar"><div class="stat"><span>Window</span><b>period</b></div><div class="stat"><span>Sales</span><b>fills</b></div><div class="stat"><span>Collections</span><b>unique</b></div><div class="stat"><span>Buyers</span><b>addresses</b></div><div class="stat"><span>Volume</span><b>USD</b></div></div>';
+      for(const r of rows) h += `<table><tr><td class="mono"><b>${r.label}</b></td><td class="n">${r.sales||0}</td><td class="n">${r.collections||0}</td><td class="n">${r.buyers||0}</td><td class="n">$${r.volume||0}</td></tr></table>`;
     }
-    btn.disabled = false;
+    t.innerHTML = t.innerHTML || '<div class="loader"></div>';
+    btn.disabled=false;
   }
 
   async function loadTopCollections(){
@@ -324,14 +427,21 @@ canvas{width:100%!important;height:100%!important}
     const stats = G.RHMarket.salesStats(sales, prices);
     const top = stats.sort((a,b)=>b.volume-a.volume).slice(0,40);
     const t = $('#topCollBody');
-    let h = '<table><tr><th>#</th><th>collection</th><th>sales</th><th>volume $</th><th>buyers</th><th>median $</th><th>wash</th></tr>';
+    let h = '<div class="stats-bar"><div class="stat"><span>Rank</span><b>#</b></div><div class="stat"><span>Collection</span><b>address</b></div><div class="stat"><span>Sales</span><b>fills</b></div><div class="stat"><span>Volume</span><b>USD</b></div><div class="stat"><span>Buyers</span><b>addrs</b></div><div class="stat"><span>Median</span><b>USD</b></div><div class="stat"><span>Wash</span><b>share</b></div></div>';
     for(let i=0;i<top.length;i++){
       const s = top[i];
-      h += `<tr><td class="n">${i+1}</td><td class="mono">${s.collection.slice(0,10)}…${s.collection.slice(-6)}</td><td class="n">${s.sales.toLocaleString()}</td><td class="n">$${s.volume.toLocaleString(undefined,{maximumFractionDigits:0})}</td><td class="n">${s.buyers}</td><td class="n">$${s.median.toFixed(4)}</td><td>${s.washShare>0.3?'<span class="tag tag-warn">wash</span>':(s.washShare>0?'<span class="tag tag-dim">${s.washShare.toFixed(2)}</span>':'<span class="tag tag-good">clean</span>')}</td></tr>`;
+      h += `<table><tr>
+        <td class="n"><b>${i+1}</b></td>
+        <td class="mono">${s.collection.slice(0,12)}…${s.collection.slice(-6)}</td>
+        <td class="n">${s.sales.toLocaleString()}</td>
+        <td class="n">$${s.volume.toLocaleString(undefined,{maximumFractionDigits:0})}</td>
+        <td class="n">${s.buyers}</td>
+        <td class="n">$${s.median.toFixed(4)}</td>
+        <td>${s.washShare>0.3?'<span class="tag tag-warn">wash</span>':(s.washShare>0?'<span class="tag tag-dim">${s.washShare.toFixed(2)}</span>':'<span class="tag tag-good">clean</span>')}</td>
+      </tr></table>`;
     }
-    h += '</table>';
     t.innerHTML = h || '<div class="empty">No data or no supported chain selected.</div>';
-    btn.disabled = false;
+    btn.disabled=false;
   }
 
   async function loadWalletAudit(){
@@ -343,18 +453,17 @@ canvas{width:100%!important;height:100%!important}
     for(const s of sales){ bal.set(s.buyer,(bal.get(s.buyer)||0)+1); bal.set(s.seller,(bal.get(s.seller)||0)+1); }
     const wallets = [...bal.entries()].sort((a,b)=>b[1]-a[1]).slice(0,40);
     const t = $('#walletsBody');
-    let h = '<table><tr><th>#</th><th>wallet</th><th># buys</th><th># sells</th><th>net</th><th>OpenSea</th></tr>';
+    let h = '<div class="stats-bar"><div class="stat"><span>#</span><b>rank</b></div><div class="stat"><span>wallet</span><b>address</b></div><div class="stat"><span># buys</span><b>fills</b></div><div class="stat"><span># sells</span><b>fills</b></div><div class="stat"><span>net</span><b>trades</b></div><div class="stat"><span>OpenSea</span><b>link</b></div></div>';
     for(let i=0;i<wallets.length;i++){
       const [w,n] = wallets[i];
       const buys = sales.filter(s=>s.buyer===w).length;
       const sells = sales.filter(s=>s.seller===w).length;
       const net = sells-buys;
       const tag = net>5 ? '<span class="tag tag-bad">seller</span>' : (net<-5 ? '<span class="tag tag-good">buyer</span>' : '<span class="tag tag-dim">mixed</span>');
-      h += `<tr><td class="n">${i+1}</td><td class="mono">${w.slice(0,6)}…${w.slice(-4)}</td><td class="n">${buys}</td><td class="n">${sells}</td><td class="n">${net}</td><td><a class="link" href="${CHAIN_HREF[chain]+w}" target="_blank">open</a></td></tr>`;
+      h += `<table><tr><td class="n"><b>${i+1}</b></td><td class="mono">${w.slice(0,6)}…${w.slice(-4)}</td><td class="n">${buys}</td><td class="n">${sells}</td><td class="n">${net}</td><td><a class="link" href="${CHAIN_HREF[chain]+w}" target="_blank">open</a></td></tr></table>`;
     }
-    h += '</table>';
     t.innerHTML = h || '<div class="empty">No wallet data.</div>';
-    btn.disabled = false;
+    btn.disabled=false;
   }
 
   async function loadConnectedGraph(){
@@ -376,13 +485,14 @@ canvas{width:100%!important;height:100%!important}
       for(const a of set){ for(const b of set){ if(a<b){ const k=[a,b].sort().join('|'); connections.set(k,(connections.get(k)||0)+1); } } }
     }
     const t = $('#graphBody');
-    let h = '<p><strong>Connected projects (bubble graph)</strong> — each circle is a collection; size = 7-day volume; distance from shared buyers/sellers. Mouse over a circle to see its name and sales.</p>';
-    h += '<div class="graphWrap" id="graphCanvasWrap"><canvas id="bubbleCanvas"></canvas></div>';
+    let h = '<p class="muted" style="font-size:.78rem"><strong>Connected projects (bubble graph)</strong> — each circle is a collection; size = 7-day volume; proximity = shared wallets. Mouse over a circle to see its name and sales.</p>';
+    h += '<div class="graphWrap"><canvas id="bubbleCanvas"></canvas></div>';
     t.innerHTML = h;
-    const canvas = $('#bubbleCanvas'); if(canvas){
+    const canvas = $('#bubbleCanvas');
+    if(canvas){
       const ctx = canvas.getContext('2d');
       const wrap = canvas.parentElement;
-      const W = wrap.clientWidth || 800, H = wrap.clientHeight || 520;
+      const W = wrap.clientWidth || 800, H = wrap.clientHeight || 440;
       canvas.width = W; canvas.height = H;
       const N = projArr.length; if(N===0) return;
       const maxVol = Math.max(...projArr.map(p=>p.volume),1);
@@ -396,29 +506,33 @@ canvas{width:100%!important;height:100%!important}
             const f = (p.radius*2+q.radius*2-d)*repulsion;
             fx += f*dx/d; fy += f*dy/d;
           }
-          p.x = Math.max(p.radius, Math.min(W-p.radius, p.x + p.vx*0.1 + fx));
-          p.y = Math.max(p.radius, Math.min(H-p.radius, p.y + p.vy*0.1 + fy));
+          p.x = Math.max(p.radius, Math.min(W-p.radius, p.x + p.vx*0.08 + fx));
+          p.y = Math.max(p.radius, Math.min(H-p.radius, p.y + p.vy*0.08 + fy));
         }
         ctx.clearRect(0,0,W,H);
         for(const p of pts){
           ctx.beginPath(); ctx.arc(p.x, p.y, p.radius, 0, Math.PI*2);
-          ctx.fillStyle = 'rgba(88,166,255,0.55)'; ctx.fill();
+          ctx.fillStyle = 'rgba(88,166,255,0.45)'; ctx.fill();
           ctx.strokeStyle = '#58a6ff'; ctx.lineWidth = 1.5; ctx.stroke();
-          ctx.fillStyle = '#e6edf3'; ctx.font = '11px ui-monospace,monospace'; ctx.fillText(p.label, p.x-p.radius-60, p.y+3);
+          ctx.fillStyle = '#e6edf3'; ctx.font = '10px ui-monospace,monospace';
+          ctx.fillText(p.label, p.x-p.radius-58, p.y+3);
+          ctx.fillStyle = 'rgba(139,152,165,.6)'; ctx.font = '8px ui-monospace,monospace';
+          ctx.fillText(`b:${p.buyers} s:${p.sellers}`, p.x-p.radius-58, p.y+14);
         }
         for(const [k,v] of connections){
           const [a,b] = k.split('|');
           const A = pts.find(p=>p.label.startsWith(a.slice(0,8))), B = pts.find(p=>p.label.startsWith(b.slice(0,8)));
           if(A && B){
             ctx.beginPath(); ctx.moveTo(A.x, A.y); ctx.lineTo(B.x, B.y);
-            ctx.strokeStyle = 'rgba(139,152,165,0.35)'; ctx.lineWidth = 1; ctx.stroke();
+            ctx.strokeStyle = 'rgba(139,152,165,0.25)'; ctx.lineWidth = 1; ctx.setLineDash([3,3]); ctx.stroke();
+            ctx.setLineDash([]);
           }
         }
         requestAnimationFrame(simulate);
       };
       simulate();
     }
-    btn.disabled = false;
+    btn.disabled=false;
   }
 
   async function init(){
