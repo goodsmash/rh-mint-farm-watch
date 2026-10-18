@@ -175,15 +175,13 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -222,11 +220,9 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -455,8 +451,7 @@
 "ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -504,6 +499,7 @@
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "PAID_FOR_OTHER_MINTS",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -642,8 +638,7 @@
 "ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -866,12 +861,14 @@
 "labels": [
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-025",
 "evidence": {
@@ -954,6 +951,7 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "LINKED_GROUP",
@@ -1045,6 +1043,7 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
@@ -1093,10 +1092,12 @@
 "labels": [
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-002",
 "evidence": {
@@ -1280,6 +1281,7 @@
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SENT_ON_AFTER_MINT",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
@@ -1559,6 +1561,7 @@
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -1700,8 +1703,7 @@
 "ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -1793,7 +1795,6 @@
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -1883,12 +1884,15 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-002",
 "evidence": {
@@ -1931,7 +1935,7 @@
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -2208,15 +2212,12 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -2397,7 +2398,8 @@
 "labels": [
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER"
 ],
 "windows": [
 "168h",
@@ -2487,10 +2489,12 @@
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"MINT_PAID_BY_OTHER"
+"MINT_PAID_BY_OTHER",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-011",
 "evidence": {
@@ -2531,7 +2535,8 @@
 "labels": [
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -2576,10 +2581,13 @@
 "labels": [
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-011",
 "evidence": {
@@ -2844,12 +2852,15 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-009",
 "evidence": {
@@ -3342,12 +3353,14 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -3659,15 +3672,12 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-123",
 "evidence": {
@@ -4156,6 +4166,8 @@
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SENT_ON_AFTER_MINT",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -4201,12 +4213,14 @@
 "labels": [
 "ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-010",
 "evidence": {
@@ -4432,6 +4446,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
@@ -6263,8 +6278,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"PAID_FOR_OTHER_MINTS",
-"SEVERAL_COLLECTIONS"
+"PAID_FOR_OTHER_MINTS"
 ],
 "windows": [
 "168h",
@@ -6312,6 +6326,7 @@
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -6534,7 +6549,8 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"PAID_FOR_OTHER_MINTS"
+"PAID_FOR_OTHER_MINTS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -7128,10 +7144,13 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"PAID_FOR_OTHER_MINTS"
+"PAID_FOR_OTHER_MINTS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-519",
 "evidence": {
@@ -7306,6 +7325,7 @@
 "score": 90,
 "tier": "STRONG_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "PAID_FOR_OTHER_MINTS",
@@ -7898,8 +7918,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -8308,7 +8328,6 @@
 "ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -8631,8 +8650,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-160",
 "evidence": {
@@ -8675,7 +8693,8 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-409",
 "evidence": {
@@ -8854,12 +8873,14 @@
 "labels": [
 "ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-340",
 "evidence": {
@@ -10507,8 +10528,7 @@
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-262",
 "evidence": {
@@ -11027,7 +11047,7 @@
 }
 },
 {
-"address": "0x43948bababa753a587fc475ced55c74760b716fc",
+"address": "0x14d7c6aa3a9d6a1e0fd1ad0efbd3d599c837e71a",
 "score": 85,
 "tier": "STRONG_SIGNAL",
 "labels": [
@@ -11040,7 +11060,7 @@
 "168h",
 "24h"
 ],
-"cluster": "farm-008",
+"cluster": "farm-001",
 "evidence": {
 "tokens": 125,
 "collections": 30,
@@ -11056,10 +11076,10 @@
 "code": null,
 "top_collections": [
 "0xb563ea07c71e10d454727570ded75fa9aef405e6",
-"0x8c90bb6247a8289217afe1e91e63389c05327b86",
-"0x392834cb236b21089e968cd8fb557633cd202dd3",
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
-"0x7b8c4724c66077e01837bea8db151321578a9ee7"
+"0x7ff501171cb7211c2f7c3d05962f6260c8cddc94",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0x9bb763a2d869fadbeed3c14551e5938d3cbc31c6",
+"0xfeb44988301a680cb2ce3f0f83a807006dc42fff"
 ],
 "example_tx": [
 "0x0a90e2862655331150bcd47edba84eda65c1c69e5ef2b968e8b43a7847e4b39c",
@@ -12180,10 +12200,12 @@
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-006",
 "evidence": {
@@ -12488,7 +12510,6 @@
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -12616,7 +12637,6 @@
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -12664,7 +12684,6 @@
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -13245,13 +13264,15 @@
 "score": 80,
 "tier": "STRONG_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -13921,10 +13942,12 @@
 "ACTIVE_MINTER",
 "MINTS_MANY_COLLECTIONS",
 "PAID_FOR_OTHER_MINTS",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-629",
 "evidence": {
@@ -15720,8 +15743,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -16045,7 +16067,6 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -16093,15 +16114,13 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -16370,7 +16389,6 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -16418,7 +16436,6 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -16466,7 +16483,6 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -16514,15 +16530,12 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -16562,7 +16575,6 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -16657,7 +16669,6 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -16705,15 +16716,13 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -16753,7 +16762,6 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -17035,8 +17043,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -17178,8 +17185,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -17226,8 +17232,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -17827,8 +17832,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -17969,8 +17973,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -18103,8 +18106,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -20571,6 +20573,7 @@
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -21569,10 +21572,10 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -22027,6 +22030,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -23295,6 +23299,7 @@
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -24080,6 +24085,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -24127,12 +24133,14 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -24219,12 +24227,15 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -24264,12 +24275,14 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -24446,12 +24459,14 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -24533,6 +24548,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -24625,6 +24641,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -24672,12 +24689,14 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -24717,12 +24736,14 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -24762,6 +24783,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -24809,12 +24831,14 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -24854,6 +24878,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -25128,12 +25153,14 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -25173,6 +25200,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -25265,6 +25293,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -25312,6 +25341,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -25359,6 +25389,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -25406,12 +25437,14 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -25451,12 +25484,14 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -25582,6 +25617,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -25629,12 +25665,14 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -25674,6 +25712,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -25721,6 +25760,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -25769,12 +25809,14 @@
 "tier": "STRONG_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-567",
 "evidence": {
@@ -25860,6 +25902,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -26001,6 +26044,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -26048,6 +26092,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -26507,6 +26552,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -26883,6 +26929,7 @@
 "score": 75,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -27864,12 +27911,14 @@
 "tier": "STRONG_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-566",
 "evidence": {
@@ -28469,6 +28518,7 @@
 "score": 75,
 "tier": "STRONG_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
@@ -28701,7 +28751,8 @@
 "PAID_FOR_OTHER_MINTS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-530",
 "evidence": {
@@ -28746,7 +28797,8 @@
 "PAID_FOR_OTHER_MINTS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-602",
 "evidence": {
@@ -29919,12 +29971,12 @@
 "collections": 2,
 "mint_txs": 9,
 "median_gap_s": null,
-"nonce": 209,
-"balance_eth": 1.4e-05,
-"swept_out": 3,
+"nonce": 213,
+"balance_eth": 0.000599,
+"swept_out": 0,
 "operated_for": 0,
 "minted_by_others": 0,
-"sink_sources": 5,
+"sink_sources": 3,
 "swarm_size": 0,
 "code": null,
 "top_collections": [
@@ -29940,12 +29992,13 @@
 }
 },
 {
-"address": "0x1cb4ea20d22ba46568c51ad038c86fbd94e1da5a",
+"address": "0xb20d24ce01da39fd7640639c5a87306f0ed8fe0d",
 "score": 75,
 "tier": "STRONG_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
-"HIGH_MINT_COUNT"
+"SENT_ON_AFTER_MINT"
 ],
 "windows": [
 "24h"
@@ -29954,23 +30007,23 @@
 "evidence": {
 "tokens": 400,
 "collections": 1,
-"mint_txs": 14,
-"median_gap_s": 71.1,
-"nonce": 47,
-"balance_eth": 0.028549,
-"swept_out": 0,
+"mint_txs": 6,
+"median_gap_s": null,
+"nonce": 49,
+"balance_eth": 0.000102,
+"swept_out": 49,
 "operated_for": 0,
 "minted_by_others": 0,
 "sink_sources": 9,
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x5162434cb1328cd4dbf91515df59e107bca69e24"
+"0xe84731941aea6eaf685908fe35527b27174e017e"
 ],
 "example_tx": [
-"0x119db45ebb1f27f6138af2f183325a69507e16704b80b81c40977acbfbc2b3a3",
-"0x16900dce326aa22566590469cc3c6e826c3bdd5179f6d524a1624c304bb62e98",
-"0x21fe2dafb90d7f20965c9ef9ff3bddf38202a92c19e787b711964e024e446944"
+"0x2867dca9df40e9dae5a88d1d6eb2ed7ae00a416d4553651599ae778d6332b86a",
+"0x4fd8fbb456b7221befdcb981af2c21b148f45936abe00dd69da24cb77dbc14b4",
+"0x696c40a8defd878bd2fe41fcc9a30fb6b0606a2b3c91885b14727623d2319f8d"
 ],
 "structural_proof": true
 }
@@ -30021,13 +30074,15 @@
 "tier": "STRONG_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "NEW_WALLET",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-747",
 "evidence": {
@@ -30905,6 +30960,7 @@
 "score": 70,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER"
@@ -31083,12 +31139,14 @@
 "score": 70,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -31132,8 +31190,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-002",
 "evidence": {
@@ -31349,12 +31406,14 @@
 "score": 70,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -31784,12 +31843,14 @@
 "score": 70,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -31868,12 +31929,14 @@
 "score": 70,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -33324,6 +33387,7 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
@@ -33369,12 +33433,15 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-002",
 "evidence": {
@@ -33413,6 +33480,7 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
@@ -33499,6 +33567,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -34026,6 +34095,7 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTED_TO_CONTRACT",
 "MINT_PAID_BY_OTHER",
@@ -34566,10 +34636,12 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-006",
 "evidence": {
@@ -34744,10 +34816,13 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-006",
 "evidence": {
@@ -34928,7 +35003,6 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -35246,7 +35320,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -35292,13 +35366,10 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-006",
 "evidence": {
@@ -35339,10 +35410,13 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-006",
 "evidence": {
@@ -35383,13 +35457,10 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-006",
 "evidence": {
@@ -35431,7 +35502,6 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -35609,7 +35679,6 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -35699,10 +35768,13 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-006",
 "evidence": {
@@ -35830,10 +35902,13 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-006",
 "evidence": {
@@ -35963,10 +36038,13 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-006",
 "evidence": {
@@ -36179,13 +36257,10 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-369",
 "evidence": {
@@ -36358,7 +36433,6 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -36496,6 +36570,7 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
@@ -36592,7 +36667,6 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -36726,6 +36800,7 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTED_TO_CONTRACT",
 "MINT_PAID_BY_OTHER",
@@ -37040,8 +37115,6 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -37088,6 +37161,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -37449,10 +37523,13 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-214",
 "evidence": {
@@ -38306,6 +38383,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -38444,7 +38522,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -38580,15 +38658,13 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -38894,15 +38970,12 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -38990,6 +39063,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -39080,7 +39154,6 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -39299,6 +39372,7 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -39395,7 +39469,6 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -39825,12 +39898,14 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -39869,12 +39944,14 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-035",
 "evidence": {
@@ -40089,15 +40166,13 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -40229,7 +40304,6 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -40593,7 +40667,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -40730,12 +40804,15 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-020",
 "evidence": {
@@ -40821,7 +40898,6 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -40865,12 +40941,15 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -41044,12 +41123,14 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -41089,13 +41170,11 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-002",
 "evidence": {
@@ -41134,12 +41213,14 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-011",
 "evidence": {
@@ -41307,12 +41388,14 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -41515,7 +41598,6 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -41559,12 +41641,15 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-148",
 "evidence": {
@@ -41780,12 +41865,14 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-026",
 "evidence": {
@@ -41902,12 +41989,14 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -42165,7 +42254,8 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"PAID_FOR_OTHER_MINTS"
+"PAID_FOR_OTHER_MINTS",
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -42342,7 +42432,8 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-535",
 "evidence": {
@@ -42864,13 +42955,10 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-251",
 "evidence": {
@@ -43317,12 +43405,14 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -43533,8 +43623,6 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -43953,12 +44041,14 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -44511,12 +44601,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTED_TO_CONTRACT",
 "MINT_PAID_BY_OTHER",
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-535",
 "evidence": {
@@ -44633,12 +44725,14 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -44678,13 +44772,15 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-003",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 3
@@ -44947,7 +45043,8 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -44983,7 +45080,6 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -45163,8 +45259,7 @@
 "PAID_FOR_OTHER_MINTS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-589",
 "evidence": {
@@ -45326,12 +45421,15 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -45370,12 +45468,15 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -45708,12 +45809,14 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -46191,12 +46294,14 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -50196,7 +50301,9 @@
 "0x2b17ad6fff01eb9064fe4f22393718c8c6d3798e",
 "0x880f28a357a8bbc35979bf0003e6af6e1cbb8b82",
 "0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
-"0x28330d6483b6f9f03e0b8ed1881cc3759f580605"
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5",
+"0x986e32ac2c8f48ddf265c4bc761eb8db333b3518",
+"0x87f5658dd5bd736f0504bb4fc5e2f9262403741d"
 ],
 "example_tx": [
 "0x139eca452ab24af054d9440482b35ad7b051957f30283c6519deebffe04fd9e5",
@@ -51075,7 +51182,8 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-562",
 "evidence": {
@@ -52063,6 +52171,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52151,6 +52260,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52191,7 +52301,7 @@
 }
 },
 {
-"address": "0x15814252fefa45f55bf1b08578a040355a7ce693",
+"address": "0x43948bababa753a587fc475ced55c74760b716fc",
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
@@ -52241,6 +52351,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52285,6 +52396,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52329,6 +52441,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52373,6 +52486,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52417,6 +52531,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52461,11 +52576,14 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -52551,8 +52669,7 @@
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-014",
 "evidence": {
@@ -52635,6 +52752,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52642,7 +52760,7 @@
 "168h",
 "24h"
 ],
-"cluster": null,
+"cluster": "farm-017",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -52679,6 +52797,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52723,6 +52842,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52810,6 +52930,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52854,6 +52975,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52898,6 +53020,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52942,6 +53065,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52986,6 +53110,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -52993,7 +53118,7 @@
 "168h",
 "24h"
 ],
-"cluster": null,
+"cluster": "farm-008",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 3
@@ -53030,6 +53155,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -53074,6 +53200,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -53118,6 +53245,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -53293,8 +53421,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -53470,6 +53597,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -53514,6 +53642,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -53558,6 +53687,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -53602,6 +53732,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -53652,8 +53783,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-010",
 "evidence": {
@@ -53692,6 +53822,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -53779,6 +53910,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -53823,6 +53955,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -53867,6 +54000,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -53917,8 +54051,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-002",
 "evidence": {
@@ -54392,6 +54525,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -54565,6 +54699,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
@@ -54744,8 +54879,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -54915,8 +55049,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -54959,6 +55092,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -55005,8 +55139,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -55051,8 +55184,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -55097,9 +55229,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -55188,8 +55318,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -55412,9 +55541,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -55502,6 +55629,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -55591,6 +55719,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -55681,13 +55810,11 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-469",
 "evidence": {
@@ -55726,6 +55853,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -55818,7 +55946,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -55861,14 +55990,12 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -55907,15 +56034,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -55997,14 +56122,12 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -56090,13 +56213,10 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -56227,15 +56347,11 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -56408,15 +56524,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -56545,7 +56659,6 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -56638,14 +56751,12 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -56684,15 +56795,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -56862,15 +56971,11 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -56911,8 +57016,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -57000,14 +57104,12 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -57132,7 +57234,6 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS"
@@ -57224,7 +57325,6 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -57271,15 +57371,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -57318,14 +57416,12 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -57364,7 +57460,6 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS"
@@ -57410,15 +57505,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -57457,15 +57550,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -57506,7 +57597,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -57592,7 +57684,6 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS"
@@ -57684,14 +57775,12 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -57730,7 +57819,6 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -57783,8 +57871,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -58123,6 +58210,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -58345,7 +58433,8 @@
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -58386,7 +58475,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -58870,8 +58960,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -58916,7 +59005,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -59139,13 +59229,10 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-006",
 "evidence": {
@@ -59451,14 +59538,11 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-038",
 "evidence": {
@@ -60210,13 +60294,10 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-006",
 "evidence": {
@@ -61152,8 +61233,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -61411,6 +61491,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -62261,8 +62342,7 @@
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-013",
 "evidence": {
@@ -62523,11 +62603,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-019",
 "evidence": {
@@ -62568,7 +62650,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -62740,6 +62823,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -62872,11 +62956,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-047",
 "evidence": {
@@ -62963,8 +63049,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -63009,8 +63094,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -63098,8 +63182,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -63403,11 +63486,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-044",
 "evidence": {
@@ -63711,8 +63796,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -63756,10 +63840,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-029",
 "evidence": {
@@ -64150,11 +64237,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-044",
 "evidence": {
@@ -64368,11 +64457,14 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -64501,8 +64593,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -64545,11 +64636,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-047",
 "evidence": {
@@ -64588,11 +64681,14 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -64898,8 +64994,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -64945,7 +65040,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -65211,8 +65306,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -65346,7 +65440,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -65525,8 +65620,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -65704,7 +65798,6 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -65838,7 +65931,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -65883,7 +65977,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -66063,7 +66158,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -66108,7 +66204,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -66196,11 +66293,14 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -66239,6 +66339,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -66419,9 +66520,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -66597,10 +66696,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-018",
 "evidence": {
@@ -66944,14 +67046,12 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -67385,10 +67485,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-285",
 "evidence": {
@@ -67905,7 +68008,6 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
@@ -67993,11 +68095,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-382",
 "evidence": {
@@ -68301,6 +68405,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -68390,11 +68495,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -68476,10 +68583,10 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -69585,6 +69692,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -69721,11 +69829,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -70076,14 +70186,11 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-017",
 "evidence": {
@@ -71224,11 +71331,15 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -71527,6 +71638,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -71662,11 +71774,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -72226,11 +72340,14 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-022",
 "evidence": {
@@ -72443,8 +72560,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -72489,7 +72605,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -73743,11 +73860,14 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -74689,6 +74809,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -75036,11 +75157,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -75079,11 +75202,14 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -75294,6 +75420,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -75426,11 +75553,14 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -76170,8 +76300,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -76522,6 +76651,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -77748,8 +77878,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -78060,11 +78189,14 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -79033,6 +79165,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -79440,7 +79573,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -79707,7 +79841,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -79750,6 +79885,7 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -79889,7 +80025,8 @@
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -80248,7 +80385,8 @@
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -80292,7 +80430,8 @@
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -80336,7 +80475,8 @@
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -80555,7 +80695,8 @@
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -80599,7 +80740,8 @@
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -80734,7 +80876,8 @@
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -80866,7 +81009,8 @@
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -81657,7 +81801,8 @@
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -81739,12 +81884,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -84647,12 +84794,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-525",
 "evidence": {
@@ -84996,12 +85145,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-609",
 "evidence": {
@@ -85965,12 +86116,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -88768,12 +88921,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-609",
 "evidence": {
@@ -90653,10 +90808,12 @@
 "labels": [
 "ACTIVE_MINTER",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -91482,12 +91639,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-566",
 "evidence": {
@@ -91573,12 +91732,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -92144,7 +92305,8 @@
 "COLLECTS_FROM_MANY_MINTERS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-372",
 "evidence": {
@@ -92405,12 +92567,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-609",
 "evidence": {
@@ -92495,12 +92659,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-609",
 "evidence": {
@@ -99199,8 +99365,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -109555,21 +109720,200 @@
 }
 },
 {
-"address": "0xdb68283c9f780423394158fdd9efd7ad2165f78e",
+"address": "0xc2346a67846fa89229d2f400dd66ecd7347dd59a",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 1
+},
+"tokens": 129,
+"collections": 38,
+"mint_txs": 38,
+"median_gap_s": 675.6,
+"nonce": 780,
+"balance_eth": 5e-06,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 5,
+"code": null,
+"top_collections": [
+"0xa9677fa2753cf70007bc4b8db24cd340bd6a5439",
+"0xb39278e6497100e33e65dedc38d981e79816aa78",
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0xb9413aa7a32da226e23b10bc0c5fd6120c8d5574",
+"0x3962f1939915caaf2cb25ce00dcc929115d4ab64"
+],
+"example_tx": [
+"0x0a49cfcd68c5e15d4ff9d1668a7105e3eb96b2b28ce701bfdf690b5c00bd4f3f",
+"0x0e7922941190d23a89c6e603a732469dbd759fb720dd0160cc30282a89aa9e78",
+"0x11c2dee43d941dfe9a632a0772eac07062efbc40e8dc3e512e57e10d28ea0276"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x5ef144d7b680232fd510936449ce0a26b8d09ef0",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 100,
+"collections": 35,
+"mint_txs": 38,
+"median_gap_s": 1254.4,
+"nonce": 283,
+"balance_eth": 5.7e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 11,
+"code": null,
+"top_collections": [
+"0xa9677fa2753cf70007bc4b8db24cd340bd6a5439",
+"0xb39278e6497100e33e65dedc38d981e79816aa78",
+"0xb9413aa7a32da226e23b10bc0c5fd6120c8d5574",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5"
+],
+"example_tx": [
+"0x052a784ae2a1d6eada511106a65546ced6001c9058077da34ecf59fdb68fad2e",
+"0x0ed78ee7a66ae65c59a08688f167a98faa186d5eb347a1b24a8f781b4535c4c9",
+"0x1087cbefb6ebb86023e145b8119f34c7afab951fb651ab31f08d6842686769d0"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x11bc87a431b447172d524698509a223a66bdb131",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 113,
+"collections": 36,
+"mint_txs": 42,
+"median_gap_s": 956.5,
+"nonce": 405,
+"balance_eth": 4.7e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 9,
+"code": null,
+"top_collections": [
+"0xa9677fa2753cf70007bc4b8db24cd340bd6a5439",
+"0xb39278e6497100e33e65dedc38d981e79816aa78",
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0xb9413aa7a32da226e23b10bc0c5fd6120c8d5574",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b"
+],
+"example_tx": [
+"0x0149f32dd8d752ff8570b371507eb575821f0469969062555e92845260ca576b",
+"0x058f3b0b7741e44f21602a2754559411c35d298fe7f0cfb3b6224e9cefd33bcf",
+"0x068fa2aa517d94fbf59d84db499b04b4123dae18065fca15d59aa1fc3250cd4d"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x31f42435bb88d7e4503b5f2c4338415cee193dac",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 2
+},
+"tokens": 103,
+"collections": 35,
+"mint_txs": 41,
+"median_gap_s": 1081.0,
+"nonce": 307,
+"balance_eth": 4.7e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 15,
+"code": null,
+"top_collections": [
+"0xb39278e6497100e33e65dedc38d981e79816aa78",
+"0xb9413aa7a32da226e23b10bc0c5fd6120c8d5574",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0xffdd802115676583f7fabf646683360dc8dd2fe8"
+],
+"example_tx": [
+"0x032e5cd4d0e22ff76899f6b86b991441322c00a46c39e6e18e5143210aa3a286",
+"0x03edd56d27d8feee1007273e5e5ce5426ec925e1904b7883d44b32e0f863a45a",
+"0x0c74b11f31b23574f8a662354f486dfd214c2c17c4a2c92491d43d80a0d8440b"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x9b382a26a6d95afbb1cd174e8f204902e9f9190f",
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
 "24h"
 ],
-"cluster": "op-609",
+"cluster": null,
 "evidence": {
 "tokens": 278,
 "collections": 25,
@@ -109591,9 +109935,101 @@
 "0x65141f76b9c554e688eef04dbfa04d1016d520c1"
 ],
 "example_tx": [
-"0x0b237102141450596f674658e90be5014411cc8bf073807f09a0f464cc604224",
-"0x0e8c2299b700dbaa5155547d4560ca66a0c8ec06589c23371cf867e59a89d3bc",
-"0x1f95a24d0979292da38af5b9acb515cb7e83dca177109c8da8a7cb36c1d98435"
+"0x03962ede13a9b13db11beaa2525bec4db2105981d5e1dcf7926fc985925a1764",
+"0x078e9435796e9f00ae6f771938ccade316d7d39e0e4dfd5a332308cbe36e4f69",
+"0x092ebb1c4ac9b3743a2eccaf54a431403eaebd36eeb4e451cb4f8ae6300c2055"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x54502b26b0c5b6a19580b19f40e4355ad98d6da5",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 2
+},
+"tokens": 90,
+"collections": 34,
+"mint_txs": 37,
+"median_gap_s": 1081.2,
+"nonce": 287,
+"balance_eth": 5.8e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 11,
+"code": null,
+"top_collections": [
+"0xb39278e6497100e33e65dedc38d981e79816aa78",
+"0xb9413aa7a32da226e23b10bc0c5fd6120c8d5574",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5",
+"0x986e32ac2c8f48ddf265c4bc761eb8db333b3518"
+],
+"example_tx": [
+"0x078762978f0b54c4810269d0c0cad5b60208186e40c5d769b00fad3083ea9518",
+"0x0e46613c0a541ffea53afb1184ced900ffdad9acab86f60212ef2b356eeeea25",
+"0x144ebb8fd9329556d64f4fe4a83c9371e18099d34f1c8d0619d364f6c5d07302"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x23a247fb04bd1786264a64a1e54ac4fdd97327f0",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 1
+},
+"tokens": 109,
+"collections": 35,
+"mint_txs": 38,
+"median_gap_s": 1173.4,
+"nonce": 269,
+"balance_eth": 0.00011,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 8,
+"code": null,
+"top_collections": [
+"0xb39278e6497100e33e65dedc38d981e79816aa78",
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0xb9413aa7a32da226e23b10bc0c5fd6120c8d5574",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b"
+],
+"example_tx": [
+"0x0361c00691f60cc8914c43e5bd2b1bc69ff2750eacb76fb3f0d2fbabc16ddb92",
+"0x09aa5e4613c73ffb84cb4f28d7b8b3b861c23595a2570bc788480671f5a8f48a",
+"0x0b6cb4f16799083a250280dd97a7b15a1e28b8183270e3728633acd88a82a4c2"
 ],
 "structural_proof": false
 }
@@ -109885,7 +110321,7 @@
 "windows": [
 "24h"
 ],
-"cluster": "farm-007",
+"cluster": "farm-008",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 3
@@ -110371,7 +110807,7 @@
 "0xec73b88bcfb3c9f5e255d96b228f2883e52ae387"
 ],
 "example_tx": [
-"0x015d40f2abaae5160a630b91c7c09932d201608daad45856034313787b488141",
+"0x00d5447fe2e483c30008a60aeb4684a432b9e7e94a67b6d8c1eb85ad720da908",
 "0x0268fb31c155278aad0865a301985287a61220799d6afe316f652febd9192606",
 "0x0ccf6aa2a99ca2bdc09bcc4955fa8336db05d6152e715cb639dda6a7a3231cb6"
 ],
@@ -110403,10 +110839,10 @@
 "balance_eth": 6e-06,
 "swept_out": 0,
 "operated_for": 0,
-"minted_by_others": 0,
+"minted_by_others": 1,
 "sink_sources": 0,
-"swarm_size": 8,
-"code": null,
+"swarm_size": 0,
+"code": "0xef01008d130c86951214a6aeb868b210d0243aac15b862",
 "top_collections": [
 "0xb563ea07c71e10d454727570ded75fa9aef405e6",
 "0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
@@ -110463,11 +110899,473 @@
 "0x121493272bfe4454abfe4b65977130f6a6479c1252b9c19adfe6220d6dbc8324",
 "0x1336ffa498f222502b8ab8cea7828ad21c87710076b1cf2862ab603f9c24050e"
 ],
-"structural_proof": false
+"structural_proof": true
 }
 },
 {
-"address": "0x4dab7faa904dbcc3ae60242a3d72d96f9af125da",
+"address": "0x446db554b67796781c350691e9dfea72b2f79467",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-222",
+"evidence": {
+"tokens": 93,
+"collections": 33,
+"mint_txs": 33,
+"median_gap_s": 1343.2,
+"nonce": 228,
+"balance_eth": 2e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef01008d130c86951214a6aeb868b210d0243aac15b862",
+"top_collections": [
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
+"0x7b8c4724c66077e01837bea8db151321578a9ee7",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5"
+],
+"example_tx": [
+"0x0cb1e256f2e2ba40b8f55612712b91ace448d33ada176bbaf4d746938bc8390c",
+"0x23daff356b2210e5f9255aa6a5a189c2d32e32a5c129d36c3939e696169b4fcf",
+"0x31e357f62065657db6c53867e30847018ae05ddcdc606d781a177e33a2dfcb8a"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0xee1ea5ae9c710068ff97de23684094c0db809def",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-222",
+"evidence": {
+"tokens": 93,
+"collections": 33,
+"mint_txs": 33,
+"median_gap_s": 1343.2,
+"nonce": 494,
+"balance_eth": 0.000121,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef01008d130c86951214a6aeb868b210d0243aac15b862",
+"top_collections": [
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
+"0x7b8c4724c66077e01837bea8db151321578a9ee7",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5"
+],
+"example_tx": [
+"0x0cb1e256f2e2ba40b8f55612712b91ace448d33ada176bbaf4d746938bc8390c",
+"0x23daff356b2210e5f9255aa6a5a189c2d32e32a5c129d36c3939e696169b4fcf",
+"0x31e357f62065657db6c53867e30847018ae05ddcdc606d781a177e33a2dfcb8a"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x49a1ae6d4efdba259496c1b93acb702f91d2162c",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-222",
+"evidence": {
+"tokens": 93,
+"collections": 33,
+"mint_txs": 33,
+"median_gap_s": 1343.2,
+"nonce": 224,
+"balance_eth": 3e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef01008d130c86951214a6aeb868b210d0243aac15b862",
+"top_collections": [
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
+"0x7b8c4724c66077e01837bea8db151321578a9ee7",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5"
+],
+"example_tx": [
+"0x0cb1e256f2e2ba40b8f55612712b91ace448d33ada176bbaf4d746938bc8390c",
+"0x23daff356b2210e5f9255aa6a5a189c2d32e32a5c129d36c3939e696169b4fcf",
+"0x31e357f62065657db6c53867e30847018ae05ddcdc606d781a177e33a2dfcb8a"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0xe167b5340ca3a2bd18945f5f9a550c43954b8985",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-222",
+"evidence": {
+"tokens": 93,
+"collections": 33,
+"mint_txs": 33,
+"median_gap_s": 1343.2,
+"nonce": 237,
+"balance_eth": 6.9e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef01008d130c86951214a6aeb868b210d0243aac15b862",
+"top_collections": [
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
+"0x7b8c4724c66077e01837bea8db151321578a9ee7",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5"
+],
+"example_tx": [
+"0x0cb1e256f2e2ba40b8f55612712b91ace448d33ada176bbaf4d746938bc8390c",
+"0x23daff356b2210e5f9255aa6a5a189c2d32e32a5c129d36c3939e696169b4fcf",
+"0x31e357f62065657db6c53867e30847018ae05ddcdc606d781a177e33a2dfcb8a"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0xab0c1a3a58debd972a961652a7896ca8e4fc3c34",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-222",
+"evidence": {
+"tokens": 93,
+"collections": 33,
+"mint_txs": 33,
+"median_gap_s": 1343.2,
+"nonce": 236,
+"balance_eth": 7.7e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef01008d130c86951214a6aeb868b210d0243aac15b862",
+"top_collections": [
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
+"0x7b8c4724c66077e01837bea8db151321578a9ee7",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5"
+],
+"example_tx": [
+"0x0cb1e256f2e2ba40b8f55612712b91ace448d33ada176bbaf4d746938bc8390c",
+"0x23daff356b2210e5f9255aa6a5a189c2d32e32a5c129d36c3939e696169b4fcf",
+"0x31e357f62065657db6c53867e30847018ae05ddcdc606d781a177e33a2dfcb8a"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x7417ba5a26afce1357b8e0f7e3fb0742ff807ba6",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-222",
+"evidence": {
+"tokens": 93,
+"collections": 33,
+"mint_txs": 33,
+"median_gap_s": 1343.2,
+"nonce": 233,
+"balance_eth": 7.7e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef01008d130c86951214a6aeb868b210d0243aac15b862",
+"top_collections": [
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
+"0x7b8c4724c66077e01837bea8db151321578a9ee7",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5"
+],
+"example_tx": [
+"0x0cb1e256f2e2ba40b8f55612712b91ace448d33ada176bbaf4d746938bc8390c",
+"0x23daff356b2210e5f9255aa6a5a189c2d32e32a5c129d36c3939e696169b4fcf",
+"0x31e357f62065657db6c53867e30847018ae05ddcdc606d781a177e33a2dfcb8a"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x5f6e9d6393ddd73f4ec866daa1756134d416998a",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-222",
+"evidence": {
+"tokens": 93,
+"collections": 33,
+"mint_txs": 33,
+"median_gap_s": 1343.2,
+"nonce": 232,
+"balance_eth": 7.4e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef01008d130c86951214a6aeb868b210d0243aac15b862",
+"top_collections": [
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
+"0x7b8c4724c66077e01837bea8db151321578a9ee7",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5"
+],
+"example_tx": [
+"0x0cb1e256f2e2ba40b8f55612712b91ace448d33ada176bbaf4d746938bc8390c",
+"0x23daff356b2210e5f9255aa6a5a189c2d32e32a5c129d36c3939e696169b4fcf",
+"0x31e357f62065657db6c53867e30847018ae05ddcdc606d781a177e33a2dfcb8a"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x1bcb6c7e0eede775706f40f76da584f68f3579b8",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-222",
+"evidence": {
+"tokens": 93,
+"collections": 33,
+"mint_txs": 33,
+"median_gap_s": 1343.2,
+"nonce": 241,
+"balance_eth": 4.5e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef01008d130c86951214a6aeb868b210d0243aac15b862",
+"top_collections": [
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
+"0x7b8c4724c66077e01837bea8db151321578a9ee7",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5"
+],
+"example_tx": [
+"0x0cb1e256f2e2ba40b8f55612712b91ace448d33ada176bbaf4d746938bc8390c",
+"0x23daff356b2210e5f9255aa6a5a189c2d32e32a5c129d36c3939e696169b4fcf",
+"0x31e357f62065657db6c53867e30847018ae05ddcdc606d781a177e33a2dfcb8a"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x026421b0b675a72f8243fb77d0911662dbd0b90a",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-222",
+"evidence": {
+"tokens": 93,
+"collections": 33,
+"mint_txs": 33,
+"median_gap_s": 1343.2,
+"nonce": 237,
+"balance_eth": 4.7e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef01008d130c86951214a6aeb868b210d0243aac15b862",
+"top_collections": [
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
+"0x7b8c4724c66077e01837bea8db151321578a9ee7",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5"
+],
+"example_tx": [
+"0x0cb1e256f2e2ba40b8f55612712b91ace448d33ada176bbaf4d746938bc8390c",
+"0x23daff356b2210e5f9255aa6a5a189c2d32e32a5c129d36c3939e696169b4fcf",
+"0x31e357f62065657db6c53867e30847018ae05ddcdc606d781a177e33a2dfcb8a"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0xe032c36e0b2e34f18ccbd6cd2b57f83a326dacd9",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-222",
+"evidence": {
+"tokens": 93,
+"collections": 33,
+"mint_txs": 33,
+"median_gap_s": 1343.2,
+"nonce": 272,
+"balance_eth": 7.2e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef01008d130c86951214a6aeb868b210d0243aac15b862",
+"top_collections": [
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
+"0x7b8c4724c66077e01837bea8db151321578a9ee7",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5"
+],
+"example_tx": [
+"0x0cb1e256f2e2ba40b8f55612712b91ace448d33ada176bbaf4d746938bc8390c",
+"0x23daff356b2210e5f9255aa6a5a189c2d32e32a5c129d36c3939e696169b4fcf",
+"0x31e357f62065657db6c53867e30847018ae05ddcdc606d781a177e33a2dfcb8a"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x492ebc992e4b63e170850c21f1aab24f21ad8030",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-222",
+"evidence": {
+"tokens": 93,
+"collections": 33,
+"mint_txs": 33,
+"median_gap_s": 1343.2,
+"nonce": 1664,
+"balance_eth": 2.5e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef01008d130c86951214a6aeb868b210d0243aac15b862",
+"top_collections": [
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
+"0x7b8c4724c66077e01837bea8db151321578a9ee7",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5"
+],
+"example_tx": [
+"0x0cb1e256f2e2ba40b8f55612712b91ace448d33ada176bbaf4d746938bc8390c",
+"0x23daff356b2210e5f9255aa6a5a189c2d32e32a5c129d36c3939e696169b4fcf",
+"0x31e357f62065657db6c53867e30847018ae05ddcdc606d781a177e33a2dfcb8a"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x738cfafe1e53382b7a804a5489d29cff1a4550c1",
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
@@ -110478,7 +111376,7 @@
 "windows": [
 "24h"
 ],
-"cluster": null,
+"cluster": "farm-008",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -110491,7 +111389,7 @@
 "balance_eth": 0.000514,
 "swept_out": 0,
 "operated_for": 0,
-"minted_by_others": 0,
+"minted_by_others": 1,
 "sink_sources": 0,
 "swarm_size": 6,
 "code": null,
@@ -110507,7 +111405,7 @@
 "0x07b429cbd0569f57718c6efa85fdc7cd5365053d460147f5e9ab4f7abdc34dec",
 "0x07d63ee2d7407f34cf65f4cd6548f010e46bfb289d9391018b9d072ca7bbc976"
 ],
-"structural_proof": false
+"structural_proof": true
 }
 },
 {
@@ -110517,12 +111415,13 @@
 "labels": [
 "ACTIVE_MINTER",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"MINT_PAID_BY_OTHER",
+"SMART_WALLET_7702"
 ],
 "windows": [
 "24h"
 ],
-"cluster": null,
+"cluster": "op-222",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 3
@@ -110535,7 +111434,7 @@
 "balance_eth": 0.00037,
 "swept_out": 0,
 "operated_for": 0,
-"minted_by_others": 0,
+"minted_by_others": 1,
 "sink_sources": 0,
 "swarm_size": 5,
 "code": null,
@@ -110551,7 +111450,7 @@
 "0x145e623ba2061716d5b44ee20d1dc862bb40a79caecb4bc4a67f974b2b79fa85",
 "0x178704f3cddbc6b04230a437d3ee4574d5d910a9b33070797f776e84c8744d83"
 ],
-"structural_proof": false
+"structural_proof": true
 }
 },
 {
@@ -110561,12 +111460,13 @@
 "labels": [
 "ACTIVE_MINTER",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"MINT_PAID_BY_OTHER",
+"SMART_WALLET_7702"
 ],
 "windows": [
 "24h"
 ],
-"cluster": null,
+"cluster": "op-222",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -110579,7 +111479,7 @@
 "balance_eth": 4e-06,
 "swept_out": 0,
 "operated_for": 0,
-"minted_by_others": 0,
+"minted_by_others": 1,
 "sink_sources": 0,
 "swarm_size": 11,
 "code": null,
@@ -110595,11 +111495,11 @@
 "0x0207a969cf64f4ac44493405589627c73d4548f5353b2d92df710f4471493a13",
 "0x04fc677077268cdc8472a670cc7adb09655b1f468f29f98fa369387ef439fd04"
 ],
-"structural_proof": false
+"structural_proof": true
 }
 },
 {
-"address": "0x5d722437527d758b72abcbf7ac16fcacbacfe903",
+"address": "0xe6a082caee5c61778ca2f8a37f9fd1647dd3436a",
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
@@ -110872,7 +111772,7 @@
 "cluster": null,
 "evidence": {
 "via": {
-"OpenSea SeaDrop": 2
+"OpenSea SeaDrop": 3
 },
 "tokens": 62,
 "collections": 26,
@@ -110972,12 +111872,13 @@
 "operated_for": 0,
 "minted_by_others": 0,
 "sink_sources": 0,
-"swarm_size": 6,
+"swarm_size": 7,
 "code": null,
 "top_collections": [
 "0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xec73b88bcfb3c9f5e255d96b228f2883e52ae387",
 "0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0x986e32ac2c8f48ddf265c4bc761eb8db333b3518",
 "0x28330d6483b6f9f03e0b8ed1881cc3759f580605",
 "0x87f5658dd5bd736f0504bb4fc5e2f9262403741d"
 ],
@@ -116682,7 +117583,8 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-406",
 "evidence": {
@@ -116889,7 +117791,7 @@
 "windows": [
 "24h"
 ],
-"cluster": null,
+"cluster": "farm-033",
 "evidence": {
 "tokens": 333,
 "collections": 1,
@@ -116899,7 +117801,7 @@
 "balance_eth": 5.8e-05,
 "swept_out": 183,
 "operated_for": 0,
-"minted_by_others": 0,
+"minted_by_others": 2,
 "sink_sources": 0,
 "swarm_size": 0,
 "code": "0xef010063c0c19a282a1b52b07dd5a65b58948a07dae32b",
@@ -118398,7 +119300,7 @@
 "cluster": null,
 "evidence": {
 "via": {
-"OpenSea SeaDrop": 3
+"OpenSea SeaDrop": 2
 },
 "tokens": 51,
 "collections": 21,
@@ -118413,7 +119315,6 @@
 "swarm_size": 16,
 "code": "0xef010069007702764179f14f51cdce752f4f775d74e139",
 "top_collections": [
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xffdd802115676583f7fabf646683360dc8dd2fe8",
 "0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
 "0x66b21c80a76cae6e3979960412266433ec771c85",
@@ -118501,15 +119402,15 @@
 "code": "0xef010069007702764179f14f51cdce752f4f775d74e139",
 "top_collections": [
 "0x4b74de16a690226d96f77c585c90622fcb3d6cd2",
-"0x3499274b7e812c7dc81f3fd33e809796344d61dc",
 "0xb563ea07c71e10d454727570ded75fa9aef405e6",
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
-"0xffdd802115676583f7fabf646683360dc8dd2fe8"
+"0xffdd802115676583f7fabf646683360dc8dd2fe8",
+"0x28330d6483b6f9f03e0b8ed1881cc3759f580605",
+"0x87f5658dd5bd736f0504bb4fc5e2f9262403741d"
 ],
 "example_tx": [
-"0x02ad82c26d4bfd574f92e0a4678a018b12484357a4eb4eb890fbdb6c092c4cd9",
-"0x2033674101aece4d4656929b58f9d4d10617ae51b536dc5c9be881d5861629e6",
-"0x2a6f9e7ccf37daeb41ad83912c57b47c9f8db9dbba8d07967d16215a59b20011"
+"0x00285b4c19cd721a613c231727b1a76d75191e3c2c78c939afd4ae8f8e4a7c0e",
+"0x00f3bd5b5b83820c0070563e5f4d05e0974cdcd2065cb30915c4bfd8e49f7971",
+"0x0555383661a93f599f5f30c7886474a64c363973924c5ead1d6a0ca75d2d87b4"
 ],
 "structural_proof": true
 }
@@ -119376,12 +120277,10 @@
 "labels": [
 "ACTIVE_MINTER",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -120622,7 +121521,6 @@
 "labels": [
 "ACTIVE_MINTER",
 "MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -120838,7 +121736,8 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-680",
 "evidence": {
@@ -121466,7 +122365,8 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-535",
 "evidence": {
@@ -122055,7 +122955,8 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -122231,6 +123132,51 @@
 "ACTIVE_MINTER",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS",
+"SMART_WALLET_7702"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 2
+},
+"tokens": 123,
+"collections": 39,
+"mint_txs": 39,
+"median_gap_s": 6654.3,
+"nonce": 156,
+"balance_eth": 7.4e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef010069007702764179f14f51cdce752f4f775d74e139",
+"top_collections": [
+"0x3ef883c740a7f0ca01c288170085c0f61bc28de0",
+"0x6ee3608ae0240cb25dd9d10dfe763776e7261c77",
+"0x77550ba2dcc587da4e8655aed2ffd276ec672ae4",
+"0x54aa6dd6da1e76ee5db067d9106f3c3219aec8aa",
+"0x19c9d093f29c6c0c0827df680f01d53879bbc124"
+],
+"example_tx": [
+"0x0a80c321af2dbdebaab872b177cba87a038df16defee8e7b4bca037f62727439",
+"0x0c637ef8bb84213ce01743640bcbee81c8e9a9c7bfb2e142f26b507fe038f6b6",
+"0x0d1566c625ff233a62041d1e9b1e1646bdbd3de9c810c20056b4ec3986fae0d5"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x1f77aa77d89631a9ece1f24623b1f4e1f4bea8e5",
+"score": 50,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -123614,6 +124560,8 @@
 "labels": [
 "ACTIVE_MINTER",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -123964,7 +124912,8 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -126011,8 +126960,7 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-556",
 "evidence": {
@@ -127548,13 +128496,15 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-004",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -128387,8 +129337,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -131373,52 +132322,6 @@
 }
 },
 {
-"address": "0xbd4bf9837e90a38b1ee43b89ec93eb14c7a19e8c",
-"score": 50,
-"tier": "MIXED_SIGNAL",
-"labels": [
-"ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS",
-"SMART_WALLET_7702"
-],
-"windows": [
-"168h",
-"24h"
-],
-"cluster": null,
-"evidence": {
-"via": {
-"OpenSea SeaDrop": 2
-},
-"tokens": 51,
-"collections": 25,
-"mint_txs": 25,
-"median_gap_s": 660.8,
-"nonce": 780,
-"balance_eth": 0.0009,
-"swept_out": 0,
-"operated_for": 0,
-"minted_by_others": 0,
-"sink_sources": 0,
-"swarm_size": 0,
-"code": "0xef010069007702764179f14f51cdce752f4f775d74e139",
-"top_collections": [
-"0x4620da3ef209e74ddac56a2fadab9a62080dc218",
-"0xd6c6b52d8cb2b8d93f02d91081729b68d147f590",
-"0xd9863f24fddf5adedd2cf1d0923532fae7f62be6",
-"0x1dd6573a4ad1cb3926468f8aea16434540266c9a",
-"0x2c8b9ac2a9bd317039b4a12ef4050e10bf23d3bb"
-],
-"example_tx": [
-"0x13a9067ae2f2dae8a5ca7e6982cd4befd54c56a7ea83c0148514ea8ec2ce64b5",
-"0x14d25db8a014a595c8d282b8a61f2880b3a7721ecf1c1116b34de40fd38de7d3",
-"0x20113293f23a1cbe07b204fa0dd927a5f333c395aea9eaf43b5dca54baec8213"
-],
-"structural_proof": true
-}
-},
-{
 "address": "0xde08da77048bae71c922790b537eef069b5978bc",
 "score": 50,
 "tier": "MIXED_SIGNAL",
@@ -132497,6 +133400,45 @@
 }
 },
 {
+"address": "0x50806b8e8896455f1ebf59a3c971d7e444a89adb",
+"score": 50,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 112,
+"collections": 1,
+"mint_txs": 14,
+"median_gap_s": 274.7,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x58daec3116aae6d93017baaea7749052e8a04fa7"
+],
+"example_tx": [
+"0x08217aee296f8de93588cca3e3ba350ce8068774601bc3043c2f6a21065d3385",
+"0x0ce477569a1ee9c5fa8d53f8a5d956d6d6aaa6da1bdf1ec8b715be4def0eb825",
+"0x1ede28ea35434a9f53735c542ce53ec1b3680de89b34038551786c2df38b4cbd"
+],
+"structural_proof": false
+}
+},
+{
 "address": "0x946b8e47be5884fccbcb4cb6952f313cf8701289",
 "score": 50,
 "tier": "MIXED_SIGNAL",
@@ -132530,7 +133472,6 @@
 "top_collections": [
 "0xb563ea07c71e10d454727570ded75fa9aef405e6",
 "0x4b74de16a690226d96f77c585c90622fcb3d6cd2",
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xffdd802115676583f7fabf646683360dc8dd2fe8",
 "0x12c0a33438850f651e04282df52d1526313fac6b"
 ],
@@ -132571,14 +133512,13 @@
 "top_collections": [
 "0xb563ea07c71e10d454727570ded75fa9aef405e6",
 "0x4b74de16a690226d96f77c585c90622fcb3d6cd2",
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xffdd802115676583f7fabf646683360dc8dd2fe8",
 "0xa9677fa2753cf70007bc4b8db24cd340bd6a5439"
 ],
 "example_tx": [
 "0x02113bfbec4c9c7fdcf47095844a644876fcb6c00852364ca0c33062980eaeab",
 "0x06266db418c3fa15f203347a797ed6dd83141ba7ad62bc564c006031172ff578",
-"0x07c55d7fcd6d612695d92267c1493a29a5eb64de9ce47767dd47cad2699b4249"
+"0x07d64b92408eeca4b503a30a14bfa442d36fbdb7d6c414a8f17f73ac961984cc"
 ],
 "structural_proof": true
 }
@@ -132661,7 +133601,7 @@
 "example_tx": [
 "0x03674c1f305e383d078ba57c8b740b9851f9e07f6d4f84df410915dd1a1693fa",
 "0x057ba2620b739f3c84b8ba5e08fd43f02d7fcf3cdbf8f330d431bd5a1a4e8306",
-"0x0a0112d07ecd61a0a93f2c478107bbaf7a45f52a2b4a0b8b9f918f633413404a"
+"0x05f2a6c4cd9281020074478fe0e068bb04f27c945bde00985335a798aad04975"
 ],
 "structural_proof": true
 }
@@ -132696,7 +133636,6 @@
 "swarm_size": 0,
 "code": "0xef0100612373d7003d694220f7800eeaf8e3924c0951d3",
 "top_collections": [
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xffdd802115676583f7fabf646683360dc8dd2fe8",
 "0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
 "0x87f5658dd5bd736f0504bb4fc5e2f9262403741d",
@@ -132735,7 +133674,7 @@
 "minted_by_others": 0,
 "sink_sources": 0,
 "swarm_size": 0,
-"code": "0xef0100b308d91ceca24df580908781171ba5c250b4bc07",
+"code": "0xef010069007702764179f14f51cdce752f4f775d74e139",
 "top_collections": [
 "0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xec73b88bcfb3c9f5e255d96b228f2883e52ae387",
@@ -132744,9 +133683,9 @@
 "0x66b21c80a76cae6e3979960412266433ec771c85"
 ],
 "example_tx": [
-"0x0204b5884285c38276a7a6fe77ddeb9a73bc885b61015b9ddaf2aa043cd65406",
-"0x03b80e643791c6515382469b96bfad0371369bd846e6be655e4f791dddb77713",
-"0x1a3f92c0961dc9541281e264b2d70c58d8655f6486e1f8862d3016a32b71b431"
+"0x006591756ef4ab79bc2952ee65bb4f326d479eeb55cfc823ffe6cb7270a71d61",
+"0x11df995207c8118df9eb8a3296cd404e641e4b3833e59854421c3fe0678d207f",
+"0x21112d678163565db4d37761a3ea24b1af6e4fd2d298d8133d7a4307e2a65f06"
 ],
 "structural_proof": true
 }
@@ -132965,6 +133904,7 @@
 "score": 47,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "SEVERAL_COLLECTIONS"
 ],
@@ -135425,8 +136365,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -135515,8 +136454,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -135649,8 +136587,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -135918,8 +136855,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -136321,8 +137257,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -136410,8 +137345,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -136544,8 +137478,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -136858,8 +137791,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -137346,12 +138278,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-566",
 "evidence": {
@@ -139112,12 +140046,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-566",
 "evidence": {
@@ -145980,7 +146916,7 @@
 "0xffdd802115676583f7fabf646683360dc8dd2fe8"
 ],
 "example_tx": [
-"0x02417f5674f1eab632ef0c96a663b026a19a0f03427ee0b2617366483d04c6b6",
+"0x053e31406428ac7ce08dedd480082014e37c5753a18bea23b509e7d4cc4d4e0c",
 "0x0634227fc614f4624de1a883d378b7c34ff891a2decd5026ca4d090471fcab40",
 "0x06afc1f530f743816ba633af9fc4b6f4ed8a7db7143c78c2485fa5bb5c5f3967"
 ],
@@ -146336,7 +147272,7 @@
 "cluster": null,
 "evidence": {
 "via": {
-"OpenSea SeaDrop": 3
+"OpenSea SeaDrop": 1
 },
 "tokens": 251,
 "collections": 23,
@@ -146524,7 +147460,6 @@
 "0xffdd802115676583f7fabf646683360dc8dd2fe8"
 ],
 "example_tx": [
-"0x0560b3cdf1da32830d80f35b22986935b86531eebee1a0261229ad78f838471e",
 "0x09e67be8140ec9017028eceab4902b807e1089e0a784718e623b93c58a9ad65d",
 "0x0cd6192f36fe2aedc7744d6740d3d63d2abec5bc414833412e6f47f614f9182a"
 ],
@@ -146647,7 +147582,6 @@
 "0xffdd802115676583f7fabf646683360dc8dd2fe8"
 ],
 "example_tx": [
-"0x05387c2db0c5809acffc7498f10985ff2c34f90a99eedd885023d45dd51a7c4a",
 "0x06e9549733008c00df2c69169465e9b53474b4725ddd370b7576c0693536071b",
 "0x16046c54f1065322d0a2b989c20a9e6aa506e8259eea15b392726ca079efef29"
 ],
@@ -147126,7 +148060,7 @@
 "cluster": null,
 "evidence": {
 "via": {
-"OpenSea SeaDrop": 3
+"OpenSea SeaDrop": 1
 },
 "tokens": 248,
 "collections": 21,
@@ -147526,6 +148460,7 @@
 "0xffdd802115676583f7fabf646683360dc8dd2fe8"
 ],
 "example_tx": [
+"0x096f1d07374bababb2cf0c9654de91236c145d8e4608d4c5db6a7027af49b328",
 "0x0cdcea8aff26014e161ed72bbaa362fa969a29b0748934d1e04c5ee983608e40",
 "0x0e7eaa1a23edef81d3412f48ff2e0a08a6085c455638a87c3fb69eb024256a60",
 "0x1163ad7f3759c792b428efafe49a180fabc64e1f06686c5c071ca8b6a21cd684"
@@ -147864,8 +148799,10 @@
 "0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xec73b88bcfb3c9f5e255d96b228f2883e52ae387",
 "0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
-"0x28330d6483b6f9f03e0b8ed1881cc3759f580605",
-"0x87f5658dd5bd736f0504bb4fc5e2f9262403741d"
+"0xdc857055f4148feaea392c54c85d1502d3be9ce5",
+"0x986e32ac2c8f48ddf265c4bc761eb8db333b3518",
+"0x87f5658dd5bd736f0504bb4fc5e2f9262403741d",
+"0x66b21c80a76cae6e3979960412266433ec771c85"
 ],
 "example_tx": [
 "0x0e24dd2c5966484dd56e0f6834a9dcfc750480e4bd2200efe2f297f3955b6f8e",
@@ -150111,7 +151048,8 @@
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -150374,8 +151312,7 @@
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -151385,7 +152322,7 @@
 "168h",
 "24h"
 ],
-"cluster": null,
+"cluster": "farm-021",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -151815,7 +152752,8 @@
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -152026,46 +152964,6 @@
 }
 },
 {
-"address": "0xc2346a67846fa89229d2f400dd66ecd7347dd59a",
-"score": 45,
-"tier": "MIXED_SIGNAL",
-"labels": [
-"ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS"
-],
-"windows": [
-"168h"
-],
-"cluster": null,
-"evidence": {
-"tokens": 181,
-"collections": 70,
-"mint_txs": 75,
-"median_gap_s": 1998.7,
-"nonce": 664,
-"balance_eth": 2e-06,
-"swept_out": 0,
-"operated_for": 0,
-"minted_by_others": 0,
-"sink_sources": 0,
-"swarm_size": 0,
-"code": null,
-"top_collections": [
-"0x2a282ad40c902f673837626210b34473c84669a4",
-"0xcceb91b84cf264574e5ff053ce383eab458d5a81",
-"0x8ba5e4293cb7690e1e0c8afbaf38f46e0ec6eaa8",
-"0x52345dc4b9547a8376e79492a4920919164664ba",
-"0x13497e364d0856bcb9d82fc4a3b3cebfbfee4590"
-],
-"example_tx": [
-"0x023393c9c4223dd96b980428ba17aa80166d5eeba11d7b5dcff32c327c758ee2",
-"0x04ebb86d7e2fb6cc29856315463dd707429d63f89da1b0e3e5dc55ebbbb91789",
-"0x0b3325720a29b3c9cdd4f66fc35b837fb9bca6ad9fa6bc4c284ee4694e380a55"
-],
-"structural_proof": false
-}
-},
-{
 "address": "0x7f5ca0837c895722d654728562d25695b349a090",
 "score": 45,
 "tier": "MIXED_SIGNAL",
@@ -152203,7 +153101,8 @@
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -152544,12 +153443,10 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-030",
 "evidence": {
@@ -154862,8 +155759,7 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -155635,12 +156531,10 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -160243,7 +161137,8 @@
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -161404,12 +162299,10 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -162051,7 +162944,8 @@
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -162263,10 +163157,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -162865,10 +163762,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -163464,10 +164364,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -164368,10 +165271,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -166555,10 +167461,12 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -168181,10 +169089,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -168525,12 +169436,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-001",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -168568,12 +169481,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-030",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -168611,12 +169526,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-001",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -168654,12 +169571,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-001",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -168697,12 +169616,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-001",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -169041,12 +169962,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-001",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -169471,12 +170394,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-001",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -169514,12 +170439,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-001",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -169557,12 +170484,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-001",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -169858,12 +170787,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-001",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -170801,10 +171732,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -177517,6 +178451,88 @@
 }
 },
 {
+"address": "0xcff53fb9e9e46405548d00809f03b792d74edc43",
+"score": 45,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": "op-602",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 2
+},
+"tokens": 80,
+"collections": 30,
+"mint_txs": 30,
+"median_gap_s": 1225.4,
+"nonce": 806,
+"balance_eth": 0.00192,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
+"0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
+"0x986e32ac2c8f48ddf265c4bc761eb8db333b3518",
+"0x28330d6483b6f9f03e0b8ed1881cc3759f580605"
+],
+"example_tx": [
+"0x0233db747bbd96b8088be5d2f089e4cd7ab3a5f49dd63573cee706e1c6c77724",
+"0x12a70414e9e0d36f1c5572035b7f666548886ce28c450295b4733e6fc70b5cbf",
+"0x144cbf8e33bd58d17a81247e2afdccd7295d43d170cde2b8646ed39f56916504"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x9f17115c8647f2e87571305299ea3e10a610fd2b",
+"score": 45,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"COLLECTS_FROM_MANY_MINTERS",
+"HIGH_MINT_COUNT",
+"SMART_WALLET_7702"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": "farm-021",
+"evidence": {
+"tokens": 1,
+"collections": 1,
+"mint_txs": 1,
+"median_gap_s": null,
+"nonce": 746,
+"balance_eth": 0.000646,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 5,
+"swarm_size": 0,
+"code": "0xef010077021100bd87b7008e5e1989d0eb38555d0d0000",
+"top_collections": [
+"0x09fe37de65482592a0a617516f93a2a25d725059"
+],
+"example_tx": [
+"0xb0713ee6562bf23208d9816976ab1dd4089453b5b47d1603f657ba16eba5bd7b"
+],
+"structural_proof": true
+}
+},
+{
 "address": "0xba9df845f65b5e601a6f45e8cc3f57b16469bd03",
 "score": 45,
 "tier": "MIXED_SIGNAL",
@@ -177676,7 +178692,6 @@
 "top_collections": [
 "0x4b74de16a690226d96f77c585c90622fcb3d6cd2",
 "0xb563ea07c71e10d454727570ded75fa9aef405e6",
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xffdd802115676583f7fabf646683360dc8dd2fe8",
 "0xa9677fa2753cf70007bc4b8db24cd340bd6a5439"
 ],
@@ -177836,7 +178851,7 @@
 "mint_txs": 1,
 "median_gap_s": null,
 "nonce": 10,
-"balance_eth": 0.001853,
+"balance_eth": 0.002341,
 "swept_out": 0,
 "operated_for": 0,
 "minted_by_others": 0,
@@ -177966,7 +178981,6 @@
 "top_collections": [
 "0x4b74de16a690226d96f77c585c90622fcb3d6cd2",
 "0xb563ea07c71e10d454727570ded75fa9aef405e6",
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xffdd802115676583f7fabf646683360dc8dd2fe8",
 "0xa9677fa2753cf70007bc4b8db24cd340bd6a5439"
 ],
@@ -178009,7 +179023,6 @@
 "top_collections": [
 "0x4b74de16a690226d96f77c585c90622fcb3d6cd2",
 "0xb563ea07c71e10d454727570ded75fa9aef405e6",
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xffdd802115676583f7fabf646683360dc8dd2fe8",
 "0xa9677fa2753cf70007bc4b8db24cd340bd6a5439"
 ],
@@ -178095,7 +179108,6 @@
 "top_collections": [
 "0x4b74de16a690226d96f77c585c90622fcb3d6cd2",
 "0xb563ea07c71e10d454727570ded75fa9aef405e6",
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xffdd802115676583f7fabf646683360dc8dd2fe8",
 "0xa9677fa2753cf70007bc4b8db24cd340bd6a5439"
 ],
@@ -178135,7 +179147,6 @@
 "top_collections": [
 "0x4b74de16a690226d96f77c585c90622fcb3d6cd2",
 "0xb563ea07c71e10d454727570ded75fa9aef405e6",
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xffdd802115676583f7fabf646683360dc8dd2fe8",
 "0xa9677fa2753cf70007bc4b8db24cd340bd6a5439"
 ],
@@ -178158,7 +179169,7 @@
 "windows": [
 "24h"
 ],
-"cluster": null,
+"cluster": "farm-020",
 "evidence": {
 "tokens": 138,
 "collections": 39,
@@ -178188,7 +179199,7 @@
 }
 },
 {
-"address": "0xbb462fd0d6a6839bab3761cfd8ae8a46db8a0bec",
+"address": "0xdbfe314fa1db881f06e6fbb6c33f4cd78e2eb666",
 "score": 45,
 "tier": "MIXED_SIGNAL",
 "labels": [
@@ -178560,7 +179571,7 @@
 }
 },
 {
-"address": "0x6418db8611b6d3c9454d70019950aea6e707df21",
+"address": "0xaf57b20673a65b20e0dde1bc5a617167933cb3df",
 "score": 45,
 "tier": "MIXED_SIGNAL",
 "labels": [
@@ -178714,6 +179725,47 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
+"0xa9677fa2753cf70007bc4b8db24cd340bd6a5439",
+"0xb39278e6497100e33e65dedc38d981e79816aa78",
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0xb9413aa7a32da226e23b10bc0c5fd6120c8d5574",
+"0xffdd802115676583f7fabf646683360dc8dd2fe8"
+],
+"example_tx": [
+"0x002823b7cbdbb36597dd05b19ca0a33f61f7c99336e574c8d1078c7297bee17a",
+"0x03ea39db72b0003a49d2f1c98d038d7a719c07403be54f70bf7a6a34e56ef448",
+"0x0e14252f7ec201ca3d5a7a22a6190efc47a6f7c9dd872c57eba4e32b90da6b3a"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xcfcb32417eb854a80f09d582266c530cb93b6584",
+"score": 45,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 113,
+"collections": 31,
+"mint_txs": 59,
+"median_gap_s": 158.0,
+"nonce": 763,
+"balance_eth": 2e-06,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x4b74de16a690226d96f77c585c90622fcb3d6cd2",
 "0xb563ea07c71e10d454727570ded75fa9aef405e6",
 "0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xa9677fa2753cf70007bc4b8db24cd340bd6a5439",
@@ -179304,7 +180356,7 @@
 }
 },
 {
-"address": "0xf0884ba05215626b9bae923bd56dd742add7eb32",
+"address": "0xe703e7695659439571842fd530edd698dc43a2c2",
 "score": 45,
 "tier": "MIXED_SIGNAL",
 "labels": [
@@ -179372,7 +180424,8 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
 "0x7b8c4724c66077e01837bea8db151321578a9ee7",
 "0x880f28a357a8bbc35979bf0003e6af6e1cbb8b82",
 "0xec73b88bcfb3c9f5e255d96b228f2883e52ae387",
@@ -179387,7 +180440,7 @@
 }
 },
 {
-"address": "0xad9c9484544f3a9c490018817b1fb51d02f441b3",
+"address": "0xf0884ba05215626b9bae923bd56dd742add7eb32",
 "score": 45,
 "tier": "MIXED_SIGNAL",
 "labels": [
@@ -179498,7 +180551,8 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
 "0x7b8c4724c66077e01837bea8db151321578a9ee7",
 "0x880f28a357a8bbc35979bf0003e6af6e1cbb8b82",
 "0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
@@ -179569,7 +180623,7 @@
 "cluster": null,
 "evidence": {
 "via": {
-"OpenSea SeaDrop": 3
+"OpenSea SeaDrop": 1
 },
 "tokens": 69,
 "collections": 27,
@@ -179584,7 +180638,8 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
 "0x7b8c4724c66077e01837bea8db151321578a9ee7",
 "0x880f28a357a8bbc35979bf0003e6af6e1cbb8b82",
 "0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
@@ -179627,7 +180682,8 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
+"0x90087a6190c196a7f1d525efdaed09f32765e8f0",
+"0x2212846c1ecfa2148014e02429ab56ce7f21721f",
 "0x7b8c4724c66077e01837bea8db151321578a9ee7",
 "0x880f28a357a8bbc35979bf0003e6af6e1cbb8b82",
 "0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
@@ -179854,9 +180910,12 @@
 ],
 "cluster": "farm-016",
 "evidence": {
-"tokens": 5,
-"collections": 2,
-"mint_txs": 2,
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 6,
+"collections": 3,
+"mint_txs": 3,
 "median_gap_s": null,
 "nonce": 829,
 "balance_eth": 0.026868,
@@ -179868,10 +180927,12 @@
 "code": "0xef010063c0c19a282a1b52b07dd5a65b58948a07dae32b",
 "top_collections": [
 "0xcaa6d67c70b2d653449d322b2d30fcac011b59b8",
-"0xe327d2ec1d4dde5823186e81441086ae9b7b2971"
+"0xe327d2ec1d4dde5823186e81441086ae9b7b2971",
+"0x8288bba62929a89e4eb86265d84104dcd075d650"
 ],
 "example_tx": [
 "0x065a45da207071e1bf1ef75d588a7c179f7a3e839fec89b6708cd9f3d7939bc8",
+"0x7ef6a925a1876022dd911a7b923369d8b045ef3962edce7637f563fececc2289",
 "0xfcf204367c5e8bf0e586687a65171f36f232dda4228192abb6b5ee1f1cf8bd95"
 ],
 "structural_proof": true
@@ -188775,13 +189836,11 @@
 "score": 40,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -189069,48 +190128,6 @@
 "0x0ae9cee979b5c5ef055f59257af60471466c0b5e57addd2841346b1ed63204d4",
 "0x0e8a1364318d90828d96900b9a112d8ab6d742368fcf3f800594ecd24f6b5d63",
 "0x1283d1d0367df0d76818f0117069d968b4cc30535881ca00e4895539907fd8a4"
-],
-"structural_proof": true
-}
-},
-{
-"address": "0x9f17115c8647f2e87571305299ea3e10a610fd2b",
-"score": 40,
-"tier": "MIXED_SIGNAL",
-"labels": [
-"HIGH_MINT_COUNT",
-"SMART_WALLET_7702"
-],
-"windows": [
-"168h"
-],
-"cluster": null,
-"evidence": {
-"via": {
-"0x834a2aa520f58bf6670740463a00e6ecf6022d0c": 1,
-"OpenSea SeaDrop": 1
-},
-"tokens": 379,
-"collections": 3,
-"mint_txs": 6,
-"median_gap_s": null,
-"nonce": 692,
-"balance_eth": 0.000108,
-"swept_out": 111,
-"operated_for": 0,
-"minted_by_others": 0,
-"sink_sources": 0,
-"swarm_size": 0,
-"code": "0xef010077021100bd87b7008e5e1989d0eb38555d0d0000",
-"top_collections": [
-"0x33568d70e213388a53ea69201bce6bffd216267d",
-"0x7b214156044f03678aaa8d459bfde45cded31755",
-"0xbaeeddf7ada7050a1078f27ab9f4a8c1a37ae9ec"
-],
-"example_tx": [
-"0x1723141e2d91a277eb747e8067652cd7c5453e384177c27bb097209866ba30ee",
-"0x44183f9873931351f71d441e33b2c121b61f4243716da56be22623d77cf3bdcf",
-"0x7f56560e4f610f5d7cb7add5346f59fd3c8de1ee1b80301f17140302bbbf64dd"
 ],
 "structural_proof": true
 }
@@ -189427,13 +190444,11 @@
 "score": 40,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -190517,8 +191532,7 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-654",
 "evidence": {
@@ -193308,12 +194322,14 @@
 "score": 40,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-566",
 "evidence": {
@@ -194325,12 +195341,14 @@
 "score": 40,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-566",
 "evidence": {
@@ -196969,12 +197987,14 @@
 "score": 40,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -198370,7 +199390,8 @@
 "COLLECTS_FROM_MANY_MINTERS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-148",
 "evidence": {
@@ -204529,7 +205550,7 @@
 }
 },
 {
-"address": "0x945a8c21d80e070f538c34bc406e087a98ff7897",
+"address": "0xe37795e7bfdc29a67ba3faa0feb7e619e902833d",
 "score": 40,
 "tier": "MIXED_SIGNAL",
 "labels": [
@@ -204594,6 +205615,39 @@
 ],
 "example_tx": [
 "0x73b46666d704ae8bc662654ad7d955203d7cf4279fb42d3bc26a6bb8522fece6"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x945a8c21d80e070f538c34bc406e087a98ff7897",
+"score": 40,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"COLLECTS_FROM_MANY_MINTERS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-015",
+"evidence": {
+"tokens": 1,
+"collections": 1,
+"mint_txs": 1,
+"median_gap_s": null,
+"nonce": 237,
+"balance_eth": 2.9e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 7,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x09fe37de65482592a0a617516f93a2a25d725059"
+],
+"example_tx": [
+"0xdf60fc64931d3b852e27cc5463580c886e78c400492ce2fbf22c1b01907576f7"
 ],
 "structural_proof": true
 }
@@ -208741,9 +209795,9 @@
 "code": "0xef0100fa174c5faec02c6e09fef38f71915eb357bfc18c",
 "top_collections": [
 "0xb563ea07c71e10d454727570ded75fa9aef405e6",
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xffdd802115676583f7fabf646683360dc8dd2fe8",
 "0x4b74de16a690226d96f77c585c90622fcb3d6cd2",
+"0x986e32ac2c8f48ddf265c4bc761eb8db333b3518",
 "0x87f5658dd5bd736f0504bb4fc5e2f9262403741d"
 ],
 "example_tx": [
@@ -209194,7 +210248,7 @@
 "cluster": null,
 "evidence": {
 "via": {
-"OpenSea SeaDrop": 1
+"OpenSea SeaDrop": 2
 },
 "tokens": 78,
 "collections": 21,
@@ -209547,7 +210601,7 @@
 "minted_by_others": 0,
 "sink_sources": 0,
 "swarm_size": 0,
-"code": "0xef010069007702764179f14f51cdce752f4f775d74e139",
+"code": "0xef0100612373d7003d694220f7800eeaf8e3924c0951d3",
 "top_collections": [
 "0xa9677fa2753cf70007bc4b8db24cd340bd6a5439",
 "0xffdd802115676583f7fabf646683360dc8dd2fe8",
@@ -209608,7 +210662,7 @@
 }
 },
 {
-"address": "0x60539e3447cdccbf77f935366fd75b2b2d853202",
+"address": "0xae4e084c48eac02179334bc983e570fdac235678",
 "score": 37,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -209635,7 +210689,7 @@
 "minted_by_others": 0,
 "sink_sources": 0,
 "swarm_size": 0,
-"code": "0xef010069007702764179f14f51cdce752f4f775d74e139",
+"code": "0xef0100612373d7003d694220f7800eeaf8e3924c0951d3",
 "top_collections": [
 "0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0xec73b88bcfb3c9f5e255d96b228f2883e52ae387",
@@ -210738,12 +211792,10 @@
 "score": 35,
 "tier": "LOW_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -210970,12 +212022,10 @@
 "score": 35,
 "tier": "LOW_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -211043,7 +212093,6 @@
 "score": 35,
 "tier": "LOW_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT"
 ],
 "windows": [
@@ -211716,8 +212765,7 @@
 "HIGH_MINT_COUNT"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -221363,7 +222411,7 @@
 "cluster": null,
 "evidence": {
 "via": {
-"OpenSea SeaDrop": 3
+"OpenSea SeaDrop": 2
 },
 "tokens": 612,
 "collections": 1,
@@ -221670,11 +222718,11 @@
 "0x05cc03a480263779ae2930759a5328f62b0bfd06b6f7210f71fa20b51b4bf8c5",
 "0x0a9c4524c556f0e9f4f6358beb529f0e3d9eb5ae1eb2c02426b5d515637782d6"
 ],
-"structural_proof": true
+"structural_proof": false
 }
 },
 {
-"address": "0x8c57d1fab10d4b78f49ef5c6abaeb76a63710f61",
+"address": "0x059ff725690eaa54eb43c356ec889166f7476797",
 "score": 35,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -222924,8 +223972,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -223003,50 +224050,6 @@
 }
 },
 {
-"address": "0x6c7dd0dda55266466abf77f68e1ecfe2df01f04a",
-"score": 32,
-"tier": "LOW_SIGNAL",
-"labels": [
-"ACTIVE_MINTER",
-"SEVERAL_COLLECTIONS"
-],
-"windows": [
-"168h",
-"24h"
-],
-"cluster": null,
-"evidence": {
-"via": {
-"OpenSea SeaDrop": 2
-},
-"tokens": 126,
-"collections": 18,
-"mint_txs": 18,
-"median_gap_s": 1520.7,
-"nonce": 266,
-"balance_eth": 0.000507,
-"swept_out": 0,
-"operated_for": 0,
-"minted_by_others": 0,
-"sink_sources": 0,
-"swarm_size": 0,
-"code": null,
-"top_collections": [
-"0x32dbc1441c89a013894e16cd31fef4617b21e298",
-"0xae2123be47a8b72974ec3c150a80114c3e887d9e",
-"0xdeb214ae4d46af1d6a8499c09d61882cc9707294",
-"0x176f4fe60025099906f223eae59f421bb2eaa532",
-"0x3259267d8a90f0a3191d473ae22daa966f169086"
-],
-"example_tx": [
-"0x054ee59aeb7f09cbbe4858d86f27920ab1e996f387ae14cdccfa5f3593139f85",
-"0x0f89b9e4e902829b3c02bc9cd0022dc1ceddf34179367b41ed1ed288a072efdf",
-"0x1399bc45ccd469379a0baee6b4321f86e66b565764e10ffc3ac92ed7e7d7314c"
-],
-"structural_proof": false
-}
-},
-{
 "address": "0x87b134674e93089ac664dcd9d7d2691e64d065cb",
 "score": 32,
 "tier": "LOW_SIGNAL",
@@ -223055,8 +224058,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -223707,7 +224709,8 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -224991,8 +225994,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -227385,10 +228387,12 @@
 "tier": "LOW_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -239253,7 +240257,8 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -243313,14 +244318,16 @@
 "score": 32,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-220",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -243618,14 +244625,16 @@
 "score": 32,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-220",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -245426,7 +246435,7 @@
 "windows": [
 "24h"
 ],
-"cluster": null,
+"cluster": "farm-001",
 "evidence": {
 "tokens": 68,
 "collections": 24,
@@ -246774,7 +247783,7 @@
 "cluster": null,
 "evidence": {
 "via": {
-"OpenSea SeaDrop": 2
+"OpenSea SeaDrop": 3
 },
 "tokens": 44,
 "collections": 20,
@@ -248365,12 +249374,10 @@
 "tier": "LOW_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"LINKED_GROUP",
 "MINT_PAID_BY_OTHER"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-654",
 "evidence": {
@@ -256642,13 +257649,15 @@
 "score": 30,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-220",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -258827,7 +259836,8 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-556",
 "evidence": {
@@ -260360,8 +261370,7 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -260917,13 +261926,15 @@
 "score": 30,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-220",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -261239,8 +262250,7 @@
 "PAID_FOR_OTHER_MINTS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-633",
 "evidence": {
@@ -261322,7 +262332,8 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -261956,7 +262967,8 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-698",
 "evidence": {
@@ -263341,8 +264353,7 @@
 "PAID_FOR_OTHER_MINTS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-654",
 "evidence": {
@@ -263423,7 +264434,8 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-680",
 "evidence": {
@@ -264937,7 +265949,8 @@
 "PAID_FOR_OTHER_MINTS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-664",
 "evidence": {
@@ -279102,7 +280115,8 @@
 "PAID_FOR_OTHER_MINTS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-802",
 "evidence": {
@@ -293547,7 +294561,7 @@
 ],
 "cluster": null,
 "evidence": {
-"tokens": 5,
+"tokens": 6,
 "collections": 1,
 "mint_txs": 5,
 "median_gap_s": null,
@@ -293696,7 +294710,154 @@
 "evidence": {
 "tokens": 5,
 "collections": 1,
-"mint_txs": 3,
+"mint_txs": 5,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0xa79f5775b0b49e51202c48ddf03f380faa96f641"
+],
+"example_tx": [
+"0x2b593a37a19c6a446a85f2c8cd4463edabf57b24f6ddbed52424e77deb21b035",
+"0x41f600cb9c8999c18a2ea00bc308293667660748e148aa2d5d0b8c04164fcc07",
+"0x42df4ddbb6a9ba5bda73130939fd47c0458d7818a1eab67c6c6c9b73e248204a"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x744b5597203e2a49169c2e49bc671a065ec6cac6",
+"score": 30,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 5,
+"collections": 2,
+"mint_txs": 1,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x58daec3116aae6d93017baaea7749052e8a04fa7",
+"0x73991a25c818bf1f1128deaab1492d45638de0d3"
+],
+"example_tx": [
+"0x3f11b724bcfa08c3b5fb85fa8d4f2033989ec4f09dc8d07ff6d47dd574d8827d"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x2282f4cd0d3e9c252b6f8fb240b11c17c6c5d2d0",
+"score": 30,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-235",
+"evidence": {
+"tokens": 5,
+"collections": 1,
+"mint_txs": 5,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 1.8e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x58daec3116aae6d93017baaea7749052e8a04fa7"
+],
+"example_tx": [
+"0xb2475f8f596afb631a408c6848caefec7b773a38519871569579d87dd2c9c5e6",
+"0xc5c4ed2406ebcde81c9f8aa22bb59d2a4a394a2136e262a1e196cdfcfc33d4ef",
+"0xc5d9e3f07adf7cfdafe62d131439a8abff5499c2986fc867256e5c0be59172ed"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x77dc695302553f939b6652f46d0326763cb13964",
+"score": 30,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 5,
+"collections": 1,
+"mint_txs": 5,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 9e-06,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x58daec3116aae6d93017baaea7749052e8a04fa7"
+],
+"example_tx": [
+"0x2c51a8236eb3fbf0b3f140f88485bef61f115abf9a11dd04ab6487a7f1e4ac7d",
+"0x604bc0ebf3f41476ac0e7d363a8f429ac0ae1f3706ff17107b39e2cf79e48ec1",
+"0xa27d50fa54a9ea3a309bbb7573a5094be75077d38f3ec60d4f75abc56ed89be8"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xf5b097092f35c405f01786a77468fd94a47f3ea2",
+"score": 30,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-219",
+"evidence": {
+"tokens": 5,
+"collections": 4,
+"mint_txs": 5,
 "median_gap_s": null,
 "nonce": 1,
 "balance_eth": 0.0,
@@ -293707,12 +294868,15 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x837170cdded801f491855405cbcfda1211d812d7"
+"0x208f33bf0685be59c4c0facdc7008b5f74410633",
+"0x38e078f4d2dcd04f67240e0490a2e7ea2360477b",
+"0x1947095c30e458a8dedf6bbd8e97c39e67256d51",
+"0x9a38ed1f5d234a0fe9f26bfd0ef92f627d5192f7"
 ],
 "example_tx": [
-"0x263e3ca96a207072c34a951f9296cc816ab4a59ff49a0782f88e6db5a12f5e41",
-"0x5c9fab50e5825104bfd3122bfdb58783bcdee2b591fccda9ed08331be7439b4f",
-"0x950a64748243336f80db216ee6d5268dc70d6597852c5bdbd3d34930f4130021"
+"0x1b2741d9d9f13b5f295f5cd8d76e5c901f68a337a0c7dbc03f9102235322219a",
+"0x4b69b8df9a162f948d40c4884b63a1f1f739722f7ece00b84534f432153f2907",
+"0x8b4afa70d5b4cba5e84f2e4bfd0c47d5a810a7a61de96641ac663776bd3c70a1"
 ],
 "structural_proof": false
 }
@@ -305613,12 +306777,14 @@
 "score": 27,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-537",
 "evidence": {
@@ -308051,12 +309217,14 @@
 "score": 27,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-566",
 "evidence": {
@@ -312551,12 +313719,14 @@
 "score": 27,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-566",
 "evidence": {
@@ -319445,12 +320615,14 @@
 "score": 27,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -322431,12 +323603,14 @@
 "score": 27,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -342023,12 +343197,14 @@
 "score": 27,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-525",
 "evidence": {
@@ -351523,7 +352699,7 @@
 }
 },
 {
-"address": "0x3536f02bfdcb6f1984fb427a3018897362fb9dc3",
+"address": "0x777b2dbf0ce8fd7bb38bdb05db53d25cba3d3d2b",
 "score": 27,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -351551,7 +352727,6 @@
 "swarm_size": 7,
 "code": null,
 "top_collections": [
-"0x064e1748bfcfbe47243530aa17a04f857fe9efa7",
 "0x6770a1e88992582b9c089d45e5d5af4a33fded4b",
 "0x2f64b3a207c1f5b6c8d71a6213390b5d2c9f5954",
 "0xe327d2ec1d4dde5823186e81441086ae9b7b2971",
@@ -351806,7 +352981,7 @@
 "operated_for": 0,
 "minted_by_others": 0,
 "sink_sources": 0,
-"swarm_size": 5,
+"swarm_size": 9,
 "code": null,
 "top_collections": [
 "0xaf673c466b1b0e5e557b7d31da0a5a99c7cbb241",
@@ -351914,8 +353089,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -355604,12 +356778,10 @@
 "tier": "LOW_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -362400,7 +363572,8 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -364189,7 +365362,8 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-748",
 "evidence": {
@@ -369636,8 +370810,7 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-589",
 "evidence": {
@@ -370367,10 +371540,13 @@
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
-"LINKED_GROUP"
+"ACTIVE_MINTER",
+"LINKED_GROUP",
+"SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-568",
 "evidence": {
@@ -375875,8 +377051,7 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-654",
 "evidence": {
@@ -376235,8 +377410,7 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-525",
 "evidence": {
@@ -402578,7 +403752,8 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-566",
 "evidence": {
@@ -425488,12 +426663,10 @@
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "LINKED_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-535",
 "evidence": {
@@ -425595,8 +426768,7 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -425613,7 +426785,8 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -638968,7 +640141,7 @@
 }
 },
 {
-"address": "0x3f9b0d25f4d5cb419caf19ea52ec71aac1bfa5a0",
+"address": "0xfbb6e3f415d3f9c2b363442d8c675026b3dc33b0",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639000,7 +640173,7 @@
 }
 },
 {
-"address": "0xb36495ed2640005db6f760b64138f7c53414e1d3",
+"address": "0x2165d1ef249d0c8d2bef622b54d5bcabebd2ee24",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639011,12 +640184,12 @@
 ],
 "cluster": "op-041",
 "evidence": {
-"tokens": 4,
+"tokens": 5,
 "collections": 1
 }
 },
 {
-"address": "0x7564c031c4ba97660bc265a0f68ec76a8308764f",
+"address": "0x4227e2581ec746bc91fddb258c7a29f9e06a9316",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639027,12 +640200,12 @@
 ],
 "cluster": "op-041",
 "evidence": {
-"tokens": 4,
+"tokens": 5,
 "collections": 1
 }
 },
 {
-"address": "0xf8ed3a12832b106b0edc947b007c64439ad74402",
+"address": "0x0c71af74423c92d0f3ed788642735d3a52ee8e75",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639064,7 +640237,7 @@
 }
 },
 {
-"address": "0x87664c30cfba8fe860439bbf94e3521686dec0de",
+"address": "0x97bbdb94af68dc2c92699d5493502c537fdf885d",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639080,7 +640253,7 @@
 }
 },
 {
-"address": "0x762a54baf401a395b6e39c95a3a4d19c1b739f82",
+"address": "0xaf0436e94cd63ab05d3d07c88135880443623736",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639096,7 +640269,7 @@
 }
 },
 {
-"address": "0x190a4d60640405cae5eca9deb12ced7d977a5caa",
+"address": "0xbe399b6186f058f9eb9ea883474c8cedc0ed1cd1",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639128,7 +640301,7 @@
 }
 },
 {
-"address": "0x3dcecd8d7ccddf7a900888e6a08367baeecd6300",
+"address": "0x06428bc5adac8241ce3500e57dec04d03c3808da",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639144,7 +640317,7 @@
 }
 },
 {
-"address": "0x53eeff2bbce9aa26bbc3ff3d03831925d9afb259",
+"address": "0x84a8290da3703188380fbe2fe4cee1deee4235fe",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639160,7 +640333,7 @@
 }
 },
 {
-"address": "0x1442c1ed6333609729792c5547c8779efedfacd6",
+"address": "0x3498ecf11035fcb4566974e2c322aa1db72f81ab",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639176,7 +640349,7 @@
 }
 },
 {
-"address": "0xcde33affa6f90db87c0f08068f25567fac7f4824",
+"address": "0xba764fce09563e7c47b4afdceaefd5d502997086",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639192,7 +640365,7 @@
 }
 },
 {
-"address": "0xbb05d90d326acee719517262cb83b96ae6ebb377",
+"address": "0xfacc0db7f3d32efc6df8655b5efb9d1645f6f191",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639208,7 +640381,7 @@
 }
 },
 {
-"address": "0x6138adfefae5bddd68dfaa9818df4a3721b06cac",
+"address": "0x17d8e0608de50e50e8b6f4e3cf6a30feed1550d7",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639224,7 +640397,7 @@
 }
 },
 {
-"address": "0x9ba50df3c7b8bc64c5f46c029ea3fdb14a32d1d1",
+"address": "0x0e9f8d22569e48f27e953c207389aee3b75a8a3d",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639240,7 +640413,7 @@
 }
 },
 {
-"address": "0x84fec0265bc33439eba04ff3a1d9809c9d983cef",
+"address": "0x4612ec02f6daea125afeaa74f4989bef1e9d28f7",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639256,7 +640429,7 @@
 }
 },
 {
-"address": "0x5e5a87e70d8623bea3fe854521f9a7a7874bb864",
+"address": "0x0117568c323f0df22b618d43cfac96987edc1d77",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639272,7 +640445,7 @@
 }
 },
 {
-"address": "0xf6655df9e9d1ca2e05d6d6bf129f14adc4114214",
+"address": "0xc641ae649a2287d22e5a491f026bd49b9ee897d6",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639288,7 +640461,7 @@
 }
 },
 {
-"address": "0xeab55fc7d263aefb258b5fe3e73247d767c22b42",
+"address": "0x5f4916965b2f1ab21683b9f110b1f178b36b1248",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639304,7 +640477,7 @@
 }
 },
 {
-"address": "0x016f0f95cca48e7dd0c29f7ba331732e1fdb2fc1",
+"address": "0xe3797af6a1168456d2650e344a3ec7b1f68a4f73",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -639320,7 +640493,7 @@
 }
 },
 {
-"address": "0x416abf98608bfb4deb31fdd7f82c9e8eb07c2f16",
+"address": "0xf706b56d133d846de650264a8441a82a6dc3c40f",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -640216,7 +641389,7 @@
 }
 },
 {
-"address": "0x7cc645b70b74639e66c25c45d773a3351d6355f7",
+"address": "0xbd947d13830e119cc78ba99f8c83041ce7511bd8",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -640232,7 +641405,7 @@
 }
 },
 {
-"address": "0x4e5365a38093b3126811d6cd097d0fac43675b76",
+"address": "0xf9df64f187886a33c58cd6b1e6ca2d7f6b775311",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -640328,7 +641501,7 @@
 }
 },
 {
-"address": "0x995baa38387ee04a47e0b6d833ac16cb3e2ad691",
+"address": "0xdab84174874b9182cf5b8de741d08036ef474e75",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -640744,7 +641917,7 @@
 }
 },
 {
-"address": "0x50de798521334c460f5ca2b1874bce5e588dce6f",
+"address": "0x7fcd7a34979ce55031f798e64aea0a729cc94aa8",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -644609,10 +645782,10 @@
 "windows": [
 "24h"
 ],
-"cluster": "farm-002",
+"cluster": "op-234",
 "evidence": {
-"tokens": 0,
-"collections": 0
+"tokens": 1,
+"collections": 1
 }
 },
 {
@@ -644648,7 +645821,7 @@
 }
 },
 {
-"address": "0x1c40563752833bcaeb6aab2b1dc7ebc7e1b0b79c",
+"address": "0x3ca0d0337063d3973f706988401aaab5fe770a80",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -644690,6 +645863,2054 @@
 "24h"
 ],
 "cluster": "farm-031",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xe7e169d87b2b225478e4d23c10328919d600c4af",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-079",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x64f7eca950d71d8f684f06208e07df77772f6610",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-080",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x27b35d4f133e5dff1e0f940d89b31d4925f1a58e",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-081",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xf8777c332430dcc38adf916f2e54f11ce1e739ff",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-082",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x9676705e9aa0f840c85780b14bfadda49bd04f5f",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-083",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x30f98faa0f661ab530b57bfed339cc8c463c631a",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-084",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x48f393240def8768e58e6a81d873065a8025f798",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-085",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xcb415344cd0fc552ce7b48ee9375991ff5865895",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-086",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xa3f2a68c49e5aecc2369b4b0523912e12a10667f",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-087",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xa9740bc23e5203d292d454d5f5ca084fdabde816",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-088",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xc3d5602916e0465653f3237d6ebd343ed9705630",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-089",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x9626d135162685447f1c7ce58e8fd5ac4889620a",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-090",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x5186fc0017a983c51b3845f0ed7800a4c23ad0b0",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-091",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x661a9d739e3d0e583da0b7c447da24ba95f3a78e",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-092",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x175a3e0ffeeeee6334f1716269ec29bbb27f4162",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-093",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x998bf40847f0bf4a6e1fa8cbd242fc72ccfa1db4",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-094",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xd6484a997129938709fab588fd6f55b0a684ab56",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-095",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xae2ed030a1fb93b0a7aed3301ff4ed0d4f790edb",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-096",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xd45e1d24e3d84a43eba0d6cbccde9c3ea6a05b70",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-097",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x57e060078b1b9e67dd7d2df0debeab433aa411f9",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-098",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xff1a46e1cdaf27fa83978fe9299f0f350c110536",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-099",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x19be0e413efdfaac8e3865d67c34be29e398ae8c",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-100",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x9bcfa64ce1c253716e1f6bbec40a287980cdfa03",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-101",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xc34650a88c4362fc77c2e32c99d887a2937c0f2f",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-102",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x4541626178370ba0af7a8bcb2bd3c0a92254e5cd",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-103",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x2c7fe46d928d3cd40b46c43d4865a495597d5c4c",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-104",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x7d100288d098c28404a18bd5ae2ebf66e48b911c",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-105",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x30e5f706dabbfb380ba39fe9c22f5a2aac2b7174",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-106",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x47ac82b71df8eb35d270203a25b9c6e76ab9f022",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-107",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xa34d7d609296c8d7978b9860310d15280169036d",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-108",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x3e47f2e513ead22523e70bced088e983f6e44b43",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-109",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xb8bc81524338c84d9bbe6b07b50f4702a7bb7230",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-110",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xef7c232726558107f1d8feb3963e38d31fde42ff",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-111",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xc8011eca7d3864b9bfe3cc9fcbf4fedb51215b8e",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-112",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xbc3ac1ec5f155ab95551780cd4575e48da26cc12",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-113",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x7c1b4b31fd641e1ea73e895b3656d93a659f0d0d",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-114",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x68ffcb1b5f8e5d035c3b4bf49f8f139f49e45509",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-115",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x9129cb1c67b90a8acf484c2b48b41dafb6115727",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-116",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x54f0819d589155e3e8e172074d7a562104fc77f0",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-117",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x22e4cea0fde6a4d725bfca893010c9a15612b647",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-118",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x74c7ebf82fea8e8a22394eec6180c0ca26a411e9",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-119",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x334d7292575ed7a62220860ff91180ccfa61437d",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-120",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xd498fb8d9da6fcd64f9c0dd27e0b22c84eaa02f1",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-121",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xb6643835a7d369213682e366ac3d55a9b1e7a640",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-122",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x15b52529e4c180df95c31bf6e37ae291051183bf",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-123",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x83d61a87159ff70056cc31730b65a1a7ccc836af",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-124",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xeede9fdfc671487d0654aadd3745cf30a7f6f2b2",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-125",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xf70756eb29a90350fef13ed82135d3c0acb8e570",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-126",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x0fb95dd3f4beefaf237addb5486fa183b1ebe794",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-127",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xe8111035af0b72e61759762088db2cf8ed76c379",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-128",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xabade454f6011277c35693caf5adfe08b55c196e",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-129",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x99d8f8245c583fb7580ac291735ec9573b260028",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-130",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x753e1a679b9c1c21f58401bc382519686b517ab0",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-131",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xd09bf7ea25f52a741a5d715b8c8aa3583c2db2b9",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-132",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x997bd6938948e10b5648c871298fd019ef4e984e",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-133",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xd5a9dea4d7136a7b2b7098546db1bf3596712aec",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-134",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x33240aa1f6a7b558429cf34f7d88a2834ce8c89f",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-135",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x2d45b62b0b87a7fa63a887e13166c1592f12cae5",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-136",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x53ed53e7f9a4821ed370fee3124e8bac5e11a61c",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-137",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xebcb4957ccc167b25f26652e23fc61426e553748",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-138",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x694af8477b0067c739853fba425b29d4f0cb9a51",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-139",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xf384de1f543bdcba24a3e0d5fa4fca970cda3220",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-140",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xcaa6d85b9dd05ccf10aa97c36d65c755f2edc0ab",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-141",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x0913793e1b75505464da32abd308255a73ec72cd",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-142",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x96d2f13c453a7d210ea3cfc55f16c86cbc940cda",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-143",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xab9bff5c11b2f9752fc68542a92da05da81fc3f7",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-144",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x5c15d8be6a1dcb715d998d60ed06732f71dcf432",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-145",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xd1769dfaa2366c1a0c2875f217d5bfbd0009032d",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-146",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x84fdf8fa2c9a96db85faafdeb16a688e5faa4998",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-147",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x63b5d1ac158510f6a2479ec9bd0ca071c5772a60",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-148",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x9477cfb89919f61f2be47c311492ff83b6c5506f",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-149",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x883ea6d41fb4c16fc9020a17c226b94646f36994",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-150",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xe124f5a24351b88ac9050e552d5b338396536e5c",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-151",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x6a224d74c8f6343dd665da857a2178b8f1a13ce2",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-152",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x55553d7d451de0b9ec449c1e1f488ab90f9ce798",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-153",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x27893a5a44dbad141801dce0bd33086da41d31b6",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-154",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x1ec5858f161fa17f148626abcfac12381f97d34b",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-155",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x5a9b1bd3e39a29e4f718d0b677c83156d87206b9",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-156",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xeac4a477c275dd968f29267cc02de31574f6b0f9",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-157",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xb5a9e5a319c7fda551a30be592c77394bf935c6f",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-158",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xe6cfc6cd3f0047297c069e01471279a8c86af050",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-159",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x283e8a65b482da28160a9b38c519b79fdbf36e73",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-160",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xa06d1ec543832562863ba6f1ba2b9d17d8e54df0",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-161",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xd78c7aa0455e78e5305ffc4a672b419b448ec816",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-162",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x066cab02900fcba7b3dfa5d2ad152d67f8c4ab6e",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-163",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x4b2a97d536e66791eee051a87dd270f05b040800",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-164",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xd737d0fb33b2204bfa5027b742e6c6000a60ee44",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-165",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x5f0a4a59c8b39cddbcf0c683a6374655b4f5d76e",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-166",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xbd226f4e9c62e02e11e7781ad92756b2f3eb634f",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-167",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x903bc39e16dc5709adfb52ae3408f89e4e38c3fe",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-168",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x8cad231cc09c26dd7ce52e6f7bd091ea38296dd5",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-169",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x57e620ed97035541c76944efba673ea56cbff059",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-170",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x356c3c9e0c38eeeea534ce241a5545f711545e86",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-171",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x8f4eaeeb5c7113ceb4f3731db7a10933a697414e",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-172",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xfa1151f9c5ad68a0168af7b33d1649a78180399d",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-173",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xef95f0a7634a8120f66e95aa5b9b097609247050",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-174",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xba93ca89f754d7fde479678a1d7d53891fad6151",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-175",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x6d621d22fe6b129b3de6b502508218ee7c770e04",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-176",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xfdb3fcc1291d6cf0b8f88be60430973ad674bcd6",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-177",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x589e5d46b8d37132a9eed128281f33b6e45159cc",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-178",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x3ec6732676db7996c1b34e64b0503f941025cb63",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-179",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x79a9120304315cf7d82a7157bc267b0c8794619d",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-180",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x55ebfca8cfdbbffd23a0891e96f774b59549baf9",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-181",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x8bde40b48147dc392858e7eef4b70ff98dce53e5",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-182",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x757c07c891b1175a380c08c90017b01b40ec7cff",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-183",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x20c1cd5c2ca77bee95281e6a798fbfbfab514738",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-184",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x7ccf7db0141a500ac1369592f8a36db6bee5d961",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-185",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x4c7dcac838e45d7ade3c6905b32266cb618cb598",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-186",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x1d3bc1f9d3f9770453949abd619592cd7583c5ed",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-187",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xa1321f0f2a26378ea8a1d096fa9fd7d056b82619",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-188",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xcdb5f4a6352c2c51868b52341740f28de0d8c05d",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-189",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xd98c255d11d7b928ac138f52a875b11a65844444",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-190",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x8b8c94b3473b5e8a7ea36b8d76838197902267fb",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-191",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xd2acb1bbd0c696051e1c55cf0d561b40a8509c19",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-192",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xadc271533dfe849c5682fb61976aa02e1369fbaa",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-193",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x034fccca38ac1f3877e8e046444c753c149a943b",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-194",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xc872d0cacc5db8fa0c378dc8dab694de003c8c3a",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-195",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x514e0024a54b6546e298949ac16649e846c60fc7",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-196",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x00b46775b43c0b5c9487b81a2a2daee75226c313",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-197",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x6b56f1ff941242b288ad19ccd816c9eedac2d8a6",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-198",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xa4a5465db9f10e30afbc4822ad53dead9eb849c8",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-199",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x4f07beafd8d1a64eb182782aaa2d4e0e0bc88740",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-200",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x1e587073a19a646dae50535bfb94975a156585ae",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-201",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xe92f4f0b731763281cb6fcb672a6b6ed98812e09",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-202",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x60380925a8b1007f70f60a6a42bffe391374b09a",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-205",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x734f9d1473e017cc0dff719a48b7b790e1810072",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-207",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xe4e6c5cc8166dce2079a55ba1c6bbcc0753ba910",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-212",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x93e92f947ea7950f014eea9f7a9967c7cf82dfbd",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-213",
 "evidence": {
 "tokens": 0,
 "collections": 0
@@ -670435,7 +673656,8 @@
 "ACTIVE_MINTER"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -671581,7 +674803,8 @@
 "COLLECTION_OWNER"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -673583,48 +676806,6 @@
 "0x03b5b1a5636d07a95d6d2774c45e2ba5417e7e9c0b83dde59f7bc80d3a172a5e",
 "0x04c0e00e83e8f46e389927d058f419ed4a6d6aad0d5c118779fceaf4721e350c",
 "0x05e1af3a4d74d775ac0071020d4a3bbcaa283a9336bc09b5cdf2b2d708a41beb"
-],
-"structural_proof": false
-}
-},
-{
-"address": "0x8baf854ee38031c98d008e3204e252696ae9ea60",
-"score": 20,
-"tier": "LOW_SIGNAL",
-"labels": [
-"ACTIVE_MINTER"
-],
-"windows": [
-"168h"
-],
-"cluster": null,
-"evidence": {
-"via": {
-"OpenSea SeaDrop": 2
-},
-"tokens": 83,
-"collections": 9,
-"mint_txs": 10,
-"median_gap_s": 10064.7,
-"nonce": 65,
-"balance_eth": 0.000112,
-"swept_out": 0,
-"operated_for": 0,
-"minted_by_others": 0,
-"sink_sources": 0,
-"swarm_size": 0,
-"code": null,
-"top_collections": [
-"0xe5f956f5bf7b09804b47e3e927a8fc4fe897e825",
-"0x82471e051270f73272a22a31d722cac9acd8dbd9",
-"0x3ad697313d29cdd473870ee63eb764e534a60f84",
-"0xad56e25c6267e48bc5da326c1b2b7133107b6e4b",
-"0xc2b22e4225245e138e618383ddc9d27429006770"
-],
-"example_tx": [
-"0x10391e90cefbd47b2125756ea748e6c128adc4ec5134b8a28afd9e829d354839",
-"0x2150a32bd21a38a89252b7d266ea9c26334983ced98da5560e79fab6f4f2a8cc",
-"0x2541d734af7bce3234ee5d8fc66570f4fc1a2ba33ff7e25561bf2d4b8115989e"
 ],
 "structural_proof": false
 }
@@ -682093,7 +685274,8 @@
 "ACTIVE_MINTER"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -685657,8 +688839,7 @@
 "MINT_PAID_BY_OTHER"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -687641,7 +690822,8 @@
 "MINT_PAID_BY_OTHER"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -709566,8 +712748,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -711100,8 +714281,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -711179,8 +714359,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -733606,10 +736785,10 @@
 "evidence": {
 "tokens": 146,
 "collections": 1,
-"mint_txs": 1,
-"median_gap_s": null,
-"nonce": 483,
-"balance_eth": 0.543026,
+"mint_txs": 28,
+"median_gap_s": 71.3,
+"nonce": 35,
+"balance_eth": 0.002901,
 "swept_out": 0,
 "operated_for": 0,
 "minted_by_others": 0,
@@ -733617,10 +736796,12 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x51a2a2244f560916b16e6f0ec04440561cf14c39"
+"0x46d114d4256b26d1c4a4047f9bca63176e1c7d38"
 ],
 "example_tx": [
-"0xb4405d8af5f4a9b564ffaaa62edad270ea6cb686106c8e6c59ea2142b3c63ce3"
+"0x007385fee591d736933da92f865a8199cb3f64498cfa20d507b94f8f51be544c",
+"0x0a78ae875e5809c3ba57349ba32e1a8198695952852546af447bf55b85b3a2e0",
+"0x10e0fe56fc7fa3833ac77619a00af3a7165a382dfd99bc719c840a2e8ce93320"
 ],
 "structural_proof": false
 }
@@ -733679,6 +736860,47 @@
 "nonce": 46,
 "balance_eth": 0.001203,
 "swept_out": 0,
+"operated_for": 27,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x0eccd155fe9e8252854f5501dd80563fff1063e7",
+"0x726e87095beea11704f17fb759c6adc7d54de0ed"
+],
+"example_tx": [
+"0x00270ae631ccbac5b72927aaad14f9a8bfa5179defa542ef036a0900cc15ae5f",
+"0x06f7839847f0e3fe3f8ffe5e83591457047686326c4475f81aab4a74bc8a7408",
+"0x08270e195f3cbda8ca59cf8e8d69838d0b9a2a1ddf046a9bd556f83bc727d17d"
+],
+"structural_proof": false,
+"owner_of": [
+"0x0eccd155fe9e8252854f5501dd80563fff1063e7",
+"0x726e87095beea11704f17fb759c6adc7d54de0ed"
+],
+"note": "Pays for mints sent to other wallets, but owns the collection: a creator airdrop / distribution, not a farm."
+}
+},
+{
+"address": "0xd23dc9be46c08b7438154df767c12c3737b347c3",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"ACTIVE_MINTER"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 107,
+"collections": 1,
+"mint_txs": 8,
+"median_gap_s": null,
+"nonce": 37,
+"balance_eth": 9.6e-05,
+"swept_out": 1,
 "operated_for": 0,
 "minted_by_others": 0,
 "sink_sources": 0,
@@ -733735,6 +736957,51 @@
 }
 },
 {
+"address": "0xf58d693ea13252a5eb92e42830a53892aff3d006",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"COLLECTION_OWNER"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 103,
+"collections": 2,
+"mint_txs": 44,
+"median_gap_s": 12.4,
+"nonce": 674,
+"balance_eth": 0.000798,
+"swept_out": 0,
+"operated_for": 34,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x42fda47340e3a90118f3364dc0c5319ea3a0a564",
+"0x52b09801e527c16889eb5cf790a94d967f11b333"
+],
+"example_tx": [
+"0x0046c3cf3bc628570ada75a6bd2df6f7cca0f7203f7a2234a47df4b07b4a2675",
+"0x013e3279bb76f5b95ed6d3c97b16267b6dcbabbe5bf2485bd01e3afb74a41d61",
+"0x02eb60d1c53a97b725f20aa5d41cfc0356f858043f2436da9f2b9011901ff1e8"
+],
+"structural_proof": false,
+"owner_of": [
+"0x52b09801e527c16889eb5cf790a94d967f11b333",
+"0x42fda47340e3a90118f3364dc0c5319ea3a0a564"
+],
+"note": "Pays for mints sent to other wallets, but owns the collection: a creator airdrop / distribution, not a farm."
+}
+},
+{
 "address": "0x8061f3c5b0dba63745455e99c239e2f25bd83807",
 "score": 20,
 "tier": "LOW_SIGNAL",
@@ -733746,9 +737013,6 @@
 ],
 "cluster": null,
 "evidence": {
-"via": {
-"OpenSea SeaDrop": 1
-},
 "tokens": 100,
 "collections": 1,
 "mint_txs": 1,
@@ -734149,6 +737413,45 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
+"0xe4bc55cf1457bac61668e19e85a0f1f5ed272bb7",
+"0xf55270454b8574b23ed36aa04bef7077fe3cc3b2",
+"0x7ff501171cb7211c2f7c3d05962f6260c8cddc94",
+"0xec06384e9528db3f2c5aa51c16d6ce8c6da1f58e",
+"0x64a3d899a4352305351010aac96343aaed276486"
+],
+"example_tx": [
+"0x0a8361cc0906b5f998eecc21de40ab75ce64240191990ed5cee3f7acb63f28e7",
+"0x0aff24a1f93da0d18891ceac0999ec24d52ab781971c3ca09d7579a5caa55c48",
+"0x1226f162642385e1b4fe2cebc19af52f339d0868fc383b860b5a1a1ddd06571f"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xe83a0df98b6a26c7e957f8dcb573c826b0f0b9a1",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"ACTIVE_MINTER"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 71,
+"collections": 1,
+"mint_txs": 71,
+"median_gap_s": 25.9,
+"nonce": 251,
+"balance_eth": 0.000483,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
 "0xac05e358b1a63e44ff8f549e13ecbddc7d172fd7"
 ],
 "example_tx": [
@@ -734207,7 +737510,7 @@
 ],
 "cluster": null,
 "evidence": {
-"tokens": 58,
+"tokens": 67,
 "collections": 1,
 "mint_txs": 21,
 "median_gap_s": 7.5,
@@ -734601,7 +737904,7 @@
 "minted_by_others": 0,
 "sink_sources": 0,
 "swarm_size": 0,
-"code": "0xef010077021100bd87b7008e5e1989d0eb38555d0d0000",
+"code": "0xef01007702cb554e6bfb442cb743a7df23154544a7176c",
 "top_collections": [
 "0x048a277b361b115054da1be1f53f9aa78e171e12",
 "0x6ca8a46da1b95900fbd01d9b5b9be1a9df03094a"
@@ -735070,9 +738373,9 @@
 ],
 "cluster": null,
 "evidence": {
-"tokens": 10,
-"collections": 1,
-"mint_txs": 1,
+"tokens": 9,
+"collections": 3,
+"mint_txs": 5,
 "median_gap_s": null,
 "nonce": 0,
 "balance_eth": 0.00015,
@@ -735355,12 +738658,92 @@
 ],
 "cluster": null,
 "evidence": {
-"tokens": 6,
+"tokens": 8,
+"collections": 7,
+"mint_txs": 7,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.000219,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x674bf3477b4021c5e1aa27d7100da6c8eee0ac03",
+"0x3c801cb9e703d9688d3663c623e50a6fdeb6e3e8",
+"0x1dfcd85d3c457ba1914d19cbb9b337c6e9c5a8ac",
+"0x3de89f72ea2da8e4219d0a32106b04bd254c0c82",
+"0x09fe37de65482592a0a617516f93a2a25d725059"
+],
+"example_tx": [
+"0x42168a3675e1d87c472b901297303ce53fb9300e0ee629493a63bc69bb1e24c5",
+"0x67e6b0ae3fa3fd789f479116f8056a2c3158b92c2b25a2f828d693747b2d1975",
+"0x6e28bbb80ce77ba5df997e3a4c216d6d8475695dc0f5b02ccfabf2eb8f672183"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x04cf05162b4acb360dd512829579cb39ad8f1644",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 8,
+"collections": 7,
+"mint_txs": 7,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.000206,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x674bf3477b4021c5e1aa27d7100da6c8eee0ac03",
+"0x3c801cb9e703d9688d3663c623e50a6fdeb6e3e8",
+"0x1dfcd85d3c457ba1914d19cbb9b337c6e9c5a8ac",
+"0x3de89f72ea2da8e4219d0a32106b04bd254c0c82",
+"0x09fe37de65482592a0a617516f93a2a25d725059"
+],
+"example_tx": [
+"0x217b6be001b0fa5a75e4d94e73c07b6b346b70ea2cb50932456619c23b211e91",
+"0x5cf6cc9e26ee696ae869a4d9a97f9dad2811e137349992c53d4b37acd3e57958",
+"0x93258dd6e50c1b31fe7119cc11e810b1837faade282e43027cd65c0577e1fa13"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x79582cdc85ef4a14681bf268a066b179f725b1d3",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 7,
 "collections": 1,
 "mint_txs": 3,
 "median_gap_s": null,
 "nonce": 1,
-"balance_eth": 0.0,
+"balance_eth": 0.000156,
 "swept_out": 0,
 "operated_for": 0,
 "minted_by_others": 0,
@@ -735389,7 +738772,7 @@
 "windows": [
 "24h"
 ],
-"cluster": null,
+"cluster": "op-246",
 "evidence": {
 "tokens": 6,
 "collections": 2,
@@ -735399,7 +738782,7 @@
 "balance_eth": 0.000678,
 "swept_out": 0,
 "operated_for": 0,
-"minted_by_others": 0,
+"minted_by_others": 2,
 "sink_sources": 0,
 "swarm_size": 10,
 "code": "0xef0100cb013e8638267d7769640ffc42ee2dd2e8d21d41",
@@ -735415,7 +738798,7 @@
 }
 },
 {
-"address": "0x4ebbdc009f6c2247db2c3f2683a3bf6238aa9c06",
+"address": "0x997696866c42e30d3ea1ad7d35762ba34c740cb3",
 "score": 20,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -735437,8 +738820,8 @@
 "operated_for": 0,
 "minted_by_others": 0,
 "sink_sources": 0,
-"swarm_size": 10,
-"code": "0xef0100cb013e8638267d7769640ffc42ee2dd2e8d21d41",
+"swarm_size": 11,
+"code": "0xef0100b308d91ceca24df580908781171ba5c250b4bc07",
 "top_collections": [
 "0x12c0a33438850f651e04282df52d1526313fac6b",
 "0x26b910e363ed9ea827f8baf47c54e3b3bf123694"
@@ -735495,7 +738878,83 @@
 "score": 20,
 "tier": "LOW_SIGNAL",
 "labels": [
-"MINT_PAID_BY_OTHER",
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 6,
+"collections": 6,
+"mint_txs": 6,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.000641,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x3c801cb9e703d9688d3663c623e50a6fdeb6e3e8",
+"0x1dfcd85d3c457ba1914d19cbb9b337c6e9c5a8ac",
+"0x3de89f72ea2da8e4219d0a32106b04bd254c0c82",
+"0x7a2c0fff56ec7e62ab4a4768413c7b6550c73a5b",
+"0xb05e202e9c1f6caf1c6568ee184753367176c85a"
+],
+"example_tx": [
+"0x2fe431ecfc3a8ac2da83d9a9581f799e9e1be6e08e058d8bb8d23b4b53f9135b",
+"0x9fe5a6109d34da0f255079f0d2d9ffc61ede66ecd535463d2a8cfc9cadabfe9f",
+"0xd7ada7f6764211882b9f88455c8b658763bec42e0ff01491f9e08e0ec6706096"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x05afa6adfcd1c40cf82174025ecbc2e1ed603ca4",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 6,
+"collections": 1,
+"mint_txs": 6,
+"median_gap_s": null,
+"nonce": 2,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x58daec3116aae6d93017baaea7749052e8a04fa7"
+],
+"example_tx": [
+"0x02bf920a949a6c05eb51be20d483e73005b1a756214142ac7e098f239eff17c0",
+"0x1ef4c6c7a09cc57f4701deebd34ef6dd480f73cc89f7ca561f7254d09230c008",
+"0x4aaaaa541050db2998e9b254811b955bb276b4fad0b5e233f9a3b39c730cfcc5"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x25681c0ecd4e3107f2ecebfe667e9adbc3dc77ba",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
 "NEW_WALLET"
 ],
 "windows": [
@@ -735507,11 +738966,11 @@
 "collections": 1,
 "mint_txs": 1,
 "median_gap_s": null,
-"nonce": 0,
+"nonce": 1,
 "balance_eth": 0.0,
 "swept_out": 0,
 "operated_for": 0,
-"minted_by_others": 1,
+"minted_by_others": 0,
 "sink_sources": 0,
 "swarm_size": 0,
 "code": null,
