@@ -549,10 +549,12 @@
 "labels": [
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-002",
 "evidence": {
@@ -682,6 +684,7 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
@@ -958,7 +961,9 @@
 "labels": [
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SENT_ON_AFTER_MINT",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -1417,7 +1422,6 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
@@ -1425,8 +1429,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-020",
 "evidence": {
@@ -1465,6 +1468,7 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
@@ -2114,11 +2118,13 @@
 "labels": [
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -2392,12 +2398,10 @@
 "labels": [
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -2665,7 +2669,8 @@
 "HIGH_MINT_COUNT",
 "LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
-"MINT_PAID_BY_OTHER"
+"MINT_PAID_BY_OTHER",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -2842,15 +2847,12 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-009",
 "evidence": {
@@ -2889,7 +2891,6 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
@@ -2897,8 +2898,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-043",
 "evidence": {
@@ -3026,7 +3026,6 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
@@ -3164,14 +3163,12 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-019",
 "evidence": {
@@ -3796,14 +3793,12 @@
 "labels": [
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-341",
 "evidence": {
@@ -4796,7 +4791,6 @@
 "score": 100,
 "tier": "STRONG_SIGNAL",
 "labels": [
-"COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
@@ -6385,6 +6379,8 @@
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -6520,6 +6516,7 @@
 "labels": [
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
@@ -6833,13 +6830,16 @@
 "score": 90,
 "tier": "STRONG_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -7468,6 +7468,7 @@
 "tier": "STRONG_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "PAID_FOR_OTHER_MINTS"
 ],
@@ -7699,8 +7700,7 @@
 "PAID_FOR_OTHER_MINTS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-557",
 "evidence": {
@@ -8019,8 +8019,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-065",
 "evidence": {
@@ -9330,7 +9329,6 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
 "24h"
 ],
 "cluster": "farm-019",
@@ -10927,10 +10925,12 @@
 "labels": [
 "ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-378",
 "evidence": {
@@ -11551,7 +11551,8 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-499",
 "evidence": {
@@ -12142,12 +12143,10 @@
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-086",
 "evidence": {
@@ -13280,7 +13279,7 @@
 "168h",
 "24h"
 ],
-"cluster": null,
+"cluster": "farm-063",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 4
@@ -13317,6 +13316,7 @@
 "score": 80,
 "tier": "STRONG_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTED_TO_CONTRACT",
 "MINT_PAID_BY_OTHER",
@@ -13994,7 +13994,7 @@
 "168h",
 "24h"
 ],
-"cluster": null,
+"cluster": "farm-106",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 3
@@ -14620,7 +14620,7 @@
 "windows": [
 "24h"
 ],
-"cluster": "farm-009",
+"cluster": "farm-004",
 "evidence": {
 "tokens": 700,
 "collections": 1,
@@ -15562,6 +15562,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
+"SENT_ON_AFTER_MINT",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
@@ -16014,11 +16015,13 @@
 "labels": [
 "ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
+"LINKED_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-198",
 "evidence": {
@@ -16378,7 +16381,8 @@
 "HIGH_MINT_COUNT",
 "LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -16606,6 +16610,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS"
@@ -16746,10 +16751,12 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-026",
 "evidence": {
@@ -17236,6 +17243,7 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP"
 ],
@@ -19313,8 +19321,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -19542,8 +19549,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -19590,7 +19596,8 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -19779,7 +19786,8 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -20060,8 +20068,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -20292,7 +20299,8 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -23578,8 +23586,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -23626,8 +23633,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-010",
 "evidence": {
@@ -23715,6 +23721,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
@@ -24134,8 +24141,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-010",
 "evidence": {
@@ -24589,12 +24595,10 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -25052,8 +25056,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -25150,8 +25153,7 @@
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -25514,12 +25516,10 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -25797,7 +25797,8 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP"
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -25928,12 +25929,10 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -26027,8 +26026,7 @@
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -26437,13 +26435,15 @@
 "score": 75,
 "tier": "STRONG_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -26708,6 +26708,7 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP"
 ],
@@ -28774,12 +28775,14 @@
 "tier": "STRONG_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-567",
 "evidence": {
@@ -29229,7 +29232,8 @@
 "PAID_FOR_OTHER_MINTS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-592",
 "evidence": {
@@ -30156,7 +30160,7 @@
 }
 },
 {
-"address": "0xebd854b1193aa12a8143e2ee27a8dcc489448c16",
+"address": "0x58862e0804646d3758fd238dbc42d5f990c99683",
 "score": 75,
 "tier": "STRONG_SIGNAL",
 "labels": [
@@ -30186,7 +30190,118 @@
 "0xbab51626810d35c81d03fed06531bf9e4293dba4"
 ],
 "example_tx": [
-"0xbdadeae140fef23301465f6bccf266b3372a439d5675d3ca281544365b85ce21"
+"0x89922d738775a16842acc396460ed7d427b2a17a7da3d5e9a3da0e87976beb93"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0xe7701e8cbf1ca7723943562173e215797fcaeda4",
+"score": 75,
+"tier": "STRONG_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"COLLECTS_FROM_MANY_MINTERS",
+"SENT_ON_AFTER_MINT"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": "farm-045",
+"evidence": {
+"tokens": 111,
+"collections": 1,
+"mint_txs": 1,
+"median_gap_s": null,
+"nonce": 498,
+"balance_eth": 0.002151,
+"swept_out": 95,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 3,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0xbab51626810d35c81d03fed06531bf9e4293dba4"
+],
+"example_tx": [
+"0x62aac4342372631ce9a4790e93796d52f4b7d26b76c5f95c4a33a04311eb7c60"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x4a3a6a37141de54ac3434356de44802577453bbb",
+"score": 75,
+"tier": "STRONG_SIGNAL",
+"labels": [
+"COLLECTS_FROM_MANY_MINTERS",
+"HIGH_MINT_COUNT"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-007",
+"evidence": {
+"tokens": 710,
+"collections": 1,
+"mint_txs": 9,
+"median_gap_s": null,
+"nonce": 43,
+"balance_eth": 8e-06,
+"swept_out": 300,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 13,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x950fe34f0caa134cb471e5d7ee210aa81f33b73d"
+],
+"example_tx": [
+"0x06c907369b47ff07ba5e814da18574581cbfc03c8aff018390253e60427fb58e",
+"0x67d3fda63503ac2547dbd687487c23456303d2e9118e0dc189a6dabada1d0407",
+"0x753b573a34729ddf66ec57f3793582458b90709bb159744f579b097238e9610c"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x37246dd73607223d74371d83bcbb85cef384a9ae",
+"score": 75,
+"tier": "STRONG_SIGNAL",
+"labels": [
+"COLLECTS_FROM_MANY_MINTERS",
+"HIGH_MINT_COUNT"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-020",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 325,
+"collections": 1,
+"mint_txs": 9,
+"median_gap_s": null,
+"nonce": 25,
+"balance_eth": 1.9e-05,
+"swept_out": 50,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 8,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x9fe7f727a64d9cc342c6e229bb029ed2716bbae7"
+],
+"example_tx": [
+"0x02899b86e047543431b6c65cf2bbd9dcd2a99b2fc3fbd8b494b63e2a17ed0412",
+"0x2284bfa5cd3d637dedf75be988b6787e22ca1daa54433c98b299885d35519673",
+"0x4ddb48d276f9efa0f9aebf0d7179898e620a7faa6d9a3973ec53ceb63866f573"
 ],
 "structural_proof": true
 }
@@ -30244,6 +30359,9 @@
 ],
 "cluster": "farm-028",
 "evidence": {
+"via": {
+"OpenSea SeaDrop": 1
+},
 "tokens": 111,
 "collections": 1,
 "mint_txs": 1,
@@ -33339,6 +33457,44 @@
 }
 },
 {
+"address": "0x7dcd4de060f6d9b0a353441a94795d509218bd5c",
+"score": 70,
+"tier": "STRONG_SIGNAL",
+"labels": [
+"COLLECTS_FROM_MANY_MINTERS",
+"MINT_PAID_BY_OTHER",
+"SENT_ON_AFTER_MINT",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-038",
+"evidence": {
+"tokens": 21,
+"collections": 1,
+"mint_txs": 4,
+"median_gap_s": null,
+"nonce": 295,
+"balance_eth": 0.001142,
+"swept_out": 36,
+"operated_for": 0,
+"minted_by_others": 2,
+"sink_sources": 5,
+"swarm_size": 0,
+"code": "0xef010069007702764179f14f51cdce752f4f775d74e139",
+"top_collections": [
+"0x269fe3b5933cfd8fa892d2993a4518a0a9f3670e"
+],
+"example_tx": [
+"0x078b8bd5365d5f77471a2af6655ea38de284c71d506a9588a1e84bb3be83826e",
+"0x2a23d9ed6fe7bb761b6d78350772a2bf740ccb39292297852000ef9a112edf53",
+"0x392338b3af18632fc9a48de73f0e738592aa7846cd75b2ee5b276e5d50d82566"
+],
+"structural_proof": true
+}
+},
+{
 "address": "0xfd70877a4bed78dc2dba8a5536ee6bb81eeff4fd",
 "score": 67,
 "tier": "MIXED_SIGNAL",
@@ -34388,11 +34544,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-087",
 "evidence": {
@@ -34735,6 +34893,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -35136,6 +35295,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -36525,6 +36685,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -36694,6 +36855,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -36825,6 +36987,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -37139,6 +37302,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
@@ -37500,6 +37664,8 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -38727,12 +38893,14 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-025",
 "evidence": {
@@ -39396,11 +39564,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-373",
 "evidence": {
@@ -39439,8 +39609,8 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
@@ -39493,8 +39663,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-053",
 "evidence": {
@@ -40368,6 +40537,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -40950,13 +41120,10 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -41134,6 +41301,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -42214,11 +42382,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-026",
 "evidence": {
@@ -43204,7 +43374,8 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -43946,7 +44117,6 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
@@ -44204,10 +44374,12 @@
 "labels": [
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -44496,9 +44668,9 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
@@ -45132,13 +45304,11 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-011",
 "evidence": {
@@ -45862,8 +46032,8 @@
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
@@ -46117,6 +46287,8 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
+"REGULAR_TIMING",
+"SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
@@ -47277,7 +47449,8 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -47317,14 +47490,16 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-008",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -47357,7 +47532,7 @@
 }
 },
 {
-"address": "0x0e8d03959767796f7f092198adfa1e43eda8cb43",
+"address": "0x59011587c3f2d151d864b3d7cf80639a3822eb88",
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
@@ -48697,7 +48872,8 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -49997,7 +50173,7 @@
 }
 },
 {
-"address": "0x8053e6e8b6cab476d13060806141be5bc71bfc42",
+"address": "0x7ae4da8a21759f8aee48224138eaf978bcd78c2c",
 "score": 65,
 "tier": "MIXED_SIGNAL",
 "labels": [
@@ -50964,7 +51140,8 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-589",
 "evidence": {
@@ -51010,8 +51187,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-647",
 "evidence": {
@@ -52447,8 +52623,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -53722,14 +53897,12 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-032",
 "evidence": {
@@ -53811,14 +53984,11 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-255",
 "evidence": {
@@ -54079,8 +54249,7 @@
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -54339,8 +54508,7 @@
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-002",
 "evidence": {
@@ -54508,14 +54676,11 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-104",
 "evidence": {
@@ -55939,10 +56104,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-003",
 "evidence": {
@@ -56029,8 +56197,7 @@
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-002",
 "evidence": {
@@ -56684,10 +56851,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-026",
 "evidence": {
@@ -57108,6 +57278,53 @@
 "0x0082073b5d7b0d371fd338121362f5c4b5da56e56a92f6efc9997d504e5f0c9d",
 "0x01044377896d7192dc7d7068ce89b122f91c7d025ebb6f1c8425337d7ba80a33",
 "0x059a62dc40ea1b82200eea61156d105b8ad59d5b46c52b66812d623906324871"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x54dc1336ad6511fdeec865e3166208dc0445aa5e",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"HIGH_MINT_COUNT",
+"MINTS_MANY_COLLECTIONS",
+"REGULAR_TIMING",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": "farm-019",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 974,
+"collections": 180,
+"mint_txs": 183,
+"median_gap_s": 292.0,
+"nonce": 3259,
+"balance_eth": 0.00066,
+"swept_out": 4,
+"operated_for": 1,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x685902c6793e099ed2c9dcfe1e5a6b57d8865f26",
+"0x3ef883c740a7f0ca01c288170085c0f61bc28de0",
+"0xe2693f6fd67f9c28100186d8322ef125779a2807",
+"0xf0883480eea717ed0936bc5283eecb1a0eaafd97",
+"0x32dbc1441c89a013894e16cd31fef4617b21e298"
+],
+"example_tx": [
+"0x0037abbd4c7ea5656a8e77a43e8eb80b146a2118e6dbd82e60a59e7541621fe2",
+"0x00850c821e326e68f758aae98d1e42ac625af4f9fbdb5b835d06d788dff990cb",
+"0x01390400f841046f9f7eee12eb1eb1633cecff0f30454d0405055ce42a7de625"
 ],
 "structural_proof": false
 }
@@ -57770,7 +57987,6 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP"
@@ -58639,15 +58855,11 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-363",
 "evidence": {
@@ -58730,10 +58942,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-006",
 "evidence": {
@@ -59204,49 +59419,6 @@
 }
 },
 {
-"address": "0x14d7c6aa3a9d6a1e0fd1ad0efbd3d599c837e71a",
-"score": 60,
-"tier": "MIXED_SIGNAL",
-"labels": [
-"HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
-],
-"windows": [
-"168h"
-],
-"cluster": "farm-001",
-"evidence": {
-"via": {
-"OpenSea SeaDrop": 3
-},
-"tokens": 731,
-"collections": 194,
-"mint_txs": 239,
-"median_gap_s": 421.7,
-"nonce": 778,
-"balance_eth": 2.8e-05,
-"swept_out": 220,
-"operated_for": 1,
-"minted_by_others": 0,
-"sink_sources": 0,
-"swarm_size": 0,
-"code": null,
-"top_collections": [
-"0x48df4a6fc9fe5c955c566e46482ea21da6a6c05e",
-"0xf400d6226f1e1dc5f3e7f524fc53e29e6e141801",
-"0x609f930b3ee52b1e33d1530ea38c7c50f328cf7b",
-"0xe9ca262c13481632974d761ee13dfa814caa4f9b",
-"0x6e73f8dca3135a206135a9cafb4d429f355c2ef3"
-],
-"example_tx": [
-"0x02118e0d7473610825191abcb7475de1b7c9576847a8b78fb789a3383f571e39",
-"0x0451345a9f76bda6b58d5ed7dca18e11d6342341d6fe8966b0b40538614710fa",
-"0x05b7a0a3f80486f875ffbc0aec629bb32ef01f4c23e17f94a50f14d2db9c3a41"
-],
-"structural_proof": false
-}
-},
-{
 "address": "0xf080e48c002fc2ed963c3740ca76dfe5c9b879c5",
 "score": 60,
 "tier": "MIXED_SIGNAL",
@@ -59475,7 +59647,6 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP"
@@ -59867,15 +60038,13 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -59914,16 +60083,11 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS",
-"SMART_WALLET_7702"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-356",
 "evidence": {
@@ -60485,13 +60649,10 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-006",
 "evidence": {
@@ -61666,8 +61827,7 @@
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-002",
 "evidence": {
@@ -63972,10 +64132,13 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-029",
 "evidence": {
@@ -64499,7 +64662,6 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
 "REGULAR_TIMING"
@@ -65472,10 +65634,12 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-011",
 "evidence": {
@@ -65956,8 +66120,7 @@
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -66383,13 +66546,11 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -66561,10 +66722,12 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-011",
 "evidence": {
@@ -66648,6 +66811,7 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
@@ -67705,10 +67869,9 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"LINKED_GROUP",
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -71942,8 +72105,7 @@
 "labels": [
 "COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -72072,10 +72234,9 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"LINKED_GROUP",
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "168h",
@@ -72376,13 +72537,11 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"COLLECTS_FROM_MANY_MINTERS",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-001",
 "evidence": {
@@ -73850,11 +74009,14 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -74665,14 +74827,11 @@
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -75147,8 +75306,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -75409,8 +75567,7 @@
 "ACTIVE_MINTER",
 "HIGH_MINT_COUNT",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -75672,12 +75829,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-082",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -75978,12 +76137,10 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
-"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-011",
 "evidence": {
@@ -80011,8 +80168,7 @@
 "labels": [
 "ACTIVE_MINTER",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -80101,12 +80257,10 @@
 "labels": [
 "ACTIVE_MINTER",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -80325,12 +80479,10 @@
 "labels": [
 "ACTIVE_MINTER",
 "MINTS_MANY_COLLECTIONS",
-"SAME_GAS_GROUP",
-"SEVERAL_COLLECTIONS"
+"SAME_GAS_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -80773,8 +80925,7 @@
 "SAME_GAS_GROUP"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -87841,6 +87992,7 @@
 "ACTIVE_MINTER",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
+"SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
@@ -88849,12 +89001,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-609",
 "evidence": {
@@ -90034,14 +90188,12 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-567",
 "evidence": {
@@ -91436,12 +91588,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-609",
 "evidence": {
@@ -92047,12 +92201,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -99191,12 +99347,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-609",
 "evidence": {
@@ -109547,7 +109705,8 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"COLLECTS_FROM_MANY_MINTERS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -109628,7 +109787,53 @@
 }
 },
 {
-"address": "0x0c99af6c93cbfed945fbb98fb8ef132b8ab493d4",
+"address": "0xba9df845f65b5e601a6f45e8cc3f57b16469bd03",
+"score": 60,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 2
+},
+"tokens": 60,
+"collections": 26,
+"mint_txs": 26,
+"median_gap_s": 1194.5,
+"nonce": 907,
+"balance_eth": 0.000168,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 9,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c",
+"0xeb06e4e26ed806a38888d6a48b0f3fed82725e7d",
+"0xd59d45b56f3df1dc5fc4d32dde13ea44a0e00c70",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4"
+],
+"example_tx": [
+"0x10db050a6aa3596f6ea8c941ab98006ab9f0a513ef29a123282c7916cce1d132",
+"0x11e5e7328e4cae302b35cac20f1540490096d78479d114905c3950b49837dc93",
+"0x1488e45c4b7813eec4765e1b653c3cc157326131d25989e349400256ecde67fb"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xda739002c15030c5286d7099c862c4467d9d70f2",
 "score": 60,
 "tier": "MIXED_SIGNAL",
 "labels": [
@@ -109645,7 +109850,7 @@
 },
 "tokens": 65,
 "collections": 1,
-"mint_txs": 1,
+"mint_txs": 4,
 "median_gap_s": null,
 "nonce": 891,
 "balance_eth": 0.017432,
@@ -109656,10 +109861,12 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x8aadfcd9d7b7c940c401a2c3ef4455017b8ad698"
+"0x5a185bcf690b11a5091786f75df77042c2aca823"
 ],
 "example_tx": [
-"0xbd1099bc082f97c1b327c6820892c68a522cb95f8f6bb82a0f3d363e897a2f79"
+"0x27e6155be6ab63f89f2e169fc9b964f50dd46639a361e7f6c56089e4a22e634c",
+"0x359a45aabab39b86e109a26548d656204d240646c7a5a33f77e63f9e4ff1a6bb",
+"0x518b14e9bac4a5f50206dc756a7dd2074e114b91c92d16145782ea642346d5e4"
 ],
 "structural_proof": true
 }
@@ -110634,7 +110841,8 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -115810,7 +116018,10 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x4857db576ee0e45f10525ec59527bfd10beec60b"
+"0x07f44c47743a2f36414a82b9f558ecfcf0eedcef",
+"0x2ebd7b85a4e08d5b508b04ba147976c94afe6590",
+"0x4857db576ee0e45f10525ec59527bfd10beec60b",
+"0xa79f5775b0b49e51202c48ddf03f380faa96f641"
 ],
 "example_tx": [
 "0x011e88dece247546c21ad2383ffe0e6dd57b2a6b227444ae45546e5eab5a77e2",
@@ -116653,14 +116864,16 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-126",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -116746,8 +116959,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -117569,6 +117781,53 @@
 }
 },
 {
+"address": "0xe6e40cfe775fd15bed4c21a0fae1cd6f042743dc",
+"score": 52,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINT_PAID_BY_OTHER",
+"REGULAR_TIMING",
+"SEVERAL_COLLECTIONS",
+"SMART_WALLET_7702"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": "op-538",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 1
+},
+"tokens": 50,
+"collections": 17,
+"mint_txs": 36,
+"median_gap_s": 0.2,
+"nonce": 1348,
+"balance_eth": 0.000365,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef010069007702764179f14f51cdce752f4f775d74e139",
+"top_collections": [
+"0x37fcce50a35c3d4a5331602929b6f64be5da2586",
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x265fa32cc84a4ecf946082e34fc3c83d423e9a21"
+],
+"example_tx": [
+"0x058c1b4eae80bac15c4de5b61f4e67048701c7c58d99fdad6d58aaa89351f937",
+"0x060f92aa53c21d466842caa2210c9748358bf0e8e6ecd691e4a496e38890e425",
+"0x1914e5bbc2c37d1324199399c0d5802b68ea19b9844eaf8dff2835a0fa6b14d2"
+],
+"structural_proof": true
+}
+},
+{
 "address": "0xcfd69592c3c74da72bb536c2897d3557cef3af25",
 "score": 52,
 "tier": "MIXED_SIGNAL",
@@ -117595,10 +117854,10 @@
 "swarm_size": 0,
 "code": "0xef0100d14adde40900e7a13224e091c57f74fbc202ca2e",
 "top_collections": [
-"0xfa5759525eb34e1a8a93da4cd5cf1f2bcc9b228e",
-"0xf8753091556a196a57309c53f23538cb071bc7de",
-"0x09fa6d864cc7301cc00f4178587c24745b0f7aa4",
 "0x432614cfbb0da25a0270ca9aa7f1c8340d7463db",
+"0xfa5759525eb34e1a8a93da4cd5cf1f2bcc9b228e",
+"0x1742b3f342106f31526a09500148ed891a07a969",
+"0x09f10f8090ee7e4a717d6709ad69b4cf52825af4",
 "0x56c535a862f815fe912fe976d41e48ca2af04d09"
 ],
 "example_tx": [
@@ -122838,7 +123097,8 @@
 "ACTIVE_MINTER",
 "MINTED_TO_CONTRACT",
 "MINT_PAID_BY_OTHER",
-"NEW_WALLET"
+"NEW_WALLET",
+"SENT_ON_AFTER_MINT"
 ],
 "windows": [
 "168h",
@@ -124551,13 +124811,15 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-126",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -126153,10 +126415,12 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"COLLECTS_FROM_MANY_MINTERS",
 "PAID_FOR_OTHER_MINTS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-631",
 "evidence": {
@@ -127022,13 +127286,15 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-128",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -128325,7 +128591,7 @@
 "168h",
 "24h"
 ],
-"cluster": "op-137",
+"cluster": "op-132",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -128913,13 +129179,15 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-126",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -129379,12 +129647,15 @@
 "labels": [
 "ACTIVE_MINTER",
 "MINTS_MANY_COLLECTIONS",
+"MINT_PAID_BY_OTHER",
+"SAME_GAS_GROUP",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-128",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -129889,7 +130160,8 @@
 "ACTIVE_MINTER",
 "MINTED_TO_CONTRACT",
 "MINT_PAID_BY_OTHER",
-"NEW_WALLET"
+"NEW_WALLET",
+"SENT_ON_AFTER_MINT"
 ],
 "windows": [
 "168h",
@@ -131667,7 +131939,8 @@
 "MINT_PAID_BY_OTHER"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-468",
 "evidence": {
@@ -132209,7 +132482,7 @@
 "windows": [
 "24h"
 ],
-"cluster": "farm-009",
+"cluster": "farm-006",
 "evidence": {
 "tokens": 746,
 "collections": 1,
@@ -132412,7 +132685,7 @@
 "mint_txs": 110,
 "median_gap_s": 2.2,
 "nonce": 17480,
-"balance_eth": 0.74435,
+"balance_eth": 0.932401,
 "swept_out": 139,
 "operated_for": 0,
 "minted_by_others": 0,
@@ -132946,12 +133219,12 @@
 }
 },
 {
-"address": "0xd769aa567bc24cc0f4921b9a18ca1a1178b162fc",
+"address": "0xd1f406510bab698f954ba75295bc8a62431af67c",
 "score": 50,
 "tier": "MIXED_SIGNAL",
 "labels": [
 "COLLECTS_FROM_MANY_MINTERS",
-"NEW_WALLET"
+"MINT_PAID_BY_OTHER"
 ],
 "windows": [
 "24h"
@@ -132959,14 +133232,15 @@
 "cluster": "farm-057",
 "evidence": {
 "via": {
-"OpenSea SeaDrop": 1
+"OpenSea SeaDrop": 1,
+"0x5567954cd026cebfe486062cb75848e0f1c12e58": 1
 },
-"tokens": 40,
+"tokens": 24,
 "collections": 1,
-"mint_txs": 1,
+"mint_txs": 4,
 "median_gap_s": null,
-"nonce": 9,
-"balance_eth": 1e-05,
+"nonce": 435,
+"balance_eth": 0.000127,
 "swept_out": 0,
 "operated_for": 0,
 "minted_by_others": 0,
@@ -132974,10 +133248,12 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x8aadfcd9d7b7c940c401a2c3ef4455017b8ad698"
+"0xa19409327a164d6266efed2733efe3e285017207"
 ],
 "example_tx": [
-"0xacb4024b88c5eff75a76d6fb27bc5775d17903776f666a517916008fa0763725"
+"0x0597a6de285a274c99efce22e825cc3ab2d0dabe9f1ec886ae624251faf9131c",
+"0x06d8f104ceaf07eac3e319302d9e9ebf5eb9049027a045d73549e646bb250391",
+"0x8a32f32bde9b26dee17fe69e55107b7b5bc576f2ba2e7bf8bcc879847fbf8ecc"
 ],
 "structural_proof": true
 }
@@ -133536,8 +133812,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -133577,12 +133852,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "HIGH_MINT_COUNT",
+"LINKED_GROUP",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-032",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 3
@@ -138033,8 +138310,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -138566,6 +138842,7 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
@@ -140470,12 +140747,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -145402,6 +145681,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
+"168h",
 "24h"
 ],
 "cluster": null,
@@ -145419,7 +145699,7 @@
 "operated_for": 0,
 "minted_by_others": 0,
 "sink_sources": 0,
-"swarm_size": 6,
+"swarm_size": 0,
 "code": null,
 "top_collections": [
 "0x0b3377b86850a06e90d99082aae6edd9aca9c3fd",
@@ -145565,7 +145845,90 @@
 "0x11b0faa52c2ede1df5503fa0582e9370ba7558a9cfaa21130433c9b66f396e6e",
 "0x184c1d052d3d4020e6719e5fa75ed9ff515b7473c8e9b636a5039e2d191e5549"
 ],
-"structural_proof": false
+"structural_proof": true
+}
+},
+{
+"address": "0x9b382a26a6d95afbb1cd174e8f204902e9f9190f",
+"score": 47,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"REGULAR_TIMING",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 195,
+"collections": 24,
+"mint_txs": 78,
+"median_gap_s": 1.3,
+"nonce": 1481,
+"balance_eth": 3.2e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x37fcce50a35c3d4a5331602929b6f64be5da2586",
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c",
+"0xeb06e4e26ed806a38888d6a48b0f3fed82725e7d",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4"
+],
+"example_tx": [
+"0x07c57e668b76dd215bf94eff30cd5320953fbd7acc480e88c678014584e5e28d",
+"0x0cb4d81db4f15aee58d2e87874cdf52e0a49ab7f8bb91201d36a28e697628051",
+"0x107003244bbdbb6913c033afd00f0b4909ffedeb0fb2aa1246a0e09a681e6776"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x13e4e0bf609ecb2b79522fed02a7231a70699545",
+"score": 47,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"REGULAR_TIMING",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 123,
+"collections": 24,
+"mint_txs": 96,
+"median_gap_s": 1.0,
+"nonce": 675,
+"balance_eth": 7.4e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x37fcce50a35c3d4a5331602929b6f64be5da2586",
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c",
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0xeb06e4e26ed806a38888d6a48b0f3fed82725e7d",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4"
+],
+"example_tx": [
+"0x060c0baf0e12d302be802bf39c95ece82265d05faa4e0d7d34708a53a19077fa",
+"0x0a4efdddd4533b71880eb1b199eea9f0995641a9a17993e5e298c46e30a593db",
+"0x0c4c38841c1e1a8511494ce9f5bc96abb489f55131de08f85c9a8b7f1e98519f"
+],
+"structural_proof": true
 }
 },
 {
@@ -147595,8 +147958,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -147722,7 +148084,8 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "168h",
@@ -147766,12 +148129,10 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-033",
 "evidence": {
@@ -148543,8 +148904,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -151200,12 +151560,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-056",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -154239,12 +154601,10 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-095",
 "evidence": {
@@ -156020,12 +156380,10 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-021",
 "evidence": {
@@ -156622,8 +156980,7 @@
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -164174,12 +164531,14 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-041",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 3
@@ -169035,12 +169394,10 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS",
-"SEVERAL_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "farm-021",
 "evidence": {
@@ -170316,10 +170673,12 @@
 "tier": "MIXED_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"MINTS_MANY_COLLECTIONS"
+"MINTS_MANY_COLLECTIONS",
+"SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -172212,7 +172571,8 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -173068,11 +173428,13 @@
 "score": 45,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"ACTIVE_MINTER",
 "COLLECTS_FROM_MANY_MINTERS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-069",
 "evidence": {
@@ -174118,7 +174480,7 @@
 "swept_out": 0,
 "operated_for": 0,
 "minted_by_others": 0,
-"sink_sources": 3,
+"sink_sources": 4,
 "swarm_size": 0,
 "code": "0xef010063c0c19a282a1b52b07dd5a65b58948a07dae32b",
 "top_collections": [
@@ -174207,7 +174569,8 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x4857db576ee0e45f10525ec59527bfd10beec60b"
+"0x4857db576ee0e45f10525ec59527bfd10beec60b",
+"0x07f44c47743a2f36414a82b9f558ecfcf0eedcef"
 ],
 "example_tx": [
 "0x213a586fdbfc6d6689a70c792505cae8a761fd18268e0e1e727bbe1c3fc5ae1d",
@@ -174384,20 +174747,23 @@
 "score": 45,
 "tier": "MIXED_SIGNAL",
 "labels": [
-"HIGH_MINT_COUNT",
-"NEW_WALLET"
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS"
 ],
 "windows": [
 "24h"
 ],
 "cluster": null,
 "evidence": {
-"tokens": 222,
-"collections": 1,
-"mint_txs": 1,
-"median_gap_s": null,
-"nonce": 8,
-"balance_eth": 0.003026,
+"via": {
+"OpenSea SeaDrop": 2
+},
+"tokens": 159,
+"collections": 25,
+"mint_txs": 40,
+"median_gap_s": 323.8,
+"nonce": 475,
+"balance_eth": 7.1e-05,
 "swept_out": 0,
 "operated_for": 0,
 "minted_by_others": 0,
@@ -174405,10 +174771,139 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x9661753d1374645ab1c6e23c1f6c52847e990581"
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x37fcce50a35c3d4a5331602929b6f64be5da2586",
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c",
+"0xeb06e4e26ed806a38888d6a48b0f3fed82725e7d",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4"
 ],
 "example_tx": [
-"0x3bc67a8617de577ab001e0164fe843c27ff6d17c9ac95212e8824e913551cc3d"
+"0x00372168d3bb10e0f24d437e38c7d44bdc6dcad2cc1d37c7969a4158b4fcc24d",
+"0x01df04de88a1d4ef301f58cbee1a6c810aa904d3e13f6bac5930dee2ab2189a6",
+"0x0625396d23d91407bd7d5b52a5edeb7825d78c677db3444a64cf06519fe86ce4"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x08a8aa8e9e6f6ee85c2645d6756d479047d3b09b",
+"score": 45,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 127,
+"collections": 41,
+"mint_txs": 48,
+"median_gap_s": 542.9,
+"nonce": 2625,
+"balance_eth": 4e-06,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x23c62299435e60648fdbe6d1c8618f0eb1ba4a63",
+"0xcc9d507c8102bcbd4b292e8ac4f2f4e24015adfe",
+"0x82814b10a6b5fe80ef1731b45689e794c179082a",
+"0x50023edd5b2d4d82d3556cc40f87f0eaa07ebcc7",
+"0x928791fa49b696040c85f70821871e44e9b3498c"
+],
+"example_tx": [
+"0x096d73823955402c1f685c8d0cf35aa333d0e5055995f2a1cce33c1efce4a632",
+"0x09f5b6bfba81827a6be192159b005b6d6fb321578b93c8482a0e16f4c01323db",
+"0x0e2232e7808f9ff8a9da0ecc0bee91a61b9726c49bb6f02100927e3dccb9eca5"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xaf529455d5af956230b83f0349eb4a2618a60ad5",
+"score": 45,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 118,
+"collections": 53,
+"mint_txs": 54,
+"median_gap_s": 755.1,
+"nonce": 73,
+"balance_eth": 0.000602,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x022de7131f45813c4de30086bc949478fcb144e2",
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x92f869982e153a0899efda4a98ab73b345bca5fc",
+"0x50023edd5b2d4d82d3556cc40f87f0eaa07ebcc7",
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c"
+],
+"example_tx": [
+"0x003dd0358aa276ef0ad2aa22c8d61d8d3d4cccf6924a3c81bd5fc1bc305ba419",
+"0x0a727f6c4127bb9168d43b524b75d556503fcbbb254b3cd2baaa927d896be113",
+"0x116a0d9ad24c7a4bcb2dca9b4fe7b11c86e3f1e2828307ea866b08fda7821b7c"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x88c1f2b2205bd06d26102632086751736ebdb8a2",
+"score": 45,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"MINTS_MANY_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 118,
+"collections": 53,
+"mint_txs": 54,
+"median_gap_s": 755.1,
+"nonce": 100,
+"balance_eth": 0.002283,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x022de7131f45813c4de30086bc949478fcb144e2",
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x92f869982e153a0899efda4a98ab73b345bca5fc",
+"0x50023edd5b2d4d82d3556cc40f87f0eaa07ebcc7",
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c"
+],
+"example_tx": [
+"0x06c825c5e4c05a5b87ee5c79a4ca8109a8f5fe57aa455fc9a8b1dc1e0429fe78",
+"0x094f2fdd78949162e9d0e1f2f42a85b6e700ec0c7b4a9301f82b3cede15921bc",
+"0x0b496a49d26859354c599b676aa2faad07818b3278930ed154db7f975711074a"
 ],
 "structural_proof": false
 }
@@ -175447,6 +175942,45 @@
 }
 },
 {
+"address": "0xe6722ecc023118107d89a0342f8e5db4d1e16c21",
+"score": 45,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET",
+"SENT_ON_AFTER_MINT"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-006",
+"evidence": {
+"tokens": 42,
+"collections": 2,
+"mint_txs": 42,
+"median_gap_s": 466.1,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 63,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x4857db576ee0e45f10525ec59527bfd10beec60b",
+"0x07f44c47743a2f36414a82b9f558ecfcf0eedcef"
+],
+"example_tx": [
+"0x029c5b983a080f7e67cce5aef0a3f389241521ae278fe1321fe421b772e3cc65",
+"0x0fa6bf152834f01f01bcc75a6aefabbe6d9e3339685f0965bd1c97863629b3f2",
+"0x12eb8d22063e3e3e261f42aee9f172801f07626d405f4e6daaa104224e905aa2"
+],
+"structural_proof": true
+}
+},
+{
 "address": "0xccfa248df51c7f71f5e162f94ae110f448b31ebe",
 "score": 45,
 "tier": "MIXED_SIGNAL",
@@ -175461,13 +175995,13 @@
 ],
 "cluster": null,
 "evidence": {
-"tokens": 44,
+"tokens": 36,
 "collections": 1,
 "mint_txs": 44,
 "median_gap_s": 1341.9,
 "nonce": 2,
 "balance_eth": 0.0,
-"swept_out": 44,
+"swept_out": 36,
 "operated_for": 0,
 "minted_by_others": 1,
 "sink_sources": 0,
@@ -175479,7 +176013,7 @@
 "example_tx": [
 "0x0107dbe38cd08694e4d0b5b8a6afe9ddc38c15b19a337eb552607cca1354679a",
 "0x0215592cd3a999f4eb66d9b2d15e0c655cb012c28abaad41d389dd93a0e7441a",
-"0x0ecc2c146d3466f2ba3f8c2f5cd84ad03395916f9bcbbe059fd5d02d22d14cc1"
+"0x14bba5332e67f981c2e7f2390d8d71ddfe8fd3aa144792788f8f60af432d14a6"
 ],
 "structural_proof": true
 }
@@ -175811,7 +176345,7 @@
 "windows": [
 "24h"
 ],
-"cluster": "farm-009",
+"cluster": "farm-006",
 "evidence": {
 "tokens": 19,
 "collections": 1,
@@ -175837,7 +176371,83 @@
 }
 },
 {
-"address": "0x7dcd4de060f6d9b0a353441a94795d509218bd5c",
+"address": "0x10bcfac04b31acd3fe7f82a57a535706bce44694",
+"score": 45,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET",
+"SENT_ON_AFTER_MINT"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-004",
+"evidence": {
+"tokens": 25,
+"collections": 1,
+"mint_txs": 25,
+"median_gap_s": 1805.4,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 1123,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x4857db576ee0e45f10525ec59527bfd10beec60b"
+],
+"example_tx": [
+"0x1e709eaeceb502a61e9401d4ab883512cb4ce34153d1be581c29b2e350f5f4d9",
+"0x24f0bcc12f85f8519c43fb9df52b3fc5e569560efb957c793b05e31d7f876d95",
+"0x3b28e86f7baf3eedc8101afb1bbfd33d795b3224c61316e2e6b3d3d4c8afd6f5"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x2991c0fa84e7745e610f7ca1378b9f9e3e859604",
+"score": 45,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET",
+"SENT_ON_AFTER_MINT"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-004",
+"evidence": {
+"tokens": 22,
+"collections": 1,
+"mint_txs": 22,
+"median_gap_s": 147.9,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 22,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x4857db576ee0e45f10525ec59527bfd10beec60b"
+],
+"example_tx": [
+"0x03b80d1319130544e0cb16f155fd0256d75b340511ae6521ca84a3075bceb659",
+"0x22846a7b161ef028cd434d87884b09bff650b3b79899c1e7ee5ec03576d87b9d",
+"0x2c1980fbb06a45ba1ced8e03b414556bfbddf10607bffb19ee5e2f81e96a71c9"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x775c4ca23786ead43ad13b71116c3d0b8ce19d0e",
 "score": 45,
 "tier": "MIXED_SIGNAL",
 "labels": [
@@ -183069,13 +183679,15 @@
 "score": 42,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-566",
 "evidence": {
@@ -189925,12 +190537,14 @@
 "score": 40,
 "tier": "MIXED_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "MINT_PAID_BY_OTHER",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-566",
 "evidence": {
@@ -200138,7 +200752,7 @@
 }
 },
 {
-"address": "0x49930d83b674353339436c0f3776506b547dc337",
+"address": "0x5cc77d3fe7a27edb2c097c23f3a1b437de172e1b",
 "score": 40,
 "tier": "MIXED_SIGNAL",
 "labels": [
@@ -200336,7 +200950,10 @@
 ],
 "cluster": "farm-030",
 "evidence": {
-"tokens": 54,
+"via": {
+"0x6421c8cc9d57f11bde82f02fcf489190d3033e2a": 3
+},
+"tokens": 56,
 "collections": 1,
 "mint_txs": 54,
 "median_gap_s": 938.9,
@@ -200791,7 +201408,7 @@
 ],
 "cluster": "farm-002",
 "evidence": {
-"tokens": 2,
+"tokens": 4,
 "collections": 2,
 "mint_txs": 2,
 "median_gap_s": null,
@@ -200804,12 +201421,249 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x72a6b53acf09744512376c3d13bf91a61bbdbe4e",
+"0xfcb6bea6b4e62072bf220b98f9106eace59f48c8",
 "0xc85081d905074dfe942b2691f14b851632c3d6aa"
 ],
 "example_tx": [
-"0x12af635142fb7903cf66027227957a54aa9e07cd2f3e8e5fe7665b86e15f9231",
-"0x98df022d74433f82621d311f1ba950c6ef167ef71c0a1f4e6c8bea8f10878b1e"
+"0x98df022d74433f82621d311f1ba950c6ef167ef71c0a1f4e6c8bea8f10878b1e",
+"0xc38f668e27bbe6336f4f1099a66f78178615ca032c306910797dfd034546fe7b"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0xb403e6ee64ec2dac337efaca0c6d87786f6050ea",
+"score": 40,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"COLLECTS_FROM_MANY_MINTERS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-074",
+"evidence": {
+"tokens": 4,
+"collections": 1,
+"mint_txs": 2,
+"median_gap_s": null,
+"nonce": 111,
+"balance_eth": 0.00132,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 4,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0xa19409327a164d6266efed2733efe3e285017207"
+],
+"example_tx": [
+"0x6fdd1bb6a0edc8d63b40c4581523224cb840b24d466244123ad5a612437e555c",
+"0xbaf59ebce831226adaa1707f0d46a5d24aae179929617d28b9b952a2acdad40e"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x384dc6e99b9cab4fda3f0a362e55cb8ce090a04b",
+"score": 40,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"COLLECTS_FROM_MANY_MINTERS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-088",
+"evidence": {
+"tokens": 4,
+"collections": 2,
+"mint_txs": 2,
+"median_gap_s": null,
+"nonce": 56,
+"balance_eth": 0.000135,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 3,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0xfcb6bea6b4e62072bf220b98f9106eace59f48c8"
+],
+"example_tx": [
+"0x5479325e4fcd2f2f84dd574bf725c5b3386407616457d976aee9864c61317c58",
+"0x56ae1b4cbfd82f0915fb9425048b8f0b4337a2810cb0cd7a17cbc0bf22c6184a"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0xdac2bc200893208c86695a7d8d62c28ba69e014e",
+"score": 40,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"COLLECTS_FROM_MANY_MINTERS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-058",
+"evidence": {
+"tokens": 3,
+"collections": 2,
+"mint_txs": 2,
+"median_gap_s": null,
+"nonce": 1107,
+"balance_eth": 0.001036,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 5,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0xebeea5e9b5483d53df59da10dd753ee5a33baa19",
+"0x652cb92509af5f1308ef95b0bed46fcf6461ff62"
+],
+"example_tx": [
+"0x4a65d0ad0416c5572b1f8ab1ecec3d02c5892975046c7da84f1b3a35db6872eb",
+"0xe8b4d8d83aee755d15a371949649c64734ba3aec39de3e9ee4fa72f241814abc"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0xb637f8b662b6b967733a1dce421102d8ea5e4284",
+"score": 40,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"COLLECTS_FROM_MANY_MINTERS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-099",
+"evidence": {
+"tokens": 2,
+"collections": 1,
+"mint_txs": 2,
+"median_gap_s": null,
+"nonce": 1931,
+"balance_eth": 0.002697,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 3,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0xfcb6bea6b4e62072bf220b98f9106eace59f48c8"
+],
+"example_tx": [
+"0x48c301225dc864dc83571c7a3f3a3287339a8f5cd845e0c7b577f20d49380c7b",
+"0xed2ddea4792ffe580058396bb2e168681a8a40157d9b348ea4b3db1ae5f95f27"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0xf8ed3a12832b106b0edc947b007c64439ad74402",
+"score": 40,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"COLLECTS_FROM_MANY_MINTERS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-117",
+"evidence": {
+"tokens": 1,
+"collections": 1,
+"mint_txs": 1,
+"median_gap_s": null,
+"nonce": 1406,
+"balance_eth": 0.000961,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 3,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0xa19409327a164d6266efed2733efe3e285017207"
+],
+"example_tx": [
+"0x4ac009c77d1736c58c1a8877bb3b9030ef1fa571673a2b193df9f93dba59cf5c"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0xc1277756c77e320c6f6893e789563d6d20643078",
+"score": 40,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"COLLECTS_FROM_MANY_MINTERS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-113",
+"evidence": {
+"tokens": 1,
+"collections": 1,
+"mint_txs": 1,
+"median_gap_s": null,
+"nonce": 195,
+"balance_eth": 0.001602,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 3,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0xfcb6bea6b4e62072bf220b98f9106eace59f48c8"
+],
+"example_tx": [
+"0x7cfc6d4e6d2572850a18713090fcac955d3e61711bfdb791649b133ea38344ef"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x5b13c461bfba0a12f39d25efb46d8c7c17922d08",
+"score": 40,
+"tier": "MIXED_SIGNAL",
+"labels": [
+"COLLECTS_FROM_MANY_MINTERS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-041",
+"evidence": {
+"tokens": 1,
+"collections": 1,
+"mint_txs": 1,
+"median_gap_s": null,
+"nonce": 17,
+"balance_eth": 3.9e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 6,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x5001b971255ec1e4c08d021aebdc8b60b9cf92d4"
+],
+"example_tx": [
+"0xc92130f6ca553a525f98acb2bf4ce69f599745c217763c5c954c5e888f254a37"
 ],
 "structural_proof": true
 }
@@ -202829,13 +203683,11 @@
 "tier": "LOW_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -203228,13 +204080,15 @@
 "tier": "LOW_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-128",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -203530,13 +204384,11 @@
 "tier": "LOW_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -203793,13 +204645,15 @@
 "tier": "LOW_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-126",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -203969,13 +204823,11 @@
 "tier": "LOW_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -204191,13 +205043,11 @@
 "tier": "LOW_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
-"SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -205232,7 +206082,7 @@
 }
 },
 {
-"address": "0xbf03738655e58a95033ac31f97f048e0afdd36e2",
+"address": "0x87b2fefe22afae0114456c1bfcb18c6e7205a4cc",
 "score": 37,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -205268,9 +206118,9 @@
 "0x2ba93e3cd3674c73636ba9e503f06aa1da4b49d9"
 ],
 "example_tx": [
-"0x0a9b67462a55478ac13d8f97850c31b9353e6449dd1cadca81f9ea73e66921a6",
-"0x1ac90b3623ef951390b79d8682c348c20c47456c26c6c392bda8f2b766f018c9",
-"0x28434fc163012730522ef9445e3d496a5d65f9eb5cd8c77d3bc1d6a3a66a7848"
+"0x057dec7cc515f90f5991fc720a8d12114ed5b03d8c50289971820b7244153178",
+"0x059779518f509369b853a9093ab136fab93918fea4c373fd82b0dc749e1909bb",
+"0x1da872f06b879a44a8884248fe5e474e0f7b31858fafeea28191021a903a39e3"
 ],
 "structural_proof": true
 }
@@ -217075,18 +217925,16 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0xbab51626810d35c81d03fed06531bf9e4293dba4",
-"0x8aadfcd9d7b7c940c401a2c3ef4455017b8ad698"
+"0xbab51626810d35c81d03fed06531bf9e4293dba4"
 ],
 "example_tx": [
-"0x5e70fd8cc64863aa47e2057783cf736634c9752996e1736a10bbb312c5b89b55",
 "0x7b9a56dea844739988f8aae920bfbaf398bf3fecf373c393528431a1a84d8a4b"
 ],
 "structural_proof": true
 }
 },
 {
-"address": "0x58862e0804646d3758fd238dbc42d5f990c99683",
+"address": "0xebd854b1193aa12a8143e2ee27a8dcc489448c16",
 "score": 35,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -217112,12 +217960,10 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0xbab51626810d35c81d03fed06531bf9e4293dba4",
-"0x8aadfcd9d7b7c940c401a2c3ef4455017b8ad698"
+"0xbab51626810d35c81d03fed06531bf9e4293dba4"
 ],
 "example_tx": [
-"0x3f9a2731bc7d2822ca71d322ca8d7fa55b00623306e483209947deb1621160b3",
-"0x89922d738775a16842acc396460ed7d427b2a17a7da3d5e9a3da0e87976beb93"
+"0xbdadeae140fef23301465f6bccf266b3372a439d5675d3ca281544365b85ce21"
 ],
 "structural_proof": true
 }
@@ -217136,9 +217982,12 @@
 ],
 "cluster": "farm-001",
 "evidence": {
-"tokens": 141,
-"collections": 2,
-"mint_txs": 2,
+"via": {
+"OpenSea SeaDrop": 1
+},
+"tokens": 111,
+"collections": 1,
+"mint_txs": 1,
 "median_gap_s": null,
 "nonce": 520,
 "balance_eth": 0.107993,
@@ -217149,12 +217998,10 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0xbab51626810d35c81d03fed06531bf9e4293dba4",
-"0x8aadfcd9d7b7c940c401a2c3ef4455017b8ad698"
+"0xbab51626810d35c81d03fed06531bf9e4293dba4"
 ],
 "example_tx": [
-"0x54e31a0d64c20e5f2c2e6838f05b31734da73900201dffefd71e69c322ce06f2",
-"0xcac48ff1f3454083b52eebe0c4edd5d114122737aa96b6a31996eb3429d66df8"
+"0x54e31a0d64c20e5f2c2e6838f05b31734da73900201dffefd71e69c322ce06f2"
 ],
 "structural_proof": true
 }
@@ -217405,7 +218252,7 @@
 "example_tx": [
 "0x019337ca1088da476dcfc773f12bedf62e40d324a6b3c2a25f84b27bc25a506f",
 "0x02e7d6fd2d32d3d153f28342c96f11f3db727cbda6eb337262f2693fc15e22f3",
-"0x037a99a1f57cbe714cd5f14064dc00cd8cefac666fbfe520d3cb0c4aa9a78114"
+"0x0968cd6a06275ab811c711ec4c4602f5a66e292c0f047e1e024227556fa7d022"
 ],
 "structural_proof": true
 }
@@ -217926,6 +218773,117 @@
 ],
 "example_tx": [
 "0x3194a5aae923b90964b484902aac6a5e089dee9f001a147573eb21828b5715b0"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0xa12a192281e0e58eea22e9f40ab013c6faba147e",
+"score": 35,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET",
+"SENT_ON_AFTER_MINT"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-014",
+"evidence": {
+"tokens": 27,
+"collections": 1,
+"mint_txs": 27,
+"median_gap_s": 2153.7,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 43,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x4857db576ee0e45f10525ec59527bfd10beec60b"
+],
+"example_tx": [
+"0x2cb46d4b68865330b4921b6db507d9f4a09dba416b39d1bd7f0c71409eef21de",
+"0x390901ff0fbbc01d736465bf1ca0d161ae475adbda49eaa857039ee71c0bb936",
+"0x3d6ca8828b0be48a4dbb4ae5be95e40e30092ca8f970dadbe53c95026c5e7a98"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0xa6bcd99e7d3b7caa0cd0a92f3d70b7bec80d48d9",
+"score": 35,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET",
+"SENT_ON_AFTER_MINT"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-029",
+"evidence": {
+"tokens": 26,
+"collections": 1,
+"mint_txs": 26,
+"median_gap_s": 1156.9,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 26,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x4857db576ee0e45f10525ec59527bfd10beec60b"
+],
+"example_tx": [
+"0x0d4ebfe7eadd04ebad5f52ac04c8a0f29135fded86e7c9f0f7ecaef17b743822",
+"0x2c7e5592c85a257a81f96d0be3a29463d6cf75f8d2ce18bfcefc0fd2998c415e",
+"0x2ccf2ffbaf2d12cfa909c90cc6cbdb1ad47af20a54999db47f5b9775f9f47126"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x27c01754e94701b1ef96c1e8fdb13b18999d0e16",
+"score": 35,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET",
+"SENT_ON_AFTER_MINT"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-004",
+"evidence": {
+"tokens": 24,
+"collections": 1,
+"mint_txs": 24,
+"median_gap_s": 1726.5,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 705,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x4857db576ee0e45f10525ec59527bfd10beec60b"
+],
+"example_tx": [
+"0x0aed63b9164f6e84068ded1a4e048191a2d28554e2afdc7420e39fc4772dcd4f",
+"0x0b98d6dac6fbc49bd739b763f9279cf0a5ecdea822ca0e41a2e1a16e76344b7f",
+"0x0f0066e3bb9fe480591563c4ec4d2a2502fea1ffde0174202ff9d10f1f6bce0c"
 ],
 "structural_proof": true
 }
@@ -219856,6 +220814,7 @@
 "tier": "LOW_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
@@ -220927,12 +221886,14 @@
 "tier": "LOW_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "SEVERAL_COLLECTIONS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-155",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -236223,8 +237184,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -236705,8 +237665,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -238201,8 +239160,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -238246,8 +239204,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -239644,14 +240601,16 @@
 "score": 32,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-128",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -239908,14 +240867,16 @@
 "score": 32,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-126",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 2
@@ -241963,7 +242924,7 @@
 "cluster": null,
 "evidence": {
 "via": {
-"OpenSea SeaDrop": 3
+"OpenSea SeaDrop": 2
 },
 "tokens": 57,
 "collections": 23,
@@ -245048,10 +246009,12 @@
 "tier": "LOW_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-630",
 "evidence": {
@@ -251446,13 +252409,15 @@
 "score": 30,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINTS_MANY_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "op-129",
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 1
@@ -254710,8 +255675,7 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-129",
 "evidence": {
@@ -254952,7 +255916,8 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -255579,8 +256544,7 @@
 "PAID_FOR_OTHER_MINTS"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-680",
 "evidence": {
@@ -257094,7 +258058,8 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-556",
 "evidence": {
@@ -257440,7 +258405,8 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-556",
 "evidence": {
@@ -257745,8 +258711,7 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -258170,7 +259135,8 @@
 "PAID_FOR_OTHER_MINTS"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-630",
 "evidence": {
@@ -259660,7 +260626,8 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": null,
 "evidence": {
@@ -260694,44 +261661,6 @@
 }
 },
 {
-"address": "0x5a85839a5803c60a3887860756bbdba923251736",
-"score": 30,
-"tier": "LOW_SIGNAL",
-"labels": [
-"MINTED_TO_CONTRACT",
-"MINT_PAID_BY_OTHER",
-"NEW_WALLET"
-],
-"windows": [
-"168h",
-"24h"
-],
-"cluster": null,
-"evidence": {
-"tokens": 17,
-"collections": 1,
-"mint_txs": 14,
-"median_gap_s": 25223.1,
-"nonce": 1,
-"balance_eth": 0.0,
-"swept_out": 0,
-"operated_for": 0,
-"minted_by_others": 2,
-"sink_sources": 0,
-"swarm_size": 0,
-"code": null,
-"top_collections": [
-"0x07f44c47743a2f36414a82b9f558ecfcf0eedcef"
-],
-"example_tx": [
-"0x1e89c8b98e0fba7fe0569e629e47da4aac11febaffdda0bcb450efe80e80a0cb",
-"0x2452c5b871d5d727fa455bcfecc5585cc84e14bd8d9d5b5774e50377eea14d9c",
-"0x292f22ec5605467690f37b0195563251bdcf9de5d2b68d16833ce03fddf38cb0"
-],
-"structural_proof": false
-}
-},
-{
 "address": "0x492797ca9a4c96e7a146c84bec51e3d09dd0b83f",
 "score": 30,
 "tier": "LOW_SIGNAL",
@@ -260964,8 +261893,7 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": "op-848",
 "evidence": {
@@ -262046,7 +262974,8 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-598",
 "evidence": {
@@ -279446,8 +280375,7 @@
 "NEW_WALLET"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -287943,7 +288871,7 @@
 "minted_by_others": 0,
 "sink_sources": 0,
 "swarm_size": 0,
-"code": null,
+"code": "0xef010077021100bd87b7008e5e1989d0eb38555d0d0000",
 "top_collections": [
 "0x10d52964397dfb100c58212ca80946c60f3fd0c9"
 ],
@@ -288068,7 +288996,7 @@
 }
 },
 {
-"address": "0xc8da4b2fb5098e62936b8f75f1e660b40b67808d",
+"address": "0x0a205b25ddf93d8b77eb3169079ffbb59a377744",
 "score": 30,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -288094,7 +289022,7 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0xc8da4b2fb5098e62936b8f75f1e660b40b67808d"
+"0x0a205b25ddf93d8b77eb3169079ffbb59a377744"
 ],
 "example_tx": [
 "0x0e3228a3811f947cbc407aba0b8d7f00230adb7737b0ba5a54de9595f6122e81",
@@ -288338,7 +289266,7 @@
 ],
 "cluster": null,
 "evidence": {
-"tokens": 16,
+"tokens": 22,
 "collections": 1,
 "mint_txs": 16,
 "median_gap_s": 3809.9,
@@ -288366,14 +289294,12 @@
 "score": 30,
 "tier": "LOW_SIGNAL",
 "labels": [
-"MINTED_TO_CONTRACT",
-"MINT_PAID_BY_OTHER",
-"NEW_WALLET"
+"PAID_FOR_OTHER_MINTS"
 ],
 "windows": [
 "24h"
 ],
-"cluster": null,
+"cluster": "op-130",
 "evidence": {
 "tokens": 16,
 "collections": 1,
@@ -288382,8 +289308,8 @@
 "nonce": 1,
 "balance_eth": 0.0,
 "swept_out": 0,
-"operated_for": 0,
-"minted_by_others": 1,
+"operated_for": 12,
+"minted_by_others": 0,
 "sink_sources": 0,
 "swarm_size": 0,
 "code": null,
@@ -288629,11 +289555,11 @@
 "0x6ddebd665f09f619c443321143fc1fbe6840551ab86d39edc9a3569a99a674f9",
 "0x7d215315cbbb5d9d460d59e5ee22f5ffc6a73fc14b1f712feb2a6d1d8a29008e"
 ],
-"structural_proof": false
+"structural_proof": true
 }
 },
 {
-"address": "0x72e5dc8bb512b93e49991d541c23208b9145f273",
+"address": "0x289163d75a7aedfd00fed0f6583e462b473ead68",
 "score": 30,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -288646,7 +289572,7 @@
 ],
 "cluster": null,
 "evidence": {
-"tokens": 12,
+"tokens": 22,
 "collections": 1,
 "mint_txs": 12,
 "median_gap_s": 6481.9,
@@ -289086,14 +290012,14 @@
 "windows": [
 "24h"
 ],
-"cluster": "op-137",
+"cluster": "op-132",
 "evidence": {
 "tokens": 9,
 "collections": 1,
 "mint_txs": 1,
 "median_gap_s": null,
-"nonce": 26,
-"balance_eth": 0.000508,
+"nonce": 28,
+"balance_eth": 0.000502,
 "swept_out": 0,
 "operated_for": 9,
 "minted_by_others": 0,
@@ -289160,7 +290086,7 @@
 ],
 "cluster": null,
 "evidence": {
-"tokens": 8,
+"tokens": 9,
 "collections": 1,
 "mint_txs": 8,
 "median_gap_s": null,
@@ -289188,7 +290114,9 @@
 "score": 30,
 "tier": "LOW_SIGNAL",
 "labels": [
-"PAID_FOR_OTHER_MINTS"
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET"
 ],
 "windows": [
 "24h"
@@ -289205,8 +290133,8 @@
 "nonce": 36503,
 "balance_eth": 0.041946,
 "swept_out": 0,
-"operated_for": 3,
-"minted_by_others": 0,
+"operated_for": 0,
+"minted_by_others": 1,
 "sink_sources": 0,
 "swarm_size": 0,
 "code": null,
@@ -289219,7 +290147,7 @@
 "0xb4cfcdf41c47456226446a4a3cb5a18e736326b8057d3bf89cd93a773f659cfb",
 "0xcd3265eaea37c118e4fc43ed2455aa70667a8ee46a2bcab64059d58a14c80e46"
 ],
-"structural_proof": true
+"structural_proof": false
 }
 },
 {
@@ -289713,9 +290641,9 @@
 ],
 "cluster": null,
 "evidence": {
-"tokens": 7,
+"tokens": 8,
 "collections": 1,
-"mint_txs": 7,
+"mint_txs": 8,
 "median_gap_s": null,
 "nonce": 1,
 "balance_eth": 0.0,
@@ -289748,7 +290676,7 @@
 "windows": [
 "24h"
 ],
-"cluster": null,
+"cluster": "op-127",
 "evidence": {
 "tokens": 7,
 "collections": 1,
@@ -290146,7 +291074,7 @@
 }
 },
 {
-"address": "0xe0763177d7e80e290fc4fea055fae11f5024f687",
+"address": "0x7aa49e8798a2447dfc687c859b37c5c7b2e758c6",
 "score": 30,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -290157,14 +291085,14 @@
 "windows": [
 "24h"
 ],
-"cluster": null,
+"cluster": "op-127",
 "evidence": {
-"tokens": 6,
-"collections": 1,
+"tokens": 8,
+"collections": 3,
 "mint_txs": 3,
 "median_gap_s": null,
 "nonce": 1,
-"balance_eth": 0.000644,
+"balance_eth": 2.3e-05,
 "swept_out": 0,
 "operated_for": 0,
 "minted_by_others": 1,
@@ -290172,12 +291100,14 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x027aca2794e44f24950d81227dcd516ffbb49d6e"
+"0x06aa6ab7f34ebb1a5d586c78353c0b5a44b64331",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0x389f639b0de4773c0b1f9073051488bce7d72a40"
 ],
 "example_tx": [
-"0x2dd0f987a4f9f3d413a64e822faf79da7c77bdebc58304dcda974243df53d552",
-"0x64990a6d9c3ea8c931e1d6818ab2954ed250f2b8f5b5ce6ee613359b4b2e6186",
-"0xbb17631a7f3ef313fa5dc575ac43b9e8700cec3267354ef686be0f7e175f2a8b"
+"0x5a304a7fecc63dba84d0a92e09d1fff0e7f37b99eaaac6b77fc59921e01f09cf",
+"0x92d878d5de497a6cb6c6f0ec9eaa49e18b295f82f14a520de6be2a923550220f",
+"0xbe859a391e643dee4d963d70cfcad4e5b4ed2139e415b9d1203a6c8f1993d45c"
 ],
 "structural_proof": false
 }
@@ -290311,7 +291241,7 @@
 "windows": [
 "24h"
 ],
-"cluster": null,
+"cluster": "op-127",
 "evidence": {
 "tokens": 6,
 "collections": 1,
@@ -291024,6 +291954,372 @@
 "median_gap_s": null,
 "nonce": 5547,
 "balance_eth": 0.533256,
+"swept_out": 0,
+"operated_for": 3,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x027aca2794e44f24950d81227dcd516ffbb49d6e"
+],
+"example_tx": [
+"0xde524828102578214afc86630aed85888dc4496aadeb524e057b90a1043fab19"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x4e6e2b036d10c3f4fa6225782021f0ebcad407b1",
+"score": 30,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 5,
+"collections": 1,
+"mint_txs": 5,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x07f44c47743a2f36414a82b9f558ecfcf0eedcef"
+],
+"example_tx": [
+"0x2526d5ba5890c5b09eb5d86ebbf912be9702c9c9b42fa0afdfa45d227467436c",
+"0x3abe0eecdb64e74ee7c534009b8b7eaf3a44dd9a880266de6be18bb4e7e2750c",
+"0x5b743d76530ea55d4b3754c0ffd924d647188d16144c27ca80e9ab9b91c189fd"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xe757fa362c184f9783a463cf28d109d1416d54f6",
+"score": 30,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-122",
+"evidence": {
+"tokens": 5,
+"collections": 1,
+"mint_txs": 5,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x73991a25c818bf1f1128deaab1492d45638de0d3"
+],
+"example_tx": [
+"0x1d6d39bb79b39b1a04fd7fa6ebcbdfa7af867520fe33d0e28f2247ec1fc5e826",
+"0xa0946b05db80a537aceb00c31de760b916f9ad038956170699b3f92dab865c1c",
+"0xae48fc6dbc604bcfb150f4b7a912d5d8b263732f5df32b01bf612281229b335b"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xdd9bb9217803837b34c7975144c61afa318a4244",
+"score": 30,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-125",
+"evidence": {
+"tokens": 5,
+"collections": 1,
+"mint_txs": 5,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x07f44c47743a2f36414a82b9f558ecfcf0eedcef"
+],
+"example_tx": [
+"0x2d71c3cee74b6fbeb70374acbc50c692b244321d024ec2e5762d5f8aa082506c",
+"0x51f0a7a015280af4cadc11dd4b2ced6c3671f57d1aa30896913b25d0b07132f8",
+"0xa09b456d6e49b9e39f471c6b5ef32fa1598caf4ccbfc5f94b288f1d2d4332536"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x6d4c98edd77667f2a40439a56c1de6dab913e6ad",
+"score": 30,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-125",
+"evidence": {
+"tokens": 5,
+"collections": 1,
+"mint_txs": 5,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 2,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x4857db576ee0e45f10525ec59527bfd10beec60b"
+],
+"example_tx": [
+"0x0f3ac6ae8bedcdb1064644e93705c0bbd318f213f4e3bf2bf1adbe5fdab346ad",
+"0x3fb83aad173cf8b98df42bc122e8d0d7c1af49b4c53319a9885ccde4130b0e00",
+"0x4f8360ef740da1519d00604a41df8878a912e481bd2bc7c25e82b3e06ac3c81f"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xc93c6a8a7b1259ae889e5df614c5a4862927ad32",
+"score": 30,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 5,
+"collections": 1,
+"mint_txs": 5,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x4857db576ee0e45f10525ec59527bfd10beec60b"
+],
+"example_tx": [
+"0x1c5bd83d9c3d8d84e692a92606bf65cbdd38dd58225ff655d6c886355a8505ea",
+"0x486e674e3b20bff53a76be6fb5adc9a74e815288a33b9d2825f2e880ed6a2288",
+"0x5413ffd0ddaff9d75ae477c87cdf5fa095d0931c52071650688cb35f1ba5a5fb"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x6e10ab8323a66d529baba546436ca9b5b207080d",
+"score": 30,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 5,
+"collections": 1,
+"mint_txs": 5,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 1,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x0bf85d7dfa0de5d4ba8776bf848f187b53276bfc"
+],
+"example_tx": [
+"0x45b81b07a95585dc3361d9fb1d2a6286da302d4bfc5ab7621adf2aa829dfe169",
+"0x5bee420043c623ac5afeeea8520e88b485f5aeb7c8905c53069d49d5520cc79b",
+"0x6da9660ed0870f791f20b162fc165dd6f861e7ecf8609108d7b66078bd5623a2"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x39b1724af7328a5830e906396d2e34ad6231105f",
+"score": 30,
+"tier": "LOW_SIGNAL",
+"labels": [
+"PAID_FOR_OTHER_MINTS"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-151",
+"evidence": {
+"via": {
+"0x7db061c58fdecb9f583b6571550abb3fd6d88775": 1
+},
+"tokens": 5,
+"collections": 1,
+"mint_txs": 1,
+"median_gap_s": null,
+"nonce": 39,
+"balance_eth": 3e-06,
+"swept_out": 0,
+"operated_for": 5,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x1a5ce8479cd3c0cd08a796fae912fc3862c3d425"
+],
+"example_tx": [
+"0x9013f1d0aaf21ee2325a1cff00039aa70009fceecc9ac3b3000fcce86a614583"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x6be8f62457b72c4b3d111a3f063aff0f1c15d4f5",
+"score": 30,
+"tier": "LOW_SIGNAL",
+"labels": [
+"PAID_FOR_OTHER_MINTS"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-152",
+"evidence": {
+"via": {
+"0x7db061c58fdecb9f583b6571550abb3fd6d88775": 1
+},
+"tokens": 5,
+"collections": 1,
+"mint_txs": 1,
+"median_gap_s": null,
+"nonce": 32,
+"balance_eth": 3e-06,
+"swept_out": 0,
+"operated_for": 5,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x1a5ce8479cd3c0cd08a796fae912fc3862c3d425"
+],
+"example_tx": [
+"0x665f45a6658ab32d0611369d9b7e4b7275d2f27d4303943ffd786aacfb404b1e"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x51787f3a343b0627cc53fd5bc2069e51feb1c854",
+"score": 30,
+"tier": "LOW_SIGNAL",
+"labels": [
+"PAID_FOR_OTHER_MINTS"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-153",
+"evidence": {
+"via": {
+"0x7db061c58fdecb9f583b6571550abb3fd6d88775": 1
+},
+"tokens": 5,
+"collections": 1,
+"mint_txs": 1,
+"median_gap_s": null,
+"nonce": 32,
+"balance_eth": 3e-06,
+"swept_out": 0,
+"operated_for": 5,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x1a5ce8479cd3c0cd08a796fae912fc3862c3d425"
+],
+"example_tx": [
+"0x2b5e35d46e257ee86eda370f1516f8fd192da2a7abc5fbbebccf4c9460c46143"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x43372242f28ef86d2f84ebf3899ba30d78ad84ce",
+"score": 30,
+"tier": "LOW_SIGNAL",
+"labels": [
+"PAID_FOR_OTHER_MINTS"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-148",
+"evidence": {
+"via": {
+"0x4337084d9e255ff0702461cf8895ce9e3b5ff108": 1
+},
+"tokens": 3,
+"collections": 1,
+"mint_txs": 1,
+"median_gap_s": null,
+"nonce": 5575,
+"balance_eth": 0.532916,
 "swept_out": 0,
 "operated_for": 3,
 "minted_by_others": 0,
@@ -305592,12 +306888,14 @@
 "score": 27,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -309963,12 +311261,14 @@
 "score": 27,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-566",
 "evidence": {
@@ -313257,11 +314557,13 @@
 "tier": "LOW_SIGNAL",
 "labels": [
 "MINT_PAID_BY_OTHER",
+"SAME_GAS_GROUP",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -313343,12 +314645,14 @@
 "score": 27,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-531",
 "evidence": {
@@ -328863,12 +330167,14 @@
 "score": 27,
 "tier": "LOW_SIGNAL",
 "labels": [
+"LINKED_GROUP",
 "MINT_PAID_BY_OTHER",
 "SEVERAL_COLLECTIONS",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -348853,7 +350159,867 @@
 }
 },
 {
-"address": "0x2894b636a806378febd619861a8f581c1203d0a9",
+"address": "0x2766f5c05c0c9ba074a8246a7ebaae3d4cc6f4c9",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-001",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 39,
+"collections": 23,
+"mint_txs": 23,
+"median_gap_s": 1625.4,
+"nonce": 630,
+"balance_eth": 0.005266,
+"swept_out": 1,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 13,
+"code": null,
+"top_collections": [
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x06aa6ab7f34ebb1a5d586c78353c0b5a44b64331",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7"
+],
+"example_tx": [
+"0x0223613559a8fecd314a293b5d59786898f796fccb915f361c2a761f40628f03",
+"0x0be55c32b0e14b0e1a0e18e54783636dad06cdf941a4dc58aed7f10ab9d08844",
+"0x11dcd76bbf7e120f1d0f3aaf95647fa79ed75ff2935956afec8966c61d82266e"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x0ecc07cb412c1912ea4c7ac7eae715077eba954e",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-001",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 2
+},
+"tokens": 39,
+"collections": 23,
+"mint_txs": 23,
+"median_gap_s": 1625.7,
+"nonce": 655,
+"balance_eth": 0.000428,
+"swept_out": 1,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 33,
+"code": null,
+"top_collections": [
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x06aa6ab7f34ebb1a5d586c78353c0b5a44b64331",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7"
+],
+"example_tx": [
+"0x01000a8a5003d884070c27205103c8feda0e1cd933dfc1dd5d528eb3769cc32a",
+"0x086a280ae6eab526a5289128a54221340d1068001646f9fc928eef045fd2e273",
+"0x1fcc7ca15501cf29538f589fa8f053e273f42d9e16f25b2671fec241f32c19b1"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xbd669379b37d34af68de0daded41700a4d6e068c",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 39,
+"collections": 20,
+"mint_txs": 20,
+"median_gap_s": 1543.1,
+"nonce": 454,
+"balance_eth": 0.000652,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 14,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x1632017d2535b262c03071a8e73925e6c0c9d58a"
+],
+"example_tx": [
+"0x02ecf3932400599f9b371f6bc9eb264923abd7192cbd3744d4377645922422fb",
+"0x11b0faa52c2ede1df5503fa0582e9370ba7558a9cfaa21130433c9b66f396e6e",
+"0x184c1d052d3d4020e6719e5fa75ed9ff515b7473c8e9b636a5039e2d191e5549"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x6d0bfd2ca3d52a64a2f1b5173214af86db6befde",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 33,
+"collections": 19,
+"mint_txs": 19,
+"median_gap_s": 2743.8,
+"nonce": 1030,
+"balance_eth": 0.003164,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 9,
+"code": null,
+"top_collections": [
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c",
+"0xd59d45b56f3df1dc5fc4d32dde13ea44a0e00c70",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x1632017d2535b262c03071a8e73925e6c0c9d58a"
+],
+"example_tx": [
+"0x0101ac83fa4545c4b35055f8f5bf11f16c07debc5372a024c47d754b5389c559",
+"0x2030ef54b0f82bb7adfeccaff6ac2b77f7e9cc72c107f4547653f390af301c5e",
+"0x39770669dff4754389ef303fad09b44ab55ca8ac9883fc7954dfded3000c81dd"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xb3a83d6bed15265391444b2a674b6ea983e6ce0e",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 33,
+"collections": 19,
+"mint_txs": 19,
+"median_gap_s": 2743.9,
+"nonce": 1263,
+"balance_eth": 0.000384,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 15,
+"code": null,
+"top_collections": [
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c",
+"0xd59d45b56f3df1dc5fc4d32dde13ea44a0e00c70",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x1632017d2535b262c03071a8e73925e6c0c9d58a"
+],
+"example_tx": [
+"0x07c46350c2cd818de028cc7f84f8087279e1c4bd63af744a28745943d0f00ceb",
+"0x1565ed9682d5f8b193d4122d548115ab789372b9801ad66b38e6677ca2f41085",
+"0x205d6bced5e7960cc57aa877b99092ddfe73d37a8290c0dbf183283f3061de86"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xa9b31fc313ddb08fdc9160cf34c9819678d5dc51",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-002",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 33,
+"collections": 19,
+"mint_txs": 19,
+"median_gap_s": 1821.9,
+"nonce": 21,
+"balance_eth": 0.000235,
+"swept_out": 1,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 11,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x21b204ff8e3c574afece00c970786b15ad17807b2f623e4df2637ff9bf21e661",
+"0x2552f74b7624e87c959a18871c3e5a0c21e63ab61d362427eb3b9f6ea5b8189b",
+"0x3a8549c3ebeeb93678d8d112403eb4360591634f487717c116437c824e3438d8"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x7e204d831a25c92a010070a16df802953018edcf",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-002",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 33,
+"collections": 19,
+"mint_txs": 19,
+"median_gap_s": 1821.4,
+"nonce": 21,
+"balance_eth": 0.000235,
+"swept_out": 1,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 5,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x10061e78909456739b78a35aecae71db3e6939a342b7f5f4109c85ba51dedef9",
+"0x164ce606b2f9b432bc2f48f8fa2d1f730e65cf033af9919bc9b038c7d5330e1e",
+"0x168085747909039e054d41727ad77eb1c0ec916c4388c2bc9764d148a5ae1889"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xd5ae22a8211fa0e27251b8374a790bfbeab9d7f5",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-002",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 33,
+"collections": 19,
+"mint_txs": 19,
+"median_gap_s": 1821.4,
+"nonce": 21,
+"balance_eth": 0.000235,
+"swept_out": 1,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 6,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x14c75ab73ad7725fc45050f94ea2d8f81d41ddc3e9b198ffb85f20661712f7fa",
+"0x16e8e355ac64be351aaae99295639ed405280fa227f9d64e5316968a11799c54",
+"0x2da61956aeab9ba309bd28b781d2cfd0c37e6d5fa409e26744568d858bddc44c"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xd6bd8d452df202a3716d27f3fd3460a661843216",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-002",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 1
+},
+"tokens": 33,
+"collections": 19,
+"mint_txs": 19,
+"median_gap_s": 1821.3,
+"nonce": 21,
+"balance_eth": 0.000235,
+"swept_out": 1,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 5,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x0742b6950389edc38ef62d3c092ba92bfcfd9a12d77f83a2c5d7760957f7b36b",
+"0x4f64182589c7eae85f8ea2e3294e636b1483dd9706dfe69b9a8f262539ec8cb2",
+"0x69b23c71dd6ea942fc02f0a2dc9d2005922f9e56011f644dda1c9b74a292ede2"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x6a22e99901e43050aa6b33b75051009174147ecd",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-002",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 1
+},
+"tokens": 33,
+"collections": 19,
+"mint_txs": 19,
+"median_gap_s": 1821.5,
+"nonce": 21,
+"balance_eth": 0.000235,
+"swept_out": 1,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 17,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x04fd8e0bdab6f73138596d76d5b98f5f748f6522f2a4c21a2067451a1ddbe3a1",
+"0x23687779747d1fe08df7d40a6d9ffc1dff6f53e3059ba86a68b0dc16b82c7303",
+"0x294da24b1e5295ddb8c3c606274859dabde58b4e7bf0e41e7d95be04377c20f2"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x0641dff6b768f7ac8d2342640ed1c6ec36daa92f",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-002",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 33,
+"collections": 19,
+"mint_txs": 19,
+"median_gap_s": 1821.4,
+"nonce": 21,
+"balance_eth": 0.000235,
+"swept_out": 1,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 6,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x169dcea826c6e764795a2b3f48ca114ab9828ce2182cdf9345490a883468b33c",
+"0x203734cf4cff8e0f72815f3262f0e26c2de84463f61b060913cc037862b07be3",
+"0x40d3b1abb28c80290e8cb258e29aa919180eb5995144cf4beeed575b32fbb139"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x676ce7cdda8ac6dc35d586573aba490f08a30d5d",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-002",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 33,
+"collections": 19,
+"mint_txs": 19,
+"median_gap_s": 1821.1,
+"nonce": 21,
+"balance_eth": 0.000235,
+"swept_out": 1,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 17,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x05d6c5990248442ddca9bec18a307663a68acc8d6862ebbdbe18f0b14e2a53f4",
+"0x0796d813fe5143108d049c8baefc95b510c95f280fec180689bd23b843baf272",
+"0x1024e843423af3fefd1bf472db8dcee75f3efc25cfb9c80228538901c50d9510"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xd372f73b6ee4ade8e7b28391664507e29c88c616",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-002",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 33,
+"collections": 19,
+"mint_txs": 19,
+"median_gap_s": 1821.3,
+"nonce": 21,
+"balance_eth": 0.000235,
+"swept_out": 1,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 17,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x00b137d0f9e97ca5eb1383b892622bce3c27795ef2e52edbfdbfafd9cd0141a1",
+"0x082956c2e5059b959190307081d6fa7c3c08fc3c71eaf67e620b65964906746d",
+"0x0e6193deea369d24f8c42541f05bdaf43363bd91f6b1f63c94d2477149f0823b"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xc8e7f2b310a54f39b18fa7c39bb644d4a95f0bdd",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-002",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 2
+},
+"tokens": 33,
+"collections": 19,
+"mint_txs": 19,
+"median_gap_s": 1821.5,
+"nonce": 21,
+"balance_eth": 0.000235,
+"swept_out": 1,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 5,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x0686af126f47db9a547f6810136929be328eeb97b37f178df734a9da71e49d61",
+"0x078342e24fb4e78da218ecae375a93624ae07e35eacc26dd1bcfd3210049d8b7",
+"0x29802cfac4fe94ceb4945fa2b740daa818a11e9f9facaebfa2ed4e839e7b168e"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x2b561d2bb8353ccfe55a42ea6ba2cb2f635048dd",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-002",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 33,
+"collections": 19,
+"mint_txs": 19,
+"median_gap_s": 1821.5,
+"nonce": 24,
+"balance_eth": 0.000233,
+"swept_out": 1,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 17,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x014d1d7df814c3786d9c99aac7e48a9166522718dce75d6000c9e01ae26b553e",
+"0x0166078e4ea6111530f288d55e5692bf4c3a996ec9bf90dcfca59aca2c0323be",
+"0x03870943cfb819f6f0fa3d1dae2198d334805014b6a3af4564a085ca719d3ce3"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x7f09f0fa9a0d752db534b8d6f921eebb7f2de9af",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-002",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 33,
+"collections": 19,
+"mint_txs": 19,
+"median_gap_s": 1821.4,
+"nonce": 21,
+"balance_eth": 0.000235,
+"swept_out": 1,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 40,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x049529f281e88f69e96be8baecac505fff0a2fb2208d99b3b1be64eba364eb88",
+"0x06755c96b3f53f7e855f3ee5e39b8031d2051fcd9c4987e3c2a1ca01b54208a2",
+"0x0e9a3a50d26376e6cdc45de58321ec99ea35473849d434b0593a16f0f1f3da9c"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x79f961e5f8e8fe060a18bbf5aec026037b39f94e",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-033",
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 2
+},
+"tokens": 32,
+"collections": 17,
+"mint_txs": 17,
+"median_gap_s": 3067.6,
+"nonce": 1097,
+"balance_eth": 0.010741,
+"swept_out": 1,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 8,
+"code": null,
+"top_collections": [
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c",
+"0xd59d45b56f3df1dc5fc4d32dde13ea44a0e00c70",
+"0xb2ee720edeac3a01b3b4d38be2159631345cd1e4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0xebeea5e9b5483d53df59da10dd753ee5a33baa19"
+],
+"example_tx": [
+"0x144a51b59b068412561dffe179299ad0c78491b81ddbb2af765abe604d9bf43f",
+"0x39d9bf4b78ab0519c28efa29bc455254cb18ac2d9b1377f399c80a80ce3400be",
+"0x4a0fbb991e6ed66d1d52fddfa96195568d2f0ca46758dd7fd957ed3735105147"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xad526b18cb575589721f4a98d07612fc1ced2de2",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 32,
+"collections": 18,
+"mint_txs": 18,
+"median_gap_s": 1543.5,
+"nonce": 20,
+"balance_eth": 0.000249,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 17,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x0ba1e990c5f6eee41502db33a4ce3d7331edfe78cf6b4a418a2ce5d50607fa87",
+"0x131c4acf5a5acb391fe595eaaf51114ac5fdbbec9614d2a2a309c909db5b3692",
+"0x2093459439dfc8fdf1eaca09cf388d81638faf5b19976918b08a56c9595ea65c"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x6012d0050226f5cdeb7f6bf3907274a13788aba3",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 2
+},
+"tokens": 32,
+"collections": 18,
+"mint_txs": 18,
+"median_gap_s": 1543.1,
+"nonce": 20,
+"balance_eth": 0.000238,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 40,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x126219c1247b7c373ba0bdc736f38201921f15d7691763b51b917ed3e44b86f3",
+"0x149ff66f7c58a9b8bc161ac94cbc765424cac96a6ab097090f89e02dcbaadef1",
+"0x1ef2fb6a40f8c7268154ecc9e7d54f07cf7ed29c64cf94c51cfd74cafd245e1f"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x1ed4acdd0c057a5c2fcb52852ba9fbbfdfbe6bc0",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 2
+},
+"tokens": 32,
+"collections": 18,
+"mint_txs": 18,
+"median_gap_s": 1543.5,
+"nonce": 20,
+"balance_eth": 0.000238,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 5,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x01cfffdc09bf3196a6bac8d444d0b1bbf3f2c2c9a49a8e98251e8e6bf9398d66",
+"0x21f6ca7dd5ff95a343a465f2cb2887353a369c22c3aedea905130c513e4f7613",
+"0x392fe6acd2ba46bd9095e0ba0b95e0e9c1aa3dbbca021a14a647ed23c0af42bc"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x04c3c4790748cb4d708dd38689747ed4df4901de",
 "score": 27,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -348867,6 +351033,350 @@
 "evidence": {
 "via": {
 "OpenSea SeaDrop": 1
+},
+"tokens": 32,
+"collections": 18,
+"mint_txs": 18,
+"median_gap_s": 1543.1,
+"nonce": 20,
+"balance_eth": 0.000238,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 5,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x032a44590b69b5d7c66ba0596366bb2e6609d4a17728a923bae5c906457dad34",
+"0x237025df7d92d7f744bb695ae90e1ae92bd9fa8d6430de7d88b087c02dd91b5b",
+"0x2813b23c72d8c2f7aa3c5851a35dfdb7175f9e85e72f400016f1007791f7a1b3"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x72993e412c5bd8cc62528c61f75fb4fefdf4e042",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 32,
+"collections": 18,
+"mint_txs": 18,
+"median_gap_s": 1542.9,
+"nonce": 20,
+"balance_eth": 0.000238,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 6,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x056dd76b589b5ebcca45808736f8ba239f45f313037b00d9be2024dc6159c339",
+"0x06831f8000e2380c107c7e8d4179df4503eb0e78425880d022467f58d269da10",
+"0x2ee89a3d355dcfd509a922a0a966708f635cd4945018a79f9ea7c978d9789a86"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xab28d4104a7136248c129013b51b1274ae7cab30",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 32,
+"collections": 18,
+"mint_txs": 18,
+"median_gap_s": 1543.0,
+"nonce": 20,
+"balance_eth": 0.000238,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 11,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x04cb18a2810622a888a000b5655d24444306fc6013a8b398d36d13d6b98da7ec",
+"0x2564c879cca766cf95b2dc2942ed00ae689e2a31d487a238fec1c33ba4c9f99e",
+"0x3dadd8aeba8abc9ebe9170a4a35ccad3179f111adeca082dd1254b60a7a575bf"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x83192b59031d3a9e38d3022cb022e831b3863bb8",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 32,
+"collections": 18,
+"mint_txs": 18,
+"median_gap_s": 1543.6,
+"nonce": 20,
+"balance_eth": 0.000238,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 62,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x09c57d0fab6a9a8eee93bb7e426b9c8e6d2d402f267448e1fa256ae48efe16ff",
+"0x1e5dafceade2e72592411178e7bc0bdc32213221d170f3fdf27d789fb91645f0",
+"0x25ee3b93b1c50bb348174a1c3a5cc9fb63ba4169df635ba7fedf61727da669dd"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x052b86f6599978dac9b7ee13acbb9baf3079e455",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 31,
+"collections": 17,
+"mint_txs": 17,
+"median_gap_s": 1821.3,
+"nonce": 19,
+"balance_eth": 0.00024,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 7,
+"code": null,
+"top_collections": [
+"0x254929a640b80bb8e8eb8cbc709daf6d0b742b8a",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x9ec088d2099c8b140359276e61cac6af845b69fb",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x01e58f5782699e796cb371f44482f6205ba8b0d1e516f37685c5b4642a004250",
+"0x0f3fa24a21bd3bd08cf490055d9946d4a6965d4f30de930517f0fc41e2535c3a",
+"0x1d6e46f6c526b1189dfa9280ed1acb5af26122137a90857d825735bb80300644"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x32e2cc4f7078867d5be1f54e6fe54f43a00e9c04",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 1
+},
+"tokens": 28,
+"collections": 18,
+"mint_txs": 18,
+"median_gap_s": 2976.8,
+"nonce": 93,
+"balance_eth": 3.4e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 14,
+"code": null,
+"top_collections": [
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x1632017d2535b262c03071a8e73925e6c0c9d58a",
+"0x2a25da73647490793ef43095d64920933acaaa93"
+],
+"example_tx": [
+"0x0770d791543506ed7995a1986fb74cd53e53cdb9b6ab92d2beefd67ee85fe45f",
+"0x0fa08b4db85db2fa76cd122a37b579c183d9775cbe3bb237077d58597aaec280",
+"0x10433448682a1ca67ced305e8944e70069edc1a79e824e42ac6e9dba641bb1dd"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xd9d7b296ed2183f1bdebf4e7815c155b903a76b4",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 28,
+"collections": 18,
+"mint_txs": 18,
+"median_gap_s": 2975.4,
+"nonce": 94,
+"balance_eth": 3.3e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 14,
+"code": null,
+"top_collections": [
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x1632017d2535b262c03071a8e73925e6c0c9d58a",
+"0x2a25da73647490793ef43095d64920933acaaa93"
+],
+"example_tx": [
+"0x0ac67a98c62cd8b13931a791ed877d3fec85e874bfe7daf5820e2acdec6adbe4",
+"0x16a3c62a4baf45ef02079d00b6c6617e8c240a2543742c5ba4e6bfdcb5a01c50",
+"0x235e225b0f291d6433efa17db6f0adb209d3ab6f418abc7bf36acad370d37643"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xc9e61ac6f3a048ae47e607764e5e351109e2e1a1",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 28,
+"collections": 18,
+"mint_txs": 18,
+"median_gap_s": 2975.9,
+"nonce": 94,
+"balance_eth": 3.3e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 15,
+"code": null,
+"top_collections": [
+"0x425b458de3dc548cea07aae45d71b6ad3ad52c3c",
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x1632017d2535b262c03071a8e73925e6c0c9d58a",
+"0x2a25da73647490793ef43095d64920933acaaa93"
+],
+"example_tx": [
+"0x06a0cd4c26630b272f54b42b2c0a18cd2497af11afbe9ca84f6c64bad14a4d78",
+"0x09c67b4fc0f00e39fd512b0f95ab09e60ab1062edba8847ab530bc5e3da9e180",
+"0x0e5364e1259342dafe7bb34ac50a41ce322e4fe51a3514f1691f547e75edc600"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x2894b636a806378febd619861a8f581c1203d0a9",
+"score": 27,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SEVERAL_COLLECTIONS"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
 },
 "tokens": 36,
 "collections": 20,
@@ -351386,12 +353896,14 @@
 "tier": "LOW_SIGNAL",
 "labels": [
 "ACTIVE_MINTER",
+"SENT_ON_AFTER_MINT",
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
-"cluster": null,
+"cluster": "farm-119",
 "evidence": {
 "via": {
 "0x542298e710b32b49883577883b75b39ef18883ce": 2
@@ -358748,23 +361260,6 @@
 "0x1732fcd5c1c5a9d819b42900ffdd4d66230f1c7fae1f57bdba8adebc071d54f7"
 ],
 "structural_proof": true
-}
-},
-{
-"address": "0x047c81a5f1a06930142bf84a8b2eeaa2f30bda23",
-"score": 25,
-"tier": "LOW_SIGNAL",
-"labels": [
-"LINKED_GROUP"
-],
-"windows": [
-"168h"
-],
-"cluster": "op-535",
-"evidence": {
-"tokens": 39,
-"collections": 5,
-"structural_proof": false
 }
 },
 {
@@ -374464,7 +376959,8 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-566",
 "evidence": {
@@ -379980,7 +382476,8 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-660",
 "evidence": {
@@ -388085,7 +390582,8 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-630",
 "evidence": {
@@ -409140,7 +411638,8 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-538",
 "evidence": {
@@ -423798,10 +426297,13 @@
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
-"LINKED_GROUP"
+"LINKED_GROUP",
+"SENT_ON_AFTER_MINT",
+"SMART_WALLET_7702"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-540",
 "evidence": {
@@ -424498,7 +427000,8 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-567",
 "evidence": {
@@ -449156,7 +451659,8 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-615",
 "evidence": {
@@ -449173,7 +451677,8 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-615",
 "evidence": {
@@ -449190,7 +451695,8 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-615",
 "evidence": {
@@ -449207,7 +451713,8 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-615",
 "evidence": {
@@ -449224,7 +451731,8 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "op-615",
 "evidence": {
@@ -635340,7 +637848,8 @@
 "LINKED_GROUP"
 ],
 "windows": [
-"168h"
+"168h",
+"24h"
 ],
 "cluster": "farm-179",
 "evidence": {
@@ -636438,8 +638947,152 @@
 ],
 "cluster": "farm-001",
 "evidence": {
-"tokens": 30,
-"collections": 1
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xb88c63064b97ff78d94901f0848726081ba5ebbf",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"LINKED_GROUP"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": "farm-060",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x138dd757e017d43de1d811c315b5482b276850f7",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"LINKED_GROUP"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": "farm-077",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x1ad5242b27010a0dc8a3f5ce959243160a9cd905",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"LINKED_GROUP"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": "farm-108",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xbbeb161d1d94e7025f6b40ef35fb772dbbe40543",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"LINKED_GROUP"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": "farm-045",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x472fde6daa9331909925618396976b7cd5929949",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"LINKED_GROUP"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": "farm-105",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x82a02221c673dd85fe3ee7b9b46e96c29a6f64e4",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"LINKED_GROUP"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": "farm-079",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0xea804145f316938f6b244ab886dfae91803452ed",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"LINKED_GROUP"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": "farm-107",
+"evidence": {
+"tokens": 0,
+"collections": 0
+}
+},
+{
+"address": "0x98345e17f99bf33b8bced5284c8822aa2a96e940",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"ACTIVE_MINTER",
+"LINKED_GROUP"
+],
+"windows": [
+"168h",
+"24h"
+],
+"cluster": "farm-062",
+"evidence": {
+"tokens": 0,
+"collections": 0
 }
 },
 {
@@ -636456,8 +639109,8 @@
 ],
 "cluster": "farm-001",
 "evidence": {
-"tokens": 30,
-"collections": 1
+"tokens": 0,
+"collections": 0
 }
 },
 {
@@ -636537,17 +639190,19 @@
 "balance_eth": 0.000424,
 "swept_out": 0,
 "operated_for": 0,
-"minted_by_others": 0,
+"minted_by_others": 2,
 "sink_sources": 0,
 "swarm_size": 0,
-"code": "0xef010069007702764179f14f51cdce752f4f775d74e139",
+"code": "0xef010063c0c19a282a1b52b07dd5a65b58948a07dae32b",
 "top_collections": [
-"0x66eba3356eaf6e2c0bd8cd997ae70819d0ceb8a3"
+"0xe035e407a2a8836c094088b4ac31d5d041f1c2cc",
+"0x10d52964397dfb100c58212ca80946c60f3fd0c9",
+"0x930934035633a78ccc0bf8628c07bae5753cf843"
 ],
 "example_tx": [
-"0x02331063573e01fa7e8fbe58fb400e21b832e9d68ae315a340c7da9b6b82c550",
-"0x10c6bd8dc7ed0cd3499a1b2ee3f177468e36f10653d21f0203b274011ffea0cd",
-"0x74130b462481be6b828a2577f50c83204f40a3c68ca930c28f2f8c0e038110fc"
+"0x0a4da005cbf4a347d49f0cffbc1e05c860578df442ac1a3a9be495ea2acefe84",
+"0x5351caafdc63d0368e739a967e529ab6fa65032b9be200503949bb95122c7da8",
+"0x5e32d4cafee75bf38153cbd61f2ae3c364943fed02e58aaf81e71c531d5d6770"
 ],
 "structural_proof": true
 }
@@ -636656,7 +639311,7 @@
 "minted_by_others": 0,
 "sink_sources": 0,
 "swarm_size": 0,
-"code": "0xef01006c35fbcf24e57e5aa2e3aa2ca82e052499d02cf8",
+"code": "0xef0100d14adde40900e7a13224e091c57f74fbc202ca2e",
 "top_collections": [
 "0x5400ba4e452f832e1542662203593004cf1303d1",
 "0xb884ab1732a07a27d9cebdb2348c31a5fd03abca",
@@ -636997,7 +639652,7 @@
 }
 },
 {
-"address": "0xd32a077cb14175f357196aa9b18929cbbed20c70",
+"address": "0x3c0805fa309ea712dc5ccbbdda76b7e22c0b9ebc",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -637030,9 +639685,50 @@
 "0x83dbc5a9531f67acebd870fbb0bb4db717303834"
 ],
 "example_tx": [
-"0x0dfeff5230e0fbf9b55e07137f5c97849747608a81e2e302332c470d0c873a04",
-"0x1a2105e37304537aaf3143b345839c5679fe81bcdc989fbffc077a44786d24cf",
-"0xc1f92978a25765dc1a96f1007dbb417121e079890efc2f895951b1cd3434f937"
+"0x477a10795e8ab6b180d0134f2587b6a2fb7b4f167d9261433543db226f103882",
+"0x8149c3a49a785ea066c458c61e2bb6db28fe76fc2b739627f9c2a12960c3d164",
+"0xab4c1fd85b6024fe9d6935d71c2b8547ea1920ab0e6895198e36ccbc79f82ec9"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x8af746fda6d0f4b6fc76e9640bfe084a31da870d",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"NEW_WALLET",
+"SAME_GAS_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 36,
+"collections": 3,
+"mint_txs": 4,
+"median_gap_s": null,
+"nonce": 5,
+"balance_eth": 9e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 5,
+"code": null,
+"top_collections": [
+"0x9de7c797942e1ad7bd1b3a73db1a281db355bc0c",
+"0x56511f824f8d31f4c7747622bd2ad1be26f24e4e",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x4de86c70e4afc453a2af842f16ddab52ef1c7faa343fffefe3b9d4601e3e647a",
+"0x9b08dea4b32a4c821d87bebe2932218fa8606cab455f5f2ad42b6658c296bfec",
+"0xc5fff8d739ae1f11ce15a21525f6e3638acbe44fb13489d1b4a1c0cb2558fd95"
 ],
 "structural_proof": false
 }
@@ -637051,7 +639747,7 @@
 "cluster": null,
 "evidence": {
 "via": {
-"OpenSea SeaDrop": 2
+"OpenSea SeaDrop": 3
 },
 "tokens": 36,
 "collections": 3,
@@ -637079,7 +639775,48 @@
 }
 },
 {
-"address": "0xc216cbf593ecdc0941699f355fd8bea71ebe0b88",
+"address": "0xd354b62d91a166e032e9bde1596f59c3ee0503b4",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"NEW_WALLET",
+"SAME_GAS_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 1
+},
+"tokens": 36,
+"collections": 3,
+"mint_txs": 4,
+"median_gap_s": null,
+"nonce": 5,
+"balance_eth": 9e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 5,
+"code": null,
+"top_collections": [
+"0x9de7c797942e1ad7bd1b3a73db1a281db355bc0c",
+"0x56511f824f8d31f4c7747622bd2ad1be26f24e4e",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x04f3aa531193f78208a543fb20cbfc089d4adcfa733c15b09eb9f2727b36e7b9",
+"0x5b9d4ace06b35c6e57ac1a0008138c0a2014c5ec525ab5a91e91f35925b47af3",
+"0x92cc8eac72b0b4320a38fc956f905d7cdfd0ffaea597d6bb0b76ed010f88471f"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x760725b82e65c54a020e8a7b6777d3e644725db2",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -640143,7 +642880,8 @@
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
-"LINKED_GROUP"
+"NEW_WALLET",
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "24h"
@@ -640239,7 +642977,8 @@
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
-"LINKED_GROUP"
+"NEW_WALLET",
+"SAME_GAS_GROUP"
 ],
 "windows": [
 "24h"
@@ -640255,7 +642994,9 @@
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
-"LINKED_GROUP"
+"MINT_PAID_BY_OTHER",
+"NEW_WALLET",
+"SMART_WALLET_7702"
 ],
 "windows": [
 "24h"
@@ -643138,7 +645879,351 @@
 "cluster": "op-119",
 "evidence": {
 "tokens": 5,
-"collections": 1
+"collections": 2,
+"mint_txs": 5,
+"median_gap_s": null,
+"nonce": 10,
+"balance_eth": 6e-06,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 12,
+"code": null,
+"top_collections": [
+"0x37fcce50a35c3d4a5331602929b6f64be5da2586",
+"0x46ca9620aad571e0f99266652283ab9941944aa9"
+],
+"example_tx": [
+"0x3092f3e3be6612c887f3e9cc30da69b618d9c6f0a9fbb8191172ff191dad2023",
+"0x45d7ffc2b1ec892a3cc4bea3c5a373f89a727c2f15a06dcb259e707182aef8c9",
+"0x78da9a8dba945d9c78e81e4aa82db3351e0f8c153b1fe8753b97c8c1dfbc45dc"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x54f8f427e950bad72e2574da3b596094032027d7",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"NEW_WALLET",
+"SAME_GAS_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 2
+},
+"tokens": 5,
+"collections": 3,
+"mint_txs": 3,
+"median_gap_s": null,
+"nonce": 4,
+"balance_eth": 0.001063,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 5,
+"code": null,
+"top_collections": [
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0xfcb6bea6b4e62072bf220b98f9106eace59f48c8",
+"0x1a2bea3d3024c77ecdf4b43a1240e2df32f46af3"
+],
+"example_tx": [
+"0x2e89c2cd176931fa6ed33dc8c4958548cb31a2d468773cfaa6898b757bba26de",
+"0x94cf984cca9a0bed22bd2279b1e1a72c48f79ba43337c2e552543325b9234ec8",
+"0xcb86bf50142045c0ff87c9eb438630fbb939e027d28fb8045fbbea2657201fd9"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x9f50066ed701b5c1f2ac15bdde31b2f39713d771",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"NEW_WALLET",
+"SAME_GAS_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 5,
+"collections": 3,
+"mint_txs": 3,
+"median_gap_s": null,
+"nonce": 4,
+"balance_eth": 0.001036,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 5,
+"code": null,
+"top_collections": [
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0xfcb6bea6b4e62072bf220b98f9106eace59f48c8",
+"0x1a2bea3d3024c77ecdf4b43a1240e2df32f46af3"
+],
+"example_tx": [
+"0x146c30e059a253d90392a57508316d33bd96b97f601c36a57db92341ebf215a9",
+"0x82738a0a91d1f9a4cc21ba56969829e65bd726794530f86ccf00aa6f6cf00001",
+"0x96dce3b48d9082f9e4d62fd45f233514a6283df855f96010c7aef46e4e5afbdb"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x43ada0d6315e0e48cd0f473fe0a51ad5614625b1",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"NEW_WALLET",
+"SAME_GAS_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 5,
+"collections": 3,
+"mint_txs": 3,
+"median_gap_s": null,
+"nonce": 4,
+"balance_eth": 0.001036,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 5,
+"code": null,
+"top_collections": [
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0xfcb6bea6b4e62072bf220b98f9106eace59f48c8",
+"0x1a2bea3d3024c77ecdf4b43a1240e2df32f46af3"
+],
+"example_tx": [
+"0x87a2ddb4ff1ba316c41ddfb645773a39a75df4817dbd33107a9e99e2c010bff2",
+"0x9e86b7739a626fa08f0136dafc0f4d52aedd4489855f684ec46b7a6d18d45afb",
+"0xa3880c439096a6c9b43137dd6bdc3deed9aebcb4b0558097f2a1913ff542484a"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xa1a9db181c9eede3cdf9003818b700d064a08439",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"NEW_WALLET",
+"SAME_GAS_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 5,
+"collections": 3,
+"mint_txs": 3,
+"median_gap_s": null,
+"nonce": 4,
+"balance_eth": 0.001042,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 5,
+"code": null,
+"top_collections": [
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0xfcb6bea6b4e62072bf220b98f9106eace59f48c8",
+"0x1a2bea3d3024c77ecdf4b43a1240e2df32f46af3"
+],
+"example_tx": [
+"0x0c47406f20ed3e127229da968e30815ee960840ce07378b5c470a6660e4bbae6",
+"0x90b9fdab7693821d14c0a81cfd922ec9d991a472503299f336920b5a40af68ac",
+"0xdb04b996d62f28e910d27299360dc91a4a9bc7d79572bc688234e1c4f3faa87a"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xc7d63d3f66cb6b20e4db565a452853d4450952cb",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-126",
+"evidence": {
+"tokens": 5,
+"collections": 3
+}
+},
+{
+"address": "0x0adc23b1d9607a79088fd8e3f61cb1a38995840c",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-126",
+"evidence": {
+"tokens": 5,
+"collections": 3
+}
+},
+{
+"address": "0x48c03f5c142b951fb34f8e047536f87394e9949a",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-126",
+"evidence": {
+"tokens": 5,
+"collections": 2
+}
+},
+{
+"address": "0x2b8565c68cf5a88a9e74a402595f6c4e381688b1",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-126",
+"evidence": {
+"tokens": 5,
+"collections": 3
+}
+},
+{
+"address": "0x04003c5632e444a9596fbb66afc379461062b8ff",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-126",
+"evidence": {
+"tokens": 5,
+"collections": 3
+}
+},
+{
+"address": "0xee1355f27927915d5cdefbf5bafbe7b1285d7bca",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-128",
+"evidence": {
+"tokens": 5,
+"collections": 3
+}
+},
+{
+"address": "0x761bffcd7116aa494779930e05f8beeb6bbafa14",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-128",
+"evidence": {
+"tokens": 5,
+"collections": 3
+}
+},
+{
+"address": "0x1b24022e94b0df867cec525d016f4c08b5ba30bb",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-128",
+"evidence": {
+"tokens": 5,
+"collections": 3
+}
+},
+{
+"address": "0x04281999b33279878b8e8cd1d5a34f8a54720ca8",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-128",
+"evidence": {
+"tokens": 5,
+"collections": 3
+}
+},
+{
+"address": "0x734f9d1473e017cc0dff719a48b7b790e1810072",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-128",
+"evidence": {
+"tokens": 5,
+"collections": 4
 }
 },
 {
@@ -643249,6 +646334,86 @@
 ],
 "cluster": "op-128",
 "evidence": {
+"tokens": 5,
+"collections": 1
+}
+},
+{
+"address": "0x7170accdc4fce40b57dd6ce1bd8096250a662311",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-155",
+"evidence": {
+"tokens": 5,
+"collections": 1
+}
+},
+{
+"address": "0x7d8ff0cdc14330d191db889ff26f6b5ee6859d8c",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-155",
+"evidence": {
+"tokens": 5,
+"collections": 1
+}
+},
+{
+"address": "0x6ff67e1b8cd1d910fc032f230611bbb42a439789",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-155",
+"evidence": {
+"tokens": 5,
+"collections": 1
+}
+},
+{
+"address": "0x02cd5a786edf06e563872b4fc30cbd2d61ddbc74",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-155",
+"evidence": {
+"tokens": 5,
+"collections": 2
+}
+},
+{
+"address": "0x195627f03fe2668d65c763cd39eec45b1d76c8ee",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-123",
+"evidence": {
 "tokens": 4,
 "collections": 1
 }
@@ -643311,7 +646476,23 @@
 "windows": [
 "24h"
 ],
-"cluster": "op-137",
+"cluster": "op-132",
+"evidence": {
+"tokens": 3,
+"collections": 2
+}
+},
+{
+"address": "0xf8201563a19719bd65f5fb6c77e90375d2dd3ea0",
+"score": 25,
+"tier": "LOW_SIGNAL",
+"labels": [
+"LINKED_GROUP"
+],
+"windows": [
+"24h"
+],
+"cluster": "op-132",
 "evidence": {
 "tokens": 3,
 "collections": 2
@@ -646975,7 +650156,7 @@
 "windows": [
 "24h"
 ],
-"cluster": "op-137",
+"cluster": "op-132",
 "evidence": {
 "tokens": 1,
 "collections": 1
@@ -646991,7 +650172,7 @@
 "windows": [
 "24h"
 ],
-"cluster": "op-137",
+"cluster": "op-132",
 "evidence": {
 "tokens": 1,
 "collections": 1
@@ -654575,7 +657756,7 @@
 "windows": [
 "24h"
 ],
-"cluster": "farm-009",
+"cluster": "farm-006",
 "evidence": {
 "tokens": 0,
 "collections": 0
@@ -654614,7 +657795,7 @@
 }
 },
 {
-"address": "0x8f9c022a1e2ce1ab8ae0cbf69e95b2207e33632f",
+"address": "0xa8fae16a994a87ef81c3c4493f8a9087239d0194",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -654742,7 +657923,7 @@
 }
 },
 {
-"address": "0xfb488142281d7aff2e61ef58c22f7bd6cf2edd64",
+"address": "0x06d3ecea623a8d89fe8a14e88eaa985cff11b84d",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -654790,7 +657971,7 @@
 }
 },
 {
-"address": "0x52dc756fbfadf03c204d29f9528ba612ac207d35",
+"address": "0xa00eb408b8f7b0c39c9de9edff94ed403e1dd71e",
 "score": 25,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -654975,7 +658156,7 @@
 "windows": [
 "24h"
 ],
-"cluster": "farm-075",
+"cluster": "farm-054",
 "evidence": {
 "tokens": 0,
 "collections": 0
@@ -655151,7 +658332,7 @@
 "windows": [
 "24h"
 ],
-"cluster": "farm-097",
+"cluster": "farm-086",
 "evidence": {
 "tokens": 0,
 "collections": 0
@@ -676752,8 +679933,7 @@
 "ACTIVE_MINTER"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -696140,6 +699320,43 @@
 }
 },
 {
+"address": "0x6ec95a3c6c7b8368c9bf37ff664672e55df3550d",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER"
+],
+"windows": [
+"168h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 33,
+"collections": 2,
+"mint_txs": 33,
+"median_gap_s": 3556.5,
+"nonce": 359,
+"balance_eth": 0.048563,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 2,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x58daec3116aae6d93017baaea7749052e8a04fa7",
+"0xeaea9253a0b75b936a965dbd35b2a3f01831de74"
+],
+"example_tx": [
+"0x006cbe941d68576f9724a3f689d92fe3f54c436d485fc9af81eb756c6e0205fd",
+"0x01c20ba51dfbadbc22277cca1a3ed782ececdcec36f3781541e5810f1e36fe2d",
+"0x02c4c0773d8642fd4aedf917da23f0e307e5d82f4e8e725dea7a5e680267dddb"
+],
+"structural_proof": false
+}
+},
+{
 "address": "0x9406df3d368474a5bd93328803e20265cfbbbebc",
 "score": 20,
 "tier": "LOW_SIGNAL",
@@ -707238,8 +710455,7 @@
 "SMART_WALLET_7702"
 ],
 "windows": [
-"168h",
-"24h"
+"168h"
 ],
 "cluster": null,
 "evidence": {
@@ -743860,7 +747076,7 @@
 ],
 "cluster": null,
 "evidence": {
-"tokens": 63,
+"tokens": 76,
 "collections": 1,
 "mint_txs": 63,
 "median_gap_s": 868.5,
@@ -744104,7 +747320,7 @@
 }
 },
 {
-"address": "0x701237d76a9964febfb2859592a706bbae0bc4e5",
+"address": "0x7d8ae5324ec41ede600bd716980fb54e7ce18d04",
 "score": 20,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -744120,7 +747336,7 @@
 },
 "tokens": 52,
 "collections": 2,
-"mint_txs": 2,
+"mint_txs": 3,
 "median_gap_s": null,
 "nonce": 969,
 "balance_eth": 0.002299,
@@ -744131,8 +747347,8 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x90d831ce83b081eb84932ce5eda79966c9df8f87",
-"0x71557b3a4d6f12094d09c101422d8e5bbab4cab5"
+"0x9fe7f727a64d9cc342c6e229bb029ed2716bbae7",
+"0x950fe34f0caa134cb471e5d7ee210aa81f33b73d"
 ],
 "example_tx": [
 "0xa6aca620721075cea50c5eda78f4002e1d014dab6dcafa42c3aaffaaea988d34",
@@ -744327,8 +747543,7 @@
 "score": 20,
 "tier": "LOW_SIGNAL",
 "labels": [
-"SENT_ON_AFTER_MINT",
-"SMART_WALLET_7702"
+"ACTIVE_MINTER"
 ],
 "windows": [
 "24h"
@@ -744349,16 +747564,16 @@
 "minted_by_others": 0,
 "sink_sources": 0,
 "swarm_size": 0,
-"code": "0xef01004cd241e8d1510e30b2076397afc7508ae59c66c9",
+"code": null,
 "top_collections": [
-"0x4857db576ee0e45f10525ec59527bfd10beec60b"
+"0x9bc20fceac4c41a3bcf6428b4a5a256880ce5cd3"
 ],
 "example_tx": [
 "0x012082b5b436981d79b224bf48b48e9828a5d1d8af2889ab0062b62d41d1fc9d",
 "0x05548113b783ba3263dc99a07b2b83118a9dcfa37b3225bb9670843f55efde88",
 "0x07f382c58ff5b4b47d8a1efc40c92eda74f4a4582490473e1ecfad96c90084fe"
 ],
-"structural_proof": true
+"structural_proof": false
 }
 },
 {
@@ -744473,7 +747688,79 @@
 }
 },
 {
-"address": "0x0a205b25ddf93d8b77eb3169079ffbb59a377744",
+"address": "0x69df183650beb1f757d092f0056f2587bcd328b1",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SENT_ON_AFTER_MINT",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-054",
+"evidence": {
+"tokens": 43,
+"collections": 1,
+"mint_txs": 43,
+"median_gap_s": 602.7,
+"nonce": 5872,
+"balance_eth": 0.001483,
+"swept_out": 34,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef01004cd241e8d1510e30b2076397afc7508ae59c66c9",
+"top_collections": [
+"0xa79f5775b0b49e51202c48ddf03f380faa96f641"
+],
+"example_tx": [
+"0x0906509c451d968e81f250e601c148868827d92df4fdb4d771ac2b9afeb7f805",
+"0x0b9c8d57bd608f624bf720c3a7c75feb506815a50f2da6b9d8286947e1574e63",
+"0x162212e0523804d1bea03ab4e222e96d10ef4afea0fa1ddd170195697acf0159"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0xb1e2d8c3c85bd8ba2cbcf5d006b671453f03aa97",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SENT_ON_AFTER_MINT",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": "farm-018",
+"evidence": {
+"tokens": 43,
+"collections": 1,
+"mint_txs": 43,
+"median_gap_s": 456.9,
+"nonce": 2148,
+"balance_eth": 0.003041,
+"swept_out": 43,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": "0xef01004cd241e8d1510e30b2076397afc7508ae59c66c9",
+"top_collections": [
+"0x4857db576ee0e45f10525ec59527bfd10beec60b"
+],
+"example_tx": [
+"0x006f39a9033e752822084eabe0b5027dd2992d6ad711638fb908b1707d437027",
+"0x047c2602305d749ac9fda0578c92594c65779cbda450f6cd9e38a4e9f9a7524f",
+"0x09856c24475147ac1896342984342e6226ed966409161b75ef2092672a32fad7"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x07fa1184fbdaee77555f3469906825f956e01b51",
 "score": 20,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -744483,7 +747770,7 @@
 "windows": [
 "24h"
 ],
-"cluster": null,
+"cluster": "farm-039",
 "evidence": {
 "tokens": 35,
 "collections": 1,
@@ -744491,14 +747778,18 @@
 "median_gap_s": 2019.6,
 "nonce": 1,
 "balance_eth": 0.0,
-"swept_out": 0,
+"swept_out": 19,
 "operated_for": 0,
 "minted_by_others": 0,
 "sink_sources": 0,
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x0a205b25ddf93d8b77eb3169079ffbb59a377744"
+"0x2ebd7b85a4e08d5b508b04ba147976c94afe6590",
+"0x07f44c47743a2f36414a82b9f558ecfcf0eedcef",
+"0xa79f5775b0b49e51202c48ddf03f380faa96f641",
+"0x0bf85d7dfa0de5d4ba8776bf848f187b53276bfc",
+"0x4857db576ee0e45f10525ec59527bfd10beec60b"
 ],
 "example_tx": [
 "0x00ce1271e4175106d700cb9b4380408ba6fbbab6f6cc6de3b90e1e632181a5a2",
@@ -744656,7 +747947,7 @@
 }
 },
 {
-"address": "0xa5f496716da7c775a8d6ddd78ce6477ee3f7b543",
+"address": "0x9d428d1190d2185bd6f330a8b964e6fe84674146",
 "score": 20,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -744673,7 +747964,7 @@
 "mint_txs": 11,
 "median_gap_s": 6262.0,
 "nonce": 1,
-"balance_eth": 0.0,
+"balance_eth": 0.1748,
 "swept_out": 0,
 "operated_for": 0,
 "minted_by_others": 0,
@@ -744681,7 +747972,7 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0xe62a5f67516dbdba2aa28b1512c8ff44e42cb5c3"
+"0x58daec3116aae6d93017baaea7749052e8a04fa7"
 ],
 "example_tx": [
 "0x0106de9d3a10747391ac51637b31bab9d86a6e62ed75c1b1d0e41ad1470747fc",
@@ -744696,7 +747987,7 @@
 "score": 20,
 "tier": "LOW_SIGNAL",
 "labels": [
-"MINTED_TO_CONTRACT",
+"MINT_PAID_BY_OTHER",
 "NEW_WALLET"
 ],
 "windows": [
@@ -744712,7 +748003,7 @@
 "balance_eth": 0.0,
 "swept_out": 0,
 "operated_for": 0,
-"minted_by_others": 0,
+"minted_by_others": 1,
 "sink_sources": 0,
 "swarm_size": 0,
 "code": null,
@@ -745301,7 +748592,7 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0xc2643fa5b310ee1a9e7855f27f2d6c76293b37da"
+"0xe62a5f67516dbdba2aa28b1512c8ff44e42cb5c3"
 ],
 "example_tx": [
 "0x141f7668c93051dfd89b9aafdc8b0ace48f47e42d4d049a5d453172a2ea4faef",
@@ -745450,7 +748741,273 @@
 }
 },
 {
-"address": "0x9ea47b9db58970ab5ea686a5cac3e80ec652d755",
+"address": "0x0bb06f963c702d52363722ce57430063c963f8f4",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 16,
+"collections": 1,
+"mint_txs": 16,
+"median_gap_s": 4562.1,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x0bb06f963c702d52363722ce57430063c963f8f4"
+],
+"example_tx": [
+"0x0dfe611db254a7b894f09b09ad43074012374fd7b77b3217761e3998cd54eb98",
+"0x282c53ddf0ac095749fbd21eb54b5af47e1f4d6b75f90c4bbc25ab8e8c7a8035",
+"0x2c2a7deb8c2fcd90d92a9c5e122b9020e5c252e80969acfa57479247677c362c"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x17d34c7feb7cbf4944b12e78f8e71feeb338ae09",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 16,
+"collections": 1,
+"mint_txs": 16,
+"median_gap_s": 1839.0,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x73991a25c818bf1f1128deaab1492d45638de0d3"
+],
+"example_tx": [
+"0x031370d63632344c98ec1c9b4a019165d86d00cf7c33a58c574231c31bf2d816",
+"0x1e1597e60465f6225633d2389a503cef51a2bf6902a1f70a5369cc8ed65b4202",
+"0x26620f79e11627a90b429f507203525b37761eec6c3280a019039e41a34da68d"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x2198b9f76358c04fa2b2bf731abcef59a85c1cd5",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 15,
+"collections": 1,
+"mint_txs": 15,
+"median_gap_s": 4585.3,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x2198b9f76358c04fa2b2bf731abcef59a85c1cd5"
+],
+"example_tx": [
+"0x195e58a3fbb99e334916324b4359ab9ddd80970acf0d13481d4d604c524e094b",
+"0x25da587828db7c3a5ebcefd927929aa47ba4f081391113736d5f98fb40e6830a",
+"0x2975a4d72c1ad678b8461aad063410ceae04b945cb8bd6a37cef6906746fe024"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x24cdd1615c5b40a5692f94dba40ec653b3309727",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 2
+},
+"tokens": 13,
+"collections": 7,
+"mint_txs": 8,
+"median_gap_s": null,
+"nonce": 1170,
+"balance_eth": 0.015845,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 8,
+"code": "0xef010069007702764179f14f51cdce752f4f775d74e139",
+"top_collections": [
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0x2a25da73647490793ef43095d64920933acaaa93",
+"0x83dbc5a9531f67acebd870fbb0bb4db717303834"
+],
+"example_tx": [
+"0x1efb15ba8e53348728ceaff118a5f3da537cd3935bfc8ad96c9262834a26787c",
+"0x5341d79648668d18fb00911b2bcf65e4849610bc49b5b2026c142a4814171acf",
+"0x773b1b86ab32159a4be10775e45a2dbf5389b741497146f7152b44d760cf6bc0"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0x2602e246256503db4fd9e16529e0745ccda35bfd",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 13,
+"collections": 1,
+"mint_txs": 13,
+"median_gap_s": 1781.9,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x73991a25c818bf1f1128deaab1492d45638de0d3"
+],
+"example_tx": [
+"0x152eeeac9485e1c4e1ce37c882b06e547e8d1c925200d4c6a96a245e3558cee8",
+"0x2d76dd4513589957f2951fe6a6cc6bb3efb464f7c2b527b4baa4bbe26c06dcc7",
+"0x2eaae36638fa288b6e15f315fa71ddc4d09d97eb5b4aef1cc5acca4e400854d4"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x8cea5e3cc054a0720e93f737bcad585b744c0b33",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 13,
+"collections": 1,
+"mint_txs": 8,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x4857db576ee0e45f10525ec59527bfd10beec60b"
+],
+"example_tx": [
+"0x0b4eb65ef339197eb89cf1d5e64c42913be8761cc2de62c28f1716bcab3b61b6",
+"0x1bc222bb411cd88eb6389c2145a0ade6018d0c499ba2a406c9fb5c9a0afc4bbe",
+"0x97162192fa79aa2645357c7c849feb0ffbfbe6da648b31471303f487658a3fdf"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x25f8d48c147bdedd22d8c64a77d31ffa3299a56a",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"SAME_GAS_GROUP",
+"SMART_WALLET_7702"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"via": {
+"OpenSea SeaDrop": 3
+},
+"tokens": 13,
+"collections": 8,
+"mint_txs": 8,
+"median_gap_s": null,
+"nonce": 173,
+"balance_eth": 0.000699,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 15,
+"code": "0xef0100b308d91ceca24df580908781171ba5c250b4bc07",
+"top_collections": [
+"0x8f253f8c454a38cfea0bd1c601e3b85acfa6c6b4",
+"0x58f26e815db30097d735040df66bb7ee775f16dd",
+"0xb29ca96f42a25ac48627904edef27f29d1556f92",
+"0xf23c1f56b408e9646d6179e3ea0da724747a6608",
+"0x8a5725e7ba8ed42ed1f6acbf2f8ffc65fe3b6e1c"
+],
+"example_tx": [
+"0x2166e8ca80364b5a062ba3888813f50467fe6edf30beccea25657fbf2d940f35",
+"0x7192e554c10ebfd3f83ceb3d7bd27a1e3e009f6846ac8ff066b5d5a6c62d6b44",
+"0xab3b39b2d0465ea1031bc644ac3c0674e6fc28644b0ed398ac3e7794e32fd7cc"
+],
+"structural_proof": true
+}
+},
+{
+"address": "0xb659a1bef5998c7debadef086794d19f0e48fc59",
 "score": 20,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -745475,13 +749032,546 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x4857db576ee0e45f10525ec59527bfd10beec60b",
-"0x0f34f7f7b558f43a821af4181f0f8e5bc4b74892"
+"0x73991a25c818bf1f1128deaab1492d45638de0d3"
 ],
 "example_tx": [
-"0x1253e1b7d6a09aec4a868a84b6a2d09a5b4bce65e4a2a92f969cb435e9a50ee1",
-"0x519be03e009ceea09eda248019ff7a435d286db309a78abcc35234341d81ec37",
-"0x7f65c6e8bc3dae20dd104d428be7f9ca1e236424485654fac30bbe7c35a02d21"
+"0x26def7d3183239b93070da19e887ecb5f55eabc3b97c8511b1e207b1254719d6",
+"0x4b6a28be62ecc62c746187d40d3ae0ce7fd63381d3d41bc19706d455c750d20c",
+"0x5e6976f3879c7bf340b41c7fc2a75994b687a262bf12f3d01db9e1bd5fbea4b2"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x5167acd7c115362f20826d188637684fcff91d90",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 9,
+"collections": 1,
+"mint_txs": 9,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x5167acd7c115362f20826d188637684fcff91d90"
+],
+"example_tx": [
+"0x2684b5326e02e97cff6f93cee3fefcb0e6becf6b6bb7ad8810934214977f22ce",
+"0x35276640505be30c3621dc40019fb7df790cad9eef49ce22f765e9d650c1c17c",
+"0x36ebbdc05ae796041f265381979585e81c01e32e8267c74764f09372eacdc3d0"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x4e44d27def02218dcb2fe03b29e348c7d3b94d73",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 9,
+"collections": 4,
+"mint_txs": 4,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.006614,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x06aa6ab7f34ebb1a5d586c78353c0b5a44b64331",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0x389f639b0de4773c0b1f9073051488bce7d72a40",
+"0x50567acdb46132212f1d7d5ff7fdb2bb1e773460"
+],
+"example_tx": [
+"0x43ca9b05a7101ea5db142257205ac72371cb2956e8b20d4abde8b27c670c3e0b",
+"0x726fa1ffc165dfb7243dfb2ecac33a9d6f8b744ea43cfb311fb7e2211984f913",
+"0x828f22bc87b04a519fae0a64c9bb064e4362440059446430dd27a24386730d1b"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x86c012e71b47dc298b12d68b34fe7b27d4855d3d",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 9,
+"collections": 4,
+"mint_txs": 4,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.00286,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x06aa6ab7f34ebb1a5d586c78353c0b5a44b64331",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0x389f639b0de4773c0b1f9073051488bce7d72a40",
+"0x50567acdb46132212f1d7d5ff7fdb2bb1e773460"
+],
+"example_tx": [
+"0x0efabc1367ec64960379ed049f482974c8bae8a3812a744e072aed5daca3a6db",
+"0x211d08b0af068427f04c0fca8636ad333e7197e0c942f66d1c924fcc1b7734b9",
+"0x39c9e4f671c1498297bc9857a72e5c5ce08195abc43b952d26368ca94ed2ccfd"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xeb0861427f048f7387b10ac56ef076b19de8a8d3",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 9,
+"collections": 4,
+"mint_txs": 4,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.002977,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x06aa6ab7f34ebb1a5d586c78353c0b5a44b64331",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0x389f639b0de4773c0b1f9073051488bce7d72a40",
+"0x50567acdb46132212f1d7d5ff7fdb2bb1e773460"
+],
+"example_tx": [
+"0x59779da75d908547e5600d7d6f1393611ed4bd0da1ef5c628ed0a159e20423ca",
+"0x5d064d5aadfb1dca4367e5a3a682933514ee557e05bcdd2f66fc889e2485678f",
+"0x63ed6e4c25d310bf81bcc5e886663005b4cb859403f29ae007454db182d83c2b"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xad1694a4583cf942107201f36d0e2e805c2b34f9",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 9,
+"collections": 4,
+"mint_txs": 4,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.000505,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x06aa6ab7f34ebb1a5d586c78353c0b5a44b64331",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0x389f639b0de4773c0b1f9073051488bce7d72a40",
+"0x50567acdb46132212f1d7d5ff7fdb2bb1e773460"
+],
+"example_tx": [
+"0x1f473b37ade602b27c1da025a6eef1b88033b96c84dd99259899c743065d3df9",
+"0xaf66dfd5e1aa0815888dbc62993e68b8ca728ea2a8d669388b3f201e0c23b436",
+"0xbbb0378bf30388d30fbb03554aaf0b815bbfd38997920fa397c8824ae8fe4900"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x285028c08e78af77cd23a0e0d27d2ddfc8f41c9b",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 9,
+"collections": 4,
+"mint_txs": 4,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.004197,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x06aa6ab7f34ebb1a5d586c78353c0b5a44b64331",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0x389f639b0de4773c0b1f9073051488bce7d72a40",
+"0x50567acdb46132212f1d7d5ff7fdb2bb1e773460"
+],
+"example_tx": [
+"0x670d30672edc094de972a1823eec4dca13bbe54f23ebeaf121b26d35bd937de9",
+"0x70866b7d0d4bafe406a8be2611819e4194a7f91e9e6d463f18b2c77ee818a465",
+"0xe6348ce16ff9afb775b192573bc8ee03ac8f3b3c717db2994d6ff6703e18d44d"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x76c495ff9f2cfe88933ed6d51e4fe048dbe7fd5c",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 9,
+"collections": 1,
+"mint_txs": 9,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x76c495ff9f2cfe88933ed6d51e4fe048dbe7fd5c"
+],
+"example_tx": [
+"0x22cd4d970d0acebca97e47dd09c547c6e9bdfdc18a670f0c1bc2f5e6344c0e00",
+"0x853c58f4f5a7810395ecf15f68673007e7a8f1f82aea67d3d6bfd9e4025c8634",
+"0x869f199f997d35a8f7136d2b96397826de9aa51f188124ea252c84a0a1efb737"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x25d45f80199ee0029f590aa766eefa9c2f5fb013",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 9,
+"collections": 1,
+"mint_txs": 9,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x25d45f80199ee0029f590aa766eefa9c2f5fb013"
+],
+"example_tx": [
+"0x1b208897f9b2f3c27dc849492c8bf55d97bc296bc06f880cb2c3cf54c5cf7f64",
+"0x607bc198eab9428dc4d5f15b9e90522cda2991724cf4272786853d0c75c5ac06",
+"0x85f45a8806706e923df12fa82327ab845a4c3bc7e1633544cf9787fc51377810"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x6182fa01c4fc9a50e2266e98b535598be64050a5",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 9,
+"collections": 4,
+"mint_txs": 4,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 9.6e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x06aa6ab7f34ebb1a5d586c78353c0b5a44b64331",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0x389f639b0de4773c0b1f9073051488bce7d72a40",
+"0xfcb6bea6b4e62072bf220b98f9106eace59f48c8"
+],
+"example_tx": [
+"0x0f8bda67bae5de653434253b711237600760bc6b4c5b13b875038f357c538eca",
+"0x1c6b1710ec0deabf2cd886e33be83bd8beec312d28c4e2f0f7fded2a9b6edbb9",
+"0xa83b2c5ec19bffd9da34c8d264e2e244bd3c06d2d776e1b57a4a959b659ca422"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x60aac4fb6f2c1fc228f199b5fbca704aea57d792",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 9,
+"collections": 4,
+"mint_txs": 4,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 9.9e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x06aa6ab7f34ebb1a5d586c78353c0b5a44b64331",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0x389f639b0de4773c0b1f9073051488bce7d72a40",
+"0xfcb6bea6b4e62072bf220b98f9106eace59f48c8"
+],
+"example_tx": [
+"0x082db69746713eb34b862ca8ada003de93b8720d28183121e835ea63916e273b",
+"0x19f11959a9dea9f4a10975ff36822125578d64398ea2da096317f3deacacbc8d",
+"0x3157132a7452be590bb584e39ede8ada1fb632f4dfdeecdbc48ed89a761dd384"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xf920921f12aecfdcfd53bd67e3a0292602465652",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 9,
+"collections": 4,
+"mint_txs": 4,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 0.000101,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x06aa6ab7f34ebb1a5d586c78353c0b5a44b64331",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0x389f639b0de4773c0b1f9073051488bce7d72a40",
+"0xfcb6bea6b4e62072bf220b98f9106eace59f48c8"
+],
+"example_tx": [
+"0x227f8cf986ab5b7e0fe887173dc104adf418b74d4ea466a9fd611c077834cf6f",
+"0x26f00b773330fff8d25cba4838f669b594030c2fe133fee6722f9dad6db7a735",
+"0x4b42e01ae7739549e39f5383eb2a0384334bf6ef5700a74e0371b81eaefe954b"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x1b1e39167a5d95edb3cb66e9a70daa5d56c2bf97",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 9,
+"collections": 4,
+"mint_txs": 4,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 9.3e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x06aa6ab7f34ebb1a5d586c78353c0b5a44b64331",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0x389f639b0de4773c0b1f9073051488bce7d72a40",
+"0xfcb6bea6b4e62072bf220b98f9106eace59f48c8"
+],
+"example_tx": [
+"0x1136de9201090a272dfe5485ce80332baf3fcf363051027d5b864b775e9e3fb0",
+"0xa64bdd000d0e8ed88607739009c49cbf769c554e46741a84e5647083e3200563",
+"0xb07bf1fd5650f0a76c1ce4c2b7ff3a09da1d5510f0b9ad28d8d49c93fc12dd4e"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0xa35b34d426d8979ba38f4d0bdf28e85cafccae08",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 9,
+"collections": 4,
+"mint_txs": 4,
+"median_gap_s": null,
+"nonce": 1,
+"balance_eth": 9.4e-05,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x06aa6ab7f34ebb1a5d586c78353c0b5a44b64331",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0x389f639b0de4773c0b1f9073051488bce7d72a40",
+"0xfcb6bea6b4e62072bf220b98f9106eace59f48c8"
+],
+"example_tx": [
+"0x8847f82fdb1b68016f0bdb6cb66314890fbea5ce2ee292d2d6725f7cdc2bcf40",
+"0x9435339a8206b00d7678677131dbb6a6951ff773201cb4732e39cd7c473fcc4f",
+"0x9d1de98c08e0a008d22bff50a17b7e6e90ae85979b831d89a892704d280466ef"
+],
+"structural_proof": false
+}
+},
+{
+"address": "0x54be9756b19cafa13f78a5f853080ad466ac844b",
+"score": 20,
+"tier": "LOW_SIGNAL",
+"labels": [
+"MINTED_TO_CONTRACT",
+"NEW_WALLET"
+],
+"windows": [
+"24h"
+],
+"cluster": null,
+"evidence": {
+"tokens": 8,
+"collections": 1,
+"mint_txs": 8,
+"median_gap_s": null,
+"nonce": 2,
+"balance_eth": 0.0,
+"swept_out": 0,
+"operated_for": 0,
+"minted_by_others": 0,
+"sink_sources": 0,
+"swarm_size": 0,
+"code": null,
+"top_collections": [
+"0x2ebd7b85a4e08d5b508b04ba147976c94afe6590"
+],
+"example_tx": [
+"0x4559e4ea64bba1c0ff8819d3dd7006fdfc1569b753ecfd280e2b0cd1f30956d7",
+"0x637d1c41992f476ae36097a0c4a303c46e692712402d403e1a09d6d4fe4a8a9b",
+"0x6a90728c657026c980baf6c2e79c8f081d59119d878e504af3c096d0390a4b05"
 ],
 "structural_proof": false
 }
@@ -745527,7 +749617,7 @@
 }
 },
 {
-"address": "0xa2f4902a45149df16b3277a4dd63f6554f311473",
+"address": "0xd620d539be1264e060857990530d04b4823f96a6",
 "score": 20,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -745544,7 +749634,7 @@
 "mint_txs": 9,
 "median_gap_s": null,
 "nonce": 1,
-"balance_eth": 0.0,
+"balance_eth": 3e-06,
 "swept_out": 0,
 "operated_for": 0,
 "minted_by_others": 0,
@@ -745552,12 +749642,14 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0xa2f4902a45149df16b3277a4dd63f6554f311473"
+"0x06aa6ab7f34ebb1a5d586c78353c0b5a44b64331",
+"0xe9dd64b4e5a87477db1658a5c1ea01040a6b7cf7",
+"0x389f639b0de4773c0b1f9073051488bce7d72a40"
 ],
 "example_tx": [
-"0x0f1997830b175042c238b9f19560bd370c0a3cccf2636a5c4a2a7aa75b5395af",
-"0x37835382420f2b2d50212cf83229916a5484e997006dd159b19c40c2e26f6393",
-"0x557d583f093f8a6a8740f5fd62a3e6e9d20a038fb572b6d5d6a6f6b03f5f6de5"
+"0x2ac4b4926404e010095c1612572150e8e2d709df35a3106a45175ebddb31d4c0",
+"0x3371506ac9ba40f1a771cc48c271a8ec3dc14f70486ab13534874dcfab695c19",
+"0x388a817902eccaca1d4d0042fe5f9ff2356b80012da650ad926c128fe095d5ca"
 ],
 "structural_proof": false
 }
@@ -745580,7 +749672,7 @@
 "mint_txs": 9,
 "median_gap_s": null,
 "nonce": 1,
-"balance_eth": 0.0,
+"balance_eth": 2e-05,
 "swept_out": 0,
 "operated_for": 0,
 "minted_by_others": 0,
@@ -746350,7 +750442,7 @@
 }
 },
 {
-"address": "0xc4f061af9892fc165d0fd7b67c008674505be5bd",
+"address": "0x5500dd6e970af9477d768bc16cae63ad1ca50bcb",
 "score": 20,
 "tier": "LOW_SIGNAL",
 "labels": [
@@ -746375,7 +750467,7 @@
 "swarm_size": 0,
 "code": null,
 "top_collections": [
-"0x3aee58842a1d76c50f36eb5a34e79ef958d082c7"
+"0x73991a25c818bf1f1128deaab1492d45638de0d3"
 ],
 "example_tx": [
 "0x1b2baa41fb1c9cec594ebc0f855d2f240ba2a0cda13c1e60dad10afb897afa9e",
